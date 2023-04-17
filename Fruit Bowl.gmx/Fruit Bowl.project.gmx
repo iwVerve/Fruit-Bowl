@@ -155,6 +155,18 @@
       <sprite>sprites\sprSecretItem</sprite>
       <sprite>sprites\sprBossItem</sprite>
     </sprites>
+    <sprites name="Banana">
+      <sprite>sprites\sprBananaSpikeUp</sprite>
+      <sprite>sprites\sprBananaSpikeRight</sprite>
+      <sprite>sprites\sprBananaSpikeDown</sprite>
+      <sprite>sprites\sprBananaSpikeLeft</sprite>
+      <sprite>sprites\sprBananaMiniUp</sprite>
+      <sprite>sprites\sprBananaMiniRight</sprite>
+      <sprite>sprites\sprBananaMiniDown</sprite>
+      <sprite>sprites\sprBananaMiniLeft</sprite>
+    </sprites>
+    <sprite>sprites\sprBounceRefresher</sprite>
+    <sprite>sprites\sprBounceRefresherSpikes</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -162,6 +174,13 @@
     <background>background\bJumpThrough</background>
     <background>background\bTree</background>
     <background>background\bStars</background>
+    <backgrounds name="Tilesets">
+      <background>background\bBananaTiles</background>
+      <background>background\bBananaMiniTiles</background>
+    </backgrounds>
+    <backgrounds name="Backgrounds">
+      <background>background\bBanana</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathExample</path>
@@ -405,6 +424,8 @@
       <object>objects\objBossIndicator</object>
       <object>objects\objGameClear</object>
     </objects>
+    <object>objects\objBounceRefresher</object>
+    <object>objects\objBounceSpikes</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -422,6 +443,7 @@
       <room>rooms\rTest</room>
     </rooms>
     <room>rooms\rTemplate</room>
+    <room>rooms\rBanana</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
