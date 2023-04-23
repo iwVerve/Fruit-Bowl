@@ -6,7 +6,7 @@ global.debugMode = true;        //Enables debug keys (check objWorld step to see
 global.debugVisuals = true;     //Enables changing the color/alpha of player when infjump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 
 //Updates
-global.checkForUpdates = false;
+global.checkForUpdates = true;
 global.versionDataUrl = "https://pastebin.com/raw/Z5sWFNap";
 global.gameVersion = "1.0";
 

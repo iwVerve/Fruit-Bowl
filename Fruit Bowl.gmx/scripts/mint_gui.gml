@@ -1,0 +1,2 @@
+///mint_gui()
+exit;

@@ -85,8 +85,10 @@
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\sprBlockMask</sprite>
+      <sprite>sprites\sprBlockMaskOpaque</sprite>
       <sprite>sprites\sprBlockMaskCentered</sprite>
       <sprite>sprites\sprMiniBlockMask</sprite>
+      <sprite>sprites\sprMiniBlockMaskOpaque</sprite>
       <sprite>sprites\sprIceBlockMask</sprite>
       <sprite>sprites\sprKillerBlock</sprite>
       <sprite>sprites\sprBlock</sprite>
@@ -167,6 +169,14 @@
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
+    <sprite>sprites\sprCeilingRefresher</sprite>
+    <sprites name="Mint">
+      <sprite>sprites\sprMintDefault</sprite>
+      <sprite>sprites\sprMintIcon</sprite>
+      <sprite>sprites\sprMintIconMini</sprite>
+    </sprites>
+    <sprite>sprites\sprPlatformOrb</sprite>
+    <sprite>sprites\sprPlatformOrbCrystal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -306,14 +316,67 @@
       <script>scripts\print.gml</script>
       <script>scripts\string_concat.gml</script>
     </scripts>
+    <scripts name="Mint">
+      <scripts name="mint">
+        <script>scripts\mint.gml</script>
+        <script>scripts\mint_on_playtest_start.gml</script>
+        <script>scripts\mint_get_room.gml</script>
+        <script>scripts\mint_regenerate_arrays.gml</script>
+        <script>scripts\mint_snap.gml</script>
+        <script>scripts\mint_restart_playtest.gml</script>
+        <script>scripts\mint_room_set_backgrounds.gml</script>
+        <script>scripts\mint_save_room.gml</script>
+      </scripts>
+      <scripts name="mint_callback">
+        <script>scripts\mint_callback.gml</script>
+        <script>scripts\mint_callback_update_snap.gml</script>
+        <script>scripts\mint_callback_finish_snap.gml</script>
+        <script>scripts\mint_callback_switch.gml</script>
+        <script>scripts\mint_callback_select_object.gml</script>
+      </scripts>
+      <scripts name="mint_gui">
+        <script>scripts\mint_gui.gml</script>
+        <script>scripts\mint_draw_gui_elements.gml</script>
+        <script>scripts\mint_highlight_rectangle.gml</script>
+        <script>scripts\mint_draw_tooltip.gml</script>
+        <script>scripts\mint_draw_rounded_rectangle.gml</script>
+        <script>scripts\mint_add_button.gml</script>
+        <script>scripts\mint_get_button_offset.gml</script>
+        <script>scripts\mint_get_instance_tooltip.gml</script>
+        <script>scripts\mint_draw_scale_handles.gml</script>
+        <script>scripts\mint_get_scale_handles.gml</script>
+        <script>scripts\mint_check_for_scale_handle.gml</script>
+        <script>scripts\mint_add_textbox.gml</script>
+        <script>scripts\mint_add_object_to_palette.gml</script>
+      </scripts>
+      <scripts name="mint_util">
+        <script>scripts\mint_util.gml</script>
+        <script>scripts\mint_resize_window.gml</script>
+        <script>scripts\mint_destroy_everything_else.gml</script>
+        <script>scripts\mint_in_range.gml</script>
+        <script>scripts\mint_mouse_update.gml</script>
+        <script>scripts\mint_mouse_in_room_view.gml</script>
+        <script>scripts\mint_check_constant.gml</script>
+        <script>scripts\mint_update_selection_boundary.gml</script>
+        <script>scripts\mint_get_window_position.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>
     <font>fonts\fDefault18</font>
     <font>fonts\fDefault12</font>
+    <fonts name="Mint">
+      <font>fonts\fMint</font>
+    </fonts>
   </fonts>
   <objects name="objects">
+    <objects name="Mint">
+      <object>objects\objMintEditor</object>
+      <object>objects\objMintInstance</object>
+      <object>objects\objMintTile</object>
+    </objects>
     <objects name="World">
       <object>objects\objWorld</object>
       <object>objects\objCamera</object>
@@ -426,6 +489,11 @@
     </objects>
     <object>objects\objBounceRefresher</object>
     <object>objects\objBounceSpikes</object>
+    <object>objects\objDropShadows</object>
+    <object>objects\objCeilingRefresher</object>
+    <object>objects\objCeilingRefresherParticle</object>
+    <object>objects\objPlatformOrb</object>
+    <object>objects\objPlatformOrbCrystal</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">

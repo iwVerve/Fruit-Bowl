@@ -116,7 +116,7 @@ spikes = noone;
     if player != noone {
         var b = false;
         with(player) {
-            if vspeed &gt;= 0 &amp;&amp; !place_meeting(x, y - 9.4, other) {
+            if !place_meeting(x, y - 11, other) {
                 b = true;
             }
         }
