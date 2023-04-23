@@ -32,10 +32,11 @@ objects[3] = objBounceRefresher;
 objects[4] = objBullet;
 objects[5] = objCeilingRefresher;
 objects[6] = objPlatformOrb;
+objects[7] = objSave;
 
 x_dist = 3;
 y_dist = 3;
-alpha = 0.2;
+alpha = 0.15;
 
 shadow_surf = noone;
 
@@ -45,6 +46,49 @@ with(objBlock) {
 
 with(objMiniBlock) {
     sprite_index = sprMiniBlockMaskOpaque;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var object, sprite;
+
+switch(room) {
+    case rBanana:
+        object[0] = objSpikeUp;    sprite[0] = sprBananaSpikeUp;
+        object[1] = objSpikeRight; sprite[1] = sprBananaSpikeRight;
+        object[2] = objSpikeDown;  sprite[2] = sprBananaSpikeDown;
+        object[3] = objSpikeLeft;  sprite[3] = sprBananaSpikeLeft;
+        object[4] = objMiniUp;     sprite[4] = sprBananaMiniUp;
+        object[5] = objMiniRight;  sprite[5] = sprBananaMiniRight;
+        object[6] = objMiniDown;   sprite[6] = sprBananaMiniDown;
+        object[7] = objMiniLeft;   sprite[7] = sprBananaMiniLeft;
+        break;
+}
+        
+for (var i = 0; i &lt; array_length_1d(object); i += 1) {
+    with(object[i]) {
+        sprite_index = sprite[i];
+        depth = 1100;
+    }
 }
 </string>
           </argument>
