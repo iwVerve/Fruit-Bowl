@@ -177,6 +177,20 @@
     </sprites>
     <sprite>sprites\sprPlatformOrb</sprite>
     <sprite>sprites\sprPlatformOrbCrystal</sprite>
+    <sprites name="Cherry">
+      <sprite>sprites\sprCherrySpikeUp</sprite>
+      <sprite>sprites\sprCherrySpikeRight</sprite>
+      <sprite>sprites\sprCherrySpikeDown</sprite>
+      <sprite>sprites\sprCherrySpikeLeft</sprite>
+      <sprite>sprites\sprCherryMiniUp</sprite>
+      <sprite>sprites\sprCherryMiniRight</sprite>
+      <sprite>sprites\sprCherryMiniDown</sprite>
+      <sprite>sprites\sprCherryMiniLeft</sprite>
+      <sprite>sprites\sprCherryDoubleUp</sprite>
+      <sprite>sprites\sprCherryDoubleRight</sprite>
+      <sprite>sprites\sprCherryDoubleDown</sprite>
+      <sprite>sprites\sprCherryDoubleLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -187,9 +201,12 @@
     <backgrounds name="Tilesets">
       <background>background\bBananaTiles</background>
       <background>background\bBananaMiniTiles</background>
+      <background>background\bCherryTiles</background>
+      <background>background\bCherryMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bBanana</background>
+      <background>background\bCherry</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -494,6 +511,12 @@
     <object>objects\objCeilingRefresherParticle</object>
     <object>objects\objPlatformOrb</object>
     <object>objects\objPlatformOrbCrystal</object>
+    <objects name="Cherry">
+      <object>objects\objCherryDoubleUp</object>
+      <object>objects\objCherryDoubleRight</object>
+      <object>objects\objCherryDoubleDown</object>
+      <object>objects\objCherryDoubleLeft</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -512,6 +535,7 @@
     </rooms>
     <room>rooms\rTemplate</room>
     <room>rooms\rBanana</room>
+    <room>rooms\rCherry</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

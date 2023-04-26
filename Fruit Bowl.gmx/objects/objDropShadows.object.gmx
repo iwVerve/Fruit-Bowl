@@ -69,7 +69,8 @@ with(objMiniBlock) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var object, sprite;
+            <string>var object = array_create(0);
+var sprite = array_create(0);
 
 switch(room) {
     case rBanana:
@@ -81,6 +82,16 @@ switch(room) {
         object[5] = objMiniRight;  sprite[5] = sprBananaMiniRight;
         object[6] = objMiniDown;   sprite[6] = sprBananaMiniDown;
         object[7] = objMiniLeft;   sprite[7] = sprBananaMiniLeft;
+        break;
+    case rCherry:
+        object[0] = objSpikeUp;    sprite[0] = sprCherrySpikeUp;
+        object[1] = objSpikeRight; sprite[1] = sprCherrySpikeRight;
+        object[2] = objSpikeDown;  sprite[2] = sprCherrySpikeDown;
+        object[3] = objSpikeLeft;  sprite[3] = sprCherrySpikeLeft;
+        object[4] = objMiniUp;     sprite[4] = sprCherryMiniUp;
+        object[5] = objMiniRight;  sprite[5] = sprCherryMiniRight;
+        object[6] = objMiniDown;   sprite[6] = sprCherryMiniDown;
+        object[7] = objMiniLeft;   sprite[7] = sprCherryMiniLeft;
         break;
 }
         

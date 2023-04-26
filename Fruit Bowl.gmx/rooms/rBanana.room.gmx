@@ -340,6 +340,7 @@
     <instance objName="objBlock" x="672" y="256" name="inst_CA8E6148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="256" name="inst_A59CC80E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="256" name="inst_ABED0DB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="800" y="320" name="inst_910E107B" locked="0" code="smooth = true;&#xA;roomTo = rCherry;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bBananaTiles" x="0" y="64" w="32" h="32" xo="64" yo="64" id="10002890" name="inst_EF884353" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

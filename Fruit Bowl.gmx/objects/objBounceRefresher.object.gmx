@@ -28,7 +28,7 @@
             <string>image_speed = 0.2;
 
 time = random(1000000);
-y_magnitude = 3;
+y_magnitude = 2;
 y_period = 75;
 
 cooldown = 0;
@@ -116,7 +116,7 @@ spikes = noone;
     if player != noone {
         var b = false;
         with(player) {
-            if !place_meeting(x, y - 11, other) {
+            if !place_meeting(x, y - 10, other) || vspeed &gt; 4 {
                 b = true;
             }
         }
