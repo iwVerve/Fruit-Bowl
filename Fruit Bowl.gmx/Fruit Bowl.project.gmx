@@ -191,6 +191,12 @@
       <sprite>sprites\sprCherryDoubleDown</sprite>
       <sprite>sprites\sprCherryDoubleLeft</sprite>
     </sprites>
+    <sprites name="Grape">
+      <sprite>sprites\sprGrapeMiniUp</sprite>
+      <sprite>sprites\sprGrapeMiniRight</sprite>
+      <sprite>sprites\sprGrapeMiniDown</sprite>
+      <sprite>sprites\sprGrapeMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -203,10 +209,13 @@
       <background>background\bBananaMiniTiles</background>
       <background>background\bCherryTiles</background>
       <background>background\bCherryMiniTiles</background>
+      <background>background\bGrapeTiles</background>
+      <background>background\bGrapeMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bBanana</background>
       <background>background\bCherry</background>
+      <background>background\bGrape</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -536,6 +545,7 @@
     <room>rooms\rTemplate</room>
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
+    <room>rooms\rGrape</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

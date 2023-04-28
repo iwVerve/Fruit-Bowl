@@ -93,6 +93,11 @@ switch(room) {
         object[6] = objMiniDown;   sprite[6] = sprCherryMiniDown;
         object[7] = objMiniLeft;   sprite[7] = sprCherryMiniLeft;
         break;
+    case rGrape:
+        object[0] = objMiniUp;    sprite[0] = sprGrapeMiniUp;
+        object[1] = objMiniRight; sprite[1] = sprGrapeMiniRight;
+        object[2] = objMiniDown;  sprite[2] = sprGrapeMiniDown;
+        object[3] = objMiniLeft;  sprite[3] = sprGrapeMiniLeft;
 }
         
 for (var i = 0; i &lt; array_length_1d(object); i += 1) {
