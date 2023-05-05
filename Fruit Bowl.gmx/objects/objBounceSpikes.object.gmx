@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1/4;
+target_image_speed = image_speed;
 
 wait = 50;
 </string>
@@ -54,7 +55,7 @@ wait = 50;
     image_speed = 0;
     wait -= 1;
     if wait &lt;= 0 {
-        image_speed = -1/4;
+        image_speed = -target_image_speed;
     }
 }
 else if wait &lt;= 0 &amp;&amp; image_index &lt;= 0.5 {
