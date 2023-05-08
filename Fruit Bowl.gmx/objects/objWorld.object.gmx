@@ -313,7 +313,7 @@ if (!global.isUpToDate &amp;&amp; !global.gameStarted)
 }
 
 if keyboard_check_pressed(vk_f8) {
-    instance_create(0, 0, objMintEditor);
+    //instance_create(0, 0, objMintEditor);
 }
 </string>
           </argument>

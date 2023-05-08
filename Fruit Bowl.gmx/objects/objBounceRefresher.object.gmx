@@ -41,6 +41,7 @@ dip_gravity = 0.4;
 dip_vspeed_min = 0.8;
 
 spikes = noone;
+      
 </string>
           </argument>
         </arguments>
@@ -89,6 +90,7 @@ spikes = noone;
           <argument>
             <kind>1</kind>
             <string>spikes = instance_create(x, y, objBounceSpikes);
+spikes.image_angle = image_angle;
 </string>
           </argument>
         </arguments>
@@ -111,18 +113,26 @@ spikes = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if cooldown &lt;= 0 {
+            <string>var down_x = lengthdir_x(1, 270 + image_angle);
+var down_y = lengthdir_y(1, 270 + image_angle);
+
+if cooldown &lt;= 0 {
     var player = instance_place(x, y, objPlayer);
     if player != noone {
         var b = false;
         with(player) {
-            if !place_meeting(x, y - 10, other) || vspeed &gt; 4 {
+            if !place_meeting(x - 10 * down_x, y - 10 * down_y, other) || (down_x * hspeed + down_y * vspeed) &gt; 4 {
                 b = true;
             }
         }
         
         if b {
-            player.vspeed = -8.5;
+            if down_x != 0 {
+                player.hmomentum = -8.5 * down_x;
+            }
+            if down_y != 0 {
+                player.vspeed = -8.5 * down_y;
+            }
             cooldown = cooldown_duration;
             dip_vspeed = dip_start_vspeed;
             alarm[0] = 5;

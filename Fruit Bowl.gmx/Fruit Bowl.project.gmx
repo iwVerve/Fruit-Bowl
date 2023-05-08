@@ -168,6 +168,7 @@
       <sprite>sprites\sprBananaMiniLeft</sprite>
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
+    <sprite>sprites\sprBounceRefresherDown</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
     <sprite>sprites\sprCeilingRefresher</sprite>
     <sprites name="Mint">
@@ -211,11 +212,16 @@
       <background>background\bCherryMiniTiles</background>
       <background>background\bGrapeTiles</background>
       <background>background\bGrapeMiniTiles</background>
+      <background>background\bRedAppleTiles</background>
+      <background>background\bRedAppleMiniTiles</background>
+      <background>background\bGreenAppleTiles</background>
+      <background>background\bGreenAppleMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bBanana</background>
       <background>background\bCherry</background>
       <background>background\bGrape</background>
+      <background>background\bApple</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -546,6 +552,7 @@
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
     <room>rooms\rGrape</room>
+    <room>rooms\rApple</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

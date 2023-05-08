@@ -55,6 +55,8 @@ xsafe = x;
 ysafe = y;
 
 do_dynamic_collision(true);
+
+hmomentum = 0;
 </string>
           </argument>
         </arguments>
@@ -295,6 +297,9 @@ else    //Not moving
             { hspeed += min(ice.slip, abs(hspeed)); }
     }
 }
+
+hspeed += hmomentum;
+hmomentum -= sign(hmomentum) * min(abs(hmomentum), 0.4);
 
 onPlatform = false;
 with(objPlatform)
