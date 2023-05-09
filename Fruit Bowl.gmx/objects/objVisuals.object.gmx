@@ -71,6 +71,8 @@ with(objMiniBlock) {
             <kind>1</kind>
             <string>var object = array_create(0);
 var sprite = array_create(0);
+var left_sprite = array_create(0);
+var right_sprite = array_create(0);
 
 switch(room) {
     case rBanana:
@@ -98,11 +100,33 @@ switch(room) {
         object[1] = objMiniRight; sprite[1] = sprGrapeMiniRight;
         object[2] = objMiniDown;  sprite[2] = sprGrapeMiniDown;
         object[3] = objMiniLeft;  sprite[3] = sprGrapeMiniLeft;
+        break;
+    case rApple:
+        object[0] = objSpikeUp;    left_sprite[0] = sprGreenAppleSpikeUp;    right_sprite[0] = sprRedAppleSpikeUp;
+        object[1] = objSpikeRight; left_sprite[1] = sprGreenAppleSpikeRight; right_sprite[1] = sprRedAppleSpikeRight;
+        object[2] = objSpikeDown;  left_sprite[2] = sprGreenAppleSpikeDown;  right_sprite[2] = sprRedAppleSpikeDown;
+        object[3] = objSpikeLeft;  left_sprite[3] = sprGreenAppleSpikeLeft;  right_sprite[3] = sprRedAppleSpikeLeft;
+        object[4] = objMiniUp;     left_sprite[4] = sprGreenAppleMiniUp;     right_sprite[4] = sprRedAppleMiniUp;
+        object[5] = objMiniRight;  left_sprite[5] = sprGreenAppleMiniRight;  right_sprite[5] = sprRedAppleMiniRight;
+        object[6] = objMiniDown;   left_sprite[6] = sprGreenAppleMiniDown;   right_sprite[6] = sprRedAppleMiniDown;
+        object[7] = objMiniLeft;   left_sprite[7] = sprGreenAppleMiniLeft;   right_sprite[7] = sprRedAppleMiniLeft;
+        break;
 }
         
 for (var i = 0; i &lt; array_length_1d(object); i += 1) {
     with(object[i]) {
-        sprite_index = sprite[i];
+        if room == rApple {
+            if x &lt; 400 {
+                sprite_index = left_sprite[i];
+            }
+            else {
+                sprite_index = right_sprite[i];
+            }
+        }
+        else {
+            sprite_index = sprite[i];
+        }
+        
         depth = 1100;
     }
 }

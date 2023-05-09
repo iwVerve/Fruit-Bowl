@@ -198,6 +198,26 @@
       <sprite>sprites\sprGrapeMiniDown</sprite>
       <sprite>sprites\sprGrapeMiniLeft</sprite>
     </sprites>
+    <sprites name="Red Apple">
+      <sprite>sprites\sprRedAppleSpikeUp</sprite>
+      <sprite>sprites\sprRedAppleSpikeRight</sprite>
+      <sprite>sprites\sprRedAppleSpikeDown</sprite>
+      <sprite>sprites\sprRedAppleSpikeLeft</sprite>
+      <sprite>sprites\sprRedAppleMiniUp</sprite>
+      <sprite>sprites\sprRedAppleMiniRight</sprite>
+      <sprite>sprites\sprRedAppleMiniDown</sprite>
+      <sprite>sprites\sprRedAppleMiniLeft</sprite>
+    </sprites>
+    <sprites name="Green Apple">
+      <sprite>sprites\sprGreenAppleSpikeUp</sprite>
+      <sprite>sprites\sprGreenAppleSpikeRight</sprite>
+      <sprite>sprites\sprGreenAppleSpikeDown</sprite>
+      <sprite>sprites\sprGreenAppleSpikeLeft</sprite>
+      <sprite>sprites\sprGreenAppleMiniUp</sprite>
+      <sprite>sprites\sprGreenAppleMiniRight</sprite>
+      <sprite>sprites\sprGreenAppleMiniDown</sprite>
+      <sprite>sprites\sprGreenAppleMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -463,6 +483,12 @@
       <object>objects\objMiniRight</object>
       <object>objects\objMiniLeft</object>
       <object>objects\objMiniDown</object>
+      <objects name="Cherry">
+        <object>objects\objCherryDoubleUp</object>
+        <object>objects\objCherryDoubleRight</object>
+        <object>objects\objCherryDoubleDown</object>
+        <object>objects\objCherryDoubleLeft</object>
+      </objects>
       <object>objects\objCherry</object>
       <object>objects\objCherryBounce</object>
       <object>objects\objCherryBounceRandom</object>
@@ -520,17 +546,13 @@
       <object>objects\objGameClear</object>
     </objects>
     <object>objects\objBounceRefresher</object>
-    <object>objects\objBounceSpikes</object>
-    <object>objects\objDropShadows</object>
-    <object>objects\objCeilingRefresher</object>
-    <object>objects\objCeilingRefresherParticle</object>
-    <object>objects\objPlatformOrb</object>
-    <object>objects\objPlatformOrbCrystal</object>
-    <objects name="Cherry">
-      <object>objects\objCherryDoubleUp</object>
-      <object>objects\objCherryDoubleRight</object>
-      <object>objects\objCherryDoubleDown</object>
-      <object>objects\objCherryDoubleLeft</object>
+    <object>objects\objVisuals</object>
+    <objects name="Misc">
+      <object>objects\objCeilingRefresher</object>
+      <object>objects\objCeilingRefresherParticle</object>
+      <object>objects\objBounceSpikes</object>
+      <object>objects\objPlatformOrb</object>
+      <object>objects\objPlatformOrbCrystal</object>
     </objects>
   </objects>
   <rooms name="rooms">
