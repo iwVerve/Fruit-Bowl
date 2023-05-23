@@ -40,6 +40,12 @@ alpha = 0.15;
 
 shadow_surf = noone;
 
+// Not vars so they can easily be accessed from a script
+object = array_create(0);
+sprite = array_create(0);
+left_sprite = array_create(0);
+right_sprite = array_create(0);
+
 with(objBlock) {
     sprite_index = sprBlockMaskOpaque;
 }
@@ -69,47 +75,62 @@ with(objMiniBlock) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var object = array_create(0);
-var sprite = array_create(0);
-var left_sprite = array_create(0);
-var right_sprite = array_create(0);
-
-switch(room) {
+            <string>switch(room) {
     case rBanana:
-        object[0] = objSpikeUp;    sprite[0] = sprBananaSpikeUp;
-        object[1] = objSpikeRight; sprite[1] = sprBananaSpikeRight;
-        object[2] = objSpikeDown;  sprite[2] = sprBananaSpikeDown;
-        object[3] = objSpikeLeft;  sprite[3] = sprBananaSpikeLeft;
-        object[4] = objMiniUp;     sprite[4] = sprBananaMiniUp;
-        object[5] = objMiniRight;  sprite[5] = sprBananaMiniRight;
-        object[6] = objMiniDown;   sprite[6] = sprBananaMiniDown;
-        object[7] = objMiniLeft;   sprite[7] = sprBananaMiniLeft;
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprBananaSpikeUp,
+            objSpikeRight, sprBananaSpikeRight,
+            objSpikeDown,  sprBananaSpikeDown,
+            objSpikeLeft,  sprBananaSpikeLeft,
+            objMiniUp,     sprBananaMiniUp,
+            objMiniRight,  sprBananaMiniRight,
+            objMiniDown,   sprBananaMiniDown,
+            objMiniLeft,   sprBananaMiniLeft,
+        );
         break;
     case rCherry:
-        object[0] = objSpikeUp;    sprite[0] = sprCherrySpikeUp;
-        object[1] = objSpikeRight; sprite[1] = sprCherrySpikeRight;
-        object[2] = objSpikeDown;  sprite[2] = sprCherrySpikeDown;
-        object[3] = objSpikeLeft;  sprite[3] = sprCherrySpikeLeft;
-        object[4] = objMiniUp;     sprite[4] = sprCherryMiniUp;
-        object[5] = objMiniRight;  sprite[5] = sprCherryMiniRight;
-        object[6] = objMiniDown;   sprite[6] = sprCherryMiniDown;
-        object[7] = objMiniLeft;   sprite[7] = sprCherryMiniLeft;
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprCherrySpikeUp,
+            objSpikeRight, sprCherrySpikeRight,
+            objSpikeDown,  sprCherrySpikeDown,
+            objSpikeLeft,  sprCherrySpikeLeft,
+            objMiniUp,     sprCherryMiniUp,
+            objMiniRight,  sprCherryMiniRight,
+            objMiniDown,   sprCherryMiniDown,
+            objMiniLeft,   sprCherryMiniLeft,
+        );
         break;
     case rGrape:
-        object[0] = objMiniUp;    sprite[0] = sprGrapeMiniUp;
-        object[1] = objMiniRight; sprite[1] = sprGrapeMiniRight;
-        object[2] = objMiniDown;  sprite[2] = sprGrapeMiniDown;
-        object[3] = objMiniLeft;  sprite[3] = sprGrapeMiniLeft;
+        Visuals_add_object_sprite(
+            objMiniUp,     sprGrapeMiniUp,
+            objMiniRight,  sprGrapeMiniRight,
+            objMiniDown,   sprGrapeMiniDown,
+            objMiniLeft,   sprGrapeMiniLeft,
+        );
         break;
     case rApple:
-        object[0] = objSpikeUp;    left_sprite[0] = sprGreenAppleSpikeUp;    right_sprite[0] = sprRedAppleSpikeUp;
-        object[1] = objSpikeRight; left_sprite[1] = sprGreenAppleSpikeRight; right_sprite[1] = sprRedAppleSpikeRight;
-        object[2] = objSpikeDown;  left_sprite[2] = sprGreenAppleSpikeDown;  right_sprite[2] = sprRedAppleSpikeDown;
-        object[3] = objSpikeLeft;  left_sprite[3] = sprGreenAppleSpikeLeft;  right_sprite[3] = sprRedAppleSpikeLeft;
-        object[4] = objMiniUp;     left_sprite[4] = sprGreenAppleMiniUp;     right_sprite[4] = sprRedAppleMiniUp;
-        object[5] = objMiniRight;  left_sprite[5] = sprGreenAppleMiniRight;  right_sprite[5] = sprRedAppleMiniRight;
-        object[6] = objMiniDown;   left_sprite[6] = sprGreenAppleMiniDown;   right_sprite[6] = sprRedAppleMiniDown;
-        object[7] = objMiniLeft;   left_sprite[7] = sprGreenAppleMiniLeft;   right_sprite[7] = sprRedAppleMiniLeft;
+        Visuals_add_apple_object_sprite(
+            objSpikeUp,    sprGreenAppleSpikeUp,    sprRedAppleSpikeUp,
+            objSpikeRight, sprGreenAppleSpikeRight, sprRedAppleSpikeRight,
+            objSpikeDown,  sprGreenAppleSpikeDown,  sprRedAppleSpikeDown,
+            objSpikeLeft,  sprGreenAppleSpikeLeft,  sprRedAppleSpikeLeft,
+            objMiniUp,     sprGreenAppleMiniUp,     sprRedAppleMiniUp,
+            objMiniRight,  sprGreenAppleMiniRight,  sprRedAppleMiniRight,
+            objMiniDown,   sprGreenAppleMiniDown,   sprRedAppleMiniDown,
+            objMiniLeft,   sprGreenAppleMiniLeft,   sprRedAppleMiniLeft,
+        );
+        break;
+    case rKiwi:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprKiwiSpikeUp,
+            objSpikeRight, sprKiwiSpikeRight,
+            objSpikeDown,  sprKiwiSpikeDown,
+            objSpikeLeft,  sprKiwiSpikeLeft,
+            objMiniUp,     sprKiwiMiniUp,
+            objMiniRight,  sprKiwiMiniRight,
+            objMiniDown,   sprKiwiMiniDown,
+            objMiniLeft,   sprKiwiMiniLeft,
+        );
         break;
 }
         
@@ -117,14 +138,14 @@ for (var i = 0; i &lt; array_length_1d(object); i += 1) {
     with(object[i]) {
         if room == rApple {
             if x &lt; 400 {
-                sprite_index = left_sprite[i];
+                sprite_index = other.left_sprite[i];
             }
             else {
-                sprite_index = right_sprite[i];
+                sprite_index = other.right_sprite[i];
             }
         }
         else {
-            sprite_index = sprite[i];
+            sprite_index = other.sprite[i];
         }
         
         depth = 1100;

@@ -218,6 +218,16 @@
       <sprite>sprites\sprGreenAppleMiniDown</sprite>
       <sprite>sprites\sprGreenAppleMiniLeft</sprite>
     </sprites>
+    <sprites name="Kiwi">
+      <sprite>sprites\sprKiwiSpikeUp</sprite>
+      <sprite>sprites\sprKiwiSpikeRight</sprite>
+      <sprite>sprites\sprKiwiSpikeDown</sprite>
+      <sprite>sprites\sprKiwiSpikeLeft</sprite>
+      <sprite>sprites\sprKiwiMiniUp</sprite>
+      <sprite>sprites\sprKiwiMiniRight</sprite>
+      <sprite>sprites\sprKiwiMiniDown</sprite>
+      <sprite>sprites\sprKiwiMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -236,12 +246,15 @@
       <background>background\bRedAppleMiniTiles</background>
       <background>background\bGreenAppleTiles</background>
       <background>background\bGreenAppleMiniTiles</background>
+      <background>background\bKiwiTiles</background>
+      <background>background\bKiwiMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bBanana</background>
       <background>background\bCherry</background>
       <background>background\bGrape</background>
       <background>background\bApple</background>
+      <background>background\bKiwi</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -413,6 +426,8 @@
         <script>scripts\mint_get_window_position.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\Visuals_add_object_sprite.gml</script>
+    <script>scripts\Visuals_add_apple_object_sprite.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -575,6 +590,7 @@
     <room>rooms\rCherry</room>
     <room>rooms\rGrape</room>
     <room>rooms\rApple</room>
+    <room>rooms\rKiwi</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
