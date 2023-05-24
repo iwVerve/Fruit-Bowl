@@ -150,6 +150,7 @@
     <instance objName="objMiniLeft" x="448" y="224" name="inst_67FC0C29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="480" y="224" name="inst_031BB4C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="416" y="-32" name="inst_912FC611" locked="0" code="roomTo = rApple;&#xA;smooth = true;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKiwiShuriken" x="544" y="192" name="inst_6728C9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

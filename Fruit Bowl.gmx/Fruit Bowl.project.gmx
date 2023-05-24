@@ -227,6 +227,7 @@
       <sprite>sprites\sprKiwiMiniRight</sprite>
       <sprite>sprites\sprKiwiMiniDown</sprite>
       <sprite>sprites\sprKiwiMiniLeft</sprite>
+      <sprite>sprites\sprKiwiShuriken</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -504,6 +505,7 @@
         <object>objects\objCherryDoubleDown</object>
         <object>objects\objCherryDoubleLeft</object>
       </objects>
+      <object>objects\objKiwiShuriken</object>
       <object>objects\objCherry</object>
       <object>objects\objCherryBounce</object>
       <object>objects\objCherryBounceRandom</object>
