@@ -11,7 +11,7 @@
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
   <code>with(objBlock) {
-    //visible = true;
+    visible = true;
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -117,8 +117,6 @@
     <instance objName="objBlock" x="224" y="576" name="inst_B168F23A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="576" name="inst_4B07C080" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="288" y="576" name="inst_BC7340C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="320" y="576" name="inst_152C8BEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="352" y="576" name="inst_EDF04E21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="384" y="576" name="inst_2F25930D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="480" y="576" name="inst_74A07D6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="512" y="576" name="inst_BF27ABDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -268,6 +266,9 @@
     <instance objName="objBlock" x="432" y="0" name="inst_7828EAAE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="416" y="16" name="inst_A9F91FB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="416" y="608" name="inst_74B93F6B" locked="0" code="roomTo = rKiwi;&#xA;smooth = true;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="352" y="608" name="inst_438842BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="320" y="608" name="inst_372A7D94" locked="0" code="roomTo = rKiwi;&#xA;smooth = true;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="256" y="544" name="inst_3358011D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bRedAppleTiles" x="400" y="32" w="32" h="32" xo="64" yo="32" id="10003552" name="inst_397E1E73" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
