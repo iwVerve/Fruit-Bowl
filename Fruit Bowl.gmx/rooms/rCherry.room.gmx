@@ -496,15 +496,19 @@
     <tile bgName="bCherryMiniTiles" x="304" y="208" w="16" h="16" xo="0" yo="48" id="10003260" name="inst_4D95E750" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCherryMiniTiles" x="320" y="208" w="16" h="16" xo="32" yo="48" id="10003262" name="inst_21658274" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCherryMiniTiles" x="688" y="288" w="16" h="16" xo="32" yo="48" id="10003263" name="inst_BEE6E598" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryMiniTiles" x="624" y="288" w="16" h="16" xo="16" yo="48" id="10003264" name="inst_DE1A488C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryMiniTiles" x="640" y="288" w="16" h="16" xo="16" yo="48" id="10003265" name="inst_9D6618FC" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryMiniTiles" x="656" y="288" w="16" h="16" xo="16" yo="48" id="10003266" name="inst_F7E273E7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCherryMiniTiles" x="672" y="288" w="16" h="16" xo="16" yo="48" id="10003267" name="inst_48AFA42A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryMiniTiles" x="608" y="288" w="16" h="16" xo="0" yo="48" id="10003268" name="inst_FC5CF5E8" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryTiles" x="640" y="304" w="32" h="16" xo="64" yo="0" id="10003270" name="inst_880A3ACA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryTiles" x="608" y="304" w="32" h="16" xo="32" yo="0" id="10003271" name="inst_851A3058" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryTiles" x="576" y="288" w="32" h="16" xo="64" yo="16" id="10003272" name="inst_6E36D2B0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCherryTiles" x="576" y="304" w="32" h="16" xo="160" yo="64" id="10003273" name="inst_0680E41C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="592" y="288" w="16" h="16" xo="80" yo="32" id="10004418" name="inst_B65A297D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="608" y="288" w="16" h="16" xo="16" yo="0" id="10004419" name="inst_F992F8A6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="624" y="288" w="16" h="16" xo="16" yo="0" id="10004420" name="inst_428EED7C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="640" y="288" w="16" h="16" xo="16" yo="0" id="10004421" name="inst_7BF03FD2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="656" y="288" w="16" h="16" xo="80" yo="0" id="10004423" name="inst_347988FD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="656" y="304" w="16" h="16" xo="32" yo="16" id="10004424" name="inst_2CDCAE12" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="592" y="304" w="16" h="16" xo="16" yo="16" id="10004425" name="inst_40D79BF2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="608" y="304" w="16" h="16" xo="16" yo="16" id="10004426" name="inst_F045D848" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="624" y="304" w="16" h="16" xo="16" yo="16" id="10004427" name="inst_032AC7A0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="640" y="304" w="16" h="16" xo="16" yo="16" id="10004428" name="inst_694F7309" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="576" y="288" w="16" h="16" xo="16" yo="16" id="10004429" name="inst_01C3FBFF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCherryMiniTiles" x="576" y="304" w="16" h="16" xo="16" yo="16" id="10004430" name="inst_950E6887" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
