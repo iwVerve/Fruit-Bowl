@@ -76,6 +76,18 @@ with(objMiniBlock) {
           <argument>
             <kind>1</kind>
             <string>switch(room) {
+    case rTutorial:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprTutorialSpikeUp,
+            objSpikeRight, sprTutorialSpikeRight,
+            objSpikeDown,  sprTutorialSpikeDown,
+            objSpikeLeft,  sprTutorialSpikeLeft,
+            objMiniUp,     sprTutorialMiniUp,
+            objMiniRight,  sprTutorialMiniRight,
+            objMiniDown,   sprTutorialMiniDown,
+            objMiniLeft,   sprTutorialMiniLeft,
+        );
+        break;
     case rBanana:
         Visuals_add_object_sprite(
             objSpikeUp,    sprBananaSpikeUp,

@@ -157,6 +157,26 @@
       <sprite>sprites\sprSecretItem</sprite>
       <sprite>sprites\sprBossItem</sprite>
     </sprites>
+    <sprites name="Mint">
+      <sprite>sprites\sprMintDefault</sprite>
+      <sprite>sprites\sprMintIcon</sprite>
+      <sprite>sprites\sprMintIconMini</sprite>
+    </sprites>
+    <sprite>sprites\sprBounceRefresher</sprite>
+    <sprite>sprites\sprBounceRefresherSpikes</sprite>
+    <sprite>sprites\sprCeilingRefresher</sprite>
+    <sprite>sprites\sprPlatformOrb</sprite>
+    <sprite>sprites\sprPlatformOrbCrystal</sprite>
+    <sprites name="Tutorial">
+      <sprite>sprites\sprTutorialSpikeUp</sprite>
+      <sprite>sprites\sprTutorialSpikeRight</sprite>
+      <sprite>sprites\sprTutorialSpikeDown</sprite>
+      <sprite>sprites\sprTutorialSpikeLeft</sprite>
+      <sprite>sprites\sprTutorialMiniUp</sprite>
+      <sprite>sprites\sprTutorialMiniRight</sprite>
+      <sprite>sprites\sprTutorialMiniDown</sprite>
+      <sprite>sprites\sprTutorialMiniLeft</sprite>
+    </sprites>
     <sprites name="Banana">
       <sprite>sprites\sprBananaSpikeUp</sprite>
       <sprite>sprites\sprBananaSpikeRight</sprite>
@@ -167,16 +187,6 @@
       <sprite>sprites\sprBananaMiniDown</sprite>
       <sprite>sprites\sprBananaMiniLeft</sprite>
     </sprites>
-    <sprite>sprites\sprBounceRefresher</sprite>
-    <sprite>sprites\sprBounceRefresherSpikes</sprite>
-    <sprite>sprites\sprCeilingRefresher</sprite>
-    <sprites name="Mint">
-      <sprite>sprites\sprMintDefault</sprite>
-      <sprite>sprites\sprMintIcon</sprite>
-      <sprite>sprites\sprMintIconMini</sprite>
-    </sprites>
-    <sprite>sprites\sprPlatformOrb</sprite>
-    <sprite>sprites\sprPlatformOrbCrystal</sprite>
     <sprites name="Cherry">
       <sprite>sprites\sprCherrySpikeUp</sprite>
       <sprite>sprites\sprCherrySpikeRight</sprite>
@@ -264,6 +274,7 @@
       <background>background\bCoconutMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
+      <background>background\bTutorial</background>
       <background>background\bBanana</background>
       <background>background\bCherry</background>
       <background>background\bGrape</background>
