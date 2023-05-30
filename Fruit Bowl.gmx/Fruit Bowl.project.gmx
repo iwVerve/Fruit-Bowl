@@ -168,7 +168,6 @@
       <sprite>sprites\sprBananaMiniLeft</sprite>
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
-    <sprite>sprites\sprBounceRefresherDown</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
     <sprite>sprites\sprCeilingRefresher</sprite>
     <sprites name="Mint">
@@ -228,6 +227,16 @@
       <sprite>sprites\sprKiwiMiniDown</sprite>
       <sprite>sprites\sprKiwiMiniLeft</sprite>
       <sprite>sprites\sprKiwiShuriken</sprite>
+    </sprites>
+    <sprites name="Coconut">
+      <sprite>sprites\sprCoconutSpikeUp</sprite>
+      <sprite>sprites\sprCoconutSpikeRight</sprite>
+      <sprite>sprites\sprCoconutSpikeDown</sprite>
+      <sprite>sprites\sprCoconutSpikeLeft</sprite>
+      <sprite>sprites\sprCoconutMiniUp</sprite>
+      <sprite>sprites\sprCoconutMiniRight</sprite>
+      <sprite>sprites\sprCoconutMiniDown</sprite>
+      <sprite>sprites\sprCoconutMiniLeft</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

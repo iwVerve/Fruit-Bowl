@@ -309,7 +309,7 @@
     <instance objName="objBlock" x="32" y="192" name="inst_6036948A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="64" y="192" name="inst_9547D89F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="128" y="272" name="inst_F0EFF147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="336" y="200" name="inst_FEC84FD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="336" y="192" name="inst_FEC84FD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="320" y="272" name="inst_8634C25A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="336" y="272" name="inst_6F5BC4C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="352" y="256" name="inst_1BF3CB50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

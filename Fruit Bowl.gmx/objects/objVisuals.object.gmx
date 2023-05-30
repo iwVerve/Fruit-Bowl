@@ -132,6 +132,18 @@ with(objMiniBlock) {
             objMiniLeft,   sprKiwiMiniLeft,
         );
         break;
+    case rCoconut:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprCoconutSpikeUp,
+            objSpikeRight, sprCoconutSpikeRight,
+            objSpikeDown,  sprCoconutSpikeDown,
+            objSpikeLeft,  sprCoconutSpikeLeft,
+            objMiniUp,     sprCoconutMiniUp,
+            objMiniRight,  sprCoconutMiniRight,
+            objMiniDown,   sprCoconutMiniDown,
+            objMiniLeft,   sprCoconutMiniLeft,
+        );
+        break;
 }
         
 for (var i = 0; i &lt; array_length_1d(object); i += 1) {
