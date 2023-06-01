@@ -120,6 +120,11 @@ with(objMiniBlock) {
             objMiniLeft,   sprGrapeMiniLeft,
         );
         break;
+    case rIntermission1:
+        Visuals_add_object_sprite(
+            objMiniDown,   sprIntermission1MiniDown,
+        );
+        break;
     case rApple:
         Visuals_add_apple_object_sprite(
             objSpikeUp,    sprGreenAppleSpikeUp,    sprRedAppleSpikeUp,

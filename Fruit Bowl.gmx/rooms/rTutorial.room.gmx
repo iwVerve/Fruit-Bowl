@@ -280,10 +280,6 @@
     <instance objName="objBounceRefresher" x="80" y="240" name="inst_09E3FFFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBounceRefresher" x="48" y="368" name="inst_B26EF59D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBounceRefresher" x="80" y="496" name="inst_4860CEF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="128" y="608" name="inst_73A2CA3D" locked="0" code="roomTo = rBanana;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="256" y="608" name="inst_33898013" locked="0" code="roomTo = rBanana;&#xA;smooth = true;&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="608" y="608" name="inst_9B4179DE" locked="0" code="roomTo = rBanana;&#xA;smooth = true;&#xA;" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="720" y="608" name="inst_207BBB8B" locked="0" code="roomTo = rBanana;&#xA;smooth = true;&#xA;" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="320" y="-32" name="inst_F494CBEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="352" name="inst_5A01CD75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="384" name="inst_C919A230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

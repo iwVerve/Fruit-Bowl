@@ -318,6 +318,10 @@
     <instance objName="objBlock" x="384" y="160" name="inst_F8889460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="160" name="inst_BBDF8F49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="320" y="-32" name="inst_572E92AF" locked="0" code="roomTo = rApple;&#xA;smooth = true;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="96" y="-32" name="inst_E72D5D36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="288" y="-32" name="inst_8F067DFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="384" y="-32" name="inst_43766549" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="672" y="-32" name="inst_A315EA5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bKiwiTiles" x="480" y="0" w="32" h="32" xo="0" yo="64" id="10003688" name="inst_7E91A832" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

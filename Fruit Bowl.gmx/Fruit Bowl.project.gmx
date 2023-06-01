@@ -207,6 +207,9 @@
       <sprite>sprites\sprGrapeMiniDown</sprite>
       <sprite>sprites\sprGrapeMiniLeft</sprite>
     </sprites>
+    <sprites name="Intermission 1">
+      <sprite>sprites\sprIntermission1MiniDown</sprite>
+    </sprites>
     <sprites name="Red Apple">
       <sprite>sprites\sprRedAppleSpikeUp</sprite>
       <sprite>sprites\sprRedAppleSpikeRight</sprite>
@@ -264,6 +267,7 @@
       <background>background\bCherryMiniTiles</background>
       <background>background\bGrapeTiles</background>
       <background>background\bGrapeMiniTiles</background>
+      <background>background\bIntermission1Tiles</background>
       <background>background\bRedAppleTiles</background>
       <background>background\bRedAppleMiniTiles</background>
       <background>background\bGreenAppleTiles</background>
@@ -278,6 +282,7 @@
       <background>background\bBanana</background>
       <background>background\bCherry</background>
       <background>background\bGrape</background>
+      <background>background\bIntermission1</background>
       <background>background\bApple</background>
       <background>background\bKiwi</background>
       <background>background\bCoconut</background>
@@ -617,6 +622,7 @@
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
     <room>rooms\rGrape</room>
+    <room>rooms\rIntermission1</room>
     <room>rooms\rApple</room>
     <room>rooms\rKiwi</room>
     <room>rooms\rCoconut</room>
