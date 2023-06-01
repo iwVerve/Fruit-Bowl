@@ -233,18 +233,16 @@
     <instance objName="objMiniDown" x="656" y="32" name="inst_AF71B3FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="576" y="48" name="inst_694EF3C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="32" name="inst_F8242ED0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="704" y="128" name="inst_1C1C7CCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="704" y="144" name="inst_7AF85599" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="704" y="144" name="inst_7AF85599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="32" name="inst_78FB14E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="32" name="inst_417E2710" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="720" y="160" name="inst_BD66120D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="176" name="inst_8A41430E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="208" name="inst_4C08AC03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="240" name="inst_6C1D4978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="272" name="inst_708BDCD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="304" name="inst_969FAD8F" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniLeft" x="752" y="208" name="inst_2ADEA317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniRight" x="736" y="304" name="inst_4940F81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="752" y="168" name="inst_2ADEA317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="736" y="280" name="inst_4940F81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="720" y="320" name="inst_D333D73B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="752" y="400" name="inst_5D953BF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="736" y="432" name="inst_23312982" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -326,8 +324,8 @@
     <instance objName="objBlock" x="384" y="256" name="inst_58EA9945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="384" y="288" name="inst_478F50F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="384" y="320" name="inst_F3029576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="688" y="304" name="inst_7A826ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="688" y="320" name="inst_E2CFACE6" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="688" y="296" name="inst_7A826ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="688" y="312" name="inst_E2CFACE6" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="704" y="320" name="inst_3B7D17C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="320" y="432" name="inst_129FEA0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="320" y="352" name="inst_5A58A14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -430,6 +428,9 @@
     <instance objName="objOutsideRoomChanger" x="-32" y="384" name="inst_7A7E29D5" locked="0" code="roomTo = rIntermission1;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="-32" name="inst_93F48294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="352" name="inst_062F449C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="704" y="136" name="inst_756D2919" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="720" y="136" name="inst_D7297414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="688" y="344" name="inst_79AC44DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bGrapeTiles" x="0" y="0" w="32" h="32" xo="64" yo="32" id="10003274" name="inst_7B9B5C57" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -611,9 +612,6 @@
     <tile bgName="bGrapeTiles" x="560" y="400" w="32" h="16" xo="96" yo="32" id="10003463" name="inst_D0ACC0AF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="640" y="352" w="16" h="32" xo="48" yo="0" id="10003465" name="inst_55A2BE39" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="640" y="384" w="16" h="32" xo="48" yo="16" id="10003466" name="inst_B0512215" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="688" y="320" w="16" h="16" xo="48" yo="0" id="10003468" name="inst_9E2D88E5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="688" y="336" w="16" h="16" xo="48" yo="32" id="10003469" name="inst_BD35B417" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="704" y="144" w="16" h="16" xo="48" yo="0" id="10003470" name="inst_5EC4371B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="544" y="192" w="16" h="16" xo="48" yo="32" id="10003472" name="inst_81BD5213" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="160" y="512" w="16" h="16" xo="48" yo="0" id="10003474" name="inst_566F3593" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="160" y="528" w="16" h="16" xo="48" yo="32" id="10003475" name="inst_2A3F4EEF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -691,11 +689,6 @@
     <tile bgName="bGrapeMiniTiles" x="560" y="160" w="16" h="16" xo="32" yo="32" id="10004385" name="inst_5C26F554" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="544" y="144" w="16" h="16" xo="0" yo="16" id="10004386" name="inst_830BFE5B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="560" y="144" w="16" h="16" xo="32" yo="16" id="10004387" name="inst_4572E0F9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="704" y="160" w="16" h="16" xo="48" yo="16" id="10004388" name="inst_DFB69255" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="704" y="176" w="16" h="16" xo="64" yo="32" id="10004389" name="inst_F2BA690E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="720" y="176" w="16" h="16" xo="32" yo="0" id="10004390" name="inst_1881EBDF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="720" y="192" w="16" h="16" xo="32" yo="16" id="10004391" name="inst_9E7100EB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGrapeMiniTiles" x="704" y="192" w="16" h="16" xo="0" yo="16" id="10004392" name="inst_ED477D88" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="560" y="352" w="16" h="16" xo="48" yo="0" id="10004393" name="inst_72E3E7C4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="560" y="368" w="16" h="16" xo="64" yo="32" id="10004394" name="inst_C2D68319" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="576" y="368" w="16" h="16" xo="32" yo="0" id="10004395" name="inst_5FA0BCD1" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -721,6 +714,10 @@
     <tile bgName="bGrapeMiniTiles" x="192" y="432" w="16" h="16" xo="0" yo="0" id="10004415" name="inst_B6C7B4C2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="192" y="448" w="16" h="16" xo="0" yo="16" id="10004416" name="inst_E22829DF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGrapeMiniTiles" x="208" y="448" w="16" h="16" xo="16" yo="16" id="10004417" name="inst_783B4259" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bGrapeTiles" x="704" y="144" w="32" h="32" xo="96" yo="0" id="10005431" name="inst_43744395" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bGrapeTiles" x="704" y="176" w="32" h="32" xo="96" yo="32" id="10005433" name="inst_92028727" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bGrapeMiniTiles" x="688" y="312" w="16" h="16" xo="48" yo="0" id="10005435" name="inst_7644F336" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bGrapeMiniTiles" x="688" y="328" w="16" h="16" xo="48" yo="32" id="10005437" name="inst_ECB581B4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

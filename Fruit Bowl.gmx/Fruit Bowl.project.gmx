@@ -276,6 +276,7 @@
       <background>background\bKiwiMiniTiles</background>
       <background>background\bCoconutTiles</background>
       <background>background\bCoconutMiniTiles</background>
+      <background>background\bIntermission2Tiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bTutorial</background>
@@ -286,6 +287,7 @@
       <background>background\bApple</background>
       <background>background\bKiwi</background>
       <background>background\bCoconut</background>
+      <background>background\bIntermission2</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -626,6 +628,7 @@
     <room>rooms\rApple</room>
     <room>rooms\rKiwi</room>
     <room>rooms\rCoconut</room>
+    <room>rooms\rIntermission2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
