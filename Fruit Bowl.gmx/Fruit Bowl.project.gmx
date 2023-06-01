@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="3" name="datafiles">
-    <datafiles number="3" name="Music">
+  <datafiles number="4" name="datafiles">
+    <datafiles number="4" name="Music">
       <datafile>
         <name>GuyRock.ogg</name>
         <exists>-1</exists>
@@ -40,6 +40,23 @@
         <filename>Megaman.ogg</filename>
       </datafile>
     </datafiles>
+    <datafile>
+      <name>Readme.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>Readme.txt</filename>
+    </datafile>
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\GMSched</extension>
@@ -58,6 +75,9 @@
       <sound>sound\sndCherry</sound>
       <sound>sound\sndGlass</sound>
       <sound>sound\sndSpikeTrap</sound>
+      <sound>sound\sndIntroEagle</sound>
+      <sound>sound\sndIntroAlert</sound>
+      <sound>sound\sndIntroThud</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -167,6 +187,11 @@
     <sprite>sprites\sprCeilingRefresher</sprite>
     <sprite>sprites\sprPlatformOrb</sprite>
     <sprite>sprites\sprPlatformOrbCrystal</sprite>
+    <sprites name="Intro">
+      <sprite>sprites\sprFruitBowl</sprite>
+      <sprite>sprites\sprIntroEmoji</sprite>
+      <sprite>sprites\sprIntroEagle</sprite>
+    </sprites>
     <sprites name="Tutorial">
       <sprite>sprites\sprTutorialSpikeUp</sprite>
       <sprite>sprites\sprTutorialSpikeRight</sprite>
@@ -277,8 +302,10 @@
       <background>background\bCoconutTiles</background>
       <background>background\bCoconutMiniTiles</background>
       <background>background\bIntermission2Tiles</background>
+      <background>background\bFallTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
+      <background>background\bLivingRoom</background>
       <background>background\bTutorial</background>
       <background>background\bBanana</background>
       <background>background\bCherry</background>
@@ -596,6 +623,13 @@
     </objects>
     <object>objects\objBounceRefresher</object>
     <object>objects\objVisuals</object>
+    <objects name="Intro">
+      <object>objects\objIntroFade</object>
+      <object>objects\objIntroPlayer</object>
+      <object>objects\objFruitBowl</object>
+      <object>objects\objIntroEmoji</object>
+      <object>objects\objIntroEagle</object>
+    </objects>
     <objects name="Misc">
       <object>objects\objCeilingRefresher</object>
       <object>objects\objCeilingRefresherParticle</object>
@@ -620,6 +654,8 @@
       <room>rooms\rTest</room>
     </rooms>
     <room>rooms\rTemplate</room>
+    <room>rooms\rIntro</room>
+    <room>rooms\rFall</room>
     <room>rooms\rTutorial</room>
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
@@ -629,6 +665,7 @@
     <room>rooms\rKiwi</room>
     <room>rooms\rCoconut</room>
     <room>rooms\rIntermission2</room>
+    <room>rooms\rRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

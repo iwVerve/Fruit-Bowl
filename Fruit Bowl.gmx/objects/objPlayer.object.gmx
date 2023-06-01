@@ -57,6 +57,10 @@ ysafe = y;
 do_dynamic_collision(true);
 
 hmomentum = 0;
+if room == rFall {
+    airJumps = 0;
+    vspeed = maxVspeed;
+}
 </string>
           </argument>
         </arguments>
