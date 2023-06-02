@@ -8,6 +8,15 @@ Testplay:
 
 Music:
 -
+temp:
+https://www.youtube.com/watch?v=BFNg1ZW4hLw
+https://downloads.khinsider.com/game-soundtracks/album/majokko-de-go-go-paul-to-mira-kuru-daisakusen
+Sister Eri - Slow - Menu
+Main - Upbeat, sunny - Clear room
+Protagonist - Slow, chill - Early platforming
+Kurumi - Upbeat - Late platforming
+Love - Intro
+Erotic 2 - Slow, chill - Middle platforming
 
 
 Tools:
