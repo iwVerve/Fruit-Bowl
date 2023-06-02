@@ -134,6 +134,7 @@ else if time == 340 {
     with(objIntroFade) {
         state = "in";
     }
+    music_fadeout(2000);
 }
 
 time += 1;

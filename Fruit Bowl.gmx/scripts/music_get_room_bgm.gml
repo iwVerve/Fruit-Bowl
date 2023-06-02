@@ -1,22 +1,32 @@
 ///music_get_room_bgm()
 // Gets which song is supposed to be playing for the current room
 
-switch (room)
-{
+switch (room) {
     case rTitle:            //Add rooms here, if you have several rooms that play the same song they can be put together
     case rMenu:
     case rOptions:
-    case rDifficultySelect:
-    case rSample:                                                                                                            
-        return "GuyRock";
+        return "SisterPurity";
         
-    case rCherryBoss:
-        return "Megaman";
-        
-    case rMiku:
-        return -2;          //Don't change the music in any way (the Miku object plays it)
-        
-    case rEnd:
+    case rIntro:
+        return "MelodyOfSmallLove";
+    
+    case rTutorial:
+    case rBanana:
+    case rCherry:
+    case rGrape:
+        return "LoopScratch";
+    
+    case rApple:
+    case rKiwi:
+    case rCoconut:
+        return "Love";
+    
+    //case rRoom:
+    //    return "Cutie";
+    
+    //case rClear:
+    //    return "PapapaSweetSwing";
+
     default:
         return -1;          //Play nothing
 }

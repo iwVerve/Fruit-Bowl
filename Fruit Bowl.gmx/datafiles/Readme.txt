@@ -7,16 +7,18 @@ Testplay:
 
 
 Music:
--
-temp:
+Majokko de'GO♪GO♪ ~Paul to Mira☆Kuru Daisakusen~
+(魔女っこde'GO♪GO♪ ～ポールとミラ☆クル大作戦～)
+
+Menu: sister purity BOIN'G (Sister Eri's Theme)
+Intro: melody of small love (Love Theme)
+Platforming 1: loop ♂ scratch (The Protagonist Aruto's Theme)
+Platforming 2: love (Erotic Theme 2)
+Platforming 3: cutie ♀ BOIN'G (The Heroine Kurumi's Theme)
+Clear: papapa sweet swing (Main Theme)
+
 https://www.youtube.com/watch?v=BFNg1ZW4hLw
 https://downloads.khinsider.com/game-soundtracks/album/majokko-de-go-go-paul-to-mira-kuru-daisakusen
-Sister Eri - Slow - Menu
-Main - Upbeat, sunny - Clear room
-Protagonist - Slow, chill - Early platforming
-Kurumi - Upbeat - Late platforming
-Love - Intro
-Erotic 2 - Slow, chill - Middle platforming
 
 
 Tools:
