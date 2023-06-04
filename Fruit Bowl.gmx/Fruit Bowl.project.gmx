@@ -352,6 +352,7 @@
     <background>background\bTree</background>
     <background>background\bStars</background>
     <backgrounds name="Tilesets">
+      <background>background\bFallTiles</background>
       <background>background\bTutorialTiles</background>
       <background>background\bTutorialMiniTiles</background>
       <background>background\bBananaTiles</background>
@@ -370,7 +371,6 @@
       <background>background\bCoconutTiles</background>
       <background>background\bCoconutMiniTiles</background>
       <background>background\bIntermission2Tiles</background>
-      <background>background\bFallTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
