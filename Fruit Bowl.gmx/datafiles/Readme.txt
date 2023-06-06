@@ -31,6 +31,7 @@ ChipTone
 
 Graphics:
 Twemoji
+https://www.healthyeating.org/nutrition-topics/general/food-groups/fruits
 https://www.milandesignagenda.com/luxurious-modern-living-room-inspirations/
 https://www.istockphoto.com/photo/fruit-bowl-isolated-gm810147810-131067163
 https://commons.wikimedia.org/wiki/File:The_Bald_Eagle_-_Spreading_the_Wings.jpg

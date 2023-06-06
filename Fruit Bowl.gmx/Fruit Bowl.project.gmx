@@ -351,6 +351,10 @@
     <background>background\bJumpThrough</background>
     <background>background\bTree</background>
     <background>background\bStars</background>
+    <backgrounds name="Menu">
+      <background>background\bTitleBack</background>
+      <background>background\bTitleFront</background>
+    </backgrounds>
     <backgrounds name="Tilesets">
       <background>background\bFallTiles</background>
       <background>background\bTutorialTiles</background>
@@ -557,6 +561,7 @@
     </scripts>
     <script>scripts\Visuals_add_object_sprite.gml</script>
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
+    <script>scripts\is_menu_room.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -706,6 +711,8 @@
       <object>objects\objPlatformOrb</object>
       <object>objects\objPlatformOrbCrystal</object>
     </objects>
+    <object>objects\objTitleEffect</object>
+    <object>objects\objIntroBubble</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
