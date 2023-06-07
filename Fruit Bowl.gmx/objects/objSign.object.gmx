@@ -88,7 +88,7 @@ else
 if (showText)
 {
     draw_set_color(c_black);
-    draw_set_font(fDefault12);
+    draw_set_font(fHeyComicSmall);
     draw_set_halign(fa_center);
     
     var yOffset = string_height(text);

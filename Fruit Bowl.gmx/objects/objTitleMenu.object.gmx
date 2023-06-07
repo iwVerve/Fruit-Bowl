@@ -56,7 +56,7 @@ if (input_check_pressed(KEY.MENU_ACCEPT))
 
 if (global.debugMode)
 {
-    draw_set_font(fDefault24);
+    draw_set_font(fLightBeachBig);
     draw_set_halign(fa_right);
     draw_set_valign(fa_top);
     

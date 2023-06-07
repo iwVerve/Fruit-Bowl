@@ -6,6 +6,15 @@ Testplay:
 -
 
 
+Tools:
+GameMaker: Studio
+YoYoYo Engine Verve Edition
+paint.net
+Tilesetter Lite (i can not overstate how much time this saved)
+ChipTone
+FontForge
+
+
 Music:
 Majokko de'GO♪GO♪ ~Paul to Mira☆Kuru Daisakusen~
 (魔女っこde'GO♪GO♪ ～ポールとミラ☆クル大作戦～)
@@ -21,12 +30,13 @@ https://www.youtube.com/watch?v=BFNg1ZW4hLw
 https://downloads.khinsider.com/game-soundtracks/album/majokko-de-go-go-paul-to-mira-kuru-daisakusen
 
 
-Tools:
-GameMaker: Studio
-YoYoYo Engine Verve Edition
-paint.net
-Tilesetter Lite (i can not overstate how much time this saved)
-ChipTone
+Fonts:
+Light Beach
+https://www.dafont.com/light-beach.font
+https://eknojistudio.com/product/draft-produk-copy/
+Hey Comic
+https://www.dafont.com/hey-comic.font
+https://www.creativefabrica.com/product/hey-comic/ref/53/
 
 
 Graphics:

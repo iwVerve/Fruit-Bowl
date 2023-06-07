@@ -230,7 +230,7 @@ for (var i = 0; i &lt; numberOfButtons - 2; i++)
             <kind>1</kind>
             <string>draw_set_color(ternary(!global.gameStarted, c_black, c_white));
 draw_set_valign(fa_top);
-draw_set_font(fDefault24);
+draw_set_font(fLightBeachBig);
 
 yStart = (608 - numberOfButtons * yStep)/2;
 currentSlot = 0;
@@ -255,7 +255,7 @@ if (global.controllerIndex != -1)
 {
     //Display currently connected controller
     draw_set_color(c_maroon);
-    draw_set_font(fDefault12);
+    draw_set_font(fHeyComicSmall);
     draw_set_halign(fa_middle);
     draw_set_valign(fa_middle);
     

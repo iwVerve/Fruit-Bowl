@@ -571,6 +571,17 @@
     <fonts name="Mint">
       <font>fonts\fMint</font>
     </fonts>
+    <fonts name="LightBeach">
+      <font>fonts\fLightBeachSmall</font>
+      <font>fonts\fLightBeachNormal</font>
+      <font>fonts\fLightBeachBig</font>
+      <font>fonts\fLightBeachHuge</font>
+    </fonts>
+    <fonts name="HeyComic">
+      <font>fonts\fHeyComicSmall</font>
+      <font>fonts\fHeyComicNormal</font>
+      <font>fonts\fHeyComicBig</font>
+    </fonts>
   </fonts>
   <objects name="objects">
     <objects name="Mint">

@@ -472,6 +472,36 @@ set_room_caption();
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var map = global.musicMap;
+var key = ds_map_find_first(map);
+
+repeat(ds_map_size(map)) {
+    var index = map[? key];
+    audio_destroy_stream(index);
+    key = ds_map_find_next(map, key);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
@@ -581,7 +611,7 @@ texture_set_interpolation(false);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_font(fDefault12);
+draw_set_font(fHeyComicSmall);
 
 if (!global.gameStarted)
 {
@@ -655,12 +685,12 @@ if (global.gamePaused)
         draw_set_color(c_white);
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
-        draw_set_font(fDefault30);
+        draw_set_font(fLightBeachHuge);
         
-        draw_text(display_get_gui_width()/2, display_get_gui_height()/2 - 24, "PAUSE");
+        draw_text_outline(display_get_gui_width()/2, display_get_gui_height()/2 - 24, "PAUSE", c_white, c_black);
         
         draw_set_halign(fa_left);
-        draw_set_font(fDefault18);
+        draw_set_font(fHeyComicNormal);
         
         var t = savedata_get("time");
         var timeText = string(t div 3600) + ":";
@@ -673,11 +703,11 @@ if (global.gamePaused)
         t = t mod 10;
         timeText += string(floor(t));
         
-        draw_text(20, 516, "Volume: " + string(global.volumeLevel) + "%");
-        draw_text(20, 541, "Deaths: " + string(savedata_get("death")));
-        draw_text(20, 566, "Time: " + timeText);
+        draw_text_outline(20, 516, "Volume: " + string(global.volumeLevel) + "%", c_white, c_black);
+        draw_text_outline(20, 541, "Deaths: " + string(savedata_get("death")), c_white, c_black);
+        draw_text_outline(20, 566, "Time: " + timeText, c_white, c_black);
         
-        draw_set_font(fDefault12);
+        draw_set_font(fHeyComicSmall);
         draw_set_halign(fa_middle);
         if (!global.controllerMode)
         {
@@ -687,7 +717,7 @@ if (global.gamePaused)
         {
             var optionsButton = input_get_button_name(global.menuOptionsButton[1]);
         }
-        draw_text(400, 556, "["+optionsButton+"] Options");
+        draw_text_outline(400, 556, "["+optionsButton+"] Options", c_white, c_black);
     }
     else
     {

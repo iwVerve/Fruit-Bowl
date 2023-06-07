@@ -4,10 +4,10 @@ var index = argument0;
 var xx = argument1;
 var yy = argument2;
 
-draw_set_text(fa_middle, fa_top, c_black, fDefault30);
+draw_set_text(fa_middle, fa_top, c_black, fLightBeachHuge);
 draw_text(xx + 64, yy, str[index]);
 
-draw_set_text(fa_left, fa_top, c_black, fDefault12);
+draw_set_text(fa_left, fa_top, c_black, fHeyComicSmall);
 draw_text(xx + 10, yy + 70, "Deaths: " + string(death[index]));
 draw_text(xx + 10, yy + 90, "Time: " + timeStr[index]);
 
@@ -35,7 +35,7 @@ if (exists[index])
     }
     
     if clear[index] {
-        draw_set_font(fDefault24);
+        draw_set_font(fLightBeachBig);
         draw_text(xx + 63, yy + 215, "Clear!!");
     }
     
