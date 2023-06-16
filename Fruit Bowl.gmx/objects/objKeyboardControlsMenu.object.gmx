@@ -44,6 +44,9 @@ buttonName[numberOfKeys - 1] = "Reset Controls";
 bindName[numberOfKeys - 1] = "";
 
 animationTime = 0;
+
+yStart = (608 - numberOfKeys * yStep) / 2;
+currentSlot = 0;
 </string>
           </argument>
         </arguments>
@@ -241,7 +244,7 @@ for(var i = 0; i &lt; numberOfKeys; i++)
     }
     menu_draw_option(buttonName[i], bindText);
     
-    draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 21);
+    //draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 21);
 }
 
 menu_draw_menu_buttons(false);

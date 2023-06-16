@@ -188,9 +188,41 @@ surface_set_target(surf);
     draw_set_color_write_enable(1, 1, 1, 0);
         draw_background(bTitleFront, 0, 0);
     draw_set_color_write_enable(0, 0, 0, 1);
+    
         with(objIntroBubble) {
             draw_circle(x, y, size, false);
         }
+        
+        with(objFileMenu) {
+            var xx = x - 32 + savefileSelect * xSeparation;
+            var yy = y - 32;
+            var w = 192;
+            var h = 320;
+            draw_rectangle(xx, yy, xx + w - 1, yy + h - 1, false);
+            
+            draw_set_blend_mode(bm_subtract);
+                draw_rectangle(xx + 15, yy + 15, xx + w - 16, yy + h - 16, false);
+            draw_set_blend_mode(bm_normal);
+        }
+        
+        var a; a[0] = objOptionsMenu; a[1] = objKeyboardControlsMenu; a[2] = objControllerMenu;
+        var o; o[0] = 20; o[1] = 16; o[2] = o[1];
+        for (var i = 0; i &lt; 3; i += 1) {
+            var object = a[i];
+            with(object) {
+                var yy = yStart + yStep * select + o[i];
+                var left = xMargin - 8;
+                var right = view_wview - xMargin + 8;
+                var top = yy - 24;
+                var bottom = yy + 24;
+                draw_rectangle(left, top, right, bottom, false);
+                
+                draw_set_blend_mode(bm_subtract);
+                    draw_rectangle(left + 7, top + 7, right - 7, bottom - 7, false);
+                draw_set_blend_mode(bm_normal);
+            }
+        }
+        
     draw_set_color_write_enable(1, 1, 1, 1);
 surface_reset_target();
 

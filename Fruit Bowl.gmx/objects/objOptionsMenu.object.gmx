@@ -41,6 +41,7 @@ select = global.menuSelectPrev[1];
 
 xMargin = 124;
 yStep = 48;
+yStart = (608 - numberOfOptions * yStep)/2;
 
 animationTime = 0;
 </string>
@@ -138,7 +139,7 @@ for (var i = 0; i &lt; numberOfOptions; i++)
     menu_draw_option(script_execute(script, "name"), script_execute(script, "value"));
 }
 
-draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 26);
+//draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 26);
 
 menu_draw_menu_buttons(false);
 </string>
