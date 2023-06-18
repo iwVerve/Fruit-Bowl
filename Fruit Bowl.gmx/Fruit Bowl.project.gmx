@@ -375,6 +375,8 @@
       <background>background\bCoconutTiles</background>
       <background>background\bCoconutMiniTiles</background>
       <background>background\bIntermission2Tiles</background>
+      <background>background\bBlackberryTiles</background>
+      <background>background\bBlackberryMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -387,6 +389,7 @@
       <background>background\bKiwi</background>
       <background>background\bCoconut</background>
       <background>background\bIntermission2</background>
+      <background>background\bBlackberry</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -752,7 +755,7 @@
     <room>rooms\rKiwi</room>
     <room>rooms\rCoconut</room>
     <room>rooms\rIntermission2</room>
-    <room>rooms\rRoom</room>
+    <room>rooms\rBlackberry</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
