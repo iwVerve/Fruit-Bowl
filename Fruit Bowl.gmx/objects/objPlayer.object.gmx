@@ -608,6 +608,7 @@ if (!place_free(x + hspeed, y + vspeed))
         move_contact_solid(dir, maxDist);
         
         hspeed = 0;
+        hmomentum = 0;
     }
      
     if (!place_free(x, y + vspeed) &amp;&amp; vspeed != 0)

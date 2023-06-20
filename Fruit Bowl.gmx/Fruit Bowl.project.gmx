@@ -344,6 +344,16 @@
       <sprite>sprites\sprCoconutMiniDown</sprite>
       <sprite>sprites\sprCoconutMiniLeft</sprite>
     </sprites>
+    <sprites name="Blackberry">
+      <sprite>sprites\sprBlackberrySpikeUp</sprite>
+      <sprite>sprites\sprBlackberrySpikeRight</sprite>
+      <sprite>sprites\sprBlackberrySpikeDown</sprite>
+      <sprite>sprites\sprBlackberrySpikeLeft</sprite>
+      <sprite>sprites\sprBlackberryMiniUp</sprite>
+      <sprite>sprites\sprBlackberryMiniRight</sprite>
+      <sprite>sprites\sprBlackberryMiniDown</sprite>
+      <sprite>sprites\sprBlackberryMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>

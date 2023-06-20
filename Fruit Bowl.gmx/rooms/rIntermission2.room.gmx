@@ -155,8 +155,8 @@
     <instance objName="objBlock" x="0" y="0" name="inst_43AD09EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="0" name="inst_419E4A9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="672" y="-32" name="inst_BD2C1620" locked="0" code="roomTo = rCoconut;&#xA;smooth = true;&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="32" y="608" name="inst_88EADBE5" locked="0" code="roomTo = rBlackberry;&#xA;smooth = true;&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="640" y="-32" name="inst_677307E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="32" y="608" name="inst_92E1EE81" locked="0" code="roomTo = rBlackberry;&#xA;smooth = true;&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bIntermission2Tiles" x="608" y="192" w="32" h="32" xo="0" yo="0" id="10005072" name="inst_0264CDB3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

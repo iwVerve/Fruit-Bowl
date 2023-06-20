@@ -28,8 +28,8 @@
             <string>image_speed = 0.2;
 
 time = random(1000000);
-y_magnitude = 2;
-y_period = 75;
+wobble_magnitude = 1.4;
+wobble_period = random_range(75, 100);
 
 cooldown = 0;
 cooldown_duration = 10;
@@ -116,6 +116,7 @@ spikes.image_angle = image_angle;
             <string>var down_x = lengthdir_x(1, 270 + image_angle);
 var down_y = lengthdir_y(1, 270 + image_angle);
 
+
 if cooldown &lt;= 0 {
     var player = instance_place(x, y, objPlayer);
     if player != noone {
@@ -147,15 +148,23 @@ else {
     cooldown -= 1;
 }
 
+
 dip += dip_vspeed;
 dip_vspeed -= dip_gravity;
 dip_vspeed = max(dip_vspeed, -dip_vspeed_min);
 dip = max(dip, 0);
 
-y = ystart + y_magnitude * dsin(360 * time / y_period) + dip;
+
+var wobble = wobble_magnitude * dsin(360 * time / wobble_period) + dip;
+x = xstart + down_x * wobble;
+y = ystart + down_y * wobble;
+
+
 with(spikes) {
+    x = other.x;
     y = other.y;
 }
+
 
 time += 1;
 </string>
