@@ -138,11 +138,25 @@ if cooldown &lt;= 0 {
             dip_vspeed = dip_start_vspeed;
             alarm[0] = 5;
             
+            repeat(9) {
+                with(instance_create(x, y, objBounceBounceParticle)) {
+                    var d = choose(-1, 1) * random(12);
+                    x += lengthdir_x(d, other.image_angle);
+                    y += lengthdir_y(d, other.image_angle);
+                    direction = other.image_angle + 90;
+                }
+            } 
+            
             var snd = audio_play_sound(sndBounceBoing, 0, false);
             audio_sound_pitch(snd, random_range(0.8, 1.2));
         }
         else {
             player.airJumps = 1;
+            
+            repeat(5) {
+                instance_create(x, y, objBouncePickupParticle);
+            }
+            
             var snd = audio_play_sound(sndBouncePickup, 0, false);
             audio_sound_pitch(snd, random_range(0.8, 1.2));
             

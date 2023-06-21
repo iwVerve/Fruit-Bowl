@@ -721,8 +721,8 @@
       <object>objects\objBossIndicator</object>
       <object>objects\objGameClear</object>
     </objects>
-    <object>objects\objBounceRefresher</object>
     <object>objects\objVisuals</object>
+    <object>objects\objBounceRefresher</object>
     <objects name="Intro">
       <object>objects\objIntroFade</object>
       <object>objects\objIntroPlayer</object>
@@ -736,9 +736,11 @@
       <object>objects\objBounceSpikes</object>
       <object>objects\objPlatformOrb</object>
       <object>objects\objPlatformOrbCrystal</object>
+      <object>objects\objTitleEffect</object>
+      <object>objects\objIntroBubble</object>
+      <object>objects\objBouncePickupParticle</object>
+      <object>objects\objBounceBounceParticle</object>
     </objects>
-    <object>objects\objTitleEffect</object>
-    <object>objects\objIntroBubble</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
