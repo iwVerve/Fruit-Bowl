@@ -86,7 +86,10 @@ t += 1;
           <argument>
             <kind>1</kind>
             <string>draw_set_color(make_color_rgb(204, 30, 99));
-draw_circle(x, y, r, true);
+
+draw_set_alpha(0.75);
+    draw_circle(x, y, r, true);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

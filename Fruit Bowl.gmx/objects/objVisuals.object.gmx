@@ -286,33 +286,35 @@ for (var i = 0; i &lt; array_length_1d(object); i += 1) {
           <argument>
             <kind>1</kind>
             <string>if !surface_exists(shadow_surf) {
-    shadow_surf = surface_create(800, 608);
+    shadow_surf = surface_create(816, 624);
 }
 
 surface_set_target(shadow_surf);
     draw_clear_alpha(c_black, 0);
     
-    draw_set_color_write_enable(0, 0, 0, 1);
-        for(var i = 0; i &lt; array_length_1d(objects); i += 1) {
-            var object = objects[i];
-            
-            switch(object) {
-                case objPlayer:
-                    with(object) {
-                        event_perform(ev_draw, 0);
-                    }
-                    break;
-                default:
-                    with(object) {
-                        draw_self();
-                    }
-                    break;
+    d3d_set_projection_ortho(view_xview - 8, view_yview - 8, view_wview + 16, view_hview + 16, view_angle);
+        draw_set_color_write_enable(0, 0, 0, 1);
+            for(var i = 0; i &lt; array_length_1d(objects); i += 1) {
+                var object = objects[i];
+                
+                switch(object) {
+                    case objPlayer:
+                        with(object) {
+                            event_perform(ev_draw, 0);
+                        }
+                        break;
+                    default:
+                        with(object) {
+                            draw_self();
+                        }
+                        break;
+                }
             }
-        }
-    draw_set_color_write_enable(1, 1, 1, 1);
+        draw_set_color_write_enable(1, 1, 1, 1);
+    d3d_set_projection_ortho(view_xview, view_yview, view_wview, view_hview, view_angle);
 surface_reset_target();
 
-draw_surface_ext(shadow_surf, x_dist, y_dist, 1, 1, 0, c_white, alpha);
+draw_surface_ext(shadow_surf, x_dist - 8, y_dist - 8, 1, 1, 0, c_white, alpha);
 </string>
           </argument>
         </arguments>

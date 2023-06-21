@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>r = random_range(1, 2.5);
 
-speed = random_range(0.5, 3);
-friction = 0.04;
+speed = random_range(0.25, 3);
+friction = 0.03;
 
 t = 0;
-lifetime = random_range(15, 30);
+lifetime = random_range(15, 45);
 </string>
           </argument>
         </arguments>
@@ -87,7 +87,10 @@ t += 1;
             <string>draw_set_color(make_color_rgb(47, 151, 237));
 
 var half_r = r/2;
-draw_rectangle(x - half_r, y - half_r, x + half_r - 1, y + half_r - 1, false);
+
+draw_set_alpha(0.75);
+    draw_rectangle(x - half_r, y - half_r, x + half_r - 1, y + half_r - 1, false);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

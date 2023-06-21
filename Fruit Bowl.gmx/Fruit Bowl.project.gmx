@@ -577,6 +577,7 @@
     <script>scripts\Visuals_add_object_sprite.gml</script>
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
     <script>scripts\is_menu_room.gml</script>
+    <script>scripts\get_fair_rng.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>

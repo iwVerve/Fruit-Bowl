@@ -138,9 +138,11 @@ if cooldown &lt;= 0 {
             dip_vspeed = dip_start_vspeed;
             alarm[0] = 5;
             
-            repeat(9) {
+            var count = 7;
+            var array = get_fair_rng(-12, 12, count, 0.8);
+            for(var i = 0; i &lt; count; i += 1) {
                 with(instance_create(x, y, objBounceBounceParticle)) {
-                    var d = choose(-1, 1) * random(12);
+                    var d = array[i];
                     x += lengthdir_x(d, other.image_angle);
                     y += lengthdir_y(d, other.image_angle);
                     direction = other.image_angle + 90;
