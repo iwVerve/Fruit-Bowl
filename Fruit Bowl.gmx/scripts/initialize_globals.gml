@@ -3,6 +3,9 @@
 
 engine_options();
 
+audio_sound_gain(sndBounceBoing, 0.6, 0);
+audio_sound_gain(sndBouncePickup, 0.8, 0);
+
 global.debugOverlay = false;    //Enables showing the debug text overlay (shows player location, align, etc.)
 global.debugNoDeath = false;    //Enables god mode (toggle with Home key)
 global.debugInfJump = false;    //Enables infinite jump (toggle with End key)

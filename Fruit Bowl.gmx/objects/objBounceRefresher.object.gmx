@@ -137,9 +137,15 @@ if cooldown &lt;= 0 {
             cooldown = cooldown_duration;
             dip_vspeed = dip_start_vspeed;
             alarm[0] = 5;
+            
+            var snd = audio_play_sound(sndBounceBoing, 0, false);
+            audio_sound_pitch(snd, random_range(0.8, 1.2));
         }
         else {
             player.airJumps = 1;
+            var snd = audio_play_sound(sndBouncePickup, 0, false);
+            audio_sound_pitch(snd, random_range(0.8, 1.2));
+            
             instance_destroy();
         }
     }

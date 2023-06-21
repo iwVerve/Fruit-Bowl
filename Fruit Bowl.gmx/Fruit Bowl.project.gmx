@@ -146,6 +146,8 @@
       <sound>sound\sndIntroEagle</sound>
       <sound>sound\sndIntroAlert</sound>
       <sound>sound\sndIntroThud</sound>
+      <sound>sound\sndBounceBoing</sound>
+      <sound>sound\sndBouncePickup</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
