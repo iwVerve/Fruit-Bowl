@@ -91,6 +91,8 @@ spikes = noone;
             <kind>1</kind>
             <string>spikes = instance_create(x, y, objBounceSpikes);
 spikes.image_angle = image_angle;
+spikes.image_xscale = image_xscale;
+spikes.image_yscale = image_yscale;
 </string>
           </argument>
         </arguments>
