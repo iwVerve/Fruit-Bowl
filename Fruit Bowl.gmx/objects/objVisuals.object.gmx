@@ -33,6 +33,7 @@ objects[4] = objBullet;
 objects[5] = objCeilingRefresher;
 objects[6] = objPlatformOrb;
 objects[7] = objSave;
+objects[8] = objShadowCast;
 
 x_dist = 3;
 y_dist = 3;
@@ -47,6 +48,10 @@ left_sprite = array_create(0);
 right_sprite = array_create(0);
 
 with(objBlock) {
+    sprite_index = sprBlockMaskOpaque;
+}
+
+with(objShadowCast) {
     sprite_index = sprBlockMaskOpaque;
 }
 
@@ -303,6 +308,15 @@ surface_set_target(shadow_surf);
                             event_perform(ev_draw, 0);
                         }
                         break;
+                        
+                    case objBlock:
+                        with(object) {
+                            if object_index != objBlockNoShadow {
+                                draw_self();
+                            }
+                        }
+                        break;
+                        
                     default:
                         with(object) {
                             draw_self();

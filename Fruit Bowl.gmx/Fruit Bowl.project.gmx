@@ -626,6 +626,8 @@
     </objects>
     <objects name="Blocks">
       <object>objects\objBlock</object>
+      <object>objects\objBlockNoShadow</object>
+      <object>objects\objShadowCast</object>
       <object>objects\objBlockDynamic</object>
       <object>objects\objMiniBlock</object>
       <object>objects\objIceBlock</object>

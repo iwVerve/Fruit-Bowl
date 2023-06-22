@@ -387,6 +387,7 @@
     <instance objName="objBlock" x="128" y="576" name="inst_A54FFF8F" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="576" name="inst_CC9C5357" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="224" y="576" name="inst_0AC55AE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="704" y="512" name="inst_5AFF3ECA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bRedAppleTiles" x="400" y="32" w="32" h="32" xo="64" yo="32" id="10003552" name="inst_397E1E73" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -669,15 +670,16 @@
     <tile bgName="bGreenAppleMiniTiles" x="256" y="576" w="16" h="16" xo="96" yo="0" id="10006211" name="inst_71F48A69" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGreenAppleMiniTiles" x="240" y="560" w="16" h="16" xo="48" yo="0" id="10006212" name="inst_DB92B704" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGreenAppleMiniTiles" x="240" y="576" w="16" h="16" xo="64" yo="48" id="10006213" name="inst_31A38BE3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="704" y="480" w="32" h="32" xo="32" yo="64" id="10006218" name="inst_B4891FD9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="736" y="480" w="32" h="32" xo="192" yo="32" id="10006220" name="inst_CB01C8F3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="672" y="480" w="32" h="32" xo="128" yo="32" id="10006221" name="inst_CBB9C6A9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="672" y="512" w="32" h="32" xo="96" yo="32" id="10006222" name="inst_22FF6A3D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="672" y="544" w="32" h="32" xo="96" yo="32" id="10006223" name="inst_C2AE01AA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="704" y="512" w="32" h="32" xo="32" yo="64" id="10006218" name="inst_B4891FD9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="736" y="512" w="32" h="32" xo="192" yo="32" id="10006220" name="inst_CB01C8F3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="672" y="512" w="32" h="32" xo="128" yo="32" id="10006221" name="inst_CBB9C6A9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bRedAppleTiles" x="672" y="576" w="32" h="32" xo="96" yo="32" id="10006224" name="inst_E9F6670F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="736" y="512" w="32" h="32" xo="0" yo="32" id="10006225" name="inst_22EED843" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bRedAppleTiles" x="736" y="544" w="32" h="32" xo="0" yo="32" id="10006226" name="inst_130AE0FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bRedAppleTiles" x="736" y="576" w="32" h="32" xo="0" yo="32" id="10006227" name="inst_AA18DE2F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="672" y="480" w="32" h="32" xo="0" yo="32" id="10006228" name="inst_CC2346EA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="704" y="480" w="32" h="32" xo="32" yo="32" id="10006229" name="inst_7D2EB67C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="736" y="480" w="32" h="32" xo="32" yo="32" id="10006230" name="inst_FE6605F0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="672" y="544" w="32" h="32" xo="96" yo="32" id="10006234" name="inst_30709EA4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bRedAppleTiles" x="736" y="544" w="32" h="32" xo="0" yo="32" id="10006235" name="inst_960503A1" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
