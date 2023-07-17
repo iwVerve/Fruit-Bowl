@@ -390,6 +390,7 @@
       <background>background\bBlackberryTiles</background>
       <background>background\bBlackberryMiniTiles</background>
       <background>background\bStrawberryTiles</background>
+      <background>background\bStrawberryMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
