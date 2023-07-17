@@ -389,6 +389,7 @@
       <background>background\bIntermission2Tiles</background>
       <background>background\bBlackberryTiles</background>
       <background>background\bBlackberryMiniTiles</background>
+      <background>background\bStrawberryTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -773,6 +774,7 @@
     <room>rooms\rCoconut</room>
     <room>rooms\rIntermission2</room>
     <room>rooms\rBlackberry</room>
+    <room>rooms\rStrawberry</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
