@@ -249,6 +249,15 @@ surface_free(shadow_surf);
             objMiniLeft,   sprBlackberryMiniLeft,
         );
         break;
+    case rStrawberry:
+        Visuals_add_object_sprite(
+            objMiniUp,     sprStrawberrySpikeUp,
+            objMiniRight,  sprStrawberrySpikeRight,
+            objMiniDown,   sprStrawberrySpikeDown,
+            objMiniLeft,   sprStrawberrySpikeLeft,
+        );
+        break;
+
 }
         
 for (var i = 0; i &lt; array_length_1d(object); i += 1) {

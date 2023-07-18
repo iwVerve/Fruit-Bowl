@@ -356,6 +356,12 @@
       <sprite>sprites\sprBlackberryMiniDown</sprite>
       <sprite>sprites\sprBlackberryMiniLeft</sprite>
     </sprites>
+    <sprites name="Strawberry">
+      <sprite>sprites\sprStrawberrySpikeUp</sprite>
+      <sprite>sprites\sprStrawberrySpikeRight</sprite>
+      <sprite>sprites\sprStrawberrySpikeDown</sprite>
+      <sprite>sprites\sprStrawberrySpikeLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -404,6 +410,7 @@
       <background>background\bCoconut</background>
       <background>background\bIntermission2</background>
       <background>background\bBlackberry</background>
+      <background>background\bStrawberry</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
