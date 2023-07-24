@@ -22,6 +22,8 @@ switch (room) {
         return "Love";
     
     case rBlackberry:
+    case rStrawberry:
+    //case rWatermelon:
         return "Cutie";
     
     //case rClear:

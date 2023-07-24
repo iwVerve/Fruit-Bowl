@@ -37,6 +37,8 @@ https://eknojistudio.com/product/draft-produk-copy/
 Hey Comic
 https://www.dafont.com/hey-comic.font
 https://www.creativefabrica.com/product/hey-comic/ref/53/
+Awake the Beauty
+https://www.dafont.com/awake-the-beauty.font
 
 
 Graphics:
@@ -51,6 +53,7 @@ i lost the source for the grape reference. oops!
 https://www.freepik.com/free-vector/sticker-design-with-apple-isolated_18428875.htm
 https://www.freeimages.com/clipart/coconut-1319181
 https://creazilla.com/nodes/13073-blackberry-clipart
+Celeste
 
 
 Sounds:
