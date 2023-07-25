@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="10" name="datafiles">
-    <datafiles number="10" name="Music">
+  <datafiles number="13" name="datafiles">
+    <datafiles number="13" name="Music">
       <datafile>
         <name>Cutie.ogg</name>
         <exists>-1</exists>
@@ -107,6 +107,23 @@
         </ConfigOptions>
         <filename>SisterPurity.ogg</filename>
       </datafile>
+      <datafile>
+        <name>Adagio.ogg</name>
+        <exists>-1</exists>
+        <size>3360343</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Adagio.ogg</filename>
+      </datafile>
     </datafiles>
     <datafile>
       <name>Readme.txt</name>
@@ -124,6 +141,23 @@
         </Config>
       </ConfigOptions>
       <filename>Readme.txt</filename>
+    </datafile>
+    <datafile>
+      <name>Credits.txt</name>
+      <exists>-1</exists>
+      <size>2024</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>Credits.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions>
@@ -257,6 +291,7 @@
     <sprite>sprites\sprCeilingRefresher</sprite>
     <sprite>sprites\sprPlatformOrb</sprite>
     <sprite>sprites\sprPlatformOrbCrystal</sprite>
+    <sprite>sprites\sprRoomThumbnail</sprite>
     <sprites name="Intro">
       <sprite>sprites\sprFruitBowl</sprite>
       <sprite>sprites\sprIntroEmoji</sprite>
@@ -397,6 +432,8 @@
       <background>background\bBlackberryMiniTiles</background>
       <background>background\bStrawberryTiles</background>
       <background>background\bStrawberryMiniTiles</background>
+      <background>background\bWatermelonTiles</background>
+      <background>background\bWatermelonMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -411,6 +448,7 @@
       <background>background\bIntermission2</background>
       <background>background\bBlackberry</background>
       <background>background\bStrawberry</background>
+      <background>background\bWatermelon</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -587,6 +625,7 @@
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
     <script>scripts\is_menu_room.gml</script>
     <script>scripts\get_fair_rng.gml</script>
+    <script>scripts\array_from_values.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -752,6 +791,7 @@
       <object>objects\objIntroBubble</object>
       <object>objects\objBouncePickupParticle</object>
       <object>objects\objBounceBounceParticle</object>
+      <object>objects\objMap</object>
     </objects>
   </objects>
   <rooms name="rooms">

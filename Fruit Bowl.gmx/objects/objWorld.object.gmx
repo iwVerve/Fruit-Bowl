@@ -286,6 +286,12 @@ if (global.debugMode &amp;&amp; global.gameStarted &amp;&amp; !global.gamePaused
         instance_destroy(objPlayer);
         room_goto_previous();
     }
+    
+    if keyboard_check_pressed(ord("I")) {
+        with(objPlayer) {
+            visible = !visible;
+        }
+    }
 }
 
 if (global.debugVisuals)
