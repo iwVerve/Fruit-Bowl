@@ -783,6 +783,7 @@
     <room>rooms\rIntermission2</room>
     <room>rooms\rBlackberry</room>
     <room>rooms\rStrawberry</room>
+    <room>rooms\rWatermelon</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
