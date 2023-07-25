@@ -324,10 +324,6 @@
     <tile bgName="bKiwiTiles" x="544" y="64" w="32" h="32" xo="96" yo="32" id="10003691" name="inst_9F64FFC0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="512" y="0" w="32" h="32" xo="32" yo="64" id="10003694" name="inst_FE3C35F7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="544" y="0" w="32" h="32" xo="256" yo="32" id="10003699" name="inst_29DBA705" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="544" w="32" h="32" xo="0" yo="32" id="10003702" name="inst_F95303E9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="576" w="32" h="32" xo="0" yo="32" id="10003703" name="inst_BF130EE5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="480" w="32" h="32" xo="0" yo="32" id="10003704" name="inst_7BFDE5CD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="512" w="32" h="32" xo="0" yo="32" id="10003705" name="inst_B373D5B7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="768" y="160" w="32" h="32" xo="0" yo="32" id="10003706" name="inst_3BDE5493" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="768" y="192" w="32" h="32" xo="0" yo="32" id="10003707" name="inst_63EABF9B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="768" y="224" w="32" h="32" xo="0" yo="32" id="10003708" name="inst_309BBD80" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -336,8 +332,6 @@
     <tile bgName="bKiwiTiles" x="768" y="320" w="32" h="32" xo="0" yo="32" id="10003711" name="inst_F4972F0E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="768" y="352" w="32" h="32" xo="0" yo="32" id="10003712" name="inst_C47A671D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="768" y="384" w="32" h="32" xo="0" yo="32" id="10003713" name="inst_131530E5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="416" w="32" h="32" xo="0" yo="32" id="10003714" name="inst_97F043E5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="768" y="448" w="32" h="32" xo="0" yo="32" id="10003715" name="inst_1F82005A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="736" y="128" w="32" h="32" xo="0" yo="64" id="10003716" name="inst_EF667AAD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="736" y="0" w="32" h="32" xo="0" yo="32" id="10003717" name="inst_5ACAEA33" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="736" y="32" w="32" h="32" xo="0" yo="32" id="10003718" name="inst_F11705E6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -421,25 +415,20 @@
     <tile bgName="bKiwiMiniTiles" x="80" y="144" w="16" h="16" xo="0" yo="48" id="10003824" name="inst_A9DA9F40" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="144" y="144" w="16" h="16" xo="0" yo="48" id="10003825" name="inst_1BA1CE9B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="96" y="144" w="16" h="16" xo="32" yo="48" id="10003826" name="inst_6F04BE4C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="192" y="144" w="16" h="16" xo="32" yo="48" id="10003827" name="inst_0AC542F3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="160" y="144" w="16" h="16" xo="16" yo="48" id="10003828" name="inst_02CBBD1D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="176" y="144" w="16" h="16" xo="16" yo="48" id="10003829" name="inst_6DB6A914" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="176" y="80" w="32" h="32" xo="96" yo="0" id="10003830" name="inst_B67503FE" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="176" y="112" w="32" h="32" xo="96" yo="64" id="10003831" name="inst_8FC181CE" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="256" y="0" w="32" h="32" xo="0" yo="64" id="10003832" name="inst_E2BF64D2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="288" y="0" w="32" h="32" xo="64" yo="64" id="10003833" name="inst_0F1B687C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="96" y="256" w="32" h="32" xo="96" yo="0" id="10003834" name="inst_04CE0FDA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="272" w="32" h="32" xo="96" yo="0" id="10003835" name="inst_37B84590" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="304" w="32" h="32" xo="96" yo="32" id="10003836" name="inst_93E7EC21" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="336" w="32" h="32" xo="96" yo="32" id="10003837" name="inst_9B7137C4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="160" y="368" w="32" h="32" xo="96" yo="32" id="10003838" name="inst_60CCD3E1" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="400" w="32" h="32" xo="96" yo="32" id="10003839" name="inst_CB33272E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="432" w="32" h="32" xo="96" yo="32" id="10003840" name="inst_2C91098E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="464" w="32" h="32" xo="96" yo="32" id="10003841" name="inst_B1106240" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="496" w="32" h="32" xo="96" yo="32" id="10003842" name="inst_9C5F54D0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="528" w="32" h="32" xo="96" yo="32" id="10003843" name="inst_9E864A98" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="160" y="560" w="32" h="32" xo="96" yo="32" id="10003844" name="inst_6B314949" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="96" y="288" w="32" h="32" xo="96" yo="32" id="10003845" name="inst_32E75F4C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="96" y="320" w="32" h="32" xo="96" yo="32" id="10003846" name="inst_091D057C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="96" y="352" w="32" h="32" xo="96" yo="32" id="10003847" name="inst_BEA3F59A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="96" y="384" w="32" h="32" xo="96" yo="32" id="10003848" name="inst_69B8FF69" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -489,35 +478,17 @@
     <tile bgName="bKiwiTiles" x="256" y="128" w="32" h="32" xo="0" yo="0" id="10003892" name="inst_CD0E4E97" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="416" y="160" w="32" h="32" xo="32" yo="64" id="10003893" name="inst_732E77B8" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="384" y="160" w="32" h="32" xo="32" yo="64" id="10003894" name="inst_4CBCBEA5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="352" y="160" w="32" h="32" xo="32" yo="64" id="10003895" name="inst_F91F7122" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="256" y="192" w="32" h="32" xo="0" yo="64" id="10003896" name="inst_97399025" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="320" y="192" w="32" h="32" xo="64" yo="64" id="10003897" name="inst_3C1BAEFC" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="288" y="192" w="32" h="32" xo="32" yo="64" id="10003898" name="inst_B1BA58ED" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="256" y="160" w="32" h="32" xo="0" yo="32" id="10003899" name="inst_DAB490C0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="288" y="160" w="32" h="32" xo="32" yo="32" id="10003900" name="inst_A649339B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiTiles" x="320" y="160" w="32" h="32" xo="160" yo="32" id="10003901" name="inst_3F347110" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="336" y="240" w="16" h="16" xo="0" yo="32" id="10003905" name="inst_AB5636BE" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="352" y="240" w="16" h="16" xo="32" yo="32" id="10003906" name="inst_6A61D6C0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="632" y="240" w="16" h="16" xo="48" yo="16" id="10003913" name="inst_865D5DBD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="336" y="224" w="16" h="16" xo="0" yo="16" id="10003920" name="inst_AD2037B8" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="352" y="192" w="16" h="16" xo="32" yo="16" id="10003921" name="inst_4A2B00BB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="352" y="208" w="16" h="16" xo="32" yo="16" id="10003922" name="inst_AD373D0B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="352" y="224" w="16" h="16" xo="32" yo="16" id="10003923" name="inst_00E14A60" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="192" y="384" w="16" h="16" xo="16" yo="48" id="10003924" name="inst_720E05B4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="128" y="288" w="16" h="16" xo="32" yo="0" id="10003925" name="inst_B80756E2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="128" y="304" w="16" h="16" xo="32" yo="32" id="10003926" name="inst_43D430A7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="256" y="224" w="16" h="16" xo="48" yo="48" id="10003928" name="inst_DE304575" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="432" w="16" h="16" xo="0" yo="0" id="10003929" name="inst_4CA061E7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="448" w="16" h="16" xo="0" yo="16" id="10003930" name="inst_255A9B0F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="464" w="16" h="16" xo="0" yo="16" id="10003931" name="inst_0930E97C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="480" w="16" h="16" xo="0" yo="16" id="10003932" name="inst_BBD71CF8" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="496" w="16" h="16" xo="0" yo="16" id="10003933" name="inst_500CEA15" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="512" w="16" h="16" xo="0" yo="16" id="10003934" name="inst_BA03471C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="528" w="16" h="16" xo="0" yo="16" id="10003935" name="inst_2BA47852" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="544" w="16" h="16" xo="0" yo="16" id="10003936" name="inst_6A4D1AE9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="560" w="16" h="16" xo="0" yo="16" id="10003937" name="inst_8009B7CE" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="576" w="16" h="16" xo="0" yo="16" id="10003938" name="inst_5B3CFAE2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="752" y="592" w="16" h="16" xo="0" yo="16" id="10003939" name="inst_47FC9C54" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="496" y="328" w="16" h="16" xo="0" yo="0" id="10003940" name="inst_EAB9EE22" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="512" y="328" w="16" h="16" xo="32" yo="0" id="10003941" name="inst_0009FC51" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="512" y="344" w="16" h="16" xo="32" yo="16" id="10003942" name="inst_1897F06F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -529,6 +500,35 @@
     <tile bgName="bKiwiTiles" x="672" y="16" w="32" h="32" xo="96" yo="64" id="10006214" name="inst_C4CD2FC3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="672" y="0" w="32" h="16" xo="96" yo="48" id="10006215" name="inst_5B2FE674" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiTiles" x="576" y="0" w="32" h="32" xo="64" yo="64" id="10006216" name="inst_F5B85E84" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="336" y="192" w="32" h="32" xo="224" yo="32" id="10006899" name="inst_61AA8D5F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="336" y="160" w="32" h="32" xo="160" yo="32" id="10006901" name="inst_55C579A1" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="368" y="160" w="16" h="32" xo="32" yo="64" id="10006902" name="inst_E3AC497D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="320" y="192" w="16" h="32" xo="32" yo="64" id="10006903" name="inst_D5413CC3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="320" y="160" w="16" h="32" xo="32" yo="32" id="10006904" name="inst_DA3946CA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="256" y="192" w="32" h="16" xo="0" yo="32" id="10006905" name="inst_B2CE83BB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="272" y="208" w="16" h="16" xo="16" yo="80" id="10006906" name="inst_8B6734E3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="432" w="32" h="32" xo="192" yo="64" id="10006907" name="inst_69F20188" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="432" w="16" h="32" xo="0" yo="0" id="10006908" name="inst_20E29938" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="464" w="16" h="32" xo="0" yo="32" id="10006909" name="inst_AB3E8666" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="496" w="16" h="32" xo="0" yo="32" id="10006910" name="inst_475B85F4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="528" w="16" h="32" xo="0" yo="32" id="10006911" name="inst_03D3F3E3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="560" w="16" h="32" xo="0" yo="32" id="10006912" name="inst_14BE231A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="464" w="32" h="32" xo="32" yo="32" id="10006913" name="inst_DAA8C0BC" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="496" w="32" h="32" xo="32" yo="32" id="10006914" name="inst_06F44E5B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="528" w="32" h="32" xo="32" yo="32" id="10006915" name="inst_E42A11FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="560" w="32" h="32" xo="32" yo="32" id="10006916" name="inst_10B7ECD3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="416" w="32" h="16" xo="0" yo="32" id="10006917" name="inst_DF435CAA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="752" y="592" w="16" h="16" xo="0" yo="32" id="10006918" name="inst_FDD7DCAC" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="768" y="592" w="32" h="16" xo="32" yo="32" id="10006919" name="inst_F6EEB587" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="176" y="112" w="32" h="32" xo="96" yo="32" id="10006920" name="inst_91A3F514" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="96" y="288" w="32" h="32" xo="128" yo="128" id="10006921" name="inst_1DC0ED6C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="160" y="368" w="16" h="32" xo="0" yo="32" id="10006922" name="inst_5E3FAC99" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiTiles" x="176" y="368" w="16" h="16" xo="80" yo="32" id="10006923" name="inst_A4ABFDC8" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="176" y="384" w="16" h="16" xo="80" yo="64" id="10006925" name="inst_89903EE5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="176" y="144" w="16" h="16" xo="96" yo="48" id="10006926" name="inst_673E1317" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="192" y="144" w="16" h="16" xo="32" yo="32" id="10006927" name="inst_EA7C9B5C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="256" y="224" w="16" h="16" xo="48" yo="32" id="10006928" name="inst_05B6F05A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="256" y="208" w="16" h="16" xo="64" yo="16" id="10006929" name="inst_38AA3099" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
