@@ -42,8 +42,8 @@ xScale = 1;
 
 player_set_mask();
 
-if (global.difficulty == 0 &amp;&amp; global.gameStarted)
-    { instance_create(x,y,objBow); }
+/*if (global.difficulty == 0 &amp;&amp; global.gameStarted)
+    { instance_create(x,y,objBow); }*/
     
 if (global.autosave) //Save the game if currently set to autosave
 {

@@ -1,6 +1,6 @@
 ///music_fadeout([time=1000])
 
-var time = 1000;
+var time = 2000;
 if argument_count >= 1 {
     time = argument[0];
 }

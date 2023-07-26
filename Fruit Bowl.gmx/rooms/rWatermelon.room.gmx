@@ -11,7 +11,7 @@
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
   <code>with(objBlock) {
-    //visible = true;
+    visible = true;
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -139,37 +139,16 @@
     <instance objName="objBlock" x="512" y="576" name="inst_5F31CE56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="544" y="576" name="inst_833C070B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="-16" y="96" name="inst_3A011867" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="64" y="160" name="inst_6EE0F92F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="96" y="160" name="inst_65597FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="128" y="160" name="inst_8F386B1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="64" y="192" name="inst_5E2B14E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="96" y="192" name="inst_8383AD4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="128" y="192" name="inst_D4FC4599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="192" y="160" name="inst_D0AE6CC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="192" y="192" name="inst_96A99A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="192" y="224" name="inst_45796598" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="224" y="224" name="inst_200EBC3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="256" y="224" name="inst_42F17A8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="224" y="160" name="inst_DED870FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="256" y="160" name="inst_471ACA35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="256" y="192" name="inst_889D008A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="32" y="128" name="inst_2023673B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="64" y="128" name="inst_EE0D3768" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="96" y="112" name="inst_88240557" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="96" y="128" name="inst_876C08A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="96" y="96" name="inst_D685C849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="112" y="96" name="inst_5A242A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="64" y="96" name="inst_26E5C6B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="96" y="96" name="inst_835FE3A6" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="bWatermelonTiles" x="64" y="160" w="32" h="32" xo="0" yo="0" id="10006884" name="inst_D79719FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="192" y="160" w="32" h="32" xo="128" yo="0" id="10006885" name="inst_6AEB5BCA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="128" y="160" w="32" h="32" xo="64" yo="0" id="10006886" name="inst_0D63CCE9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="256" y="160" w="32" h="32" xo="224" yo="0" id="10006887" name="inst_1A30C91D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="64" y="192" w="32" h="32" xo="0" yo="64" id="10006888" name="inst_4EA5F958" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="192" y="224" w="32" h="32" xo="128" yo="96" id="10006889" name="inst_9AAE4BC7" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="128" y="192" w="32" h="32" xo="64" yo="64" id="10006890" name="inst_C1C5AE6B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="256" y="224" w="32" h="32" xo="224" yo="96" id="10006891" name="inst_75887357" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="192" y="192" w="32" h="32" xo="96" yo="32" id="10006892" name="inst_717A437E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="256" y="192" w="32" h="32" xo="96" yo="32" id="10006893" name="inst_B3D3C494" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="224" y="160" w="32" h="32" xo="32" yo="96" id="10006894" name="inst_C217FCBD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="224" y="224" w="32" h="32" xo="32" yo="96" id="10006895" name="inst_11EAD83F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="96" y="160" w="32" h="32" xo="32" yo="0" id="10006896" name="inst_6D251DF6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bWatermelonTiles" x="96" y="192" w="32" h="32" xo="32" yo="64" id="10006897" name="inst_318FAA7C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

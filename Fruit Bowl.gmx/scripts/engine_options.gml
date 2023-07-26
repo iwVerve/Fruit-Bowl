@@ -41,12 +41,12 @@ global.controllerEnabled = true;    //Sets whether controllers are supported
 global.controllerDelayLength = 5;   //Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
 
 //Difficulty
-global.difficultyCount = 4;
+global.difficultyCount = 2;
 global.difficultyNames[0] = "Load Game";
-global.difficultyNames[1] = "Medium";
-global.difficultyNames[2] = "Hard";
-global.difficultyNames[3] = "Very Hard";
-global.difficultyNames[4] = "Impossible";
+global.difficultyNames[1] = "Easy";
+global.difficultyNames[2] = "Normal";
+//global.difficultyNames[3] = "Very Hard";
+//global.difficultyNames[4] = "Impossible";
 
 //Savefiles
 global.md5StrAdd = "Put something here"; //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)

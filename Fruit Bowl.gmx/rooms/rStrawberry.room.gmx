@@ -441,7 +441,7 @@
     <instance objName="objBlock" x="592" y="80" name="inst_E10AA108" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="544" y="96" name="inst_A960F0D4" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="592" y="96" name="inst_88F2ED33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="576" y="96" name="inst_31FFB8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="objBounceRefresher" x="576" y="88" name="inst_31FFB8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="objMiniUp" x="560" y="112" name="inst_6DCFD0DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="576" y="112" name="inst_B6130AB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="768" y="96" name="inst_536F3668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

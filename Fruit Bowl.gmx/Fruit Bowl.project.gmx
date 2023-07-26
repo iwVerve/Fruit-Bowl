@@ -397,6 +397,16 @@
       <sprite>sprites\sprStrawberrySpikeDown</sprite>
       <sprite>sprites\sprStrawberrySpikeLeft</sprite>
     </sprites>
+    <sprites name="Watermelon">
+      <sprite>sprites\sprWatermelonSpikeUp</sprite>
+      <sprite>sprites\sprWatermelonSpikeRight</sprite>
+      <sprite>sprites\sprWatermelonSpikeDown</sprite>
+      <sprite>sprites\sprWatermelonSpikeLeft</sprite>
+      <sprite>sprites\sprWatermelonMiniUp</sprite>
+      <sprite>sprites\sprWatermelonMiniRight</sprite>
+      <sprite>sprites\sprWatermelonMiniDown</sprite>
+      <sprite>sprites\sprWatermelonMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
