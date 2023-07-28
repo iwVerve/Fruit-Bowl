@@ -34,6 +34,7 @@ objects[5] = objCeilingRefresher;
 objects[6] = objPlatformOrb;
 objects[7] = objSave;
 objects[8] = objShadowCast;
+objects[9] = objWatermelonTrigger;
 
 x_dist = 3;
 y_dist = 3;
@@ -288,6 +289,39 @@ for (var i = 0; i &lt; array_length_1d(object); i += 1) {
         depth = 1100;
     }
 }
+
+if room == rWatermelon {
+    with(objTriggerManager) {
+        with(inst) {
+            switch(object_index) {
+                case objSpikeUp:
+                    sprite_index = sprWatermelonTriggerSpikeUp;
+                    break;
+                case objSpikeRight:
+                    sprite_index = sprWatermelonTriggerSpikeRight;
+                    break;
+                case objSpikeDown:
+                    sprite_index = sprWatermelonTriggerSpikeDown;
+                    break;
+                case objSpikeLeft:
+                    sprite_index = sprWatermelonTriggerSpikeLeft;
+                    break;
+                case objMiniUp:
+                    sprite_index = sprWatermelonTriggerMiniUp;
+                    break;
+                case objMiniRight:
+                    sprite_index = sprWatermelonTriggerMiniRight;
+                    break;
+                case objMiniDown:
+                    sprite_index = sprWatermelonTriggerMiniDown;
+                    break;
+                case objMiniLeft:
+                    sprite_index = sprWatermelonTriggerMiniLeft;
+                    break;
+            }
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -324,6 +358,7 @@ surface_set_target(shadow_surf);
                 
                 switch(object) {
                     case objPlayer:
+                    case objWatermelonTrigger:
                         with(object) {
                             if visible {
                                 event_perform(ev_draw, 0);

@@ -182,6 +182,7 @@
       <sound>sound\sndIntroThud</sound>
       <sound>sound\sndBounceBoing</sound>
       <sound>sound\sndBouncePickup</sound>
+      <sound>sound\sndTrigger</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -406,6 +407,14 @@
       <sprite>sprites\sprWatermelonMiniRight</sprite>
       <sprite>sprites\sprWatermelonMiniDown</sprite>
       <sprite>sprites\sprWatermelonMiniLeft</sprite>
+      <sprite>sprites\sprWatermelonTriggerSpikeUp</sprite>
+      <sprite>sprites\sprWatermelonTriggerSpikeRight</sprite>
+      <sprite>sprites\sprWatermelonTriggerSpikeDown</sprite>
+      <sprite>sprites\sprWatermelonTriggerSpikeLeft</sprite>
+      <sprite>sprites\sprWatermelonTriggerMiniUp</sprite>
+      <sprite>sprites\sprWatermelonTriggerMiniRight</sprite>
+      <sprite>sprites\sprWatermelonTriggerMiniDown</sprite>
+      <sprite>sprites\sprWatermelonTriggerMiniLeft</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -802,6 +811,7 @@
       <object>objects\objBouncePickupParticle</object>
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
+      <object>objects\objWatermelonTrigger</object>
     </objects>
   </objects>
   <rooms name="rooms">

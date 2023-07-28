@@ -22,4 +22,5 @@ if (!variable_instance_exists(id, "_currentTrigger"))
     _currentTrigger = noone;
 }
 global.makingTrigger = true;
+
 return tInst;

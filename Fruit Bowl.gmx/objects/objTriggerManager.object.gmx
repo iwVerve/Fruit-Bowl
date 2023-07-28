@@ -297,8 +297,14 @@ else //Move assigned instance to own position
 {
     if (hasExclusive)
     {
-        inst.hspeed = x - inst.x;
-        inst.vspeed = y - inst.y;
+        if inst.object_index == objBounceRefresher {
+            inst.xstart = x;
+            inst.ystart = y;
+        }
+        else {
+            inst.hspeed = x - inst.x;
+            inst.vspeed = y - inst.y;
+        }
     }
     
     if (trigger_used(trg_fade))
