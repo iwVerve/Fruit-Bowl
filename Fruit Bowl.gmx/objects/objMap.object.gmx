@@ -26,22 +26,22 @@
           <argument>
             <kind>1</kind>
             <string>images = array_from_values(
-    array_from_values(-1, -1,  0, -1),
-    array_from_values(-1, -1,  1, -1),
-    array_from_values(-1, -1,  2,  3),
-    array_from_values( 8,  6,  5,  4),
-    array_from_values( 9,  7, -1, -1),
-    array_from_values(10, 11, -1, -1),
-    array_from_values(-1, -1, -1, -1),
+    array_from_values(-1, -1,  0, -1, -1),
+    array_from_values(-1, -1,  1, -1, -1),
+    array_from_values(-1, -1,  2,  3, -1),
+    array_from_values( 8,  6,  5,  4, -1),
+    array_from_values( 9,  7, -1, -1, -1),
+    array_from_values(10, 11, -1, -1, -1),
+    array_from_values(-1, -1, -1, -1, -1),
 );
 rooms = array_from_values(
-    array_from_values(-1,             -1,          rFall,          -1),
-    array_from_values(-1,             -1,          rTutorial,      -1),
-    array_from_values(-1,             -1,          rBanana,        rCherry),
-    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape),
-    array_from_values(rIntermission2, rKiwi,       -1,             -1),
-    array_from_values(rBlackberry,    rStrawberry, -1,             -1),
-    array_from_values(-1,             -1,          -1,             -1),
+    array_from_values(-1,             -1,          rFall,          -1,      -1),
+    array_from_values(-1,             -1,          rTutorial,      -1,      -1),
+    array_from_values(-1,             -1,          rBanana,        rCherry, -1),
+    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,  -1),
+    array_from_values(rIntermission2, rKiwi,       -1,             -1,      -1),
+    array_from_values(rBlackberry,    rStrawberry, -1,             -1,      -1),
+    array_from_values(-1,             -1,          -1,             -1,      -1),
 );
 scale = 0.25;
 

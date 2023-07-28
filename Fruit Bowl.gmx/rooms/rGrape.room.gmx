@@ -241,8 +241,6 @@
     <instance objName="objBlock" x="704" y="240" name="inst_6C1D4978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="272" name="inst_708BDCD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="304" name="inst_969FAD8F" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniLeft" x="752" y="168" name="inst_2ADEA317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniRight" x="736" y="280" name="inst_4940F81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="720" y="320" name="inst_D333D73B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="752" y="400" name="inst_5D953BF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="736" y="432" name="inst_23312982" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -431,6 +429,8 @@
     <instance objName="objMiniLeft" x="704" y="136" name="inst_756D2919" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniRight" x="720" y="136" name="inst_D7297414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="688" y="344" name="inst_79AC44DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="736" y="160" name="inst_C8076520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="752" y="288" name="inst_3BFC2FC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bGrapeTiles" x="0" y="0" w="32" h="32" xo="64" yo="32" id="10003274" name="inst_7B9B5C57" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
