@@ -26,6 +26,9 @@ switch (room) {
     case rWatermelon:
         return "Cutie";
     
+    case rTower:
+        return "Adagio";
+    
     //case rClear:
     //    return "PapapaSweetSwing";
 

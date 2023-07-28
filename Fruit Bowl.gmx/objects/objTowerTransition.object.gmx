@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>-1000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,25 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>options[0] = 0;
-numberOfOptions = 0;
-for(var i = 0; i &lt; ds_list_size(global.options); i++)
-{
-    var script = global.options[| i];
-    if (script_execute(script, "include"))
-    {
-        options[numberOfOptions] = script;
-        numberOfOptions++;
-    }
-}
-
-select = global.menuSelectPrev[1];
-
-xMargin = 124;
-yStep = 48;
-yStart = (608 - numberOfOptions * yStep)/2;
-
-animationTime = 0;
+            <string>surf = surface_create(800, 608);
+surface_copy(surf, 0, 0, application_surface);
+alpha = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>surface_free(surf);
 </string>
           </argument>
         </arguments>
@@ -66,43 +73,38 @@ animationTime = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>animationTime++;
-
-if (input_check_pressed(KEY.MENU_BACK) || input_check_pressed(KEY.MENU_OPTIONS))
-{
-    //Save changes and go back
-    config_save();
-    global.menuSelectPrev[1] = 0;
-    if (!global.gameStarted)
-    {
-        room_goto(rMenu);
-    }
-    else
-    {
-        instance_destroy();
-    }
-    exit;
+            <string>if room == rTower {
+    alpha -= 1/30;
 }
 
-if (numberOfOptions == 0)
-{
-    exit;
+if alpha &lt;= 0 {
+    instance_destroy();
 }
-
-var vInputPressed = input_check_pressed(KEY.MENU_DOWN) - input_check_pressed(KEY.MENU_UP);
-if (vInputPressed != 0)
-{
-    script_execute(options[select], "end");
-
-    //Move to next/previous option
-    select += vInputPressed;
-    select = modwrap(select, 0, numberOfOptions);
-    audio_play_sound(global.menuSound, 0, false);
-    script_execute(options[select], "init");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room != rTower {
+    instance_destroy();
 }
-
-var selected = options[select];
-script_execute(selected, "step");
 </string>
           </argument>
         </arguments>
@@ -125,25 +127,11 @@ script_execute(selected, "step");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(ternary(!global.gameStarted, c_black, c_white));
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_set_font(fLightBeachHuge);
-
-yStart = (608 - numberOfOptions * yStep)/2;
-currentSlot = 0;
-
-for (var i = 0; i &lt; numberOfOptions; i++)
-{
-    var script = options[i];
-    menu_draw_option(script_execute(script, "name"), script_execute(script, "value"));
+            <string>if room == rTower {
+    draw_set_alpha(alpha);
+        draw_surface(surf, 0, 1216);
+    draw_set_alpha(1);
 }
-
-if global.gameStarted {
-    draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 26);
-}
-
-menu_draw_menu_buttons(false);
 </string>
           </argument>
         </arguments>

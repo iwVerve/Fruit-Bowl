@@ -43,8 +43,8 @@ global.controllerDelayLength = 5;   //Sets the delay in frames in which the play
 //Difficulty
 global.difficultyCount = 1;
 global.difficultyNames[0] = "Load Game";
-//global.difficultyNames[1] = "Easy";
 global.difficultyNames[1] = "Normal";
+//global.difficultyNames[2] = "Normal";
 //global.difficultyNames[3] = "Very Hard";
 //global.difficultyNames[4] = "Impossible";
 

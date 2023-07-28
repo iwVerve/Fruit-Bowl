@@ -183,6 +183,7 @@
       <sound>sound\sndBounceBoing</sound>
       <sound>sound\sndBouncePickup</sound>
       <sound>sound\sndTrigger</sound>
+      <sound>sound\sndDoor</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -289,10 +290,12 @@
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
-    <sprite>sprites\sprCeilingRefresher</sprite>
-    <sprite>sprites\sprPlatformOrb</sprite>
-    <sprite>sprites\sprPlatformOrbCrystal</sprite>
     <sprite>sprites\sprRoomThumbnail</sprite>
+    <sprites name="Unused">
+      <sprite>sprites\sprCeilingRefresher</sprite>
+      <sprite>sprites\sprPlatformOrb</sprite>
+      <sprite>sprites\sprPlatformOrbCrystal</sprite>
+    </sprites>
     <sprites name="Intro">
       <sprite>sprites\sprFruitBowl</sprite>
       <sprite>sprites\sprIntroEmoji</sprite>
@@ -416,6 +419,11 @@
       <sprite>sprites\sprWatermelonTriggerMiniDown</sprite>
       <sprite>sprites\sprWatermelonTriggerMiniLeft</sprite>
     </sprites>
+    <sprites name="Tower">
+      <sprite>sprites\sprStars</sprite>
+      <sprite>sprites\sprNoise</sprite>
+      <sprite>sprites\sprTowerDoor</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -453,6 +461,8 @@
       <background>background\bStrawberryMiniTiles</background>
       <background>background\bWatermelonTiles</background>
       <background>background\bWatermelonMiniTiles</background>
+      <background>background\bOutside</background>
+      <background>background\bTowerTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -468,6 +478,7 @@
       <background>background\bBlackberry</background>
       <background>background\bStrawberry</background>
       <background>background\bWatermelon</background>
+      <background>background\bTower</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -535,6 +546,7 @@
       <script>scripts\music_toggle.gml</script>
       <script>scripts\music_load.gml</script>
       <script>scripts\music_fadeout.gml</script>
+      <script>scripts\music_balance.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\player_try_jump.gml</script>
@@ -800,18 +812,25 @@
       <object>objects\objIntroEmoji</object>
       <object>objects\objIntroEagle</object>
     </objects>
-    <objects name="Misc">
+    <objects name="Unused">
       <object>objects\objCeilingRefresher</object>
       <object>objects\objCeilingRefresherParticle</object>
-      <object>objects\objBounceSpikes</object>
       <object>objects\objPlatformOrb</object>
       <object>objects\objPlatformOrbCrystal</object>
+    </objects>
+    <objects name="Misc">
+      <object>objects\objBounceSpikes</object>
       <object>objects\objTitleEffect</object>
       <object>objects\objIntroBubble</object>
       <object>objects\objBouncePickupParticle</object>
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
+    </objects>
+    <objects name="Tower">
+      <object>objects\objSkyBackground</object>
+      <object>objects\objTowerDoor</object>
+      <object>objects\objTowerTransition</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -844,6 +863,9 @@
     <room>rooms\rBlackberry</room>
     <room>rooms\rStrawberry</room>
     <room>rooms\rWatermelon</room>
+    <room>rooms\rOutside</room>
+    <room>rooms\rTowerOutside</room>
+    <room>rooms\rTower</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

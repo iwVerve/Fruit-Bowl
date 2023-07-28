@@ -244,7 +244,9 @@ for(var i = 0; i &lt; numberOfKeys; i++)
     }
     menu_draw_option(buttonName[i], bindText);
     
-    //draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 21);
+    if global.gameStarted {
+        draw_sprite(sprPlayerIdle, animationTime/5, xMargin - 16, yStart + (yStep * select) + 21);
+    }
 }
 
 menu_draw_menu_buttons(false);

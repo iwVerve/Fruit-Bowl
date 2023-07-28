@@ -92,7 +92,7 @@
     <instance objName="objBlock" x="768" y="128" name="inst_6B9360C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="0" name="inst_99E6B3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="-32" y="32" name="inst_2EB034BB" locked="0" code="smooth = true;&#xA;roomTo = rStrawberry;" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
-    <instance objName="objVisuals" x="-32" y="16" name="inst_C1BCB744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objVisuals" x="-48" y="16" name="inst_C1BCB744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="192" name="inst_AE6C32DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="112" name="inst_6830A12B" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="32" y="0" name="inst_A9F4A2F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -426,6 +426,9 @@
     <instance objName="objBlock" x="608" y="416" name="inst_B5E95CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="672" y="592" name="inst_C6CB97F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="640" y="592" name="inst_7FFE7670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="800" y="480" name="inst_AC2E4EF1" locked="0" code="roomTo = rOutside;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="0" name="inst_BE558F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="128" name="inst_5E075FAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bWatermelonTiles" x="96" y="112" w="32" h="16" xo="96" yo="0" id="10006930" name="inst_4B20B6E3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
