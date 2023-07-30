@@ -463,6 +463,7 @@
       <background>background\bWatermelonMiniTiles</background>
       <background>background\bOutside</background>
       <background>background\bTowerTiles</background>
+      <background>background\bTowerTilesMini</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
