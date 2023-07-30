@@ -367,9 +367,16 @@ surface_set_target(shadow_surf);
                         break;
                         
                     case objBlock:
-                        with(object) {
-                            if object_index != objBlockNoShadow {
-                                draw_self();
+                        if room != rTower {
+                            with(object) {
+                                if object_index != objBlockNoShadow {
+                                    draw_self();
+                                }
+                            }
+                        }
+                        else {
+                            with(objTileLayerShadowBottom) {
+                                draw_surface(surf, view_xview - 8, view_yview - 8);
                             }
                         }
                         break;

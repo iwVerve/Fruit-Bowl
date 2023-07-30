@@ -832,6 +832,9 @@
       <object>objects\objSkyBackground</object>
       <object>objects\objTowerDoor</object>
       <object>objects\objTowerTransition</object>
+      <object>objects\objTileLayerShadowBottom</object>
+      <object>objects\objTileLayerShadowTop</object>
+      <object>objects\objTileLayerDraw</object>
     </objects>
   </objects>
   <rooms name="rooms">
