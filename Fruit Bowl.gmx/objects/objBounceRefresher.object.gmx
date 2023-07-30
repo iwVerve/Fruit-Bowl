@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>image_speed = 0.2;
 
-time = random(1000000);
 wobble_magnitude = 1.4;
 wobble_period = random_range(75, 100);
+time = random(wobble_period);
 
 cooldown = 0;
 cooldown_duration = 10;
