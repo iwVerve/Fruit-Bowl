@@ -423,6 +423,8 @@
       <sprite>sprites\sprStars</sprite>
       <sprite>sprites\sprNoise</sprite>
       <sprite>sprites\sprTowerDoor</sprite>
+      <sprite>sprites\sprTowerDoorInside</sprite>
+      <sprite>sprites\sprArrow</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -653,6 +655,7 @@
         <script>scripts\mint_get_window_position.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
     <script>scripts\is_menu_room.gml</script>
@@ -831,10 +834,12 @@
     <objects name="Tower">
       <object>objects\objSkyBackground</object>
       <object>objects\objTowerDoor</object>
+      <object>objects\objTowerDoorInside</object>
       <object>objects\objTowerTransition</object>
       <object>objects\objTileLayerShadowBottom</object>
       <object>objects\objTileLayerShadowTop</object>
       <object>objects\objTileLayerDraw</object>
+      <object>objects\objTowerSpikeVisuals</object>
     </objects>
   </objects>
   <rooms name="rooms">

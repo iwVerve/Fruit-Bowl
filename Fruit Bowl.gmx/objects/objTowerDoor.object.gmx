@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>time = 0;
 state = "ready";
+image_speed = 0;
+can_open = false;
+alpha = 0;
+arrow_time = 0;
 </string>
           </argument>
         </arguments>
@@ -49,14 +53,18 @@ state = "ready";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(state) {
+            <string>can_open = false;
+
+switch(state) {
     case "ready":
-        if input_check_pressed(KEY.UP) &amp;&amp; place_meeting(x, y, objPlayer) {
+        can_open = place_meeting(x, y, objPlayer);
+        if input_check_pressed(KEY.UP) &amp;&amp; can_open {
             with(objPlayer) {
                 frozen = true;
             }
             state = "wait";
             audio_play_sound(sndDoor, 0, false);
+            image_speed = 0.2;
         }
         break;
     case "wait":
@@ -64,6 +72,7 @@ state = "ready";
             instance_destroy(objPlayer);
             state = "wait 2";
             time = 0;
+            image_index = 0;
         }
         else {
             time += 1;
@@ -80,6 +89,60 @@ state = "ready";
         time += 1;
         break;
 }
+
+alpha += (-1 + 2 * can_open) * 0.1;
+alpha = clamp(alpha, 0, 1);
+arrow_time += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_index = image_number - 1;
+image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_set_alpha(alpha);
+    draw_sprite(sprArrow, 0, x + 16, y - 16 + 1.4 * dsin(360/80 * arrow_time));
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

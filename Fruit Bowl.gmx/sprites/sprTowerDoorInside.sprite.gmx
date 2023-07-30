@@ -20,8 +20,6 @@
   <width>32</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sprTowerDoor_0.png</frame>
-    <frame index="1">images\sprTowerDoor_1.png</frame>
-    <frame index="2">images\sprTowerDoor_2.png</frame>
+    <frame index="0">images\sprTowerDoorInside_0.png</frame>
   </frames>
 </sprite>
