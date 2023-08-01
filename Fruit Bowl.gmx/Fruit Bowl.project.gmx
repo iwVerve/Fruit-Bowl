@@ -425,6 +425,7 @@
       <sprite>sprites\sprTowerDoor</sprite>
       <sprite>sprites\sprTowerDoorInside</sprite>
       <sprite>sprites\sprArrow</sprite>
+      <sprite>sprites\sprCannon</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -840,6 +841,10 @@
       <object>objects\objTileLayerShadowTop</object>
       <object>objects\objTileLayerDraw</object>
       <object>objects\objTowerSpikeVisuals</object>
+      <object>objects\objCannon</object>
+      <object>objects\objTowerDummy</object>
+      <object>objects\objTowerDummy2</object>
+      <object>objects\objTowerFadeout</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -861,6 +866,7 @@
     <room>rooms\rIntro</room>
     <room>rooms\rFall</room>
     <room>rooms\rTutorial</room>
+    <room>rooms\rSecret1</room>
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
     <room>rooms\rGrape</room>
@@ -875,6 +881,7 @@
     <room>rooms\rOutside</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
+    <room>rooms\rClear</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

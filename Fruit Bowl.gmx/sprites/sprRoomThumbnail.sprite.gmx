@@ -32,5 +32,9 @@
     <frame index="9">images\sprRoomThumbnail_9.png</frame>
     <frame index="10">images\sprRoomThumbnail_10.png</frame>
     <frame index="11">images\sprRoomThumbnail_11.png</frame>
+    <frame index="12">images\sprRoomThumbnail_12.png</frame>
+    <frame index="13">images\sprRoomThumbnail_13.png</frame>
+    <frame index="14">images\sprRoomThumbnail_14.png</frame>
+    <frame index="15">images\sprRoomThumbnail_15.png</frame>
   </frames>
 </sprite>

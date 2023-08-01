@@ -25,16 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objects[0] = objBlock;
-objects[1] = objPlayerKiller;
-objects[2] = objPlayer;
-objects[3] = objBounceRefresher;
-objects[4] = objBullet;
-objects[5] = objCeilingRefresher;
-objects[6] = objPlatformOrb;
-objects[7] = objSave;
-objects[8] = objShadowCast;
-objects[9] = objWatermelonTrigger;
+            <string>objects = array_from_values(
+    objBlock,
+    objPlayerKiller,
+    objPlayer,
+    objBounceRefresher,
+    objBullet,
+    objCeilingRefresher,
+    objPlatformOrb,
+    objSave,
+    objShadowCast,
+    objWatermelonTrigger,
+    objCannon,
+    objTowerDummy,
+);
 
 x_dist = 3;
 y_dist = 3;

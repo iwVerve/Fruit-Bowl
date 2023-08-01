@@ -29,8 +29,8 @@ switch (room) {
     case rTower:
         return "Adagio";
     
-    //case rClear:
-    //    return "PapapaSweetSwing";
+    case rClear:
+        return "PapapaSweetSwing";
 
     default:
         return -1;          //Play nothing
