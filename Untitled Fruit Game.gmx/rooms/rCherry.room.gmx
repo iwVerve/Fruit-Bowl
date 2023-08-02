@@ -160,7 +160,6 @@
     <instance objName="objSpikeDown" x="192" y="400" name="inst_C3D46473" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="112" y="560" name="inst_B625E8EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherryDoubleDown" x="32" y="448" name="inst_5E361DDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="32" y="528" name="inst_04051AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="32" y="416" name="inst_77F20413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="64" y="416" name="inst_FD60B397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="80" y="416" name="inst_61BB6FE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
