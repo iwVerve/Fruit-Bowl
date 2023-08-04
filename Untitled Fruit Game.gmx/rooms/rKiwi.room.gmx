@@ -316,9 +316,10 @@
     <instance objName="objBlock" x="672" y="-32" name="inst_A315EA5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="224" y="0" name="inst_6189AFD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="-32" name="inst_E4E92179" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="600" y="344" name="inst_59988947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="600" y="360" name="inst_D3FF4055" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniDown" x="600" y="392" name="inst_42FD7C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="592" y="344" name="inst_59988947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="592" y="360" name="inst_D3FF4055" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="592" y="392" name="inst_42FD7C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="256" y="240" name="inst_46BD91EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bKiwiTiles" x="480" y="0" w="32" h="32" xo="0" yo="64" id="10003688" name="inst_7E91A832" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -532,8 +533,8 @@
     <tile bgName="bKiwiMiniTiles" x="192" y="144" w="16" h="16" xo="32" yo="32" id="10006927" name="inst_EA7C9B5C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="256" y="224" w="16" h="16" xo="48" yo="32" id="10006928" name="inst_05B6F05A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bKiwiMiniTiles" x="256" y="208" w="16" h="16" xo="64" yo="16" id="10006929" name="inst_38AA3099" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="600" y="360" w="16" h="16" xo="48" yo="0" id="10008183" name="inst_5AE66B75" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bKiwiMiniTiles" x="600" y="376" w="16" h="16" xo="48" yo="32" id="10008184" name="inst_00CBFA23" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="592" y="360" w="16" h="16" xo="48" yo="0" id="10008183" name="inst_5AE66B75" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bKiwiMiniTiles" x="592" y="376" w="16" h="16" xo="48" yo="32" id="10008184" name="inst_00CBFA23" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
