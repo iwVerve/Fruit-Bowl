@@ -311,6 +311,12 @@
       <sprite>sprites\sprTutorialMiniDown</sprite>
       <sprite>sprites\sprTutorialMiniLeft</sprite>
     </sprites>
+    <sprites name="Secret 1">
+      <sprite>sprites\sprSecret1SpikeUp</sprite>
+      <sprite>sprites\sprSecret1SpikeRight</sprite>
+      <sprite>sprites\sprSecret1SpikeDown</sprite>
+      <sprite>sprites\sprSecret1SpikeLeft</sprite>
+    </sprites>
     <sprites name="Banana">
       <sprite>sprites\sprBananaSpikeUp</sprite>
       <sprite>sprites\sprBananaSpikeRight</sprite>
@@ -442,6 +448,8 @@
       <background>background\bFallTiles</background>
       <background>background\bTutorialTiles</background>
       <background>background\bTutorialMiniTiles</background>
+      <background>background\bSecret1Tiles</background>
+      <background>background\bSecret1MiniTiles</background>
       <background>background\bBananaTiles</background>
       <background>background\bBananaMiniTiles</background>
       <background>background\bCherryTiles</background>
@@ -471,6 +479,7 @@
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
       <background>background\bTutorial</background>
+      <background>background\bSecret1</background>
       <background>background\bBanana</background>
       <background>background\bCherry</background>
       <background>background\bGrape</background>

@@ -145,8 +145,8 @@ if cooldown &lt;= 0 {
             for(var i = 0; i &lt; count; i += 1) {
                 with(instance_create(x, y, objBounceBounceParticle)) {
                     var d = array[i];
-                    x += lengthdir_x(d, other.image_angle);
-                    y += lengthdir_y(d, other.image_angle);
+                    x += lengthdir_x(other.image_xscale * d, other.image_angle);
+                    y += lengthdir_y(other.image_xscale * d, other.image_angle);
                     direction = other.image_angle + 90;
                 }
             } 
