@@ -41,10 +41,10 @@ global.controllerEnabled = true;    //Sets whether controllers are supported
 global.controllerDelayLength = 5;   //Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
 
 //Difficulty
-global.difficultyCount = 1;
+global.difficultyCount = 2;
 global.difficultyNames[0] = "Load Game";
-global.difficultyNames[1] = "Normal";
-//global.difficultyNames[2] = "Normal";
+global.difficultyNames[1] = "Easy";
+global.difficultyNames[2] = "Normal";
 //global.difficultyNames[3] = "Very Hard";
 //global.difficultyNames[4] = "Impossible";
 

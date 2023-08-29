@@ -316,6 +316,11 @@
       <sprite>sprites\sprSecret1SpikeRight</sprite>
       <sprite>sprites\sprSecret1SpikeDown</sprite>
       <sprite>sprites\sprSecret1SpikeLeft</sprite>
+      <sprite>sprites\sprSecret1MiniUp</sprite>
+      <sprite>sprites\sprSecret1MiniRight</sprite>
+      <sprite>sprites\sprSecret1MiniDown</sprite>
+      <sprite>sprites\sprSecret1MiniLeft</sprite>
+      <sprite>sprites\sprFops</sprite>
     </sprites>
     <sprites name="Banana">
       <sprite>sprites\sprBananaSpikeUp</sprite>
@@ -671,6 +676,7 @@
     <script>scripts\is_menu_room.gml</script>
     <script>scripts\get_fair_rng.gml</script>
     <script>scripts\array_from_values.gml</script>
+    <script>scripts\on_difficulty.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -840,6 +846,7 @@
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
+      <object>objects\objFops</object>
     </objects>
     <objects name="Tower">
       <object>objects\objSkyBackground</object>
@@ -876,6 +883,7 @@
     <room>rooms\rFall</room>
     <room>rooms\rTutorial</room>
     <room>rooms\rSecret1</room>
+    <room>rooms\rFops</room>
     <room>rooms\rBanana</room>
     <room>rooms\rCherry</room>
     <room>rooms\rGrape</room>

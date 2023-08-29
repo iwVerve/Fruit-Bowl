@@ -13,6 +13,18 @@ switch(argument0) {
             objMiniLeft,   sprTutorialMiniLeft,
         );
         break;
+    case rSecret1:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprSecret1SpikeUp,
+            objSpikeRight, sprSecret1SpikeRight,
+            objSpikeDown,  sprSecret1SpikeDown,
+            objSpikeLeft,  sprSecret1SpikeLeft,
+            objMiniUp,     sprSecret1MiniUp,
+            objMiniRight,  sprSecret1MiniRight,
+            objMiniDown,   sprSecret1MiniDown,
+            objMiniLeft,   sprSecret1MiniLeft,
+        );
+        break;
     case rBanana:
         Visuals_add_object_sprite(
             objSpikeUp,    sprBananaSpikeUp,
