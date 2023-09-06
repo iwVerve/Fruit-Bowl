@@ -290,7 +290,6 @@
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
-    <sprite>sprites\sprRoomThumbnail</sprite>
     <sprites name="Unused">
       <sprite>sprites\sprCeilingRefresher</sprite>
       <sprite>sprites\sprPlatformOrb</sprite>
@@ -321,6 +320,7 @@
       <sprite>sprites\sprSecret1MiniDown</sprite>
       <sprite>sprites\sprSecret1MiniLeft</sprite>
       <sprite>sprites\sprFops</sprite>
+      <sprite>sprites\sprFops32</sprite>
     </sprites>
     <sprites name="Banana">
       <sprite>sprites\sprBananaSpikeUp</sprite>
@@ -430,6 +430,11 @@
       <sprite>sprites\sprWatermelonTriggerMiniDown</sprite>
       <sprite>sprites\sprWatermelonTriggerMiniLeft</sprite>
     </sprites>
+    <sprites name="Secret 2">
+      <sprite>sprites\sprSecret2Stalk</sprite>
+      <sprite>sprites\sprSecret2Shrine</sprite>
+      <sprite>sprites\sprSecret2ShrineShine</sprite>
+    </sprites>
     <sprites name="Tower">
       <sprite>sprites\sprStars</sprite>
       <sprite>sprites\sprNoise</sprite>
@@ -438,6 +443,12 @@
       <sprite>sprites\sprArrow</sprite>
       <sprite>sprites\sprCannon</sprite>
     </sprites>
+    <sprites name="Map">
+      <sprite>sprites\sprRoomThumbnail</sprite>
+      <sprite>sprites\sprMapBorder</sprite>
+      <sprite>sprites\sprMapCursor</sprite>
+    </sprites>
+    <sprite>sprites\sprClearBackspace</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -789,6 +800,7 @@
       <object>objects\objTrigger</object>
       <object>objects\objTriggerButtonR</object>
       <object>objects\objTriggerButtonL</object>
+      <object>objects\objSaveSetTrigger</object>
     </objects>
     <objects name="Misc">
       <object>objects\objWater</object>
@@ -847,6 +859,10 @@
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
       <object>objects\objFops</object>
+      <object>objects\objFopsBlock</object>
+      <object>objects\objClearBowl</object>
+      <object>objects\objClearCutscene</object>
+      <object>objects\objClearBackspace</object>
     </objects>
     <objects name="Tower">
       <object>objects\objSkyBackground</object>
@@ -861,6 +877,11 @@
       <object>objects\objTowerDummy</object>
       <object>objects\objTowerDummy2</object>
       <object>objects\objTowerFadeout</object>
+    </objects>
+    <objects name="Secret 2">
+      <object>objects\objSecret2Stalk</object>
+      <object>objects\objSecret2Shrine</object>
+      <object>objects\objSecret2ShrineShine</object>
     </objects>
   </objects>
   <rooms name="rooms">

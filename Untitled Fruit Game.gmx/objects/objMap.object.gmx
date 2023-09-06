@@ -27,25 +27,46 @@
             <kind>1</kind>
             <string>images = array_from_values(
     array_from_values(-1, -1,  0, -1, -1),
-    array_from_values(-1, -1,  1, -1, -1),
-    array_from_values(-1, -1,  2,  3, 15),
-    array_from_values( 8,  6,  5,  4, -1),
-    array_from_values( 9,  7, -1, -1, -1),
+    array_from_values(-1, 18,  1, -1, -1),
+    array_from_values(-1, -1,  2,  3, 17),
+    array_from_values( 8,  6,  5,  4, 16),
+    array_from_values( 9,  7, -1, -1, 15),
     array_from_values(10, 11, 12, 13, 14),
 );
 rooms = array_from_values(
     array_from_values(-1,             -1,          rFall,          -1,       -1),
-    array_from_values(-1,             -1,          rTutorial,      -1,       -1),
+    array_from_values(-1,             rSecret1,    rTutorial,      -1,       -1),
     array_from_values(-1,             -1,          rBanana,        rCherry,  rTower),
-    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,   -1),
-    array_from_values(rIntermission2, rKiwi,       -1,             -1,       -1),
+    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,   rTower),
+    array_from_values(rIntermission2, rKiwi,       -1,             -1,       rTower),
     array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside, rTower),
 );
-scale = 0.25;
+start = array_from_values(
+    array_from_values(-1, -1, -1, -1, -1),
+    array_from_values(-1, -1, -1, -1, -1),
+    array_from_values(-1, -1, -1, -1, 3),
+    array_from_values(-1, -1, -1, -1, 2),
+    array_from_values(-1, -1, -1, -1, 1),
+    array_from_values(-1, -1, -1, -1, -1),
+);
+
+scale = 0.3;
 
 hover_x = -1;
 hover_y = -1;
 hover_room = -1;
+no_room_index = sprite_get_number(sprRoomThumbnail) - 1;
+
+total_width = array_length_2d(images, 0) * sprite_get_width(sprRoomThumbnail) * scale;
+total_height = array_height_2d(images) * sprite_get_height(sprRoomThumbnail) * scale;
+border_width = 651;
+border_height = 424;
+
+if !savedata_get("seenSecret1") {
+    images[1, 1] = -1;
+    rooms[1, 1] = -1;
+}
+
 </string>
           </argument>
         </arguments>
@@ -84,6 +105,10 @@ else {
 
 if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
     if hover_room != -1 {
+        var target = start[hover_y, hover_x];
+        if target != -1 {
+            global.playerStartTarget = target;
+        }
         instance_destroy(objPlayer);
         room_goto(hover_room);
     }
@@ -114,14 +139,17 @@ if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
 var width = scale * sprite_get_width(spr);
 var height = scale * sprite_get_height(spr);
 
-for(var i = 0; i &lt; array_height_2d(images); i += 1) {
-    for(var j = 0; j &lt; array_length_2d(images, i); j += 1) {
-        var index = images[i, j];
-        if index != -1 {
+texture_set_interpolation(true);
+    for(var i = 0; i &lt; array_height_2d(images); i += 1) {
+        for(var j = 0; j &lt; array_length_2d(images, i); j += 1) {
+            var index = images[i, j];
+            if index == -1 {
+                index = no_room_index;
+            }
             draw_sprite_ext(spr, index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
         }
     }
-}
+texture_set_interpolation(false);
 
 if hover_room != -1 &amp;&amp; instance_exists(objPlayer) {
     var xx = x + width * hover_x;
@@ -131,6 +159,9 @@ if hover_room != -1 &amp;&amp; instance_exists(objPlayer) {
         draw_rectangle(xx, yy, xx + width - 1, yy + height - 1, false);
     draw_set_alpha(1);
 }
+
+draw_sprite_ext(sprMapBorder, 0, x, y, total_width / border_width, total_height / border_height, 0, c_white, 1);
+draw_sprite_ext(sprMapCursor, 0, x + 12, y + 8, 1, 1, 0, c_white, 0.6);
 </string>
           </argument>
         </arguments>

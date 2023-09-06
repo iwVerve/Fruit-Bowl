@@ -37,6 +37,31 @@ if (instance_number(object_index) &gt; 1)
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Reset global.playerStartTarget
+
+global.playerStartTarget = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -292,6 +317,12 @@ if (global.debugMode &amp;&amp; global.gameStarted &amp;&amp; !global.gamePaused
             visible = !visible;
         }
     }
+     
+    if keyboard_check_pressed(ord("O")) {
+        var num = floor(get_integer("", ""));
+        view_yview = num;
+        instance_destroy(objCamera)
+    }
 }
 
 if (global.debugVisuals)
@@ -480,6 +511,7 @@ if (!instance_exists(objPlayMusic))
 
 room_speed = 50;
 set_room_caption();
+alarm[2] = 1;
 </string>
           </argument>
         </arguments>
