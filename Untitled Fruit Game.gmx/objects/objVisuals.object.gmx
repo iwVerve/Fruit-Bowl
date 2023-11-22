@@ -42,6 +42,7 @@
     objSecret2Stalk,
     objSecret2StalkTip,
     objWarp,
+    objBillboard,
 );
 
 x_dist = 3;

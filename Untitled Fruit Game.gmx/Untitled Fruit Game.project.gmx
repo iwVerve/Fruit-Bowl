@@ -462,6 +462,7 @@
       <sprite>sprites\sprMapCursor</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
+    <sprite>sprites\sprBillboard</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -900,6 +901,7 @@
       <object>objects\objSecret2ShrineShine</object>
       <object>objects\objSecret2Vines</object>
     </objects>
+    <object>objects\objBillboard</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
