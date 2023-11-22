@@ -39,6 +39,9 @@
     objCannon,
     objTowerDummy,
     objMap,
+    objSecret2Stalk,
+    objSecret2StalkTip,
+    objWarp,
 );
 
 x_dist = 3;
@@ -54,7 +57,9 @@ left_sprite = array_create(0);
 right_sprite = array_create(0);
 
 with(objBlock) {
-    sprite_index = sprBlockMaskOpaque;
+    if object_index != objSecret2Vines {
+        sprite_index = sprBlockMaskOpaque;
+    }
 }
 
 with(objShadowCast) {

@@ -436,6 +436,7 @@
     </sprites>
     <sprites name="Secret 2">
       <sprite>sprites\sprSecret2Stalk</sprite>
+      <sprite>sprites\sprSecret2Vines</sprite>
       <sprite>sprites\sprSecret2Shrine</sprite>
       <sprite>sprites\sprSecret2ShrineShine</sprite>
       <sprite>sprites\sprCloudSpikeUp</sprite>
@@ -703,7 +704,6 @@
     <script>scripts\array_from_values.gml</script>
     <script>scripts\on_difficulty.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>
@@ -898,6 +898,7 @@
       <object>objects\objSecret2StalkTip</object>
       <object>objects\objSecret2Shrine</object>
       <object>objects\objSecret2ShrineShine</object>
+      <object>objects\objSecret2Vines</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -934,6 +935,7 @@
     <room>rooms\rWatermelon</room>
     <room>rooms\rOutside</room>
     <room>rooms\rOutsideAbove</room>
+    <room>rooms\rIdk</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
     <room>rooms\rOutsideRight</room>
