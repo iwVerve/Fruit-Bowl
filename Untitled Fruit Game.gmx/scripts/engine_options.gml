@@ -12,7 +12,9 @@ global.gameVersion = "1.0";
 
 //Menu
 global.menuMode = 1;                //Sets whether to use a warp room or a menu for selecting the game's difficulty (0 = warp room, 1 = menu)
-global.menuSound = sndJump;         //Sets what sound to use for navigating the main menu
+global.menuSound = sndMenuClick;
+global.menuTransitionSound = sndMenuTransition;
+global.menuSelectSound = sndMenuSelect;
 
 //World
 global.startRoom = rIntro;         //Sets which room to begin with

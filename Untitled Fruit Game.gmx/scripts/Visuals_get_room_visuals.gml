@@ -130,4 +130,17 @@ switch(argument0) {
             objMiniLeft,   sprWatermelonMiniLeft,
         );
         break;
+    case rOutsideAbove:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprCloudSpikeUp,
+            objSpikeRight, sprCloudSpikeRight,
+            objSpikeDown,  sprCloudSpikeDown,
+            objSpikeLeft,  sprCloudSpikeLeft,
+            objMiniUp,    sprCloudMiniUp,
+            objMiniRight, sprCloudMiniRight,
+            objMiniDown,  sprCloudMiniDown,
+            objMiniLeft,  sprCloudMiniLeft,
+        );
+        break;
+
 }

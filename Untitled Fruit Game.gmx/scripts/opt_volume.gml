@@ -20,6 +20,7 @@ switch(argument0)
         var h = input_check(KEY.MENU_RIGHT) - input_check(KEY.MENU_LEFT);
         if (hPress != 0)
         {
+            audio_play_sound(global.menuSelectSound, 0, false);
             global.volumeLevel += hPress;
             volumeTimer = volumeDelay;
         }

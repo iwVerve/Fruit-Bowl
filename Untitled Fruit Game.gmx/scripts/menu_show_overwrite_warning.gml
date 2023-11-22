@@ -2,3 +2,4 @@
 
 showOverwriteWarning = true;
 warningSelectYes = true;
+audio_play_sound(global.menuSound, 0, false);

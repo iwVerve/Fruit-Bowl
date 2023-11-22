@@ -16,7 +16,7 @@ switch(argument0)
             //Switch option
             global.vsyncMode = !global.vsyncMode;
             set_vsync();
-            audio_play_sound(global.menuSound, 0, false);
+            audio_play_sound(global.menuSelectSound, 0, false);
         }
         break;
         

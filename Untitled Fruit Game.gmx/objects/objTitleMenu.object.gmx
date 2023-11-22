@@ -29,6 +29,7 @@
 if (input_check_pressed(KEY.MENU_ACCEPT))
 {
     room_goto(rMenu);
+    audio_play_sound(global.menuTransitionSound, 0, false);
 }
 </string>
           </argument>

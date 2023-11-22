@@ -38,6 +38,7 @@
     objWatermelonTrigger,
     objCannon,
     objTowerDummy,
+    objMap,
 );
 
 x_dist = 3;
@@ -245,6 +246,7 @@ surface_set_target(shadow_surf);
                 switch(object) {
                     case objPlayer:
                     case objWatermelonTrigger:
+                    case objMap:
                         with(object) {
                             if visible {
                                 event_perform(ev_draw, 0);

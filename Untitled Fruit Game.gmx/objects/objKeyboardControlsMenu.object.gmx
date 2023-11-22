@@ -102,6 +102,7 @@ if (!settingKey)
     {
         //Save changes and go back
         config_save();
+        audio_play_sound(sndMenuTransition, 0, false);
         instance_create(x, y, objOptionsMenu);
         instance_destroy();
     }
@@ -110,6 +111,7 @@ if (!settingKey)
     {
         //Save changes and go back
         config_save();
+        audio_play_sound(sndMenuTransition, 0, false);
         global.menuSelectPrev[1] = 0;
         if (!global.gameStarted)
         {
@@ -134,6 +136,7 @@ if (!settingKey)
     if (input_check_pressed(KEY.MENU_ACCEPT))
     {
         //Select current option  
+        audio_play_sound(global.menuSelectSound, 0, false);
         if (select != numberOfKeys - 1)
         {
             //Start rebinding
@@ -165,6 +168,7 @@ else
         
         global.controls[select, 0] = newKey;
         settingKey = false;
+        audio_play_sound(global.menuSelectSound, 0, false);
     }
     else if (input_any_controller_button() != -1)
     {

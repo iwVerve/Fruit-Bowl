@@ -8,6 +8,7 @@ if (global.menuMode == 0)   //Difficulty select room
 else    //Difficulty select menu
 {
     fileSelected = true;
+    audio_play_sound(global.menuSelectSound, 0, false);
     if (exists[savefileSelect]) //Default to Load game if file exists
         difficultySelect = -1;
     else

@@ -72,6 +72,7 @@ if (input_check_pressed(KEY.MENU_BACK) || input_check_pressed(KEY.MENU_OPTIONS))
 {
     //Save changes and go back
     config_save();
+    audio_play_sound(global.menuTransitionSound, 0, false);
     global.menuSelectPrev[1] = 0;
     if (!global.gameStarted)
     {

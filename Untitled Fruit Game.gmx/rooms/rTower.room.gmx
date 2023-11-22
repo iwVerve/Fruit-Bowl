@@ -750,7 +750,7 @@
     <instance objName="objSpikeLeft" x="608" y="1584" name="inst_71B1338E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="-32" y="0" name="inst_FF222719" locked="0" code="" scaleX="1" scaleY="59" colour="4294967295" rotation="0"/>
     <instance objName="objBlockNoShadow" x="0" y="-32" name="inst_C4BE714B" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlockNoShadow" x="800" y="0" name="inst_C6F5E862" locked="0" code="" scaleX="1" scaleY="76" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="800" y="0" name="inst_C6F5E862" locked="0" code="" scaleX="1" scaleY="59" colour="4294967295" rotation="0"/>
     <instance objName="objTowerSpikeVisuals" x="16" y="1248" name="inst_A359A4CA" locked="0" code="visuals = rGrape;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="objTowerSpikeVisuals" x="16" y="2240" name="inst_D53655FE" locked="0" code="visuals = rBanana;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objTowerSpikeVisuals" x="32" y="432" name="inst_A32E664B" locked="0" code="visuals = rCherry;&#xA;" scaleX="1" scaleY="8.5" colour="4294967295" rotation="0"/>
@@ -797,6 +797,8 @@
     <instance objName="objPlayerStart" x="320" y="192" name="inst_295BC4A6" locked="0" code="target = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="256" y="928" name="inst_691F1EF8" locked="0" code="target = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="448" y="1472" name="inst_4CE01BCF" locked="0" code="target = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="800" y="2400" name="inst_8ED7181E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="800" y="1888" name="inst_297E9F28" locked="0" code="roomTo = rOutsideRight;&#xA;smooth = true;&#xA;offsetY = -1824;&#xA;" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bOutside" x="0" y="2400" w="32" h="32" xo="0" yo="0" id="10007620" name="inst_C06126B7" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -18,7 +18,7 @@ switch(argument0)
         if input_check_pressed(KEY.MENU_ACCEPT)
         {
             execute_shell_simple(game_save_id);
-            audio_play_sound(global.menuSound, 0, false);
+            audio_play_sound(global.menuSelectSound, 0, false);
         }
         break;
         

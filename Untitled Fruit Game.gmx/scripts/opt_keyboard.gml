@@ -13,7 +13,7 @@ switch(argument0)
         //Called every frame the option is selected
         if (input_check_pressed(KEY.MENU_ACCEPT))
         {
-            audio_play_sound(global.menuSound, 0, false);
+            audio_play_sound(global.menuTransitionSound, 0, false);
             config_save(); //Save changes
             global.menuSelectPrev[1] = select;
             instance_create(x, y, objKeyboardControlsMenu);

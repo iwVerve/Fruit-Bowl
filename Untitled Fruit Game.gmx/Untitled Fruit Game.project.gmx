@@ -184,6 +184,10 @@
       <sound>sound\sndBouncePickup</sound>
       <sound>sound\sndTrigger</sound>
       <sound>sound\sndDoor</sound>
+      <sound>sound\sndMenuClick</sound>
+      <sound>sound\sndMenuTransition</sound>
+      <sound>sound\sndMenuSelect</sound>
+      <sound>sound\sndThunder</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -434,6 +438,14 @@
       <sprite>sprites\sprSecret2Stalk</sprite>
       <sprite>sprites\sprSecret2Shrine</sprite>
       <sprite>sprites\sprSecret2ShrineShine</sprite>
+      <sprite>sprites\sprCloudSpikeUp</sprite>
+      <sprite>sprites\sprCloudSpikeRight</sprite>
+      <sprite>sprites\sprCloudSpikeDown</sprite>
+      <sprite>sprites\sprCloudSpikeLeft</sprite>
+      <sprite>sprites\sprCloudMiniUp</sprite>
+      <sprite>sprites\sprCloudMiniRight</sprite>
+      <sprite>sprites\sprCloudMiniDown</sprite>
+      <sprite>sprites\sprCloudMiniLeft</sprite>
     </sprites>
     <sprites name="Tower">
       <sprite>sprites\sprStars</sprite>
@@ -491,6 +503,8 @@
       <background>background\bOutside</background>
       <background>background\bTowerTiles</background>
       <background>background\bTowerTilesMini</background>
+      <background>background\bCloudTiles</background>
+      <background>background\bCloudTilesMini</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -689,6 +703,7 @@
     <script>scripts\array_from_values.gml</script>
     <script>scripts\on_difficulty.gml</script>
   </scripts>
+  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>
@@ -880,6 +895,7 @@
     </objects>
     <objects name="Secret 2">
       <object>objects\objSecret2Stalk</object>
+      <object>objects\objSecret2StalkTip</object>
       <object>objects\objSecret2Shrine</object>
       <object>objects\objSecret2ShrineShine</object>
     </objects>
@@ -917,8 +933,10 @@
     <room>rooms\rStrawberry</room>
     <room>rooms\rWatermelon</room>
     <room>rooms\rOutside</room>
+    <room>rooms\rOutsideAbove</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
+    <room>rooms\rOutsideRight</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>
