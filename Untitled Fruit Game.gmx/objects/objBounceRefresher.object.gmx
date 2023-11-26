@@ -41,6 +41,9 @@ dip_gravity = 0.4;
 dip_vspeed_min = 0.8;
 
 spikes = noone;
+
+x_prev = x;
+y_prev = y;
       
 </string>
           </argument>
@@ -93,6 +96,32 @@ spikes = noone;
 spikes.image_angle = image_angle;
 spikes.image_xscale = image_xscale;
 spikes.image_yscale = image_yscale;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_exists(spikes) {
+    spikes.x = x;
+    spikes.y = y;
+}
 </string>
           </argument>
         </arguments>
@@ -153,6 +182,12 @@ if cooldown &lt;= 0 {
             
             var snd = audio_play_sound(sndBounceBoing, 0, false);
             audio_sound_pitch(snd, random_range(0.8, 1.2));
+            
+            if room == rJigsaw {
+                if player.airJumps = 0 {
+                    player.airJumps = 1;
+                }
+            }
         }
         else {
             player.airJumps = 1;
@@ -178,19 +213,25 @@ dip_vspeed -= dip_gravity;
 dip_vspeed = max(dip_vspeed, -dip_vspeed_min);
 dip = max(dip, 0);
 
+if path_index != -1 {
+    hspeed = x - x_prev;
+    vspeed = y - y_prev;
+}
+xstart += hspeed;
+ystart += vspeed;
 
 var wobble = wobble_magnitude * dsin(360 * time / wobble_period) + dip;
 x = xstart + down_x * wobble;
 y = ystart + down_y * wobble;
 
-
-with(spikes) {
-    x = other.x;
-    y = other.y;
+if instance_exists(spikes) {
+    spikes.x = x + hspeed;
+    spikes.y = y + vspeed;
 }
 
-
 time += 1;
+x_prev = x;
+y_prev = y;
 </string>
           </argument>
         </arguments>

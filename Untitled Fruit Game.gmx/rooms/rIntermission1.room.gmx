@@ -292,6 +292,7 @@
     <instance objName="objBlock" x="448" y="0" name="inst_15D41ED7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="32" name="inst_FD6706F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="64" name="inst_B99B2DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBrickDecal" x="368" y="432" name="inst_10BB25DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bIntermission1Tiles" x="512" y="352" w="32" h="32" xo="0" yo="0" id="10004726" name="inst_1B06783B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -136,11 +136,15 @@ switch(argument0) {
             objSpikeRight, sprCloudSpikeRight,
             objSpikeDown,  sprCloudSpikeDown,
             objSpikeLeft,  sprCloudSpikeLeft,
-            objMiniUp,    sprCloudMiniUp,
-            objMiniRight, sprCloudMiniRight,
-            objMiniDown,  sprCloudMiniDown,
-            objMiniLeft,  sprCloudMiniLeft,
+            objMiniUp,     sprCloudMiniUp,
+            objMiniRight,  sprCloudMiniRight,
+            objMiniDown,   sprCloudMiniDown,
+            objMiniLeft,   sprCloudMiniLeft,
         );
         break;
-
+    case rJigsaw:
+        Visuals_add_object_sprite(
+            objMiniUp, sprJigsawMiniUp,
+        );
+        break;
 }

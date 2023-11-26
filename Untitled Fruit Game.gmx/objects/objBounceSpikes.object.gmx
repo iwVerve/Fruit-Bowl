@@ -29,6 +29,9 @@
 target_image_speed = image_speed;
 
 wait = 70;
+if room == rJigsaw {
+    wait = 40;
+}
 </string>
           </argument>
         </arguments>

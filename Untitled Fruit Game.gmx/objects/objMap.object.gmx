@@ -30,15 +30,15 @@
     array_from_values(-1, 18,  1, -1, -1, -1),
     array_from_values(-1, -1,  2,  3, 17, -1),
     array_from_values( 8,  6,  5,  4, 16, -1),
-    array_from_values( 9,  7, -1, 19, 15, -1),
-    array_from_values(10, 11, 12, 13, 14, 13),
+    array_from_values( 9,  7, -1, 19, 15, 21),
+    array_from_values(10, 11, 12, 13, 14, 20),
 );
 rooms = array_from_values(
     array_from_values(-1,             -1,          rFall,          -1,            -1,     -1),
     array_from_values(-1,             rSecret1,    rTutorial,      -1,            -1,     -1),
     array_from_values(-1,             -1,          rBanana,        rCherry,       rTower, -1),
     array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower, -1),
-    array_from_values(rIntermission2, rKiwi,       -1,             rOutsideAbove, rTower, -1),
+    array_from_values(rIntermission2, rKiwi,       -1,             rOutsideAbove, rTower, rClimb1),
     array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower, rOutsideRight),
 );
 start = array_from_values(
@@ -63,8 +63,12 @@ border_width = 651;
 border_height = 424;
 
 if !savedata_get("seenTowerRight") {
-    images[5, 5] = -1;
+    images[5, 5] = 22;
     rooms[5, 5] = -1;
+}
+if !savedata_get("seenClimb1") {
+    images[4, 5] = -1;
+    rooms[4, 5] = -1;
 }
 if !savedata_get("seenSecret1") {
     images[1, 1] = -1;
@@ -153,6 +157,9 @@ texture_set_interpolation(true);
             var index = images[i, j];
             if index == -1 {
                 index = no_room_index;
+            }
+            if index == 22 {
+                draw_sprite_ext(spr, no_room_index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);            
             }
             draw_sprite_ext(spr, index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
         }

@@ -43,6 +43,7 @@
     objSecret2StalkTip,
     objWarp,
     objBillboard,
+    objPlatform,
 );
 
 x_dist = 3;
@@ -212,6 +213,15 @@ if room == rWatermelon {
                     sprite_index = sprWatermelonTriggerMiniLeft;
                     break;
             }
+        }
+    }
+}
+
+if room == rJigsaw {
+    with(objMiniUp) {
+        image_speed = 0;
+        if x % 32 != 0 {
+            image_index = 1;
         }
     }
 }

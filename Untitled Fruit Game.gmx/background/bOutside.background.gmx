@@ -14,6 +14,6 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>64</width>
-  <height>32</height>
+  <height>64</height>
   <data>images\bOutside.png</data>
 </background>

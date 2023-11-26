@@ -358,6 +358,7 @@
     </sprites>
     <sprites name="Intermission 1">
       <sprite>sprites\sprIntermission1MiniDown</sprite>
+      <sprite>sprites\sprBrickDecal</sprite>
     </sprites>
     <sprites name="Red Apple">
       <sprite>sprites\sprRedAppleSpikeUp</sprite>
@@ -447,6 +448,9 @@
       <sprite>sprites\sprCloudMiniRight</sprite>
       <sprite>sprites\sprCloudMiniDown</sprite>
       <sprite>sprites\sprCloudMiniLeft</sprite>
+      <sprite>sprites\sprJigsawFox</sprite>
+      <sprite>sprites\sprJigsawTile</sprite>
+      <sprite>sprites\sprJigsawMiniUp</sprite>
     </sprites>
     <sprites name="Tower">
       <sprite>sprites\sprStars</sprite>
@@ -463,6 +467,10 @@
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
+    <sprite>sprites\sprJigsawDjumpIndicator</sprite>
+    <sprite>sprites\sprBillboardPlatform</sprite>
+    <sprite>sprites\sprSpinner</sprite>
+    <sprite>sprites\sprSpinnerBackground</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -507,6 +515,8 @@
       <background>background\bTowerTilesMini</background>
       <background>background\bCloudTiles</background>
       <background>background\bCloudTilesMini</background>
+      <background>background\bJigsawTiles</background>
+      <background>background\bPathTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -524,10 +534,13 @@
       <background>background\bStrawberry</background>
       <background>background\bWatermelon</background>
       <background>background\bTower</background>
+      <background>background\bJigsaw</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathExample</path>
+    <path>paths\pathClimb1_1</path>
+    <path>paths\pathClimb1_2</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -704,6 +717,7 @@
     <script>scripts\get_fair_rng.gml</script>
     <script>scripts\array_from_values.gml</script>
     <script>scripts\on_difficulty.gml</script>
+    <script>scripts\jigsaw_draw_tile.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -879,6 +893,7 @@
       <object>objects\objClearBowl</object>
       <object>objects\objClearCutscene</object>
       <object>objects\objClearBackspace</object>
+      <object>objects\objInfiniteJump</object>
     </objects>
     <objects name="Tower">
       <object>objects\objSkyBackground</object>
@@ -900,8 +915,17 @@
       <object>objects\objSecret2Shrine</object>
       <object>objects\objSecret2ShrineShine</object>
       <object>objects\objSecret2Vines</object>
+      <object>objects\objJigsaw</object>
+      <object>objects\objJigsawGravity</object>
+      <object>objects\objJigsawBounceSpawner</object>
+      <object>objects\objJigsawPlatform</object>
+      <object>objects\objJigsawDjumpIndicator</object>
+      <object>objects\objJigsawDjumpIndicatorSpawner</object>
     </objects>
     <object>objects\objBillboard</object>
+    <object>objects\objBillboardPlatform</object>
+    <object>objects\objBrickDecal</object>
+    <object>objects\objSpinner</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -920,27 +944,30 @@
     </rooms>
     <room>rooms\rTemplate</room>
     <room>rooms\rIntro</room>
-    <room>rooms\rFall</room>
-    <room>rooms\rTutorial</room>
+    <rooms name="Main">
+      <room>rooms\rFall</room>
+      <room>rooms\rTutorial</room>
+      <room>rooms\rBanana</room>
+      <room>rooms\rCherry</room>
+      <room>rooms\rGrape</room>
+      <room>rooms\rIntermission1</room>
+      <room>rooms\rApple</room>
+      <room>rooms\rKiwi</room>
+      <room>rooms\rCoconut</room>
+      <room>rooms\rIntermission2</room>
+      <room>rooms\rBlackberry</room>
+      <room>rooms\rStrawberry</room>
+      <room>rooms\rWatermelon</room>
+    </rooms>
     <room>rooms\rSecret1</room>
     <room>rooms\rFops</room>
-    <room>rooms\rBanana</room>
-    <room>rooms\rCherry</room>
-    <room>rooms\rGrape</room>
-    <room>rooms\rIntermission1</room>
-    <room>rooms\rApple</room>
-    <room>rooms\rKiwi</room>
-    <room>rooms\rCoconut</room>
-    <room>rooms\rIntermission2</room>
-    <room>rooms\rBlackberry</room>
-    <room>rooms\rStrawberry</room>
-    <room>rooms\rWatermelon</room>
     <room>rooms\rOutside</room>
     <room>rooms\rOutsideAbove</room>
-    <room>rooms\rIdk</room>
+    <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
     <room>rooms\rOutsideRight</room>
+    <room>rooms\rClimb1</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>
