@@ -465,6 +465,16 @@
       <sprite>sprites\sprMapBorder</sprite>
       <sprite>sprites\sprMapCursor</sprite>
     </sprites>
+    <sprites name="Climb">
+      <sprite>sprites\sprClimbSpikeUp</sprite>
+      <sprite>sprites\sprClimbSpikeRight</sprite>
+      <sprite>sprites\sprClimbSpikeDown</sprite>
+      <sprite>sprites\sprClimbSpikeLeft</sprite>
+      <sprite>sprites\sprClimbMiniUp</sprite>
+      <sprite>sprites\sprClimbMiniRight</sprite>
+      <sprite>sprites\sprClimbMiniDown</sprite>
+      <sprite>sprites\sprClimbMiniLeft</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprJigsawDjumpIndicator</sprite>
@@ -541,6 +551,9 @@
     <path>paths\pathExample</path>
     <path>paths\pathClimb1_1</path>
     <path>paths\pathClimb1_2</path>
+    <path>paths\pathClimb2_1</path>
+    <path>paths\pathClimb2_2</path>
+    <path>paths\pathClimb2_3</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -968,6 +981,7 @@
     <room>rooms\rTower</room>
     <room>rooms\rOutsideRight</room>
     <room>rooms\rClimb1</room>
+    <room>rooms\rClimb2</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>

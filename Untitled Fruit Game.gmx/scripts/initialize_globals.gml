@@ -74,3 +74,6 @@ randomize();    //Make sure the game starts with a random seed for RNG
 music_balance();
 
 global.playerStartTarget = 0;
+
+global.seenMapRoom = false;
+

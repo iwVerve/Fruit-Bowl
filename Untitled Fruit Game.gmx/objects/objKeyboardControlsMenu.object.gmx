@@ -34,7 +34,7 @@ settingKey = false;
 showResetPrompt = false;
 
 //Add one for the "Reset controls" line
-numberOfKeys = KEY.NUMBER + 1;
+numberOfKeys = KEY.NUMBER + 1 - !global.seenMapRoom;
 
 buttonName = input_define("getKeyboardNameArray");
 event_user(0);

@@ -29,7 +29,7 @@
     array_from_values(-1, -1,  0, -1, -1, -1),
     array_from_values(-1, 18,  1, -1, -1, -1),
     array_from_values(-1, -1,  2,  3, 17, -1),
-    array_from_values( 8,  6,  5,  4, 16, -1),
+    array_from_values( 8,  6,  5,  4, 16, 23),
     array_from_values( 9,  7, -1, 19, 15, 21),
     array_from_values(10, 11, 12, 13, 14, 20),
 );
@@ -37,7 +37,7 @@ rooms = array_from_values(
     array_from_values(-1,             -1,          rFall,          -1,            -1,     -1),
     array_from_values(-1,             rSecret1,    rTutorial,      -1,            -1,     -1),
     array_from_values(-1,             -1,          rBanana,        rCherry,       rTower, -1),
-    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower, -1),
+    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower, rClimb2),
     array_from_values(rIntermission2, rKiwi,       -1,             rOutsideAbove, rTower, rClimb1),
     array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower, rOutsideRight),
 );
@@ -69,6 +69,10 @@ if !savedata_get("seenTowerRight") {
 if !savedata_get("seenClimb1") {
     images[4, 5] = -1;
     rooms[4, 5] = -1;
+}
+if !savedata_get("seenClimb2") {
+    images[3, 5] = -1;
+    rooms[3, 5] = -1;
 }
 if !savedata_get("seenSecret1") {
     images[1, 1] = -1;

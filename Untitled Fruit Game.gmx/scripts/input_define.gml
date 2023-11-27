@@ -14,7 +14,8 @@ enum KEY
     SKIP,
     SUICIDE,
     PAUSE,
-    
+    HUB,
+        
     //Anything above this line is rebindable, anything below is not
     NUMBER,
     
@@ -42,6 +43,7 @@ switch(type)
         global.controls[KEY.SKIP, 0] =          ini_read_real("Keyboard",  "Skip",     ord('S'));
         global.controls[KEY.SUICIDE, 0] =       ini_read_real("Keyboard",  "Suicide",  ord('Q'));
         global.controls[KEY.PAUSE, 0] =         ini_read_real("Keyboard",  "Pause",    ord('P'));
+        global.controls[KEY.HUB, 0] =           ini_read_real("Keyboard",  "Hub",      vk_backspace);
         global.controls[KEY.ALIGN_LEFT, 0] =    ord('A');
         global.controls[KEY.ALIGN_RIGHT, 0] =   ord('D');
         global.controls[KEY.MENU_LEFT, 0] =     vk_left;
@@ -65,6 +67,7 @@ switch(type)
         global.controls[KEY.SKIP, 1] =          ini_read_real("Controller",  "Skip",     gp_face2);
         global.controls[KEY.SUICIDE, 1] =       ini_read_real("Controller",  "Suicide",  gp_select);
         global.controls[KEY.PAUSE, 1] =         ini_read_real("Controller",  "Pause",    gp_start);
+        global.controls[KEY.HUB, 1] =           ini_read_real("Controller",  "Hub",      gp_shoulderl);
         global.controls[KEY.ALIGN_LEFT, 1] =    gp_shoulderl;
         global.controls[KEY.ALIGN_RIGHT, 1] =   gp_shoulderr;
         global.controls[KEY.ALIGN_LEFT, 1] =    ord('A');
@@ -90,6 +93,7 @@ switch(type)
         ini_write_real("Keyboard",  "Skip",     global.controls[KEY.SKIP, 0]);
         ini_write_real("Keyboard",  "Suicide",  global.controls[KEY.SUICIDE, 0]);
         ini_write_real("Keyboard",  "Pause",    global.controls[KEY.PAUSE, 0]);
+        ini_write_real("Keyboard",  "Hub",      global.controls[KEY.HUB, 0]);
         break;
         
     case "saveControllerConfig":
@@ -103,36 +107,39 @@ switch(type)
         ini_write_real("Controller",  "Skip",     global.controls[KEY.SKIP, 1]);
         ini_write_real("Controller",  "Suicide",  global.controls[KEY.SUICIDE, 1]);
         ini_write_real("Controller",  "Pause",    global.controls[KEY.PAUSE, 1]);
+        ini_write_real("Controller",  "Hub",      global.controls[KEY.HUB, 1]);
         break;
               
         
     case "getKeyboardNameArray":
         var buttonName;
-        buttonName[0] = "Left Button";
-        buttonName[1] = "Right Button";
-        buttonName[2] = "Up Button";
-        buttonName[3] = "Down Button";
-        buttonName[4] = "Jump Button";
-        buttonName[5] = "Shoot Button";
-        buttonName[6] = "Restart Button";
-        buttonName[7] = "Skip Button";
-        buttonName[8] = "Suicide Button";
-        buttonName[9] = "Pause Button";
+        buttonName[0] =  "Left";
+        buttonName[1] =  "Right";
+        buttonName[2] =  "Up";
+        buttonName[3] =  "Down";
+        buttonName[4] =  "Jump";
+        buttonName[5] =  "Shoot";
+        buttonName[6] =  "Restart";
+        buttonName[7] =  "Skip";
+        buttonName[8] =  "Suicide";
+        buttonName[9] =  "Pause";
+        buttonName[10] = "Warp";
         return buttonName;
         
     case "getControllerNameArray":
         var buttonName;
-        buttonName[0] = "Controller Index";
-        buttonName[1] = "Left Button";
-        buttonName[2] = "Right Button";
-        buttonName[3] = "Up Button";
-        buttonName[4] = "Down Button";
-        buttonName[5] = "Jump Button";
-        buttonName[6] = "Shoot Button";
-        buttonName[7] = "Restart Button";
-        buttonName[8] = "Skip Button";
-        buttonName[9] = "Suicide Button";
-        buttonName[10] = "Pause Button";
+        buttonName[0] =  "Controller Index";
+        buttonName[1] =  "Left";
+        buttonName[2] =  "Right";
+        buttonName[3] =  "Up";
+        buttonName[4] =  "Down";
+        buttonName[5] =  "Jump";
+        buttonName[6] =  "Shoot";
+        buttonName[7] =  "Restart";
+        buttonName[8] =  "Skip";
+        buttonName[9] =  "Suicide";
+        buttonName[10] = "Pause";
+        buttonName[11] = "Warp";
         return buttonName;
         
         
@@ -147,6 +154,7 @@ switch(type)
         global.controls[KEY.SKIP, 0] =    ord('S');
         global.controls[KEY.SUICIDE, 0] = ord('Q');
         global.controls[KEY.PAUSE, 0] =   ord('P');
+        global.controls[KEY.HUB, 0] =     vk_backspace;
         break;
         
     case "setControllerDefault":
@@ -160,5 +168,6 @@ switch(type)
         global.controls[KEY.SKIP, 1] =    gp_face2;
         global.controls[KEY.SUICIDE, 1] = gp_select;
         global.controls[KEY.PAUSE, 1] =   gp_start;
+        global.controls[KEY.HUB, 1] =     gp_shoulderl;
         break;
 }

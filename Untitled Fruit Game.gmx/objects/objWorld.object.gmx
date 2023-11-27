@@ -353,7 +353,8 @@ if keyboard_check_pressed(vk_f8) {
     //instance_create(0, 0, objMintEditor);
 }
 
-if keyboard_check_pressed(vk_backspace) {
+//if keyboard_check_pressed(vk_backspace) {
+if input_check_pressed(KEY.HUB) {
     if global.gameStarted &amp;&amp; savedata_get("gameClear") {
         instance_destroy(objPlayer);
         room_goto(rClear);

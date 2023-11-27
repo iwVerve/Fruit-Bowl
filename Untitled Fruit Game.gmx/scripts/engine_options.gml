@@ -22,7 +22,7 @@ global.roomCaptionDef = "YoYoYo Engine Verve Edition";  //Sets default window ca
 global.deathMusicMode = 0;          //Sets whether or not to play death music when the player dies (0 = no death music, 1 = instantly pause current music, 2 = fade out current music)
 global.pauseDelayLength = 40;       //Sets the delay in frames in which the player can pause/unpause the game (can be set to 0 to disable pause delay)
 global.timeWhenDead = true;         //Sets whether or not to count the in-game timer when the player is dead
-global.timeWhenCleared = false;     //Increment the timer after the save file is considered finished
+global.timeWhenCleared = true;     //Increment the timer after the save file is considered finished
 global.platformsPhase = false;      //Sets whether or not to let the player fall through the platform or into the block when pushing them against a ceiling.
 global.blocksCrush = true;          //Makes getting stuck in the wall due to moving blocks or platforms kill the player.
 

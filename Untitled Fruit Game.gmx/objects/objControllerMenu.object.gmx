@@ -34,7 +34,7 @@ settingButton = false;
 showResetPrompt = false;
 
 //Add two for the "Controller index" and "Reset controls" lines
-numberOfButtons = KEY.NUMBER + 2;
+numberOfButtons = KEY.NUMBER + 2 - !global.seenMapRoom;
 buttonName = input_define("getControllerNameArray");
 
 event_user(0);

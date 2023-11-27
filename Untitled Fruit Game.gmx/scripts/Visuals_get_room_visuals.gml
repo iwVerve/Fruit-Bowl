@@ -147,4 +147,17 @@ switch(argument0) {
             objMiniUp, sprJigsawMiniUp,
         );
         break;
+    case rClimb1:
+    case rClimb2:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprClimbSpikeUp,
+            objSpikeRight, sprClimbSpikeRight,
+            objSpikeDown,  sprClimbSpikeDown,
+            objSpikeLeft,  sprClimbSpikeLeft,
+            objMiniUp,     sprClimbMiniUp,
+            objMiniRight,  sprClimbMiniRight,
+            objMiniDown,   sprClimbMiniDown,
+            objMiniLeft,   sprClimbMiniLeft,
+        );
+        break;
 }
