@@ -54,7 +54,11 @@ offsetY = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!in_range(other.x, 0, room_width) || !in_range(other.y, 0, room_height))  //if outside room
+            <string>if other.already_warped {
+    exit;
+}
+
+if (!in_range(other.x, 0, room_width) || !in_range(other.y, 0, room_height))  //if outside room
 {
     if (!smooth)
     {
@@ -62,19 +66,23 @@ offsetY = 0;
     }
     else
     {
-        if (other.x &lt; 0)
-            { other.x += room_width; }
-        if (other.x &gt; room_width)
-            { other.x -= room_width; }
-        if (other.y &lt; 0)
-            { other.y += room_height; }
-        if (other.y &gt; room_height)
-            { other.y -= room_height; }
+        var warped = false;
+        if (other.x &lt; 0 &amp;&amp; x &lt; 0)
+            { other.x += room_width; warped = true }
+        else if (other.x &gt;= room_width &amp;&amp; x &gt;= room_width)
+            { other.x -= room_width; warped = true }
+        if (other.y &lt; 0 &amp;&amp; y &lt; 0)
+            { other.y += room_height; warped = true }
+        else if (other.y &gt;= room_height &amp;&amp; y &gt;= room_height)
+            { other.y -= room_height; warped = true }
             
-        other.x += offsetX;
-        other.y += offsetY;
-        
-        room_goto(roomTo);
+        if warped {
+            other.x += offsetX;
+            other.y += offsetY;
+            
+            other.already_warped = true;
+            room_goto(roomTo);
+        }
     }
 }
 </string>

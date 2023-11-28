@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if savedata_get("seenOutro") {
+            <string>if !global.jump_out_of_bowl {
     instance_destroy();
     exit;
 }
@@ -68,10 +68,10 @@ if time == 25 {
     with(objClearBowl) {
         depth = 0;
     }
+    global.jump_out_of_bowl = false;
     with(objPlayer) {
         frozen = false;
     }
-    savedata_set_persistent("seenOutro", true);
     instance_destroy();
 }
 

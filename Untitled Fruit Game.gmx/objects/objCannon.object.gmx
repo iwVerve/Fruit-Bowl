@@ -58,7 +58,13 @@ time = 0;
         }
         break;
     case "wait 1":
-        time += 1;
+        var player_on_ground = false;
+        with(objPlayer) {
+            if !place_free(x, y + global.grav) {
+                player_on_ground = true;
+            }
+        }
+        time += player_on_ground;
         if time &gt;= 25 {
             with(objPlayer) {
                 var d = instance_create(x, y, objTowerDummy);
@@ -118,6 +124,8 @@ time = 0;
                 vspeed = -16;
                 depth = other.depth + 1;
             }
+            var snd = audio_play_sound(sndCannon, 0, false);
+            audio_sound_gain(snd, 0.8, 0);
             state = "wait 2";
         }
         break;

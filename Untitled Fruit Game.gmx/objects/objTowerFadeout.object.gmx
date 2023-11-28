@@ -54,6 +54,7 @@ fade_duration = 150;
 alpha = time / fade_duration;
 audio_sound_gain(global.currentMusic, 1 - alpha, 0);
 if time &gt;= fade_duration + 50 {
+    global.jump_out_of_bowl = true;
     room_goto(rClear);
 }
 </string>

@@ -188,6 +188,9 @@
       <sound>sound\sndMenuTransition</sound>
       <sound>sound\sndMenuSelect</sound>
       <sound>sound\sndThunder</sound>
+      <sound>sound\sndJigsawClick</sound>
+      <sound>sound\sndScrape</sound>
+      <sound>sound\sndCannon</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -554,6 +557,7 @@
     <path>paths\pathClimb2_1</path>
     <path>paths\pathClimb2_2</path>
     <path>paths\pathClimb2_3</path>
+    <path>paths\pathClimb3_1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -732,6 +736,7 @@
     <script>scripts\on_difficulty.gml</script>
     <script>scripts\jigsaw_draw_tile.gml</script>
   </scripts>
+  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>
@@ -982,6 +987,7 @@
     <room>rooms\rOutsideRight</room>
     <room>rooms\rClimb1</room>
     <room>rooms\rClimb2</room>
+    <room>rooms\rClimb3</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>

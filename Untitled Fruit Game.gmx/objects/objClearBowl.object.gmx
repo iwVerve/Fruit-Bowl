@@ -50,7 +50,7 @@ init = false;
           <argument>
             <kind>1</kind>
             <string>if !init {
-    if !savedata_get("seenOutro") {
+    if global.jump_out_of_bowl {
         with(instance_create(x, y, objClearBowl)) {
             image_xscale = other.image_xscale;
             image_yscale = other.image_yscale;

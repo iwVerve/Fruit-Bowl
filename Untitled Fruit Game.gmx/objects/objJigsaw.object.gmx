@@ -140,16 +140,19 @@ tile_alpha = 1;
                 var i = selection;
                 var j = target;
                 
-                var temp_x = tile_target_x[i];
-                var temp_y = tile_target_y[i];
-                tile_target_x[i] = tile_target_x[j];
-                tile_target_y[i] = tile_target_y[j];
-                tile_target_x[j] = temp_x;
-                tile_target_y[j] = temp_y;
-                
-                last_tile[0] = i;
-                last_tile[1] = j;
-                
+                if i != j {
+                    var temp_x = tile_target_x[i];
+                    var temp_y = tile_target_y[i];
+                    tile_target_x[i] = tile_target_x[j];
+                    tile_target_y[i] = tile_target_y[j];
+                    tile_target_x[j] = temp_x;
+                    tile_target_y[j] = temp_y;
+                    
+                    last_tile[0] = i;
+                    last_tile[1] = j;
+                    
+                    audio_play_sound(sndJigsawClick, 0, false);
+                }
                 selection = noone;
             }
         }
@@ -181,11 +184,15 @@ if !clear {
         
         if clear {
             selected = noone;
+            
+            var warp = instance_create(640 - 16, 304 - 16, objWarp);
+            warp.roomTo = rOutsideAbove;
+            warp.autosave = true;
         }
     }
 }
 else {
-    tile_alpha -= 0.02;
+    tile_alpha -= 0.04;
 }
 </string>
           </argument>

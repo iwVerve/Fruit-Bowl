@@ -52,6 +52,9 @@ image_alpha = 0;
             <string>if distance_to_object(objPlayer) &lt;= 1 {
     if image_alpha &lt;= 0 {
         image_index = irandom(image_number - 1);
+        var snd = audio_play_sound(sndBlockChange, 0, false);
+        audio_sound_pitch(snd, random_range(0.6, 1.4));
+        audio_sound_gain(snd, 0.5, 0);
     }
     image_alpha = 1;
 }

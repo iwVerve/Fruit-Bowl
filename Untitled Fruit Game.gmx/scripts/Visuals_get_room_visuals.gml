@@ -149,6 +149,7 @@ switch(argument0) {
         break;
     case rClimb1:
     case rClimb2:
+    case rClimb3:
         Visuals_add_object_sprite(
             objSpikeUp,    sprClimbSpikeUp,
             objSpikeRight, sprClimbSpikeRight,

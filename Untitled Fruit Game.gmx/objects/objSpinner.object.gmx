@@ -35,6 +35,32 @@ angle = 0;
 
 image_xscale = 2;
 image_yscale = 2;
+
+scrape_sound = noone;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+event_user(0);
 </string>
           </argument>
         </arguments>
@@ -60,6 +86,7 @@ image_yscale = 2;
             <string>if state == "idle" {
     if time == 30 {
         state = "turn";
+        scrape_sound = audio_play_sound(sndScrape, 0, true);
     }
 } 
 else if state == "turn" {
@@ -69,6 +96,7 @@ else if state == "turn" {
         state = "wait";
         time = 0;
         savedata_set("rotated", true);
+        audio_stop_sound(scrape_sound);
     }
 }
 else if state == "wait" {
@@ -84,6 +112,54 @@ else if state == "wait" {
 }
 
 time += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+audio_stop_sound(scrape_sound);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+event_user(0);
 </string>
           </argument>
         </arguments>

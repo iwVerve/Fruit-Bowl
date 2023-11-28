@@ -61,6 +61,8 @@ if room == rFall {
     airJumps = 0;
     vspeed = maxVspeed;
 }
+
+already_warped = false;
 </string>
           </argument>
         </arguments>
@@ -259,6 +261,8 @@ else    //Touching a vine
           <argument>
             <kind>1</kind>
             <string>///Player actions and movement
+
+already_warped = false;
 
 //Left-right input
 var L = (input_check(KEY.LEFT) || (global.directionalTapFix &amp;&amp; input_check_pressed(KEY.LEFT)));

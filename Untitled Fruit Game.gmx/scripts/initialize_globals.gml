@@ -76,4 +76,5 @@ music_balance();
 global.playerStartTarget = 0;
 
 global.seenMapRoom = false;
+global.jump_out_of_bowl = false;
 
