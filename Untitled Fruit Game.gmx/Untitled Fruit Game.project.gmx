@@ -478,6 +478,14 @@
       <sprite>sprites\sprClimbMiniDown</sprite>
       <sprite>sprites\sprClimbMiniLeft</sprite>
     </sprites>
+    <sprites name="Items + Door">
+      <sprite>sprites\sprSecretDoor</sprite>
+      <sprite>sprites\sprSpoon</sprite>
+      <sprite>sprites\sprFork</sprite>
+      <sprite>sprites\sprKnife</sprite>
+      <sprite>sprites\sprItemGlow</sprite>
+      <sprite>sprites\sprDoorArrow</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprJigsawDjumpIndicator</sprite>
@@ -736,7 +744,6 @@
     <script>scripts\on_difficulty.gml</script>
     <script>scripts\jigsaw_draw_tile.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
     <font>fonts\fDefault24</font>
@@ -940,10 +947,17 @@
       <object>objects\objJigsawDjumpIndicator</object>
       <object>objects\objJigsawDjumpIndicatorSpawner</object>
     </objects>
+    <objects name="Items + Door">
+      <object>objects\objSecretDoor</object>
+      <object>objects\objFork</object>
+      <object>objects\objKnife</object>
+      <object>objects\objSpoon</object>
+    </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBrickDecal</object>
     <object>objects\objSpinner</object>
+    <object>objects\objBounceRefresherFacePlayer</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -981,6 +995,7 @@
     <room>rooms\rFops</room>
     <room>rooms\rOutside</room>
     <room>rooms\rOutsideAbove</room>
+    <room>rooms\rIdk</room>
     <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>

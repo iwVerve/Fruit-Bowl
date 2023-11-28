@@ -44,6 +44,8 @@
     objWarp,
     objBillboard,
     objPlatform,
+    objSecretDoor,
+    objFork,
 );
 
 x_dist = 3;
@@ -58,9 +60,11 @@ sprite = array_create(0);
 left_sprite = array_create(0);
 right_sprite = array_create(0);
 
-with(objBlock) {
-    if object_index != objSecret2Vines {
-        sprite_index = sprBlockMaskOpaque;
+if room != rFops {
+    with(objBlock) {
+        if object_index != objSecret2Vines {
+            sprite_index = sprBlockMaskOpaque;
+        }
     }
 }
 

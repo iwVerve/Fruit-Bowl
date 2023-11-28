@@ -12,3 +12,4 @@ audio_sound_gain(sndMenuTransition, 0.6, 0);
 audio_sound_gain(sndMenuSelect, 0.8, 0);
 audio_sound_gain(sndThunder, 0.6, 0);
 audio_sound_gain(sndScrape, 0.8, 0);
+audio_sound_gain(sndItem, 0.6, 0);

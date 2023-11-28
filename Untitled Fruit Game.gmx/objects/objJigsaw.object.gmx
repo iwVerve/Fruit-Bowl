@@ -185,9 +185,7 @@ if !clear {
         if clear {
             selected = noone;
             
-            var warp = instance_create(640 - 16, 304 - 16, objWarp);
-            warp.roomTo = rOutsideAbove;
-            warp.autosave = true;
+            instance_create(128 - 16, 304 - 16, objKnife);
         }
     }
 }

@@ -121,6 +121,7 @@ spikes.image_yscale = image_yscale;
             <string>if instance_exists(spikes) {
     spikes.x = x;
     spikes.y = y;
+    spikes.image_angle = image_angle;
 }
 </string>
           </argument>
