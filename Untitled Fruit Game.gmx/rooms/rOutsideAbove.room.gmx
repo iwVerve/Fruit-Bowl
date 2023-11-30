@@ -57,7 +57,7 @@
     <instance objName="objSkyBackground" x="-32" y="672" name="inst_FC9ED536" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="0" y="608" name="inst_404DE0DC" locked="0" code="roomTo = rOutside;&#xA;smooth = true;&#xA;" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVisuals" x="-32" y="640" name="inst_C99FA64C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveSetTrigger" x="64" y="576" name="inst_54A1B19B" locked="0" code="key = &quot;seenSecret2A&quot;;&#xA;value = true;&#xA;autosave = true;&#xA;" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveSetTrigger" x="64" y="576" name="inst_54A1B19B" locked="0" code="key = &quot;seenSecret2A&quot;;&#xA;value = true;&#xA;autosave = true;" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="0" name="inst_6C535F36" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objSecret2Stalk" x="192" y="608" name="inst_97A75302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="416" y="640" name="inst_B8A55DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -292,6 +292,24 @@
     <instance objName="objSpikeRight" x="128" y="192" name="inst_1F369D22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="96" y="96" name="inst_6AF74CB8" locked="0" code="roomTo = rJigsaw;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSecret2Vines" x="32" y="128" name="inst_7C01FA34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="0" y="480" name="inst_BA9A4CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="-32" y="64" name="inst_47FDEE67" locked="0" code="roomTo = rSecret3;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="256" name="inst_B5276C45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="288" name="inst_169E1039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="320" name="inst_97BAE80B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="352" name="inst_36DB85F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="384" name="inst_37438BB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="416" name="inst_8A3BAF81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="448" name="inst_CFE33820" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="480" name="inst_21DF80C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="512" name="inst_5D268D5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="544" name="inst_370CAE7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="576" name="inst_27ED4A56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="0" name="inst_B3377BCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockNoShadow" x="-32" y="32" name="inst_E3B4365B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="192" name="inst_00E0CCE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="224" name="inst_6D47538A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="768" y="96" name="inst_7E23D35E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bCloudTiles" x="128" y="544" w="32" h="32" xo="64" yo="96" id="10008452" name="inst_0378D557" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

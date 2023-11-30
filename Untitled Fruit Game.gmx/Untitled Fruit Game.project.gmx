@@ -538,6 +538,8 @@
       <background>background\bCloudTilesMini</background>
       <background>background\bJigsawTiles</background>
       <background>background\bPathTiles</background>
+      <background>background\bLemonTiles</background>
+      <background>background\bLemonTilesMini</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -995,7 +997,7 @@
     <room>rooms\rFops</room>
     <room>rooms\rOutside</room>
     <room>rooms\rOutsideAbove</room>
-    <room>rooms\rIdk</room>
+    <room>rooms\rSecret3</room>
     <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
