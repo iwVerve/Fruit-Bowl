@@ -161,4 +161,16 @@ switch(argument0) {
             objMiniLeft,   sprClimbMiniLeft,
         );
         break;
+    case rSecret3:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprLemonSpikeUp,
+            objSpikeRight, sprLemonSpikeRight,
+            objSpikeDown,  sprLemonSpikeDown,
+            objSpikeLeft,  sprLemonSpikeLeft,
+            objMiniUp,     sprLemonMiniUp,
+            objMiniRight,  sprLemonMiniRight,
+            objMiniDown,   sprLemonMiniDown,
+            objMiniLeft,   sprLemonMiniLeft,
+        );
+        break;
 }

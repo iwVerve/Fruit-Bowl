@@ -492,6 +492,16 @@
     <sprite>sprites\sprBillboardPlatform</sprite>
     <sprite>sprites\sprSpinner</sprite>
     <sprite>sprites\sprSpinnerBackground</sprite>
+    <sprites name="Lemon">
+      <sprite>sprites\sprLemonSpikeUp</sprite>
+      <sprite>sprites\sprLemonSpikeRight</sprite>
+      <sprite>sprites\sprLemonSpikeDown</sprite>
+      <sprite>sprites\sprLemonSpikeLeft</sprite>
+      <sprite>sprites\sprLemonMiniUp</sprite>
+      <sprite>sprites\sprLemonMiniRight</sprite>
+      <sprite>sprites\sprLemonMiniDown</sprite>
+      <sprite>sprites\sprLemonMiniLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -558,6 +568,7 @@
       <background>background\bWatermelon</background>
       <background>background\bTower</background>
       <background>background\bJigsaw</background>
+      <background>background\bLemon</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
