@@ -368,7 +368,6 @@
     <tile bgName="bIntermission1Tiles" x="672" y="576" w="32" h="32" xo="32" yo="32" id="10004796" name="inst_07AAAC5D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="704" y="576" w="32" h="32" xo="32" yo="32" id="10004797" name="inst_0BCF0B32" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="736" y="576" w="32" h="32" xo="32" yo="32" id="10004798" name="inst_E7699B53" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bIntermission1Tiles" x="768" y="576" w="32" h="32" xo="32" yo="32" id="10004799" name="inst_B1B00E81" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="768" y="544" w="32" h="32" xo="32" yo="32" id="10004800" name="inst_A26C22A4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="768" y="512" w="32" h="32" xo="32" yo="32" id="10004801" name="inst_156E5CF0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="768" y="480" w="32" h="32" xo="32" yo="32" id="10004802" name="inst_8AFFF12E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -622,6 +621,7 @@
     <tile bgName="bIntermission1Tiles" x="448" y="64" w="32" h="32" xo="64" yo="32" id="10008138" name="inst_2BA8E391" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="448" y="96" w="32" h="32" xo="160" yo="64" id="10008139" name="inst_6EB8FBE0" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bIntermission1Tiles" x="416" y="96" w="32" h="32" xo="192" yo="64" id="10008140" name="inst_E8A9CED3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bIntermission1Tiles" x="768" y="576" w="32" h="32" xo="160" yo="32" id="10009737" name="inst_ABF63979" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

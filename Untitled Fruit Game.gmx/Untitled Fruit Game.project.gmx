@@ -486,12 +486,6 @@
       <sprite>sprites\sprItemGlow</sprite>
       <sprite>sprites\sprDoorArrow</sprite>
     </sprites>
-    <sprite>sprites\sprClearBackspace</sprite>
-    <sprite>sprites\sprBillboard</sprite>
-    <sprite>sprites\sprJigsawDjumpIndicator</sprite>
-    <sprite>sprites\sprBillboardPlatform</sprite>
-    <sprite>sprites\sprSpinner</sprite>
-    <sprite>sprites\sprSpinnerBackground</sprite>
     <sprites name="Lemon">
       <sprite>sprites\sprLemonSpikeUp</sprite>
       <sprite>sprites\sprLemonSpikeRight</sprite>
@@ -502,6 +496,12 @@
       <sprite>sprites\sprLemonMiniDown</sprite>
       <sprite>sprites\sprLemonMiniLeft</sprite>
     </sprites>
+    <sprite>sprites\sprClearBackspace</sprite>
+    <sprite>sprites\sprBillboard</sprite>
+    <sprite>sprites\sprJigsawDjumpIndicator</sprite>
+    <sprite>sprites\sprBillboardPlatform</sprite>
+    <sprite>sprites\sprSpinner</sprite>
+    <sprite>sprites\sprSpinnerBackground</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -569,6 +569,8 @@
       <background>background\bTower</background>
       <background>background\bJigsaw</background>
       <background>background\bLemon</background>
+      <background>background\bNegative</background>
+      <background>background\bNegativeMask</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -971,6 +973,10 @@
     <object>objects\objBrickDecal</object>
     <object>objects\objSpinner</object>
     <object>objects\objBounceRefresherFacePlayer</object>
+    <object>objects\objVoidBubble</object>
+    <object>objects\objVoidBubbleSpawner</object>
+    <object>objects\objTempBorderDeath</object>
+    <object>objects\objNegativeBackground</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -1016,6 +1022,8 @@
     <room>rooms\rClimb1</room>
     <room>rooms\rClimb2</room>
     <room>rooms\rClimb3</room>
+    <room>rooms\rNegative1</room>
+    <room>rooms\rNegative2</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>

@@ -141,7 +141,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>draw_self();
 draw_set_alpha(alpha);
-    draw_sprite(sprArrow, 0, x + 16, y - 16 + 1.4 * dsin(360/80 * arrow_time));
+    draw_sprite(sprDoorArrow, 0, x + 16, y - 4 + 1.4 * dsin(360/80 * arrow_time));
 draw_set_alpha(1);
 </string>
           </argument>

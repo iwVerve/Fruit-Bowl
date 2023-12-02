@@ -30,7 +30,7 @@
     array_from_values(-1, 18,  1, -1, -1, -1),
     array_from_values(-1, -1,  2,  3, 17, 24),
     array_from_values( 8,  6,  5,  4, 16, 23),
-    array_from_values( 9,  7, 13, 19, 15, 21),
+    array_from_values( 9,  7, 25, 19, 15, 21),
     array_from_values(10, 11, 12, 13, 14, 20),
 );
 rooms = array_from_values(
