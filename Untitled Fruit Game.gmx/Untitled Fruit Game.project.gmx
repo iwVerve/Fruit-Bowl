@@ -496,6 +496,19 @@
       <sprite>sprites\sprLemonMiniDown</sprite>
       <sprite>sprites\sprLemonMiniLeft</sprite>
     </sprites>
+    <sprites name="Negative">
+      <sprite>sprites\sprNegativeInstDifference</sprite>
+      <sprite>sprites\sprNegativeInstPlayer</sprite>
+      <sprite>sprites\sprNegativeInstPause</sprite>
+      <sprite>sprites\sprNegativeInstEye1</sprite>
+      <sprite>sprites\sprNegativeInstEye2</sprite>
+      <sprite>sprites\sprNegativeInstEye3</sprite>
+      <sprite>sprites\sprNegativeInstEye4</sprite>
+      <sprite>sprites\sprNegativeInstGo</sprite>
+    </sprites>
+    <sprites name="Seal">
+      <sprite>sprites\sprSealNegative</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprJigsawDjumpIndicator</sprite>
@@ -968,6 +981,15 @@
       <object>objects\objKnife</object>
       <object>objects\objSpoon</object>
     </objects>
+    <objects name="Negative">
+      <object>objects\objNegativeBackground</object>
+      <object>objects\objNegativeInstructions</object>
+      <object>objects\objNegativeFloor</object>
+    </objects>
+    <objects name="Seal">
+      <object>objects\objSeal</object>
+      <object>objects\objSealNegative</object>
+    </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBrickDecal</object>
@@ -976,7 +998,6 @@
     <object>objects\objVoidBubble</object>
     <object>objects\objVoidBubbleSpawner</object>
     <object>objects\objTempBorderDeath</object>
-    <object>objects\objNegativeBackground</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -1024,6 +1045,7 @@
     <room>rooms\rClimb3</room>
     <room>rooms\rNegative1</room>
     <room>rooms\rNegative2</room>
+    <room>rooms\rNegative3</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>

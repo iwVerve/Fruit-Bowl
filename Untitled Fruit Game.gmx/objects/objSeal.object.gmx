@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>23000</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,31 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surf = noone;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Cleanup
-event_user(0);
+            <string>name = "sealParent";
 </string>
           </argument>
         </arguments>
@@ -72,32 +48,8 @@ event_user(0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Cleanup
-surface_free(surf);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Cleanup
-event_user(0);
+            <string>var alpha = (1 + dsin(360/1000 * current_time/2)) / 2;
+draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, c_yellow, alpha);
 </string>
           </argument>
         </arguments>
@@ -120,28 +72,9 @@ event_user(0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !surface_exists(surf) {
-    surf = surface_create(800, 608);
-    
-    surface_set_target(surf);
-        draw_clear_alpha(c_black, 0);
-        draw_set_color_write_enable(1, 1, 1, 0);
-            draw_background_tiled(bNegative, 0, 0);
-            if instance_exists(objSealNegative) {
-                var inst = instance_find(objSealNegative, 0);
-                draw_set_color(c_white);
-                draw_set_blend_mode(bm_subtract);
-                    draw_rectangle(inst.bbox_left, inst.bbox_top, inst.bbox_right, inst.bbox_bottom, false);
-                draw_set_blend_mode(bm_normal);
-                draw_sprite(inst.sprite_index, 0, inst.x, inst.y);
-            }
-        draw_set_color_write_enable(0, 0, 0, 1);
-            draw_background_tiled(bNegativeMask, 0, 0);
-        draw_set_color_write_enable(1, 1, 1, 1);
-    surface_reset_target();
+            <string>if savedata_get(name) {
+    event_user(0);
 }
-
-draw_surface_ext(surf, 0, 0, 1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>

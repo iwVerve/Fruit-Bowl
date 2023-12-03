@@ -20,6 +20,16 @@ if (global.pauseDelay <= 0)    //Check if pause delay is active
                     }
                 }
                 
+                global.pause_seal = noone;                
+                with(objPlayer) {
+                    var seal = instance_place(x, y, objSeal);
+                    if seal != noone {
+                        global.pause_seal = seal;
+                        savedata_set(seal.name, true);
+                    }
+                }
+                pause_t = 0;
+                
                 instance_deactivate_all(true);
                 instance_activate_object(objPlayMusic); //If objPlayMusic sets the current music, we need to find it if we turn on music in the pause options.
                 

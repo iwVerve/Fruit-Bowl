@@ -77,4 +77,5 @@ global.playerStartTarget = 0;
 
 global.seenMapRoom = false;
 global.jump_out_of_bowl = false;
-
+global.pause_seal = noone;
+pause_t = 0;
