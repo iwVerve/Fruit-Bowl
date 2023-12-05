@@ -187,6 +187,8 @@
     <instance objName="objBlock" x="704" y="416" name="inst_CEC69282" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="416" name="inst_3F2ADBBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="384" name="inst_82D3E95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBillboard" x="160" y="128" name="inst_C84B2219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objNegativeWarpBack" x="32" y="32" name="inst_9F5B1E4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bOutside" x="0" y="576" w="32" h="32" xo="64" yo="0" id="10010365" name="inst_F613A80A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

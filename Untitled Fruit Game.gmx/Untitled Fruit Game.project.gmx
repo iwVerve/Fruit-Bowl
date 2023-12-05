@@ -511,6 +511,7 @@
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
+    <sprite>sprites\sprBillboardEye</sprite>
     <sprite>sprites\sprJigsawDjumpIndicator</sprite>
     <sprite>sprites\sprBillboardPlatform</sprite>
     <sprite>sprites\sprSpinner</sprite>
@@ -985,6 +986,8 @@
       <object>objects\objNegativeBackground</object>
       <object>objects\objNegativeInstructions</object>
       <object>objects\objNegativeFloor</object>
+      <object>objects\objNegativeTransition</object>
+      <object>objects\objNegativeWarpBack</object>
     </objects>
     <objects name="Seal">
       <object>objects\objSeal</object>

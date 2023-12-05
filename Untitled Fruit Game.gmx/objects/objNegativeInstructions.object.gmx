@@ -80,7 +80,16 @@ loop_time = eye_disappear_time + 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if in_range(time, difference_appear_time, difference_appear_time + 10) {
+            <string>if savedata_get("sealNegative") {
+    difference_alpha -= 0.1;
+    go_alpha -= 0.1;
+    player_alpha -= 0.1;
+    pause_alpha -= 0.1;
+    eye_alpha -= 0.1;
+    exit;
+}
+
+if in_range(time, difference_appear_time, difference_appear_time + 10) {
     difference_alpha += 0.1;
 }
 if in_range(time, difference_disappear_time, difference_disappear_time + 10) {
