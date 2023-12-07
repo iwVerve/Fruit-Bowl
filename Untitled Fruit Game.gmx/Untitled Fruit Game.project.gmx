@@ -508,6 +508,10 @@
     </sprites>
     <sprites name="Seal">
       <sprite>sprites\sprSealNegative</sprite>
+      <sprite>sprites\sprSealBanana</sprite>
+      <sprite>sprites\sprSealCherry</sprite>
+      <sprite>sprites\sprSealSecret1</sprite>
+      <sprite>sprites\sprSealGrape</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -845,6 +849,13 @@
       <object>objects\objPlatformInvisible</object>
       <object>objects\objPlatformTouch</object>
     </objects>
+    <objects name="Intro">
+      <object>objects\objIntroFade</object>
+      <object>objects\objIntroPlayer</object>
+      <object>objects\objFruitBowl</object>
+      <object>objects\objIntroEmoji</object>
+      <object>objects\objIntroEagle</object>
+    </objects>
     <objects name="Killers">
       <object>objects\objPlayerKiller</object>
       <object>objects\objSpikeUp</object>
@@ -919,15 +930,6 @@
       <object>objects\objBossIndicator</object>
       <object>objects\objGameClear</object>
     </objects>
-    <object>objects\objVisuals</object>
-    <object>objects\objBounceRefresher</object>
-    <objects name="Intro">
-      <object>objects\objIntroFade</object>
-      <object>objects\objIntroPlayer</object>
-      <object>objects\objFruitBowl</object>
-      <object>objects\objIntroEmoji</object>
-      <object>objects\objIntroEagle</object>
-    </objects>
     <objects name="Unused">
       <object>objects\objCeilingRefresher</object>
       <object>objects\objCeilingRefresherParticle</object>
@@ -942,8 +944,6 @@
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
-      <object>objects\objFops</object>
-      <object>objects\objFopsBlock</object>
       <object>objects\objClearBowl</object>
       <object>objects\objClearCutscene</object>
       <object>objects\objClearBackspace</object>
@@ -962,6 +962,12 @@
       <object>objects\objTowerDummy</object>
       <object>objects\objTowerDummy2</object>
       <object>objects\objTowerFadeout</object>
+    </objects>
+    <objects name="Secret 1">
+      <object>objects\objFops</object>
+      <object>objects\objFopsBlock</object>
+      <object>objects\objScreenwrap</object>
+      <object>objects\objScreenwrapDraw</object>
     </objects>
     <objects name="Secret 2">
       <object>objects\objSecret2Stalk</object>
@@ -992,15 +998,21 @@
     <objects name="Seal">
       <object>objects\objSeal</object>
       <object>objects\objSealNegative</object>
+      <object>objects\objSealBanana</object>
+      <object>objects\objSealCherry</object>
+      <object>objects\objSealSecret1</object>
+      <object>objects\objSealGrape</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
+    <object>objects\objBounceRefresher</object>
+    <object>objects\objBounceRefresherFacePlayer</object>
     <object>objects\objBrickDecal</object>
     <object>objects\objSpinner</object>
-    <object>objects\objBounceRefresherFacePlayer</object>
+    <object>objects\objTempBorderDeath</object>
+    <object>objects\objVisuals</object>
     <object>objects\objVoidBubble</object>
     <object>objects\objVoidBubbleSpawner</object>
-    <object>objects\objTempBorderDeath</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">

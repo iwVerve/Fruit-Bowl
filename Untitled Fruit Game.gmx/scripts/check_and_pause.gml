@@ -24,8 +24,13 @@ if (global.pauseDelay <= 0)    //Check if pause delay is active
                 with(objPlayer) {
                     var seal = instance_place(x, y, objSeal);
                     if seal != noone {
-                        global.pause_seal = seal;
                         savedata_set(seal.name, true);
+                    }
+                }
+                
+                with(objSeal) {
+                    if savedata_get(name) {
+                        global.pause_seal = id;
                     }
                 }
                 pause_t = 0;

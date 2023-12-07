@@ -190,9 +190,17 @@ if (killer != noone)
             <kind>1</kind>
             <string>///Screen border death, player animation
 
-if ((bbox_right &lt; 0 || bbox_left &gt; room_width || bbox_bottom &lt; 0 || bbox_top &gt; room_height) &amp;&amp; global.edgeDeath)
+if (bbox_right &lt; 0 || bbox_left &gt; room_width || bbox_bottom &lt; 0 || bbox_top &gt; room_height)
 {
-    player_kill();
+    if place_meeting(x, y, objScreenwrap) {
+        if bbox_right &lt; 0 x += room_width;
+        else if bbox_left &gt; room_width x -= room_width;
+        if bbox_bottom &lt; 0 y += room_height;
+        else if bbox_top &gt; room_height y -= room_height;
+    }
+    else if global.edgeDeath {
+        player_kill();
+    }
 }
 
 
