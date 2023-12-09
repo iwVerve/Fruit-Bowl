@@ -513,6 +513,9 @@
       <sprite>sprites\sprSealSecret1</sprite>
       <sprite>sprites\sprSealGrape</sprite>
     </sprites>
+    <sprites name="Secret 3">
+      <sprite>sprites\sprODetail</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprBillboardEye</sprite>
@@ -568,6 +571,8 @@
       <background>background\bPathTiles</background>
       <background>background\bLemonTiles</background>
       <background>background\bLemonTilesMini</background>
+      <background>background\bOTiles</background>
+      <background>background\bOMiniTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -589,6 +594,7 @@
       <background>background\bLemon</background>
       <background>background\bNegative</background>
       <background>background\bNegativeMask</background>
+      <background>background\bO</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -994,6 +1000,8 @@
       <object>objects\objNegativeFloor</object>
       <object>objects\objNegativeTransition</object>
       <object>objects\objNegativeWarpBack</object>
+      <object>objects\objVoidBubble</object>
+      <object>objects\objVoidBubbleSpawner</object>
     </objects>
     <objects name="Seal">
       <object>objects\objSeal</object>
@@ -1003,6 +1011,11 @@
       <object>objects\objSealSecret1</object>
       <object>objects\objSealGrape</object>
     </objects>
+    <objects name="Secret 3">
+      <object>objects\objO</object>
+      <object>objects\objOTear</object>
+      <object>objects\objOScroll</object>
+    </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBounceRefresher</object>
@@ -1011,8 +1024,6 @@
     <object>objects\objSpinner</object>
     <object>objects\objTempBorderDeath</object>
     <object>objects\objVisuals</object>
-    <object>objects\objVoidBubble</object>
-    <object>objects\objVoidBubbleSpawner</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -1051,6 +1062,7 @@
     <room>rooms\rOutside</room>
     <room>rooms\rOutsideAbove</room>
     <room>rooms\rSecret3</room>
+    <room>rooms\rO1</room>
     <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
