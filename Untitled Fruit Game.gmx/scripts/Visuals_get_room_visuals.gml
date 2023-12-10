@@ -176,6 +176,8 @@ switch(argument0) {
     case rO1:
     case rO2:
     case rO3:
+    case rO4:
+    case rO5:
         Visuals_add_object_sprite(
             objSpikeUp,    sprOSpikeUp,
             objSpikeRight, sprOSpikeRight,

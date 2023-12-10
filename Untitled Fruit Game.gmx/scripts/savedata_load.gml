@@ -33,4 +33,6 @@ if savedata_get("saved") {
     }
 }
 
+instance_destroy(objOGauntlet);
+
 room_goto(asset_get_index(savedata_get("room")));

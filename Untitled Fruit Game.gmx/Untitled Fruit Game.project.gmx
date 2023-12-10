@@ -615,6 +615,7 @@
     <path>paths\pathClimb2_2</path>
     <path>paths\pathClimb2_3</path>
     <path>paths\pathClimb3_1</path>
+    <path>paths\pathO5_1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -1028,6 +1029,7 @@
       <object>objects\objOScroll</object>
       <object>objects\objOSlideChange</object>
       <object>objects\objOWarp</object>
+      <object>objects\objOGauntlet</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
@@ -1078,6 +1080,8 @@
     <room>rooms\rO1</room>
     <room>rooms\rO2</room>
     <room>rooms\rO3</room>
+    <room>rooms\rO4</room>
+    <room>rooms\rO5</room>
     <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
