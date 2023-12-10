@@ -31,6 +31,8 @@ warpX = 0;
 warpY = 0;
 roomTo = rTemplate;
 autosave = false;
+
+do_slide_change_transition = false;
 </string>
           </argument>
         </arguments>
@@ -77,6 +79,13 @@ autosave = false;
           <argument>
             <kind>1</kind>
             <string>///Teleport player
+
+if do_slide_change_transition {
+    var slide = instance_create(0, 0, objOSlideChange);
+    slide.room_to = roomTo;
+    slide.autosave = autosave;
+    exit;
+}
 
 if (warpX == 0 &amp;&amp; warpY == 0)
 {

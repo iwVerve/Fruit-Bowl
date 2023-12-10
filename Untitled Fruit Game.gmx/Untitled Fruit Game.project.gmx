@@ -191,6 +191,7 @@
       <sound>sound\sndJigsawClick</sound>
       <sound>sound\sndScrape</sound>
       <sound>sound\sndCannon</sound>
+      <sound>sound\sndOProjectorPush</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -454,6 +455,7 @@
       <sprite>sprites\sprJigsawFox</sprite>
       <sprite>sprites\sprJigsawTile</sprite>
       <sprite>sprites\sprJigsawMiniUp</sprite>
+      <sprite>sprites\sprJigsawDjumpIndicator</sprite>
     </sprites>
     <sprites name="Tower">
       <sprite>sprites\sprStars</sprite>
@@ -505,6 +507,7 @@
       <sprite>sprites\sprNegativeInstEye3</sprite>
       <sprite>sprites\sprNegativeInstEye4</sprite>
       <sprite>sprites\sprNegativeInstGo</sprite>
+      <sprite>sprites\sprNegativeSign</sprite>
     </sprites>
     <sprites name="Seal">
       <sprite>sprites\sprSealNegative</sprite>
@@ -515,11 +518,18 @@
     </sprites>
     <sprites name="Secret 3">
       <sprite>sprites\sprODetail</sprite>
+      <sprite>sprites\sprOSpikeUp</sprite>
+      <sprite>sprites\sprOSpikeRight</sprite>
+      <sprite>sprites\sprOSpikeDown</sprite>
+      <sprite>sprites\sprOSpikeLeft</sprite>
+      <sprite>sprites\sprOMiniUp</sprite>
+      <sprite>sprites\sprOMiniRight</sprite>
+      <sprite>sprites\sprOMiniDown</sprite>
+      <sprite>sprites\sprOMiniLeft</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprBillboardEye</sprite>
-    <sprite>sprites\sprJigsawDjumpIndicator</sprite>
     <sprite>sprites\sprBillboardPlatform</sprite>
     <sprite>sprites\sprSpinner</sprite>
     <sprite>sprites\sprSpinnerBackground</sprite>
@@ -1002,6 +1012,7 @@
       <object>objects\objNegativeWarpBack</object>
       <object>objects\objVoidBubble</object>
       <object>objects\objVoidBubbleSpawner</object>
+      <object>objects\objNegativeSign</object>
     </objects>
     <objects name="Seal">
       <object>objects\objSeal</object>
@@ -1015,6 +1026,8 @@
       <object>objects\objO</object>
       <object>objects\objOTear</object>
       <object>objects\objOScroll</object>
+      <object>objects\objOSlideChange</object>
+      <object>objects\objOWarp</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
@@ -1063,6 +1076,8 @@
     <room>rooms\rOutsideAbove</room>
     <room>rooms\rSecret3</room>
     <room>rooms\rO1</room>
+    <room>rooms\rO2</room>
+    <room>rooms\rO3</room>
     <room>rooms\rJigsaw</room>
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>

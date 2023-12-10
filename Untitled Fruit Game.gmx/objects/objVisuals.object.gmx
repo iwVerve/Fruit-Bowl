@@ -46,6 +46,7 @@
     objPlatform,
     objSecretDoor,
     objFork,
+    objNegativeSign,
 );
 
 x_dist = 3;

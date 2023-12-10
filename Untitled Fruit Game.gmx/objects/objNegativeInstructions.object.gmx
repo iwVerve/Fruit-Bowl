@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -80,12 +80,33 @@ loop_time = eye_disappear_time + 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if savedata_get("sealNegative") {
+            <string>var hide = false;
+if instance_exists(objNegativeSign) {
+    with(objNegativeSign) {
+        if !place_meeting(x, y, objPlayer) {
+            hide = true;
+        }
+    }
+}
+else {
+    hide = savedata_get("sealNegative");
+}
+
+if hide {
     difference_alpha -= 0.1;
     go_alpha -= 0.1;
     player_alpha -= 0.1;
     pause_alpha -= 0.1;
     eye_alpha -= 0.1;
+    
+    if
+        difference_alpha &lt;= 0 &amp;&amp;
+        go_alpha &lt;= 0 &amp;&amp;
+        player_alpha &lt;= 0 &amp;&amp;
+        pause_alpha &lt;= 0 &amp;&amp;
+        eye_alpha &lt;= 0 {
+        time = difference_appear_time;
+    }
     exit;
 }
 

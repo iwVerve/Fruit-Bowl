@@ -173,4 +173,18 @@ switch(argument0) {
             objMiniLeft,   sprLemonMiniLeft,
         );
         break;
+    case rO1:
+    case rO2:
+    case rO3:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprOSpikeUp,
+            objSpikeRight, sprOSpikeRight,
+            objSpikeDown,  sprOSpikeDown,
+            objSpikeLeft,  sprOSpikeLeft,
+            objMiniUp,     sprOMiniUp,
+            objMiniRight,  sprOMiniRight,
+            objMiniDown,   sprOMiniDown,
+            objMiniLeft,   sprOMiniLeft,
+        );
+        break;
 }
