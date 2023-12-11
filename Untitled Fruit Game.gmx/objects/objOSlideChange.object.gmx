@@ -29,6 +29,7 @@
 color = $1B1B1B;
 room_to = rTemplate;
 autosave = false;
+target = 0;
 
 audio_play_sound(sndOProjectorPush, 0, false);
 instance_destroy(objPlayer);
@@ -56,6 +57,7 @@ instance_destroy(objPlayer);
             <kind>1</kind>
             <string>if time_left &lt;= 0 {
     global.autosave = autosave;
+    global.playerStartTarget = target;
     room_goto(room_to);
 }
 

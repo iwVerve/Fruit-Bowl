@@ -34,11 +34,11 @@ else if savedata_get("sealNegative") {
 }
 
 eyes = array_from_values(
-    array_from_values("", "sealSecret1", "", "", "", ""),
-    array_from_values("", "", "sealBanana", "sealCherry", "", ""),
-    array_from_values("sealCoconut", "sealApple", "", "sealGrape", "", ""),
-    array_from_values("", "sealKiwi", "sealLemon", "", "", "sealNegative"),
-    array_from_values("sealBlackberry", "sealStrawberry", "sealWatermelon", "", "", ""),
+    array_from_values("",               "sealSecret1",    "",               "",           "", ""),
+    array_from_values("",               "",               "sealBanana",     "sealCherry", "", ""),
+    array_from_values("sealCoconut",    "apple",          "",               "sealGrape",  "", ""),
+    array_from_values("",               "sealKiwi",       "sealLemon", "",  "",           "sealNegative"),
+    array_from_values("sealBlackberry", "sealStrawberry", "sealWatermelon", "",           "", ""),
 );
 
 random_set_seed(254);
@@ -81,12 +81,22 @@ if image_index != 2 {
 for(var j = 0; j &lt; array_height_2d(eyes); j += 1) {
     for(var i = 0; i &lt; array_length_2d(eyes, j); i += 1) {
         var str = eyes[j, i];
-        if str != "" {
-            var xx = x + 240 + 40 * (i - 2.5) + offsetX[j, i];
-            var yy = y + 96 + 32 * (j - 2) + offsetY[j, i];
-            var img = ternary(savedata_get(str), 2, image[j, i]);
-            draw_sprite(sprBillboardEye, img, xx, yy);
+        if str == "" {
+            continue;
         }
+        
+        var xx = x + 240 + 40 * (i - 2.5) + offsetX[j, i];
+        var yy = y + 96 + 32 * (j - 2) + offsetY[j, i];
+        var img;
+        if str == "apple" {
+            var count = savedata_get("sealApple1") + savedata_get("sealApple2");
+            img = 3 + count;
+        }
+        else {
+            img = ternary(savedata_get(str), 2, image[j, i]);
+        }
+        
+        draw_sprite(sprBillboardEye, img, xx, yy);
     }
 }
 </string>

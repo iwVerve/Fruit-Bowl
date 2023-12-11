@@ -434,6 +434,7 @@
     <instance objName="objMiniUp" x="464" y="256" name="inst_A3053492" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="448" y="256" name="inst_9ABC8B3D" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="432" y="256" name="inst_0642ACB2" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSealWatermelon" x="192" y="512" name="inst_66674237" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bWatermelonTiles" x="96" y="112" w="32" h="16" xo="96" yo="0" id="10006930" name="inst_4B20B6E3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

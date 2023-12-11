@@ -793,7 +793,7 @@
     <instance objName="objSecret2Shrine" x="576" y="0" name="inst_AF173DFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSecret2Shrine" x="128" y="0" name="inst_29B8183A" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="320" y="192" name="inst_295BC4A6" locked="0" code="target = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayerStart" x="256" y="928" name="inst_691F1EF8" locked="0" code="target = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="256" y="928" name="inst_691F1EF8" locked="0" code="target = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="448" y="1472" name="inst_4CE01BCF" locked="0" code="target = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="2400" name="inst_8ED7181E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="800" y="1824" name="inst_297E9F28" locked="0" code="roomTo = rOutsideRight;&#xA;smooth = true;&#xA;offsetY = -1824;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>

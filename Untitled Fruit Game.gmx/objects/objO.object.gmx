@@ -31,10 +31,12 @@ detail_color = make_color_hsv(0, 0, 90/100 * 255);
 
 STATE_LOOK_AT_PLAYER = 0;
 STATE_SAD = 1;
+STATE_HEART = 2;
 state = STATE_LOOK_AT_PLAYER;
 
 DETAIL_IMAGE_NORMAL = 0;
 DETAIL_IMAGE_SAD = 1;
+DETAIL_IMAGE_HEART = 2;
 detail_image = DETAIL_IMAGE_NORMAL;
 detail_target_x = 0;
 detail_target_y = 0;
@@ -71,16 +73,12 @@ cry_timer = cry_timer_duration;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if state == STATE_LOOK_AT_PLAYER {
+            <string>var look_distance = 0;
+
+if state == STATE_LOOK_AT_PLAYER {
     detail_image = DETAIL_IMAGE_NORMAL;
     if instance_exists(objPlayer) {
-        var dist = point_distance(x, y, objPlayer.x, objPlayer.y);
-        var angle = point_direction(x, y, objPlayer.x, objPlayer.y);
-        
-        var f = min(max(dist - 32, 0) / 128, 1);
-        var detail_dist = 40 * f;
-        detail_target_x = 1.25 * lengthdir_x(detail_dist, angle);
-        detail_target_y = lengthdir_y(detail_dist, angle);
+        look_distance = 40;
     }
     else {
         state = STATE_SAD;
@@ -101,6 +99,22 @@ else if state == STATE_SAD {
         tear.color = detail_color;
     }
     cry_timer -= 1;
+}
+else if state == STATE_HEART {
+    detail_image = DETAIL_IMAGE_HEART;
+    if instance_exists(objPlayer) {
+        look_distance = 20;
+    }
+}
+
+if instance_exists(objPlayer) {
+    var dist = point_distance(x, y, objPlayer.x, objPlayer.y);
+    var angle = point_direction(x, y, objPlayer.x, objPlayer.y);
+    
+    var f = min(max(dist - 32, 0) / 128, 1);
+    var detail_dist = look_distance * f;
+    detail_target_x = 1.25 * lengthdir_x(detail_dist, angle);
+    detail_target_y = lengthdir_y(detail_dist, angle);
 }
 
 if detail_snap {

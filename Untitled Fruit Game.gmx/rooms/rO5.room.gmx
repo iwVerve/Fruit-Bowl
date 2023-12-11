@@ -53,13 +53,13 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objPlayerStart" x="704" y="452" name="inst_13D9482A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="672" y="448" name="inst_13D9482A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objO" x="288" y="288" name="inst_39A0F97F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOScroll" x="64" y="-32" name="inst_463D0F5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVisuals" x="-32" y="384" name="inst_B4D5767C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="720" y="364" name="inst_051B59C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="720" y="368" name="inst_051B59C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOWarp" x="480" y="384" name="inst_4C02C96E" locked="0" code="room_to = rO2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="720" y="496" name="inst_5C50AD05" locked="0" code="path_start(pathO5_1, 2, path_action_restart, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="688" y="496" name="inst_5C50AD05" locked="0" code="path_start(pathO5_1, 2, path_action_restart, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="736" y="416" name="inst_FA143C91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="384" name="inst_8F26222D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="416" name="inst_9A3DD38E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -68,7 +68,7 @@
     <instance objName="objBlock" x="768" y="512" name="inst_14A46836" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="544" name="inst_8A272214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="576" name="inst_DFB9DDA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="656" y="304" name="inst_AD4B64AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="656" y="288" name="inst_AD4B64AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBounceRefresher" x="752" y="256" name="inst_E79725FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="320" name="inst_89802C81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="288" name="inst_02427E8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -294,9 +294,8 @@
     <instance objName="objMiniLeft" x="752" y="400" name="inst_E5EE960D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bPathTiles" x="608" y="240" w="32" h="32" xo="0" yo="0" id="10011601" name="inst_52E5486F" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="672" y="240" w="32" h="32" xo="32" yo="0" id="10011602" name="inst_10A8A11A" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="672" y="480" w="32" h="32" xo="64" yo="32" id="10011603" name="inst_8C9EAED9" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="608" y="224" w="32" h="32" xo="0" yo="0" id="10011601" name="inst_52E5486F" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="672" y="224" w="32" h="32" xo="32" yo="0" id="10011602" name="inst_10A8A11A" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bPathTiles" x="608" y="480" w="32" h="32" xo="0" yo="32" id="10011604" name="inst_5684415D" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bPathTiles" x="640" y="480" w="32" h="32" xo="32" yo="96" id="10011605" name="inst_F52A5589" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bPathTiles" x="608" y="448" w="32" h="32" xo="96" yo="32" id="10011606" name="inst_33382FB6" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -311,10 +310,10 @@
     <tile bgName="bPathTiles" x="672" y="384" w="32" h="32" xo="96" yo="32" id="10011619" name="inst_D4C5FB76" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bPathTiles" x="672" y="416" w="32" h="32" xo="96" yo="32" id="10011620" name="inst_88CB7AA9" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bPathTiles" x="672" y="448" w="32" h="32" xo="96" yo="32" id="10011621" name="inst_4C6DCD1F" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="640" y="240" w="32" h="32" xo="32" yo="96" id="10011622" name="inst_0C68167C" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="704" y="480" w="32" h="32" xo="64" yo="96" id="10011623" name="inst_B56CEEDE" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="608" y="272" w="32" h="16" xo="96" yo="32" id="10011624" name="inst_65B39777" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bPathTiles" x="672" y="272" w="32" h="16" xo="96" yo="32" id="10011625" name="inst_369E056D" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="640" y="224" w="32" h="32" xo="32" yo="96" id="10011622" name="inst_0C68167C" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="672" y="480" w="32" h="32" xo="32" yo="32" id="10011631" name="inst_970EE170" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="608" y="256" w="32" h="32" xo="96" yo="32" id="10011633" name="inst_70FFE40C" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bPathTiles" x="672" y="256" w="32" h="32" xo="96" yo="32" id="10011634" name="inst_6C28D799" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOTiles" x="512" y="448" w="32" h="32" xo="0" yo="0" id="10011407" name="inst_659DA024" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOTiles" x="576" y="448" w="32" h="32" xo="64" yo="0" id="10011408" name="inst_0E103195" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOTiles" x="544" y="448" w="32" h="32" xo="32" yo="0" id="10011409" name="inst_3BF8CEDD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

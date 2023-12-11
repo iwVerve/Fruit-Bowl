@@ -320,6 +320,7 @@
     <instance objName="objBlock" x="592" y="360" name="inst_D3FF4055" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="592" y="392" name="inst_42FD7C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="256" y="240" name="inst_46BD91EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSealKiwi" x="528" y="336" name="inst_10DCD76A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bKiwiTiles" x="480" y="0" w="32" h="32" xo="0" yo="64" id="10003688" name="inst_7E91A832" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>room_to = rTemplate;
+target = 0;
 </string>
           </argument>
         </arguments>
@@ -49,8 +50,15 @@
           <argument>
             <kind>1</kind>
             <string>if place_meeting(x, y, objPlayer) {
+    if room == rO1 {
+        objPlayer.x = 369;
+        objPlayer.y = 439;
+        savedata_save(true);
+    }
+
     var slide = instance_create(0, 0, objOSlideChange);
     slide.room_to = room_to;
+    slide.target = target;
 }
 </string>
           </argument>

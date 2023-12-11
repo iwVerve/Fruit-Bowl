@@ -513,8 +513,16 @@
       <sprite>sprites\sprSealNegative</sprite>
       <sprite>sprites\sprSealBanana</sprite>
       <sprite>sprites\sprSealCherry</sprite>
-      <sprite>sprites\sprSealSecret1</sprite>
       <sprite>sprites\sprSealGrape</sprite>
+      <sprite>sprites\sprSealApple1</sprite>
+      <sprite>sprites\sprSealApple2</sprite>
+      <sprite>sprites\sprSealKiwi</sprite>
+      <sprite>sprites\sprSealCoconut</sprite>
+      <sprite>sprites\sprSealBlackberry</sprite>
+      <sprite>sprites\sprSealWatermelon</sprite>
+      <sprite>sprites\sprSealStrawberry</sprite>
+      <sprite>sprites\sprSealSecret1</sprite>
+      <sprite>sprites\sprSealLemon</sprite>
     </sprites>
     <sprites name="Secret 3">
       <sprite>sprites\sprODetail</sprite>
@@ -1020,8 +1028,16 @@
       <object>objects\objSealNegative</object>
       <object>objects\objSealBanana</object>
       <object>objects\objSealCherry</object>
-      <object>objects\objSealSecret1</object>
       <object>objects\objSealGrape</object>
+      <object>objects\objSealApple1</object>
+      <object>objects\objSealApple2</object>
+      <object>objects\objSealKiwi</object>
+      <object>objects\objSealCoconut</object>
+      <object>objects\objSealBlackberry</object>
+      <object>objects\objSealStrawberry</object>
+      <object>objects\objSealWatermelon</object>
+      <object>objects\objSealSecret1</object>
+      <object>objects\objSealLemon</object>
     </objects>
     <objects name="Secret 3">
       <object>objects\objO</object>

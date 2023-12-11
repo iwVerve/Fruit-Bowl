@@ -10,7 +10,7 @@
   <bbox_left>1</bbox_left>
   <bbox_right>30</bbox_right>
   <bbox_top>4</bbox_top>
-  <bbox_bottom>26</bbox_bottom>
+  <bbox_bottom>27</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -23,5 +23,8 @@
     <frame index="0">images\sprBillboardEye_0.png</frame>
     <frame index="1">images\sprBillboardEye_1.png</frame>
     <frame index="2">images\sprBillboardEye_2.png</frame>
+    <frame index="3">images\sprBillboardEye_3.png</frame>
+    <frame index="4">images\sprBillboardEye_4.png</frame>
+    <frame index="5">images\sprBillboardEye_5.png</frame>
   </frames>
 </sprite>
