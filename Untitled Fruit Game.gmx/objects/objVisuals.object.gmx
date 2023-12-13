@@ -289,6 +289,14 @@ surface_set_target(shadow_surf);
                             }
                         }
                         break;
+                    
+                    case objPlatform:
+                        with(object) {
+                            if visible {
+                                draw_self();
+                            }
+                        }
+                        break;
                         
                     default:
                         with(object) {

@@ -81,10 +81,11 @@ loop_time = eye_disappear_time + 10;
           <argument>
             <kind>1</kind>
             <string>var hide = false;
-if instance_exists(objNegativeSign) {
+if room == rClimb2 {
+    hide = true;
     with(objNegativeSign) {
-        if !place_meeting(x, y, objPlayer) {
-            hide = true;
+        if place_meeting(x, y, objPlayer) {
+            hide = false;
         }
     }
 }

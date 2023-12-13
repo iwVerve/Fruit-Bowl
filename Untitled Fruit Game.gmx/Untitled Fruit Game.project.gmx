@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="13" name="datafiles">
-    <datafiles number="13" name="Music">
+  <datafiles number="14" name="datafiles">
+    <datafiles number="14" name="Music">
       <datafile>
         <name>Cutie.ogg</name>
         <exists>-1</exists>
@@ -158,6 +158,23 @@
         </Config>
       </ConfigOptions>
       <filename>Credits.txt</filename>
+    </datafile>
+    <datafile>
+      <name>todo.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>todo.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions>
@@ -624,6 +641,10 @@
     <path>paths\pathClimb2_3</path>
     <path>paths\pathClimb3_1</path>
     <path>paths\pathO5_1</path>
+    <path>paths\pEyePartOutsideRight</path>
+    <path>paths\pEyePartClimb1</path>
+    <path>paths\pEyePartClimb2</path>
+    <path>paths\pEyePartClimb3</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -1014,6 +1035,7 @@
       <object>objects\objSpoon</object>
     </objects>
     <objects name="Negative">
+      <object>objects\objTempBorderDeath</object>
       <object>objects\objNegativeBackground</object>
       <object>objects\objNegativeInstructions</object>
       <object>objects\objNegativeFloor</object>
@@ -1038,8 +1060,13 @@
       <object>objects\objSealWatermelon</object>
       <object>objects\objSealSecret1</object>
       <object>objects\objSealLemon</object>
+      <object>objects\objEyeParticleSpawner</object>
+      <object>objects\objEyeParticle</object>
+      <object>objects\objEyePlatform</object>
     </objects>
     <objects name="Secret 3">
+      <object>objects\objSpinner</object>
+      <object>objects\objBounceRefresherFacePlayer</object>
       <object>objects\objO</object>
       <object>objects\objOTear</object>
       <object>objects\objOScroll</object>
@@ -1050,10 +1077,7 @@
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBounceRefresher</object>
-    <object>objects\objBounceRefresherFacePlayer</object>
     <object>objects\objBrickDecal</object>
-    <object>objects\objSpinner</object>
-    <object>objects\objTempBorderDeath</object>
     <object>objects\objVisuals</object>
   </objects>
   <rooms name="rooms">
