@@ -237,6 +237,7 @@
     <instance objName="objOutsideRoomChanger" x="-32" y="384" name="inst_689B8041" locked="0" code="roomTo = rSecret3;&#xA;do_slide_change_transition = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="800" y="384" name="inst_337BB0EE" locked="0" code="roomTo = rSecret3;&#xA;do_slide_change_transition = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="384" y="416" name="inst_C80FD8A4" locked="0" code="target = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveSetTrigger" x="96" y="416" name="inst_B9EC70C5" locked="0" code="key = &quot;seenO&quot;;&#xA;value = true;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bOTiles" x="32" y="448" w="32" h="32" xo="32" yo="0" id="10010502" name="inst_EBB9FD29" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

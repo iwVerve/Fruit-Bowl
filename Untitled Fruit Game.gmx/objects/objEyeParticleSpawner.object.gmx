@@ -31,7 +31,7 @@
 
 path = pEyePartOutsideRight;
 init = false;
-particle_count = 0;
+particle_count = 50;
 </string>
           </argument>
         </arguments>
@@ -59,7 +59,7 @@ particle_count = 0;
     init = true;
 }
 
-particle_count += length / 256;
+particle_count += length / 384;
 while particle_count &gt;= 1 {
     var position = random(1);
     var xx = path_get_x(path, position);

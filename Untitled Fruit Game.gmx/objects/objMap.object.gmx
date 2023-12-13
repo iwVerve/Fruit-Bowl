@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>images = array_from_values(
-    array_from_values(-1, -1,  0, -1, -1, -1),
+    array_from_values(-1, -1,  0, 26, 27, 28),
     array_from_values(-1, 18,  1, -1, -1, -1),
     array_from_values(-1, -1,  2,  3, 17, 24),
     array_from_values( 8,  6,  5,  4, 16, 23),
@@ -34,12 +34,12 @@
     array_from_values(10, 11, 12, 13, 14, 20),
 );
 rooms = array_from_values(
-    array_from_values(-1,             -1,          rFall,          -1,            -1,     -1),
-    array_from_values(-1,             rSecret1,    rTutorial,      -1,            -1,     -1),
-    array_from_values(-1,             -1,          rBanana,        rCherry,       rTower, rClimb3),
-    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower, rClimb2),
-    array_from_values(rIntermission2, rKiwi,       rSecret3,       rOutsideAbove, rTower, rClimb1),
-    array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower, rOutsideRight),
+    array_from_values(-1,             -1,          rFall,          rFops,         rJigsaw, rO1),
+    array_from_values(-1,             rSecret1,    rTutorial,      -1,            -1,      -1),
+    array_from_values(-1,             -1,          rBanana,        rCherry,       rTower,  rClimb3),
+    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower,  rClimb2),
+    array_from_values(rIntermission2, rKiwi,       rSecret3,       rOutsideAbove, rTower,  rClimb1),
+    array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower,  rOutsideRight),
 );
 start = array_from_values(
     array_from_values(-1, -1, -1, -1, -1, -1),
@@ -89,6 +89,18 @@ if !savedata_get("seenSecret2A") {
 if !savedata_get("seenSecret3") {
     images[4, 2] = -1;
     rooms[4, 2] = -1;
+}
+if !savedata_get("seenFops") {
+    images[0, 3] = -1;
+    rooms[0, 3] = -1;
+}
+if !savedata_get("seenJigsaw") {
+    images[0, 4] = -1;
+    rooms[0, 4] = -1;
+}
+if !savedata_get("seenO") {
+    images[0, 5] = -1;
+    rooms[0, 5] = -1;
 }
 
 </string>
@@ -173,7 +185,37 @@ texture_set_interpolation(true);
             if index == 22 {
                 draw_sprite_ext(spr, no_room_index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);            
             }
-            draw_sprite_ext(spr, index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
+            var is_secret_room = in_range(index, 26, 28);
+            if !is_secret_room {
+                draw_sprite_ext(spr, index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
+            }
+            else {
+                var sw = sprite_get_width(spr);
+                var sh = sprite_get_height(spr);
+                var margin = 16;
+                var xx = x + j * width + scale * margin;
+                var yy = y + i * height + scale * margin;
+                draw_sprite_ext(spr, no_room_index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
+                draw_sprite_part_ext(
+                    spr, index,
+                    margin, margin,
+                    sw - 2 * margin, sh - 2 * margin,
+                    xx, yy,
+                    scale, scale, c_white, 1,
+                );
+                switch(index) {
+                    case 26:
+                        draw_set_color(c_red);
+                        break;
+                    case 27:
+                        draw_set_color(c_blue);
+                        break;
+                    case 28:
+                        draw_set_color(c_green);
+                        break;
+                }
+                draw_rectangle(xx, yy, xx + width - 2 * scale * margin - 1, yy + height - 2 * scale * margin - 1, true);
+            }
         }
     }
 texture_set_interpolation(false);
