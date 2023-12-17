@@ -52,7 +52,8 @@ width = 16;
 height = 16;
 init = false;
 
-period = irandom_range(15, 35);
+period = irandom_range(8, 15);
+texture_change_chance = 0.1;
 time = irandom(period - 1);
 
 top_edge =    !place_meeting(x, y - 32, object_index);
@@ -85,7 +86,7 @@ fill_particle_period = 14;
             <kind>1</kind>
             <string>if !init || time % period == 0 {
     for(var i = 0; i &lt; 4; i += 1) {
-        if init &amp;&amp; random(1) &lt; 0.75 {
+        if init &amp;&amp; random(1) &gt; texture_change_chance {
             continue;
         }
         var index = irandom(array_length_1d(all_backgrounds) - 1);

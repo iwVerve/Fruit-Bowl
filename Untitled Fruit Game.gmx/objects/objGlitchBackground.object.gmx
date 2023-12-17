@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1250</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>r = random_range(1, 3);
+            <string>time = 0;
+period = 40;
+chance = 0.3;
+init = false;
 
-speed = random_range(0.25, 1);
-direction = random(360);
-friction = 0.01;
-
-t = 0;
-lifetime = random_range(15, 30);
+for(var i = 1; i &lt; 3; i += 1) {
+    background_alpha[i] = 0.075;
+    background_visible[i] = true;
+}
 </string>
           </argument>
         </arguments>
@@ -55,44 +56,28 @@ lifetime = random_range(15, 30);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if t &gt; lifetime {
-    r -= (t - lifetime) / 10;
-    if r &lt;= 0 {
-        instance_destroy();
+            <string>if !init || time % period == 0 {
+    for(var i = 1; i &lt; 3; i += 1) {
+        if init &amp;&amp; random(1) &gt; chance {
+            continue;
+        }
+        background_index[i] = choose(bGlitch1, bGlitch2, bGlitch3);
+        background_hspeed[i] = choose(-1, 1) * random(1);
+        background_vspeed[i] = choose(-1, 1) * background_hspeed[i];
     }
+    if random(1) &lt; 0.5 {
+        background_index[2] = background_index[1];
+    }
+    if random(1) &lt; 0.25 {
+        background_hspeed[2] = background_hspeed[1];
+    }
+    if random(1) &lt; 0.25 {
+        background_vspeed[2] = background_vspeed[1];
+    }
+    init = true;
 }
 
-t += 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_color(make_color_rgb(204, 30, 99));
-
-draw_set_alpha(0.75);
-    //draw_circle(x, y, r, true);
-    var xr = r * image_xscale;
-    var yr = r * image_yscale;
-    draw_ellipse(x-xr, y-yr, x+xr, y+yr, true);
-draw_set_alpha(1);
+time += 1;
 </string>
           </argument>
         </arguments>

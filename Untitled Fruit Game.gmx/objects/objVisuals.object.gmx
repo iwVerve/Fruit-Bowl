@@ -47,6 +47,7 @@
     objSecretDoor,
     objFork,
     objNegativeSign,
+    objGlitchTexture,
 );
 
 x_dist = 3;
@@ -75,6 +76,10 @@ with(objShadowCast) {
 
 with(objMiniBlock) {
     sprite_index = sprMiniBlockMaskOpaque;
+}
+
+with(objGlitchTexture) {
+    sprite_index = sprBlockMaskOpaque;
 }
 </string>
           </argument>

@@ -558,6 +558,7 @@
     <sprite>sprites\sprBillboardPlatform</sprite>
     <sprite>sprites\sprSpinner</sprite>
     <sprite>sprites\sprSpinnerBackground</sprite>
+    <sprite>sprites\sprGlitchStar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -633,6 +634,12 @@
       <background>background\bNegativeMask</background>
       <background>background\bO</background>
     </backgrounds>
+    <backgrounds name="Glitch">
+      <background>background\bGlitch1</background>
+      <background>background\bGlitch2</background>
+      <background>background\bGlitch3</background>
+      <background>background\bGlitch</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathExample</path>
@@ -647,6 +654,9 @@
     <path>paths\pEyePartClimb1</path>
     <path>paths\pEyePartClimb2</path>
     <path>paths\pEyePartClimb3</path>
+    <path>paths\pGlitch1_1</path>
+    <path>paths\pGlitch2_1</path>
+    <path>paths\pGlitch3_1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -1076,13 +1086,18 @@
       <object>objects\objOWarp</object>
       <object>objects\objOGauntlet</object>
     </objects>
+    <objects name="Glitch">
+      <object>objects\objGlitchTexture</object>
+      <object>objects\objGlitchEdgeParticle</object>
+      <object>objects\objGlitchBackground</object>
+      <object>objects\objGlitchBackground2</object>
+      <object>objects\objGlitchBackground3</object>
+    </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBounceRefresher</object>
     <object>objects\objBrickDecal</object>
     <object>objects\objVisuals</object>
-    <object>objects\objGlitchTexture</object>
-    <object>objects\objGlitchEdgeParticle</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -1144,7 +1159,10 @@
       <room>rooms\rNegative2</room>
       <room>rooms\rNegative3</room>
     </rooms>
-    <room>rooms\rGlitch</room>
+    <room>rooms\rGlitch1</room>
+    <room>rooms\rGlitch2</room>
+    <room>rooms\rGlitch3</room>
+    <room>rooms\rGlitch4</room>
     <room>rooms\rClear</room>
   </rooms>
   <help>

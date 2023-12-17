@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1250</depth>
+  <depth>30000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,59 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>r = random_range(1, 3);
+            <string>current_hue = 0;
+gradient_range = 42.5;
+hue_inc = 0.5;
+gradient_dist = 336;
 
-speed = random_range(0.25, 1);
-direction = random(360);
-friction = 0.01;
+saturation = 223;
+value = 0;
+value_min = 47;
+value_max = 95;
+value_time = 0;
+value_period = 200;
 
-t = 0;
-lifetime = random_range(15, 30);
+star_count = 0;
+switch(room) {
+    case rGlitch1:
+        star_count = 0;
+        break;
+    case rGlitch2:
+        star_count = 16;
+        break;
+    case rGlitch3:
+        star_count = 40;
+        break;
+    case rGlitch4:
+    default:
+        star_count = 64;
+        break;
+}
+
+parallax_distance = 16;
+star_value = 31;
+star_color = make_color_hsv(0, 0, star_value);
+
+var fairnes = 0.95;
+star_x = get_fair_rng(-parallax_distance, 800 + parallax_distance, star_count, fairnes);
+star_y = get_fair_rng(-parallax_distance, 608 + parallax_distance, star_count, fairnes);
+for(var i = 0; i &lt; star_count; i += 1) {
+    star_image[i] = irandom(sprite_get_number(sprGlitchStar) - 1);
+    star_parallax_multiplier[i] = random_range(0.25, 1);
+}
+
+// Shuffle star_y
+for(var i = star_count - 1; i &gt; 0; i -= 1) {
+    var j = irandom_range(0, i);
+    if i != j {
+        var temp = star_y[i];
+        star_y[i] = star_y[j];
+        star_y[j] = temp;
+    }
+}
+
+player_x = 0;
+player_y = 0;
 </string>
           </argument>
         </arguments>
@@ -55,14 +100,19 @@ lifetime = random_range(15, 30);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if t &gt; lifetime {
-    r -= (t - lifetime) / 10;
-    if r &lt;= 0 {
-        instance_destroy();
-    }
+            <string>current_hue += hue_inc;
+
+if instance_exists(objPlayer) {
+    player_x = objPlayer.x;
+    player_y = objPlayer.y;
 }
 
-t += 1;
+value = clamp(
+    (dsin(value_time * 360/value_period) + 1) / 2,
+    value_min,
+    value_max
+);
+value_time += 1;
 </string>
           </argument>
         </arguments>
@@ -85,14 +135,32 @@ t += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(make_color_rgb(204, 30, 99));
+            <string>var gradient_start = make_color_hsv(current_hue, saturation, value);
+var gradient_end = make_color_hsv(current_hue + gradient_range, saturation, value);
 
-draw_set_alpha(0.75);
-    //draw_circle(x, y, r, true);
-    var xr = r * image_xscale;
-    var yr = r * image_yscale;
-    draw_ellipse(x-xr, y-yr, x+xr, y+yr, true);
-draw_set_alpha(1);
+draw_set_blend_mode(bm_add);
+    draw_rectangle_color(
+        0, 0, 799, gradient_dist - 1,
+        gradient_start, gradient_start, c_black, c_black,
+        false,
+    );
+    draw_rectangle_color(
+        0, 608 - gradient_dist, 799, 607,
+        c_black, c_black, gradient_end, gradient_end,
+        false,
+    );
+draw_set_blend_mode(bm_normal);
+
+draw_set_color(c_white);
+var parallax_x = parallax_distance * (player_x / 400 - 1);
+var parallax_y = parallax_distance * (player_y / 304 - 1);
+draw_set_blend_mode(bm_add);
+    for(var i = 0; i &lt; star_count; i += 1) {
+        var xx = star_x[i] - star_parallax_multiplier[i] * parallax_x;
+        var yy = star_y[i] - star_parallax_multiplier[i] * parallax_y;
+        draw_sprite_ext(sprGlitchStar, star_image[i], xx, yy, 1, 1, 0, star_color, 1);
+    }
+draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>

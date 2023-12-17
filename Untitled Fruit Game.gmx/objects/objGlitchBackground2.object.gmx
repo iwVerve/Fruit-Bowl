@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1250</depth>
+  <depth>30000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>r = random_range(1, 3);
+            <string>cell_size = 32;
+cell_appear_start = 144;
+cell_appear_end = 112;
+cells_width = ceil(800 / cell_size);
+cells_height = ceil(608 / cell_size);
 
-speed = random_range(0.25, 1);
-direction = random(360);
-friction = 0.01;
-
-t = 0;
-lifetime = random_range(15, 30);
+for(var yy = 0; yy &lt; cells_height; yy += 1) {
+    for(var xx = 0; xx &lt; cells_width; xx += 1) {
+        cell_progress[yy, xx] = 0;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -55,14 +58,24 @@ lifetime = random_range(15, 30);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if t &gt; lifetime {
-    r -= (t - lifetime) / 10;
-    if r &lt;= 0 {
-        instance_destroy();
+            <string>if instance_exists(objPlayer) {
+    for(var cell_y = 0; cell_y &lt; cells_height; cell_y += 1) {
+        var cy = cell_size * (cell_y + 0.5);
+        for(var cell_x = 0; cell_x &lt; cells_width; cell_x += 1) {
+            var cx = cell_size * (cell_x + 0.5);
+            var distance = point_distance(cx, cy, objPlayer.x, objPlayer.y);
+            var progress = (distance - cell_appear_start) / (cell_appear_end - cell_appear_start);
+            cell_progress[cell_y, cell_x] = clamp(progress, 0, 1);
+        }
     }
 }
-
-t += 1;
+else {
+   for(var cell_y = 0; cell_y &lt; cells_height; cell_y += 1) {
+        for(var cell_x = 0; cell_x &lt; cells_width; cell_x += 1) {
+            cell_progress[cell_y, cell_x] = clamp(cell_progress[cell_y, cell_x] - 1/50, 0, 1);
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -85,14 +98,23 @@ t += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(make_color_rgb(204, 30, 99));
-
-draw_set_alpha(0.75);
-    //draw_circle(x, y, r, true);
-    var xr = r * image_xscale;
-    var yr = r * image_yscale;
-    draw_ellipse(x-xr, y-yr, x+xr, y+yr, true);
-draw_set_alpha(1);
+            <string>if instance_exists(objPlayer) {
+    for(var cell_y = 0; cell_y &lt; cells_height; cell_y += 1) {
+        var cy = cell_size * (cell_y + 0.5);
+        for(var cell_x = 0; cell_x &lt; cells_width; cell_x += 1) {
+            var cx = cell_size * (cell_x + 0.5);
+            var size = round(cell_size * cell_progress[cell_y, cell_x] / 2);
+            if size &gt; 0 {
+                draw_set_color(c_gray);
+                draw_rectangle(cx - size, cy - size, cx + size - 1, cy + size - 1, false);
+                draw_set_alpha(0.5);
+                    draw_set_color(c_dkgray);
+                    draw_rectangle(cx - size, cy - size, cx + size - 1, cy + size - 1, true);
+                draw_set_alpha(1);
+            }
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
