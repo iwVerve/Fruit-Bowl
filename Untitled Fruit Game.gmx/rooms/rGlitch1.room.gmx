@@ -363,7 +363,7 @@
     <instance objName="objBlock" x="384" y="0" name="inst_86DD6976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="32" name="inst_002688A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="736" y="608" name="inst_41DD0C97" locked="0" code="roomTo = rGlitch2;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGlitchBackground3" x="-64" y="32" name="inst_C6930F31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchBackground3" x="-64" y="32" name="inst_591B6EA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bPathTiles" x="672" y="352" w="32" h="32" xo="96" yo="64" id="10011638" name="inst_4C287A48" depth="1400" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -624,6 +624,7 @@
       <background>background\bKiwi</background>
       <background>background\bCoconut</background>
       <background>background\bIntermission2</background>
+      <background>background\bIntermission2Tutorial</background>
       <background>background\bBlackberry</background>
       <background>background\bStrawberry</background>
       <background>background\bWatermelon</background>
@@ -657,6 +658,8 @@
     <path>paths\pGlitch1_1</path>
     <path>paths\pGlitch2_1</path>
     <path>paths\pGlitch3_1</path>
+    <path>paths\pGlitch4_1</path>
+    <path>paths\pGlitch4_2</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\engine_options.gml</script>
@@ -1159,10 +1162,13 @@
       <room>rooms\rNegative2</room>
       <room>rooms\rNegative3</room>
     </rooms>
-    <room>rooms\rGlitch1</room>
-    <room>rooms\rGlitch2</room>
-    <room>rooms\rGlitch3</room>
-    <room>rooms\rGlitch4</room>
+    <rooms name="Glitch">
+      <room>rooms\rGlitch1</room>
+      <room>rooms\rGlitch2</room>
+      <room>rooms\rGlitch3</room>
+      <room>rooms\rGlitch4</room>
+      <room>rooms\rGlitch5</room>
+    </rooms>
     <room>rooms\rClear</room>
   </rooms>
   <help>

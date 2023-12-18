@@ -165,7 +165,9 @@ if cooldown &lt;= 0 {
                 player.hmomentum = -8.5 * down_x;
             }
             if down_y != 0 {
-                player.vspeed = -8.5 * down_y;
+                var v = -8.5 * down_y;
+                var f = (1 - abs(down_y));
+                player.vspeed = v + min(player.vspeed - v, 0) * f;
             }
             cooldown = cooldown_duration;
             dip_vspeed = dip_start_vspeed;

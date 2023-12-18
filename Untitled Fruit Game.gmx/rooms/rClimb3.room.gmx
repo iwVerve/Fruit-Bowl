@@ -78,7 +78,7 @@
     <instance objName="objBillboardPlatform" x="768" y="544" name="inst_3EF939F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="-32" y="0" name="inst_4046821B" locked="0" code="roomTo = rTower;&#xA;smooth = true;&#xA;offsetX = -11;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="640" y="448" name="inst_5309E34D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="592" y="528" name="inst_1E1F42E6" locked="0" code="path_start(pathClimb3_1, 2, path_action_restart, true);&#xA;path_position = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="592" y="528" name="inst_1E1F42E6" locked="0" code="path_start(pathClimb3_1, 2, path_action_restart, true);&#xA;path_position = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="608" y="480" name="inst_4FC14B18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="640" y="480" name="inst_BD2283DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="672" y="480" name="inst_074CE62C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

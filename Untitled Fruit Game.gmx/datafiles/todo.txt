@@ -1,5 +1,17 @@
 redo green apple?
-redraw apple, blackberry seals
-music
-benchmark
+benchmark - optimize glitch blocks
 redo hub screenshots
+missing music:
+- Secret 1
+- Fork room
+- Knife room
+- Spoon area
+- Outside left
+- Outside billboard + climb
+- Lemon
+- Negative
+- Glitch
+- Boss
+- True end
+more secret hints
+boss

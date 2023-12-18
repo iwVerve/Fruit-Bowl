@@ -24,7 +24,7 @@ if (global.pauseDelay <= 0)    //Check if pause delay is active
                 with(objPlayer) {
                     var seal = instance_place(x, y, objSeal);
                     if seal != noone {
-                        savedata_set(seal.name, true);
+                        savedata_set_persistent(seal.name, true);
                         
                         var have_all = true;
                         all_seals = array_from_values("sealBanana", "sealCherry", "sealGrape", "sealApple1", "sealApple2", "sealKiwi", "sealCoconut", "sealBlackberry", "sealStrawberry", "sealWatermelon", "sealLemon", "sealSecret1", "sealNegative");

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>30000</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,17 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>current_hue = 0;
+            <string>r = room;
+
+current_hue = 0;
 gradient_range = 42.5;
 hue_inc = 0.5;
 gradient_dist = 336;
 
-saturation = 223;
-value = 0;
-value_min = 47;
-value_max = 95;
-value_time = 0;
-value_period = 200;
+gradient_saturation = 223;
+gradient_value = 0;
+gradient_value_min = 47;
+gradient_value_max = 95;
+gradient_value_time = 0;
+gradient_value_period = 200;
 
 star_count = 0;
 switch(room) {
@@ -49,6 +51,7 @@ switch(room) {
         star_count = 40;
         break;
     case rGlitch4:
+    case rGlitch5:
     default:
         star_count = 64;
         break;
@@ -58,7 +61,7 @@ parallax_distance = 16;
 star_value = 31;
 star_color = make_color_hsv(0, 0, star_value);
 
-var fairnes = 0.95;
+var fairnes = 0.99;
 star_x = get_fair_rng(-parallax_distance, 800 + parallax_distance, star_count, fairnes);
 star_y = get_fair_rng(-parallax_distance, 608 + parallax_distance, star_count, fairnes);
 for(var i = 0; i &lt; star_count; i += 1) {
@@ -78,6 +81,13 @@ for(var i = star_count - 1; i &gt; 0; i -= 1) {
 
 player_x = 0;
 player_y = 0;
+player_lerped_x = 0;
+player_lerped_y = 0;
+init = false;
+
+grid_time = 0;
+grid_step = 12;
+grid_period = 500;
 </string>
           </argument>
         </arguments>
@@ -105,14 +115,49 @@ player_y = 0;
 if instance_exists(objPlayer) {
     player_x = objPlayer.x;
     player_y = objPlayer.y;
+    if !init {
+        player_lerped_x = player_x;
+        player_lerped_y = player_y;
+        init = true;
+    }
 }
 
-value = clamp(
-    (dsin(value_time * 360/value_period) + 1) / 2,
-    value_min,
-    value_max
+player_lerped_x = lerp(player_lerped_x, player_x, 0.25);
+player_lerped_y = lerp(player_lerped_y, player_y, 0.25);
+
+gradient_value = clamp(
+    (dsin(gradient_value_time * 360/gradient_value_period) + 1) / 2,
+    gradient_value_min,
+    gradient_value_max
 );
-value_time += 1;
+gradient_value_time += 1;
+
+grid_time += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room != r {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -135,8 +180,8 @@ value_time += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var gradient_start = make_color_hsv(current_hue, saturation, value);
-var gradient_end = make_color_hsv(current_hue + gradient_range, saturation, value);
+            <string>var gradient_start = make_color_hsv(current_hue, gradient_saturation, gradient_value);
+var gradient_end = make_color_hsv(current_hue + gradient_range, gradient_saturation, gradient_value);
 
 draw_set_blend_mode(bm_add);
     draw_rectangle_color(
@@ -151,9 +196,29 @@ draw_set_blend_mode(bm_add);
     );
 draw_set_blend_mode(bm_normal);
 
+var parallax_x = parallax_distance * (player_lerped_x / 400 - 1);
+var parallax_y = parallax_distance * (player_lerped_y / 304 - 1);
+
 draw_set_color(c_white);
-var parallax_x = parallax_distance * (player_x / 400 - 1);
-var parallax_y = parallax_distance * (player_y / 304 - 1);
+draw_set_blend_mode(bm_add);
+    for(var i = -1; i &lt; 26; i += 1) {
+        for(var j = -1; j &lt; 20; j += 1) {
+            var xx = round(32 * i - parallax_x);
+            var yy = round(32 * j - parallax_y);
+            var time = grid_time - (i + j) * grid_step;
+            var alpha = 0.1 * power((dsin(time * 360/grid_period) + 1) / 2, 16);
+            draw_set_alpha(alpha);
+                //draw_rectangle(xx, yy, xx + 31, yy + 31, true);
+                draw_line(xx - 1, yy, xx + 31, yy);
+                draw_line(xx, yy + 31, xx + 31, yy + 31);
+                draw_line(xx, yy, xx, yy + 31);
+                draw_line(xx + 31, yy, xx + 31, yy + 30);
+            draw_set_alpha(1);
+        }
+    }
+draw_set_blend_mode(bm_normal);
+
+draw_set_color(c_white);
 draw_set_blend_mode(bm_add);
     for(var i = 0; i &lt; star_count; i += 1) {
         var xx = star_x[i] - star_parallax_multiplier[i] * parallax_x;
