@@ -552,6 +552,9 @@
       <sprite>sprites\sprOMiniDown</sprite>
       <sprite>sprites\sprOMiniLeft</sprite>
     </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\sprBossEagle</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprBillboardEye</sprite>
@@ -783,6 +786,7 @@
       <script>scripts\ternary.gml</script>
       <script>scripts\print.gml</script>
       <script>scripts\string_concat.gml</script>
+      <script>scripts\array_shuffle.gml</script>
     </scripts>
     <scripts name="Mint">
       <scripts name="mint">
@@ -829,6 +833,14 @@
         <script>scripts\mint_get_window_position.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Boss">
+      <script>scripts\Boss_state_start.gml</script>
+      <script>scripts\Boss_state_choose.gml</script>
+      <script>scripts\Boss_state_attack_sweep_start.gml</script>
+      <script>scripts\Boss_state_attack_sweep.gml</script>
+      <script>scripts\Boss_state_attack_rain_start.gml</script>
+      <script>scripts\Boss_state_attack_rain.gml</script>
+    </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
@@ -837,6 +849,7 @@
     <script>scripts\array_from_values.gml</script>
     <script>scripts\on_difficulty.gml</script>
     <script>scripts\jigsaw_draw_tile.gml</script>
+    <script>scripts\BounceRefresher_disappear.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -1096,6 +1109,16 @@
       <object>objects\objGlitchBackground2</object>
       <object>objects\objGlitchBackground3</object>
     </objects>
+    <objects name="Boss">
+      <object>objects\objBossSave</object>
+      <object>objects\objBossEagle</object>
+      <object>objects\objBounceRefresherAppear</object>
+      <object>objects\objBounceRefresherDisappear</object>
+      <object>objects\objBossBulletParent</object>
+      <object>objects\objBossSweepBullet</object>
+      <object>objects\objBossSweepBurstBullet</object>
+      <object>objects\objBossRainBullet</object>
+    </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBounceRefresher</object>
@@ -1168,6 +1191,7 @@
       <room>rooms\rGlitch3</room>
       <room>rooms\rGlitch4</room>
       <room>rooms\rGlitch5</room>
+      <room>rooms\rBoss</room>
     </rooms>
     <room>rooms\rClear</room>
   </rooms>

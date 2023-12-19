@@ -6,12 +6,13 @@ missing music:
 - Fork room
 - Knife room
 - Spoon area
-- Outside left
-- Outside billboard + climb
-- Lemon
+/ Outside left
+/ Outside billboard + climb
+/ Lemon
 - Negative
 - Glitch
 - Boss
 - True end
 more secret hints
 boss
+check warps
