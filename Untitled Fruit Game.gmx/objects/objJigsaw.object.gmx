@@ -58,16 +58,7 @@ var indexes;
 for(var i = 0; i &lt; tile_count; i += 1) {
     indexes[i] = i;
 }
-
-// Shuffle indexes
-for(var i = tile_count - 1; i &gt; 0; i -= 1) {
-    var j = irandom_range(0, i);
-    if i != j {
-        var temp = indexes[i];
-        indexes[i] = indexes[j];
-        indexes[j] = temp;
-    }
-}
+array_shuffle(indexes);
 
 // Initialize tiles from indexes
 for(var j = 0; j &lt; tiles_v; j += 1) {

@@ -61,23 +61,14 @@ parallax_distance = 16;
 star_value = 31;
 star_color = make_color_hsv(0, 0, star_value);
 
-var fairnes = 0.99;
-star_x = get_fair_rng(-parallax_distance, 800 + parallax_distance, star_count, fairnes);
-star_y = get_fair_rng(-parallax_distance, 608 + parallax_distance, star_count, fairnes);
+var fairness = 0.99;
+star_x = get_fair_rng(-parallax_distance, 800 + parallax_distance, star_count, fairness);
+star_y = get_fair_rng(-parallax_distance, 608 + parallax_distance, star_count, fairness);
 for(var i = 0; i &lt; star_count; i += 1) {
     star_image[i] = irandom(sprite_get_number(sprGlitchStar) - 1);
     star_parallax_multiplier[i] = random_range(0.25, 1);
 }
-
-// Shuffle star_y
-for(var i = star_count - 1; i &gt; 0; i -= 1) {
-    var j = irandom_range(0, i);
-    if i != j {
-        var temp = star_y[i];
-        star_y[i] = star_y[j];
-        star_y[j] = temp;
-    }
-}
+array_shuffle(star_y);
 
 player_x = 0;
 player_y = 0;

@@ -59,14 +59,7 @@ y_array_index = 0;
     if y_array_index &gt;= array_length_1d(y_array) {
         var size = 3;
         y_array = get_fair_rng(224, room_height - 48, size, 0.6);
-        
-        // Shuffle array
-        for(var i = size - 1; i &gt;= 1; i -= 1) {
-            var j = irandom_range(0, i);
-            var temp = y_array[i];
-            y_array[i] = y_array[j];
-            y_array[j] = temp;
-        }
+        array_shuffle(y_array);
         
         y_array_index = 0;
     }

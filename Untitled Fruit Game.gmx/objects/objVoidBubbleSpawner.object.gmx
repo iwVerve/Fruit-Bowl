@@ -119,13 +119,7 @@ if array_position == array_length_1d(array) {
 var size = 16;
 array = get_fair_rng(0, 800, size, 0.85);
 array_position = 0;
-
-for (var i = size - 1; i &gt; 0; i -= 1) {
-    var j = irandom_range(0, i);
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-}
+array_shuffle(array);
 </string>
           </argument>
         </arguments>

@@ -16,3 +16,5 @@ missing music:
 more secret hints
 boss
 check warps
+boss dialogue bread reference
+boss bullets crosscode reference

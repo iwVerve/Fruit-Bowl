@@ -62,7 +62,6 @@
     <instance objName="objBlock" x="768" y="480" name="inst_B1C73128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="512" name="inst_5D6C7F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="544" name="inst_80AF7E3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="768" y="576" name="inst_044A7F1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlitchBackground3" x="-64" y="32" name="inst_98481F90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="0" name="inst_2311515B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="544" y="0" name="inst_8768FB2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -117,7 +116,6 @@
     <instance objName="objBlock" x="448" y="448" name="inst_83ECB0F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="480" name="inst_B15F5F2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="320" y="544" name="inst_A722B432" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="320" y="576" name="inst_BF08E717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="576" name="inst_4E41379E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="384" y="576" name="inst_CE79CECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="576" name="inst_0DC026C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -199,6 +197,44 @@
     <instance objName="objGlitchTexture" x="32" y="736" name="inst_0F0F439F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="256" y="416" name="inst_A56FC333" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="512" y="416" name="inst_10295264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="288" y="576" name="inst_C93C2C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="256" y="576" name="inst_B453D0C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="224" y="576" name="inst_DE1B0198" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="192" y="576" name="inst_CA158F0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="160" y="576" name="inst_470EB25F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="128" y="576" name="inst_DEFFBC9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="96" y="576" name="inst_18321840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="64" y="576" name="inst_1AF11B80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="32" y="576" name="inst_C75D69EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="448" y="576" name="inst_B564C87A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="480" y="576" name="inst_4CE76645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="512" y="576" name="inst_89DF4E56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="544" y="576" name="inst_95FC26E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="576" y="576" name="inst_5A70AB7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="608" y="576" name="inst_ACAB0952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="640" y="576" name="inst_BF377A87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="672" y="576" name="inst_15C892F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="704" y="576" name="inst_2C0E6A67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="736" y="576" name="inst_2891BF7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="704" y="544" name="inst_45D864CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="672" y="544" name="inst_13C25D17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="640" y="544" name="inst_02E03386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="320" y="576" name="inst_88F8A79B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="288" y="544" name="inst_B3D12A13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="224" y="544" name="inst_AC25AF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="256" y="544" name="inst_DA360842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="288" y="512" name="inst_0CCFE5B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="736" y="544" name="inst_54C0067C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="768" y="576" name="inst_C26B2052" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="192" y="544" name="inst_D18180CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="288" y="0" name="inst_B1C6DBEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="320" y="0" name="inst_B9D8015A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="352" y="0" name="inst_D05AC0F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="384" y="0" name="inst_2E02E671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="416" y="0" name="inst_9DF44FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="448" y="0" name="inst_D8016F31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlitchTexture" x="480" y="0" name="inst_BFB23693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="288" y="-32" name="inst_684CA606" locked="0" code="roomTo = rBoss2;&#xA;smooth = true;&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bGlitchTiles" x="32" y="448" w="32" h="32" xo="64" yo="0" id="10012637" name="inst_E867C151" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -221,11 +257,9 @@
     <tile bgName="bGlitchTiles" x="448" y="480" w="32" h="32" xo="64" yo="32" id="10012654" name="inst_99C4D14E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="320" y="512" w="32" h="32" xo="0" yo="32" id="10012655" name="inst_807F829B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="320" y="544" w="32" h="32" xo="0" yo="32" id="10012656" name="inst_51A94EEB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGlitchTiles" x="320" y="576" w="32" h="32" xo="0" yo="32" id="10012657" name="inst_ACCCBAB9" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="768" y="480" w="32" h="32" xo="0" yo="32" id="10012658" name="inst_E3A41A00" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="768" y="512" w="32" h="32" xo="0" yo="32" id="10012659" name="inst_43A2F13D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="768" y="544" w="32" h="32" xo="0" yo="32" id="10012660" name="inst_B133FAC1" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bGlitchTiles" x="768" y="576" w="32" h="32" xo="0" yo="32" id="10012661" name="inst_19D9E9FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="128" y="448" w="32" h="32" xo="0" yo="64" id="10012662" name="inst_D178D661" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="288" y="480" w="32" h="32" xo="0" yo="64" id="10012663" name="inst_7A8F4382" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bGlitchTiles" x="608" y="480" w="32" h="32" xo="0" yo="64" id="10012664" name="inst_6897F0EF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

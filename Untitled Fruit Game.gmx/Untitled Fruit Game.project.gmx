@@ -554,6 +554,7 @@
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\sprBossEagle</sprite>
+      <sprite>sprites\sprBossShield</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -834,12 +835,29 @@
       </scripts>
     </scripts>
     <scripts name="Boss">
-      <script>scripts\Boss_state_start.gml</script>
-      <script>scripts\Boss_state_choose.gml</script>
-      <script>scripts\Boss_state_attack_sweep_start.gml</script>
-      <script>scripts\Boss_state_attack_sweep.gml</script>
-      <script>scripts\Boss_state_attack_rain_start.gml</script>
-      <script>scripts\Boss_state_attack_rain.gml</script>
+      <script>scripts\Boss_create.gml</script>
+      <script>scripts\Boss_step.gml</script>
+      <script>scripts\Boss_draw.gml</script>
+      <script>scripts\BossHealthbar_draw.gml</script>
+      <script>scripts\Boss_wait.gml</script>
+      <script>scripts\Boss_state_wait.gml</script>
+      <script>scripts\Boss_state_p1_start.gml</script>
+      <script>scripts\Boss_state_p1_arrive.gml</script>
+      <script>scripts\Boss_state_p1_choose.gml</script>
+      <script>scripts\Boss_state_p1_attack_sweep_start.gml</script>
+      <script>scripts\Boss_state_p1_attack_sweep.gml</script>
+      <script>scripts\Boss_state_p1_attack_rain_start.gml</script>
+      <script>scripts\Boss_state_p1_attack_rain.gml</script>
+      <script>scripts\Boss_state_p1_attack_rise_start.gml</script>
+      <script>scripts\Boss_state_p1_attack_rise.gml</script>
+      <script>scripts\Boss_state_p1_leave_start.gml</script>
+      <script>scripts\Boss_state_p1_leave.gml</script>
+      <script>scripts\Boss_state_p2_start.gml</script>
+      <script>scripts\Boss_state_p2_choose.gml</script>
+      <script>scripts\Boss_state_p2_attack_walls_start.gml</script>
+      <script>scripts\Boss_state_p2_attack_walls.gml</script>
+      <script>scripts\Boss_state_p2_attack_cover_start.gml</script>
+      <script>scripts\Boss_state_p2_attack_cover.gml</script>
     </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
@@ -850,6 +868,7 @@
     <script>scripts\on_difficulty.gml</script>
     <script>scripts\jigsaw_draw_tile.gml</script>
     <script>scripts\BounceRefresher_disappear.gml</script>
+    <script>scripts\create_instance_display.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -1111,19 +1130,28 @@
     </objects>
     <objects name="Boss">
       <object>objects\objBossSave</object>
+      <object>objects\objBossHealthbar</object>
       <object>objects\objBossEagle</object>
       <object>objects\objBounceRefresherAppear</object>
       <object>objects\objBounceRefresherDisappear</object>
+      <object>objects\objInstanceDisplay</object>
       <object>objects\objBossBulletParent</object>
       <object>objects\objBossSweepBullet</object>
       <object>objects\objBossSweepBurstBullet</object>
       <object>objects\objBossRainBullet</object>
+      <object>objects\objBossRiseBullet</object>
+      <object>objects\objBossWallsSingleBullet</object>
+      <object>objects\objBossWallsWallBullet</object>
+      <object>objects\objBossWallsAimedBullet</object>
+      <object>objects\objBossCoverBullet</object>
+      <object>objects\objBossCoverStopper</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
     <object>objects\objBounceRefresher</object>
     <object>objects\objBrickDecal</object>
     <object>objects\objVisuals</object>
+    <object>objects\objBounceField</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
@@ -1191,7 +1219,8 @@
       <room>rooms\rGlitch3</room>
       <room>rooms\rGlitch4</room>
       <room>rooms\rGlitch5</room>
-      <room>rooms\rBoss</room>
+      <room>rooms\rBoss1</room>
+      <room>rooms\rBoss2</room>
     </rooms>
     <room>rooms\rClear</room>
   </rooms>

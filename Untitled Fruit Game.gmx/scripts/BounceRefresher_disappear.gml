@@ -7,3 +7,5 @@ inst.image_yscale = image_yscale;
 inst.image_angle = image_angle;
 inst.depth = depth;
 instance_destroy();
+
+return inst;
