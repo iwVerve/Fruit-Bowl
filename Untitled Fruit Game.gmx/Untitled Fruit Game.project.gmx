@@ -858,6 +858,11 @@
       <script>scripts\Boss_state_p2_attack_walls.gml</script>
       <script>scripts\Boss_state_p2_attack_cover_start.gml</script>
       <script>scripts\Boss_state_p2_attack_cover.gml</script>
+      <script>scripts\Boss_state_p2_attack_horizontal_start.gml</script>
+      <script>scripts\Boss_state_p2_attack_horizontal.gml</script>
+      <script>scripts\Boss_p2_check_hit.gml</script>
+      <script>scripts\Boss_state_p2_leave_start.gml</script>
+      <script>scripts\Boss_state_p2_leave.gml</script>
     </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
@@ -1145,6 +1150,10 @@
       <object>objects\objBossWallsAimedBullet</object>
       <object>objects\objBossCoverBullet</object>
       <object>objects\objBossCoverStopper</object>
+      <object>objects\objBossHorizontalBullet</object>
+      <object>objects\objBossHorizontalObstacleBullet</object>
+      <object>objects\objBossP2Bullet</object>
+      <object>objects\objBossP2DamageTrigger</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>

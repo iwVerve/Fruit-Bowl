@@ -3,7 +3,7 @@
 boss_hit = false;
 shield_hit = false;
 var bullet = instance_place(x, y, objBullet);
-if bullet != noone {
+if bullet != noone || p2_damage {
     if shield_hp > 0 {
         if shield_iframes <= 0 {
             shield_hit = true;
@@ -26,6 +26,7 @@ if bullet != noone {
         }
     }
 }
+p2_damage = false;
 
 iframes -= 1;
 shield_iframes -= 1;

@@ -14,6 +14,9 @@ shield_hit = false;
 shield_iframes = 0;
 shield_iframes_duration = 50;
 
-wait_after_attack = 25;
+p1_wait_after_attack = 25;
+p2_wait_after_attack = 75;
+
+p2_damage = false;
 
 instance_create(0, 0, objBossHealthbar);

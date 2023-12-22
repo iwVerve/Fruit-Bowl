@@ -13,7 +13,7 @@ if boss_hit || shield_hit {
         }
     }
     if boss_hit {
-        Boss_wait(wait_after_attack, Boss_state_p1_choose);
+        Boss_wait(p1_wait_after_attack, Boss_state_p1_choose);
     }
     exit;
 }

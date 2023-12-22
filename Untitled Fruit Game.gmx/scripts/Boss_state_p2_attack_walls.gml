@@ -1,5 +1,7 @@
 ///Boss_state_p2_attack_walls()
 
+Boss_p2_check_hit();
+
 if walls_time % walls_bullet_period == 0 {
     walls_bullet_counter += 1;
     var side = choose(-1, 1);
@@ -30,7 +32,7 @@ if walls_time % walls_bullet_period == 0 {
             }
         }
     }
-    else {
+    else if walls_bullet_counter % walls_wall_period != 1 {
         // Spawn bullet
         var yy = 528 - irandom(4) * 32;
         var inst = instance_create(400 + side * 400, yy, objBossWallsSingleBullet);
