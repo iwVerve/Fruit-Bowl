@@ -5,12 +5,17 @@ Boss_p2_check_hit();
 if walls_time % walls_bullet_period == 0 {
     walls_bullet_counter += 1;
     var side = choose(-1, 1);
+    if (walls_bullet_counter + 2) % walls_wall_period == 0 {
+        // 2 before wall, preview bouncer
+        instance_create(walls_bouncer_next_x, 480, objBossWallsIndicator);
+    }
     if (walls_bullet_counter + 1) % walls_wall_period == 0 {
         // 1 before wall, move bouncer
         walls_wall_counter += 1;
-        if walls_wall_counter % walls_leave_period == 0 {
+        walls_bouncer_x = walls_bouncer_next_x;
+        if (walls_wall_counter + 1) % walls_leave_period == 0 {
             // Move to edge
-            walls_bouncer_x = 400 + choose(-1, 1) * 176;
+            walls_bouncer_next_x = 400 + choose(-1, 1) * 176;
         }
         else {
             // Move around middle
@@ -18,7 +23,7 @@ if walls_time % walls_bullet_period == 0 {
             while(abs(walls_bouncer_x - xx) < 48) {
                 xx = 400 + random_range(-80, 80);
             }
-            walls_bouncer_x = xx;
+            walls_bouncer_next_x = xx;
         }
     }
     if walls_bullet_counter % walls_wall_period == 0 {

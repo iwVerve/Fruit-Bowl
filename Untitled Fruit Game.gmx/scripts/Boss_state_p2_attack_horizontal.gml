@@ -2,12 +2,17 @@
 
 Boss_p2_check_hit();
 
+if horizontal_start_delay > 0 {
+    horizontal_start_delay -= 1;
+    exit;
+}
+
 if horizontal_time % horizontal_wall_period == 0 {
     var xx = 400 + 400 * horizontal_wall_side;
     for(var i = 0; i < 12; i += 1) {
         var yy = 528 - 32 * i;
         var inst = instance_create(xx, yy, objBossHorizontalBullet);
-        inst.s0_target_x = 400 - horizontal_wall_side * 172;
+        inst.s0_target_x = 400 - horizontal_wall_side * 152;
         inst.side = horizontal_wall_side;
         create_instance_display(inst);
     }

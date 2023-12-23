@@ -12,6 +12,7 @@ walls_wall_counter = 0;
 walls_leave_period = 4;
 
 walls_bouncer_x = 400;                              
+walls_bouncer_next_x = 400 + random_range(-80, 80);
 walls_bouncer = noone;
 var appear = instance_create(400, 480, objBounceRefresherAppear);
 appear.face_player = true;

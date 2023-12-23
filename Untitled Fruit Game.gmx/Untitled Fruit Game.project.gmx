@@ -1148,10 +1148,12 @@
       <object>objects\objBossWallsSingleBullet</object>
       <object>objects\objBossWallsWallBullet</object>
       <object>objects\objBossWallsAimedBullet</object>
+      <object>objects\objBossWallsIndicator</object>
       <object>objects\objBossCoverBullet</object>
       <object>objects\objBossCoverStopper</object>
       <object>objects\objBossHorizontalBullet</object>
       <object>objects\objBossHorizontalObstacleBullet</object>
+      <object>objects\objBossHorizontalWarning</object>
       <object>objects\objBossP2Bullet</object>
       <object>objects\objBossP2DamageTrigger</object>
     </objects>
