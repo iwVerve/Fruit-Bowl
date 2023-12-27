@@ -841,28 +841,44 @@
       <script>scripts\BossHealthbar_draw.gml</script>
       <script>scripts\Boss_wait.gml</script>
       <script>scripts\Boss_state_wait.gml</script>
-      <script>scripts\Boss_state_p1_start.gml</script>
-      <script>scripts\Boss_state_p1_arrive.gml</script>
-      <script>scripts\Boss_state_p1_choose.gml</script>
-      <script>scripts\Boss_state_p1_attack_sweep_start.gml</script>
-      <script>scripts\Boss_state_p1_attack_sweep.gml</script>
-      <script>scripts\Boss_state_p1_attack_rain_start.gml</script>
-      <script>scripts\Boss_state_p1_attack_rain.gml</script>
-      <script>scripts\Boss_state_p1_attack_rise_start.gml</script>
-      <script>scripts\Boss_state_p1_attack_rise.gml</script>
-      <script>scripts\Boss_state_p1_leave_start.gml</script>
-      <script>scripts\Boss_state_p1_leave.gml</script>
-      <script>scripts\Boss_state_p2_start.gml</script>
-      <script>scripts\Boss_state_p2_choose.gml</script>
-      <script>scripts\Boss_state_p2_attack_walls_start.gml</script>
-      <script>scripts\Boss_state_p2_attack_walls.gml</script>
-      <script>scripts\Boss_state_p2_attack_cover_start.gml</script>
-      <script>scripts\Boss_state_p2_attack_cover.gml</script>
-      <script>scripts\Boss_state_p2_attack_horizontal_start.gml</script>
-      <script>scripts\Boss_state_p2_attack_horizontal.gml</script>
-      <script>scripts\Boss_p2_check_hit.gml</script>
-      <script>scripts\Boss_state_p2_leave_start.gml</script>
-      <script>scripts\Boss_state_p2_leave.gml</script>
+      <scripts name="Phase 1">
+        <script>scripts\Boss_state_p1_start.gml</script>
+        <script>scripts\Boss_state_p1_arrive.gml</script>
+        <script>scripts\Boss_state_p1_choose.gml</script>
+        <script>scripts\Boss_state_p1_attack_sweep_start.gml</script>
+        <script>scripts\Boss_state_p1_attack_sweep.gml</script>
+        <script>scripts\Boss_state_p1_attack_rain_start.gml</script>
+        <script>scripts\Boss_state_p1_attack_rain.gml</script>
+        <script>scripts\Boss_state_p1_attack_rise_start.gml</script>
+        <script>scripts\Boss_state_p1_attack_rise.gml</script>
+        <script>scripts\Boss_state_p1_leave_start.gml</script>
+        <script>scripts\Boss_state_p1_leave.gml</script>
+      </scripts>
+      <scripts name="Phase 2">
+        <script>scripts\Boss_state_p2_start.gml</script>
+        <script>scripts\Boss_state_p2_choose.gml</script>
+        <script>scripts\Boss_state_p2_attack_walls_start.gml</script>
+        <script>scripts\Boss_state_p2_attack_walls.gml</script>
+        <script>scripts\Boss_state_p2_attack_cover_start.gml</script>
+        <script>scripts\Boss_state_p2_attack_cover.gml</script>
+        <script>scripts\Boss_state_p2_attack_horizontal_start.gml</script>
+        <script>scripts\Boss_state_p2_attack_horizontal.gml</script>
+        <script>scripts\Boss_p2_check_hit.gml</script>
+        <script>scripts\Boss_state_p2_leave_start.gml</script>
+        <script>scripts\Boss_state_p2_leave.gml</script>
+      </scripts>
+      <scripts name="Phase 3">
+        <script>scripts\Boss_state_p3_start.gml</script>
+        <script>scripts\Boss_state_p3_choose.gml</script>
+        <script>scripts\Boss_state_p3_attack_ceiling_start.gml</script>
+        <script>scripts\Boss_state_p3_attack_ceiling_initialize.gml</script>
+        <script>scripts\Boss_state_p3_attack_ceiling.gml</script>
+        <script>scripts\Boss_state_p3_attack_wrap_start.gml</script>
+        <script>scripts\Boss_state_p3_attack_wrap.gml</script>
+        <script>scripts\Boss_state_p3_attack_fall_start.gml</script>
+        <script>scripts\Boss_state_p3_attack_fall_initialize.gml</script>
+        <script>scripts\Boss_state_p3_attack_fall.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
@@ -1156,6 +1172,18 @@
       <object>objects\objBossHorizontalWarning</object>
       <object>objects\objBossP2Bullet</object>
       <object>objects\objBossP2DamageTrigger</object>
+      <object>objects\objBossBulletWrapParent</object>
+      <object>objects\objBossCeilingBullet</object>
+      <object>objects\objBossCeilingTrailBullet</object>
+      <object>objects\objBossCeilingVBullet</object>
+      <object>objects\objBossWrapBullet</object>
+      <object>objects\objBossWrapAppearBullet</object>
+      <object>objects\objBossWrapBounceRefresher</object>
+      <object>objects\objBossFallWarning</object>
+      <object>objects\objBossFallGlitch</object>
+      <object>objects\objBossFallGlitchLeft</object>
+      <object>objects\objBossFallGlitchRight</object>
+      <object>objects\objBossFallBullet</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
@@ -1232,6 +1260,7 @@
       <room>rooms\rGlitch5</room>
       <room>rooms\rBoss1</room>
       <room>rooms\rBoss2</room>
+      <room>rooms\rBoss3</room>
     </rooms>
     <room>rooms\rClear</room>
   </rooms>

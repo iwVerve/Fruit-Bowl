@@ -97,6 +97,9 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == grav
         else if phase == 1 {
             objBossEagle.state = Boss_state_p2_start;
         }
+        else if phase == 2 {
+            objBossEagle.state = Boss_state_p3_start;
+        }
         with(objSaveBlocker) {
             instance_destroy();
         }
