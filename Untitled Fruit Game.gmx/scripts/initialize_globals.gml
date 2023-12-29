@@ -3,6 +3,8 @@
 
 engine_options();
 
+//generate_glitch_texture_sprites();
+
 audio_sound_gain(sndBounceBoing, 0.6, 0);
 audio_sound_gain(sndBouncePickup, 0.8, 0);
 

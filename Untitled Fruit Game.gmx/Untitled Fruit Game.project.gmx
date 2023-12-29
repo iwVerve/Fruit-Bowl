@@ -554,6 +554,9 @@
       <sprite>sprites\sprOMiniDown</sprite>
       <sprite>sprites\sprOMiniLeft</sprite>
     </sprites>
+    <sprites name="Glitch">
+      <sprite>sprites\sprGlitchTexture</sprite>
+    </sprites>
     <sprites name="Boss">
       <sprite>sprites\sprBossEagle</sprite>
       <sprite>sprites\sprBossShield</sprite>
@@ -900,6 +903,7 @@
     <script>scripts\jigsaw_draw_tile.gml</script>
     <script>scripts\BounceRefresher_disappear.gml</script>
     <script>scripts\create_instance_display.gml</script>
+    <script>scripts\generate_glitch_texture_sprites.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>

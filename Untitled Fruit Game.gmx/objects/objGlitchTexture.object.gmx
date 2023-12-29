@@ -45,16 +45,20 @@
     bLemonTiles,
     bOTiles,
 );
-background = array_create(4);
-left = array_create(4);
-top = array_create(4);
-width = 16;
-height = 16;
-init = false;
+//background = array_create(4);
+//left = array_create(4);
+//top = array_create(4);
+//width = 16;
+//height = 16;
+//init = false;
 
-period = irandom_range(8, 15);
-texture_change_chance = 0.1;
+period = irandom_range(20, 40);
+texture_change_chance = 0.05;
 time = irandom(period - 1);
+
+sprite_index = sprGlitchTexture;
+image_speed = 0;
+image_index = irandom(image_number - 1);
 
 top_edge =    !place_meeting(x, y - 32, object_index);
 right_edge =  !place_meeting(x + 32, y, object_index);
@@ -86,7 +90,7 @@ disappear = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !init || time % period == 0 {
+            <string>/*if !init || time % period == 0 {
     for(var i = 0; i &lt; 4; i += 1) {
         if init &amp;&amp; random(1) &gt; texture_change_chance {
             continue;
@@ -97,6 +101,9 @@ disappear = false;
         top[i] = random_range(0, 128);
     }
     init = true;
+}*/
+if time % period == 0 &amp;&amp; random(1) &gt; texture_change_chance {
+    image_index = irandom(image_number - 1);
 }
 
 if time % particle_period == 0 {
@@ -157,7 +164,10 @@ time += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !init {
+            <string>draw_self();
+
+/*
+if !init {
     exit;
 }
 

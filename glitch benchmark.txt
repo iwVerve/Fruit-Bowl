@@ -8,6 +8,7 @@
 | 5 |      150 |       95 |    100 |
 | 6 |      485 |      350 |    390 |
 | 7 |      120 |       73 |     75 |
+| 8 |      160 |      105 |    112 |
 |   |          |          |        |
 |   |          |          |        |
 |---|----------|----------|--------|
@@ -19,3 +20,4 @@
 5 - No texture logic
 6 - No draw, no logic
 7 - No optimization sample 2 ("no way 5 made that much difference")
+8 - Bake texture sprites
