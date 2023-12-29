@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>color_top = make_color_hsv(140, 90, 100);
 color_bottom = make_color_hsv(170, 90, 70);
+
+y_top = 0;
+y_bottom = 608;
 </string>
           </argument>
         </arguments>
@@ -50,7 +53,7 @@ color_bottom = make_color_hsv(170, 90, 70);
           <argument>
             <kind>1</kind>
             <string>d3d_set_projection_ortho(0, 0, 800, 608, 0);
-    draw_rectangle_color(0, 0, room_width, 608, color_top, color_top, color_bottom, color_bottom, false);
+    draw_rectangle_color(0, y_top, room_width, y_bottom, color_top, color_top, color_bottom, color_bottom, false);
     
     draw_set_alpha(0.75);
         for(var xx = 0; xx &lt; 800; xx += 400) {

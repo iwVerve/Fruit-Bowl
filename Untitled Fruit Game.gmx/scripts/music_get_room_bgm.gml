@@ -37,6 +37,9 @@ switch (room) {
     case rClimb3:
         return "SoCloseYetSoFarAway";
         
+    case rSecret1:
+        return "AnywayLetsBeginTheDiagnosis";
+        
     case rSecret3:
         return "RooftopRun";
     
@@ -45,6 +48,16 @@ switch (room) {
     
     case rClear:
         return "PapapaSweetSwing";
+    
+    case rJigsaw:
+        return "InThePocket";
+    
+    case rGlitch1:
+    case rGlitch2:
+    case rGlitch3:
+    case rGlitch4:
+    case rGlitch5:
+        return "TheCorpseWhisperer";
 
     default:
         return -1;          //Play nothing

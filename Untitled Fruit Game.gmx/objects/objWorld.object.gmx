@@ -324,6 +324,40 @@ if (global.debugMode &amp;&amp; global.gameStarted &amp;&amp; !global.gamePaused
         view_yview = num;
         instance_destroy(objCamera)
     }
+     
+    if keyboard_check_pressed(ord("U")) {
+        with(objSkyBackground) {
+            switch(room) {
+                case rTower:
+                    var n = get_integer("", "");
+                    y_top = n;
+                    y_bottom = n + 2432;
+                    break;
+                
+                case rClimb3:
+                    y_top = 0;
+                    y_bottom = 2432;
+                    break;
+                    
+                case rClimb2:
+                    y_top = -608;
+                    y_bottom = 1824;
+                    break;
+                    
+                case rClimb1:
+                case rOutsideAbove:
+                    y_top = -1216;
+                    y_bottom = 1216;
+                    break;
+                    
+                case rOutsideRight:
+                case rOutside:
+                    y_top = -1824;
+                    y_bottom = 608;
+                    break;
+            }
+        }
+    }
 }
 
 if (global.debugVisuals)

@@ -19,9 +19,12 @@ Platforming 1: [1] - loop ♂ scratch (The Protagonist Aruto's Theme)
 Platforming 2: [1] - love (Erotic Theme 2)
 Platforming 3: [1] - cutie ♀ BOIN'G (The Heroine Kurumi's Theme)
 Platforming 4: [2] - Adagio
-Outside: [3] - For the Sake of One Flower
-Outside platforming: [3] - So Close, Yet so Far Away
-Platforming 5: [4] - Rooftop Run (Night)
+Platforming 5: [3] - Rooftop Run (Night)
+Outside: [4] - For the Sake of One Flower
+Outside platforming: [4] - So Close, Yet so Far Away
+Secret 1: [5] - Anyway Let's Begin the Diagnosis
+Secret 3: [6] - In The Pocket
+Final platforming: [5] - The Corpse Whisperer
 Clear: [1] - papapa sweet swing (Main Theme)
 
 [1]
@@ -33,11 +36,17 @@ https://downloads.khinsider.com/game-soundtracks/album/majokko-de-go-go-paul-to-
 Rise of the Triad (2013)
 https://www.youtube.com/watch?v=UfJapKIZs4w
 [3]
-Wild Arms 4
-https://www.youtube.com/playlist?list=PL0BB0DB73893479CC
-[4]
 Sonic Unleashed
 https://www.youtube.com/playlist?list=PLvNp0Boas723dWdYd0lLxuIOXkf3SCdxO
+[4]
+Wild Arms 4
+https://www.youtube.com/playlist?list=PL0BB0DB73893479CC
+[5]
+Trauma Team
+https://www.youtube.com/playlist?list=PL77kWsjN7iun3rLufB_bh2YZCNhZnRYKs
+[6]
+Bomb Rush Cyberfunk
+https://www.youtube.com/playlist?list=PLD6ujQ0tHAv2qLS5FKH6B8MjtfEg1kwsn
 
 
 Fonts:

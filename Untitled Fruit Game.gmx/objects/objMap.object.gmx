@@ -50,7 +50,7 @@ start = array_from_values(
     array_from_values(-1, -1, -1, -1, -1, -1),
 );
 
-scale = 0.3;
+scale = 0.3125;
 
 hover_x = -1;
 hover_y = -1;
@@ -180,25 +180,28 @@ var small_rect = false;
 texture_set_interpolation(true);
     for(var i = 0; i &lt; array_height_2d(images); i += 1) {
         for(var j = 0; j &lt; array_length_2d(images, i); j += 1) {
+            var t_x = x + j * width;
+            var t_y = y + i * height;
+        
             var index = images[i, j];
             if index == -1 {
                 index = no_room_index;
             }
             if index == 22 {
-                draw_sprite_ext(spr, no_room_index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);            
+                draw_sprite_ext(spr, no_room_index, t_x, t_y, scale, scale, 0, c_white, 1);            
             }
             var is_secret_room = in_range(index, 26, 28);
             if !is_secret_room {
-                draw_sprite_ext(spr, index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
+                draw_sprite_ext(spr, index, t_x, t_y, scale, scale, 0, c_white, 1);
             }
             else {
                 var sw = sprite_get_width(spr);
                 var sh = sprite_get_height(spr);
                 var margin = 16;
                 small_rect = true;
-                var xx = x + j * width + scale * margin;
-                var yy = y + i * height + scale * margin;
-                draw_sprite_ext(spr, no_room_index, x + j * width, y + i * height, scale, scale, 0, c_white, 1);
+                var xx = t_x + scale * margin;
+                var yy = t_y + scale * margin;
+                draw_sprite_ext(spr, no_room_index, t_x, t_y, scale, scale, 0, c_white, 1);
                 draw_sprite_part_ext(
                     spr, index,
                     margin, margin,
