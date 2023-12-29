@@ -6,7 +6,7 @@ rain_speed = 3.2;
 rain_angle_range = 4;
 
 rain_spawn_time = 0;
-rain_spawn_period = 30;
+rain_spawn_period = 20;
 rain_spawn_x_range = 304;
 rain_spawn_y_start = 376;
 rain_spawn_y_min = 216;

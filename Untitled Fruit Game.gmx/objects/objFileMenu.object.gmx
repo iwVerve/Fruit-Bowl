@@ -122,7 +122,11 @@ else {
     if !showOverwriteWarning { //Not currently showing yes/no confirmation
         var hInput = input_check_pressed(KEY.MENU_RIGHT) - input_check_pressed(KEY.MENU_LEFT);
         if hInput != 0 {
-            menu_change_difficulty(difficultySelect + hInput);
+            var diff = difficultySelect + hInput;
+            if global.noEasyModeYet &amp;&amp; diff == 0 {
+                diff += hInput;
+            }
+            menu_change_difficulty(diff);
         }
         else if input_check_pressed(KEY.MENU_BACK) {
             menu_deselect_savefile();

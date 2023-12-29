@@ -63,7 +63,8 @@ else if state == 1 {
     time += 1;
     
     if time % 40 == 0 &amp;&amp; in_range(x, 64, 800 - 64) {
-        instance_create(x, y, objBossCeilingTrailBullet);
+        var bullet = instance_create(x, y, objBossCeilingTrailBullet);
+        create_instance_display(bullet);
     }
 }
 </string>

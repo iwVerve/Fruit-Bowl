@@ -60,6 +60,7 @@ glow_speed_2 = choose(-1, 1) * random_range(0.5, 1);
         instance_destroy();
         exit;
     }
+    init = true;
 }
 
 if place_meeting(x, y, objPlayer) {

@@ -146,6 +146,7 @@ if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
             global.playerStartTarget = target;
         }
         instance_destroy(objPlayer);
+        global.autosave = true;
         room_goto(hover_room);
     }
 }

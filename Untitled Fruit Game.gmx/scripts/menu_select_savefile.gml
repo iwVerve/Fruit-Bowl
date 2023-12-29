@@ -11,6 +11,7 @@ else    //Difficulty select menu
     audio_play_sound(global.menuSelectSound, 0, false);
     if (exists[savefileSelect]) //Default to Load game if file exists
         difficultySelect = -1;
-    else
-        difficultySelect = 0;
+    else {
+        difficultySelect = ternary(global.noEasyModeYet, 1, 0);
+    }
 }

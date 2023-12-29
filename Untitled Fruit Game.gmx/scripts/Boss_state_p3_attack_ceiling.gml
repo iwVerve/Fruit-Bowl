@@ -46,6 +46,7 @@ if ceiling_spawn_v_bullets && time >= 0 && time % ceiling_v_bullet_spawn_period 
         inst.hspeed = choose(-1, 1) * random(0.15);
         inst.vspeed = 6;
         inst.gravity = 0.04;
+        create_instance_display(inst);
     }
 }
 ceiling_v_bullet_time += 1;

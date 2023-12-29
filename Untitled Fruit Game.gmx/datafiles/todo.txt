@@ -15,6 +15,15 @@ missing music:
 - True end
 more secret hints
 boss
+- boss sprite
+- bullets
+- story
+- ending
 check warps
 boss dialogue bread reference
 boss bullets crosscode reference
+more different seal negative
+true end room
+sfx
+test no easy mode if no savefile
+warp to glitch + boss

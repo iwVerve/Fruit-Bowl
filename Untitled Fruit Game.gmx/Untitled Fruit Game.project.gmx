@@ -314,7 +314,9 @@
       <sprite>sprites\sprMintIconMini</sprite>
     </sprites>
     <sprite>sprites\sprBounceRefresher</sprite>
+    <sprite>sprites\sprBounceRefresherBig</sprite>
     <sprite>sprites\sprBounceRefresherSpikes</sprite>
+    <sprite>sprites\sprBounceRefresherSpikesBig</sprite>
     <sprites name="Unused">
       <sprite>sprites\sprCeilingRefresher</sprite>
       <sprite>sprites\sprPlatformOrb</sprite>
@@ -555,6 +557,14 @@
     <sprites name="Boss">
       <sprite>sprites\sprBossEagle</sprite>
       <sprite>sprites\sprBossShield</sprite>
+      <sprites name="Bullets">
+        <sprite>sprites\sprBossBulletOrange</sprite>
+        <sprite>sprites\sprBossBulletApple</sprite>
+        <sprite>sprites\sprBossBulletKiwi</sprite>
+        <sprite>sprites\sprBossBulletBlueberry</sprite>
+        <sprite>sprites\sprBossBulletMango</sprite>
+        <sprite>sprites\sprBossBulletStrawberry</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>

@@ -41,9 +41,10 @@ if sweep_fire_timer % sweep_fire_period == 0 {
 sweep_fire_timer += 1;
 
 if sweep_burst_timer % sweep_burst_period == 0 {
-    var count = 4;
-    var offset = random_range(-15, 15);
-    var rng = get_fair_rng(200 + offset, 340 + offset, count, 0.9);
+    var count = sweep_burst_count;
+    sweep_burst_count = 7 - sweep_burst_count;
+    var offset = random_range(-20, 20);
+    var rng = get_fair_rng(210 + offset, 330 + offset, count, 0.9);
     for(var i = 0; i < count; i += 1) {
         var inst = instance_create(x, y, objBossSweepBurstBullet);
         inst.speed = 4;

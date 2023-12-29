@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !savedata_get("allSeals") {
+            <string>event_inherited();
+
+if !savedata_get("allSeals") {
     instance_destroy();
 }
 </string>
@@ -50,7 +52,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var xx = random_range(bbox_left, bbox_right);
+            <string>event_inherited();
+
+var xx = random_range(bbox_left, bbox_right);
 var yy = bbox_top;
 var inst = instance_create(xx, yy, objEyeParticle);
 inst.direction = 270;

@@ -6,8 +6,8 @@ global.debugMode = true;        //Enables debug keys (check objWorld step to see
 global.debugVisuals = true;     //Enables changing the color/alpha of player when infjump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 
 //Updates
-global.checkForUpdates = false;
-global.versionDataUrl = "https://pastebin.com/raw/Z5sWFNap";
+global.checkForUpdates = true;
+global.versionDataUrl = "https://gist.githubusercontent.com/iwVerve/f95298692aee1e00707f24211a021dff/raw/";
 global.gameVersion = "1.0";
 
 //Menu
@@ -43,6 +43,7 @@ global.controllerEnabled = true;    //Sets whether controllers are supported
 global.controllerDelayLength = 5;   //Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
 
 //Difficulty
+global.noEasyModeYet = true;
 global.difficultyCount = 2;
 global.difficultyNames[0] = "Load Game";
 global.difficultyNames[1] = "Easy";

@@ -41,6 +41,7 @@ dip_gravity = 0.4;
 dip_vspeed_min = 0.8;
 
 spikes = noone;
+spikes_sprite = sprBounceRefresherSpikes;
 
 x_prev = x;
 y_prev = y;
@@ -97,6 +98,7 @@ spikes.image_angle = image_angle;
 spikes.image_xscale = image_xscale;
 spikes.image_yscale = image_yscale;
 spikes.depth = depth + 1;
+spikes.sprite_index = spikes_sprite;
 </string>
           </argument>
         </arguments>

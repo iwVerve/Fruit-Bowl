@@ -69,6 +69,8 @@ y_array_index = 0;
     
     var bounce = instance_create(xx, yy, objBounceRefresher);
     bounce.hspeed = side * random_range(1.5, 2);
+    bounce.sprite_index = sprBounceRefresherBig;
+    bounce.spikes_sprite = sprBounceRefresherSpikesBig;
 }
 
 with(objBounceRefresher) {

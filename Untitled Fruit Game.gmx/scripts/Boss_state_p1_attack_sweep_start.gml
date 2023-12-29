@@ -12,7 +12,8 @@ instance_create(400 + 208 * sweep_direction, 368, objBounceRefresherAppear);
 instance_create(400 + 272 * sweep_direction, 304, objBounceRefresherAppear);
 
 sweep_burst_timer = 0;
-sweep_burst_period = 35;
+sweep_burst_period = 32;
+sweep_burst_count = 3;
 
 sweep_delay = 0;
 
