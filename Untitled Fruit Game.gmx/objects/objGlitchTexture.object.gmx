@@ -104,7 +104,6 @@ if right_edge {
 
 if left_edge {
     emit = part_emitter_create(global.glitch_particle_system);
-    print(emit);
     part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
     part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
     emitters[emitter_count] = emit;

@@ -25,6 +25,20 @@ switch (room) {
     case rStrawberry:
     case rWatermelon:
         return "Cutie";
+        
+    case rOutside:
+    case rOutsideAbove:
+    case rTowerOutside:
+    case rOutsideRight:
+        return "ForTheSakeOfOneFlower";
+        
+    case rClimb1:
+    case rClimb2:
+    case rClimb3:
+        return "SoCloseYetSoFarAway";
+        
+    case rSecret3:
+        return "RooftopRun";
     
     case rTower:
         return "Adagio";
