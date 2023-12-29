@@ -64,10 +64,77 @@ top_edge =    !place_meeting(x, y - 32, object_index);
 right_edge =  !place_meeting(x + 32, y, object_index);
 bottom_edge = !place_meeting(x, y + 32, object_index);
 left_edge =   !place_meeting(x - 32, y, object_index);
-particle_period = 6;
-fill_particle_period = 14;
 
 disappear = false;
+
+top_emitter = noone;
+right_emitter = noone;
+bottom_emitter = noone;
+left_emitter = noone;
+
+var emit = part_emitter_create(global.glitch_particle_system);
+part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -14);
+emitters[0] = emit;
+emitter_count = 1;
+
+if top_edge {
+    emit = part_emitter_create(global.glitch_particle_system);
+    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emitters[1] = emit;
+    emitter_count = 2;
+}
+
+if bottom_edge {
+    emit = part_emitter_create(global.glitch_particle_system);
+    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emitters[emitter_count] = emit;
+    emitter_count += 1;
+}
+
+if right_edge {
+    emit = part_emitter_create(global.glitch_particle_system);
+    part_emitter_region(global.glitch_particle_system, emit, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emitters[emitter_count] = emit;
+    emitter_count += 1;
+}
+
+if left_edge {
+    emit = part_emitter_create(global.glitch_particle_system);
+    print(emit);
+    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emitters[emitter_count] = emit;
+    emitter_count += 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+
+event_user(0);
 </string>
           </argument>
         </arguments>
@@ -90,49 +157,9 @@ disappear = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if !init || time % period == 0 {
-    for(var i = 0; i &lt; 4; i += 1) {
-        if init &amp;&amp; random(1) &gt; texture_change_chance {
-            continue;
-        }
-        var index = irandom(array_length_1d(all_backgrounds) - 1);
-        background[i] = all_backgrounds[index];
-        left[i] = random_range(0, 320);
-        top[i] = random_range(0, 128);
-    }
-    init = true;
-}*/
-if time % period == 0 &amp;&amp; random(1) &gt; texture_change_chance {
+            <string>if time % period == 0 &amp;&amp; random(1) &gt; texture_change_chance {
     image_index = irandom(image_number - 1);
-}
-
-if time % particle_period == 0 {
-    if top_edge {
-        var xx = random_range(bbox_left, bbox_right);
-        var yy = bbox_top;
-        instance_create(xx, yy, objGlitchEdgeParticle);
-    }
-    if bottom_edge {
-        var xx = random_range(bbox_left, bbox_right);
-        var yy = bbox_bottom;
-        instance_create(xx, yy, objGlitchEdgeParticle);
-    }
-    if left_edge {
-        var xx = bbox_left;                          
-        var yy = random_range(bbox_top, bbox_bottom);
-        instance_create(xx, yy, objGlitchEdgeParticle);
-    }
-    if right_edge {
-        var xx = bbox_right;                         
-        var yy = random_range(bbox_top, bbox_bottom);
-        instance_create(xx, yy, objGlitchEdgeParticle);
-    }
-}
-if time % fill_particle_period == 0 {
-    var xx = random_range(bbox_left, bbox_right);                         
-    var yy = random_range(bbox_top, bbox_bottom);
-    instance_create(xx, yy, objGlitchEdgeParticle);
-}
+} 
 
 if disappear {
     image_alpha -= 1/20;
@@ -147,7 +174,7 @@ time += 1;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -164,28 +191,36 @@ time += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>/// Cleanup
 
-/*
-if !init {
-    exit;
+for(var i = 0; i &lt; emitter_count; i += 1) {
+    part_emitter_destroy(global.glitch_particle_system, emitters[i]);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
 
-draw_set_alpha(image_alpha);
-    for(var i = 0; i &lt; 4; i += 1) {
-        var xx = (i % 2) * 16;
-        var yy = (i div 2) * 16;
-        draw_background_part(
-            background[i],
-            left[i],
-            top[i],
-            width,
-            height,
-            x + xx,
-            y + yy,
-        );
-    }
-draw_set_alpha(1);
+event_user(0);
 </string>
           </argument>
         </arguments>

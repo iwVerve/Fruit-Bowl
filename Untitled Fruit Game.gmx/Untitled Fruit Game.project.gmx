@@ -556,6 +556,7 @@
     </sprites>
     <sprites name="Glitch">
       <sprite>sprites\sprGlitchTexture</sprite>
+      <sprite>sprites\sprGlitchParticle</sprite>
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\sprBossEagle</sprite>

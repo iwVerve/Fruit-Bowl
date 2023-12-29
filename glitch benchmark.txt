@@ -9,7 +9,7 @@
 | 6 |      485 |      350 |    390 |
 | 7 |      120 |       73 |     75 |
 | 8 |      160 |      105 |    112 |
-|   |          |          |        |
+| 9 |      395 |      280 |    300 |
 |   |          |          |        |
 |---|----------|----------|--------|
 
@@ -21,3 +21,4 @@
 6 - No draw, no logic
 7 - No optimization sample 2 ("no way 5 made that much difference")
 8 - Bake texture sprites
+9 - Convert to particle system
