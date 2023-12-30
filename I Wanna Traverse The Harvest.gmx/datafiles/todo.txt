@@ -6,4 +6,3 @@ boss
 - walls redo
 true end room
 sfx
-trim songs
