@@ -62,7 +62,7 @@ switch (room) {
     case rNegative1:
     case rNegative2:
     case rNegative3:
-        return -1;
+        return "Fields";
     
     case rGlitch1:
     case rGlitch2:

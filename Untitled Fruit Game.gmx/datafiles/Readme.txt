@@ -8,3 +8,9 @@ Skulldude
 Naloa
 Flames
 EchoMask
+
+
+Special Thanks:
+Emmanating
+Ghost
+SupraDarky

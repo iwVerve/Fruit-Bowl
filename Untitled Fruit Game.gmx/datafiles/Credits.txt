@@ -30,13 +30,13 @@ Secret 1: [5] - Anyway Let's Begin the Diagnosis
 Secret 2: [9] - The Ratings Are In
 Secret 3: [6] - In The Pocket
 Secret 4: [8] - I Hennes Majestats Hemliga Hatt
-Secret 5: TODO
+Secret 5: [10] - Fields
 Final platforming: [5] - The Corpse Whisperer
 Boss 1: [7] - B-in [Battle 1]
 Boss 2: [7] - 1st F. [Forest]
 Boss 3: [7] - G.D. [Mid Boss]
 Clear: [1] - papapa sweet swing (Main Theme)
-Clear 2: TODO
+Clear 2: [11] - Europe
 
 [1]
 Majokko de'GO♪GO♪ ~Paul to Mira☆Kuru Daisakusen~
@@ -67,6 +67,12 @@ https://www.youtube.com/watch?v=d0713VsPa_s&list=OLAK5uy_mVn3RElnXKscE0dtZkVEMbn
 [9]
 A Hat In Time
 https://www.youtube.com/watch?v=DXN8tnErII0&list=PLAeP_W1RI8JHKosqaCKsNreqGt5HSVd1V&index=25
+[10]
+Anodyne
+https://www.youtube.com/watch?v=sO9qYFMTk74&list=PLk8kGXAr3dTvFYEilfm514LWL1TdyBaSg&index=9
+[11]
+Terranigma
+https://www.youtube.com/watch?v=BmLx7jc5KMA&list=PL9365F3B91898B280&index=38
 
 
 Fonts:

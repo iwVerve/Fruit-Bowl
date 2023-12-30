@@ -1,14 +1,10 @@
-missing music:
-- Negative
-- True end
 boss
 - boss sprite
 - bullets
 - story
 - ending
 - walls redo
-nerf seals
 true end room
 sfx
-volume balance
 trim songs
+game title (traverse the harvest)
