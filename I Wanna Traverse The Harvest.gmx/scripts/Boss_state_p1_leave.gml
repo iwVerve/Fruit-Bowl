@@ -16,3 +16,4 @@ with(objGlitchTexture) {
 }
 
 vspeed -= 0.2;
+healthbar_vspeed -= 0.1;

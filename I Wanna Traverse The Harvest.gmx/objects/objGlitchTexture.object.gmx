@@ -53,6 +53,7 @@ var psys = global.glitch_particle_system;
 var emit = part_emitter_create(psys);
 part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_rectangle, ps_distr_linear);
 part_emitter_stream(psys, emit, global.glitch_particle_type, -14);
+fill_emitter = emit;
 emitters[0] = emit;
 emitter_count = 1;
 
@@ -142,20 +143,19 @@ event_user(0);
     image_index = irandom(image_number - 1);
 } 
 
-if time % emitter_move_period == 0 {
-    if x != emitter_x || y != emitter_y {
-        var psys = global.glitch_particle_system;
-        if left_emitter != noone
-            part_emitter_region(psys, left_emitter, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
-        if right_emitter != noone
-            part_emitter_region(psys, right_emitter, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
-        if top_emitter != noone
-            part_emitter_region(psys, top_emitter, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
-        if bottom_emitter != noone
-            part_emitter_region(psys, bottom_emitter, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
-        emitter_x = x;
-        emitter_y = y;
-    }
+if time % emitter_move_period == 0 &amp;&amp; (x != emitter_x || y != emitter_y) {
+    var psys = global.glitch_particle_system;
+    part_emitter_region(psys, fill_emitter, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_rectangle, ps_distr_linear);
+    if left_emitter != noone
+        part_emitter_region(psys, left_emitter, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    if right_emitter != noone
+        part_emitter_region(psys, right_emitter, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    if top_emitter != noone
+        part_emitter_region(psys, top_emitter, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
+    if bottom_emitter != noone
+        part_emitter_region(psys, bottom_emitter, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
+    emitter_x = x;
+    emitter_y = y;
 }
 
 if disappear {

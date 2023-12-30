@@ -30,6 +30,8 @@ p2_damage = false;
 
 iframes -= 1;
 shield_iframes -= 1;
+healthbar_y += healthbar_vspeed;
+lerped_hp = lerp(lerped_hp, hp, 0.15);
 
 if state != noone {
     script_execute(state);

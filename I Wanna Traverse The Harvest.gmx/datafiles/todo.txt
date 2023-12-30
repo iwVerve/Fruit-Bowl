@@ -4,5 +4,6 @@ boss
 - story
 - ending
 - walls redo
+- healthbar
 true end room
 sfx

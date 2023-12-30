@@ -791,6 +791,7 @@
         <sprite>sprites\sprBossBulletMango</sprite>
         <sprite>sprites\sprBossBulletStrawberry</sprite>
       </sprites>
+      <sprite>sprites\sprBossHealthbar</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -1114,6 +1115,9 @@
         <script>scripts\Boss_state_p3_attack_fall_start.gml</script>
         <script>scripts\Boss_state_p3_attack_fall_initialize.gml</script>
         <script>scripts\Boss_state_p3_attack_fall.gml</script>
+        <script>scripts\Boss_state_p3_fall_start.gml</script>
+        <script>scripts\Boss_state_p3_fall.gml</script>
+        <script>scripts\Boss_state_p3_fell.gml</script>
       </scripts>
     </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>

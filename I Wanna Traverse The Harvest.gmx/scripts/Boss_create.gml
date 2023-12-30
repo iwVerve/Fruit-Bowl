@@ -16,4 +16,8 @@ shield_iframes_duration = 50;
 
 p2_damage = false;
 
+healthbar_y = 36;
+healthbar_vspeed = 0;
+lerped_hp = hp;
+
 instance_create(0, 0, objBossHealthbar);

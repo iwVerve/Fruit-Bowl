@@ -11,3 +11,4 @@ if p2_leave_spawn_time % p2_leave_spawn_period == 0 {
 p2_leave_spawn_time += 1;
 
 vspeed -= 0.2;
+healthbar_vspeed -= 0.1;
