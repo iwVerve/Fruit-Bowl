@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 destroy = false;
+active = false;
 </string>
           </argument>
         </arguments>
@@ -49,7 +50,69 @@ destroy = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>//event_inherited();
+
+if !active {
+    exit;
+}
+
+if place_meeting(x, y, objPlayer) {
+    if instance_exists(objBossEagle) {
+        objBossEagle.p2_damage = true;
+        active = false;
+    }
+    var side = ternary(x &lt; 400, -1, 1);
+    for(var i = 0; i &lt; 6; i += 1) {
+        var xx = 400 + side * (400 - (48 + i * 32));
+        var yy = 0;
+        var inst = instance_create(xx, yy, objBossP2Bullet);
+        inst.gravity = 0.1 + sqr(6 - i) * 0.00125;
+        inst.vspeed = 1.2 + sqr(6 - i) * 0.015;
+        create_instance_display(inst);
+    }
+}
+
+time += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objPlayer">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !active {
+    exit;
+}
+
+var locked = (ds_map_exists(global.trigger, key) &amp;&amp; !global.trigger[? key]);
+if (!locked)
+{
+    if (sound != -1)
+    {
+        var snd = audio_play_sound(sound, 0, false);
+        audio_sound_gain(snd, volume, 0);
+    }
+    global.trigger[? trg] = true;
+    if (destroy)
+    {
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

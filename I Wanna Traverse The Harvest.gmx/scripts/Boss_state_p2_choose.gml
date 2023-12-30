@@ -11,3 +11,6 @@ next_attack += 1;
 with(objBossP2DamageTrigger) {
     active = true;
 }
+with(objBossP2Trigger) {
+    active = true;
+}

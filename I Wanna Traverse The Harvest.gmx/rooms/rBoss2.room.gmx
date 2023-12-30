@@ -211,9 +211,9 @@ savedata_set_persistent("seenBoss2", true);</code>
     <instance objName="objBossCoverStopper" x="160" y="544" name="inst_D8F7CF56" locked="0" code="" scaleX="15" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objBossCoverStopper" x="640" y="384" name="inst_49FB06CD" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objBossCoverStopper" x="144" y="384" name="inst_2FC2684D" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="objBossP2DamageTrigger" x="32" y="440" name="inst_9368B276" locked="0" code="" scaleX="3" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="objBossP2DamageTrigger" x="672" y="440" name="inst_46B6D2C2" locked="0" code="" scaleX="3" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="288" y="-32" name="inst_FE2FC769" locked="0" code="roomTo = rBoss3;&#xA;smooth = true;&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossP2Trigger" x="32" y="432" name="inst_CD7B31B7" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objBossP2Trigger" x="672" y="432" name="inst_84B3B4B7" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bGlitchTiles" x="256" y="544" w="32" h="32" xo="64" yo="0" id="10012757" name="inst_0708A80F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
