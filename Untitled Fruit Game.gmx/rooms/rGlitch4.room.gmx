@@ -12,7 +12,8 @@
   <showcolour>-1</showcolour>
   <code>with(objBlock) {
     //visible = true;
-}</code>
+}
+savedata_set_persistent("seenGlitch4", true);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

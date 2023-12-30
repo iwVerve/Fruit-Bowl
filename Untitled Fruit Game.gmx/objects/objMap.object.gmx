@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -49,12 +49,80 @@ start = array_from_values(
     array_from_values(-1, -1, -1, -1, 1,  -1),
     array_from_values(-1, -1, -1, -1, -1, -1),
 );
+extra_rooms = array_from_values(
+    array_from_values(7, 2, 29, rGlitch1, savedata_get("seenGlitch1")),
+    array_from_values(7, 3, 30, rGlitch2, savedata_get("seenGlitch2")),
+    array_from_values(8, 3, 31, rGlitch3, savedata_get("seenGlitch3")),
+    array_from_values(8, 4, 32, rGlitch4, savedata_get("seenGlitch4")),
+    array_from_values(8, 5, 33, rGlitch5, savedata_get("seenBoss1")),
+    array_from_values(9, 5, 34, rBoss1,   savedata_get("seenBoss1")),
+    array_from_values(9, 4, 35, rBoss2,   savedata_get("seenBoss2")),
+    array_from_values(9, 3, 36, rBoss3,   savedata_get("seenBoss3")),
+);
 
 scale = 0.3125;
+var spr = sprRoomThumbnail;
+var width = scale * sprite_get_width(spr);
+var height = scale * sprite_get_height(spr);
+emitters = array_create(0);
+emitter_count = 0;
+for(var i = 0; i &lt; array_height_2d(extra_rooms); i += 1) {
+    if !extra_rooms[i, 4] {
+        continue;
+    }
+    var xx = extra_rooms[i, 0];
+    var yy = extra_rooms[i, 1];
+    var l = true, r = true, t = true, b = true;
+    for(var j = 0; j &lt; array_height_2d(extra_rooms); j += 1) {
+        if !extra_rooms[j, 4] {
+            continue;
+        }
+        if (extra_rooms[j, 0] == xx - 1 &amp;&amp; extra_rooms[j, 1] == yy) l = false;
+        if (extra_rooms[j, 0] == xx + 1 &amp;&amp; extra_rooms[j, 1] == yy) r = false;
+        if (extra_rooms[j, 1] == yy - 1 &amp;&amp; extra_rooms[j, 0] == xx) t = false;
+        if (extra_rooms[j, 1] == yy + 1 &amp;&amp; extra_rooms[j, 0] == xx) b = false;
+    }
+    var psys = global.glitch_particle_system;
+    var ptyp = global.glitch_particle_type;
+    var emit;
+    var el = x + width * extra_rooms[i, 0];
+    var er = x + width * (extra_rooms[i, 0] + 1) - 1;
+    var et = y + height * extra_rooms[i, 1];
+    var eb = y + height * (extra_rooms[i, 1] + 1) - 1;
+    if l {
+        emit = part_emitter_create(psys);
+        part_emitter_region(psys, emit, el, el, et, eb, ps_shape_line, ps_distr_linear);
+        part_emitter_stream(psys, emit, ptyp, -6);
+        emitters[emitter_count] = emit;
+        emitter_count += 1;
+    }
+    if r {
+        emit = part_emitter_create(psys);
+        part_emitter_region(psys, emit, er, er, et, eb, ps_shape_line, ps_distr_linear);
+        part_emitter_stream(psys, emit, ptyp, -6);
+        emitters[emitter_count] = emit;
+        emitter_count += 1;
+    }
+    if t {
+        emit = part_emitter_create(psys);
+        part_emitter_region(psys, emit, el, er, et, et, ps_shape_line, ps_distr_linear);
+        part_emitter_stream(psys, emit, ptyp, -4);
+        emitters[emitter_count] = emit;
+        emitter_count += 1;
+    }
+    if b {
+        emit = part_emitter_create(psys);
+        part_emitter_region(psys, emit, el, er, eb, eb, ps_shape_line, ps_distr_linear);
+        part_emitter_stream(psys, emit, ptyp, -4);
+        emitters[emitter_count] = emit;
+        emitter_count += 1;
+    }
+}
 
 hover_x = -1;
 hover_y = -1;
 hover_room = -1;
+extra_hover_room = -1;
 no_room_index = sprite_get_number(sprRoomThumbnail) - 1;
 
 total_width = array_length_2d(images, 0) * sprite_get_width(sprRoomThumbnail) * scale;
@@ -108,6 +176,31 @@ if !savedata_get("seenO") {
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+
+event_user(0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -139,6 +232,23 @@ else {
     hover_room = -1;
 }
 
+extra_hover_room = noone;
+for(var i = 0; i &lt; array_height_2d(extra_rooms); i += 1) {
+    if !extra_rooms[i, 4] {
+        continue;
+    }
+    var x_pos = extra_rooms[i, 0];
+    var y_pos = extra_rooms[i, 1];
+    var thumbnail_left = x + width * x_pos;
+    var thumbnail_top = y + height * y_pos;
+    var thumbnail_right = thumbnail_left + width - 1;
+    var thumbnail_bottom = thumbnail_top + height - 1;
+    if in_range(mouse_x, thumbnail_left, thumbnail_right) &amp;&amp; in_range(mouse_y, thumbnail_top, thumbnail_bottom) {
+        extra_hover_room = i;
+        break;
+    }
+}
+
 if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
     if hover_room != -1 {
         var target = start[hover_y, hover_x];
@@ -149,7 +259,64 @@ if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
         global.autosave = true;
         room_goto(hover_room);
     }
+    else if extra_hover_room != noone {
+        instance_destroy(objPlayer);
+        global.autosave = true;
+        room_goto(extra_rooms[extra_hover_room, 3]);
+    }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+
+for(var i = 0; i &lt; emitter_count; i += 1) {
+    part_emitter_destroy(global.glitch_particle_system, emitters[i]);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup
+
+event_user(0);
 </string>
           </argument>
         </arguments>
@@ -222,6 +389,21 @@ texture_set_interpolation(true);
                 }
                 draw_rectangle(xx, yy, xx + width - 2 * scale * margin - 1, yy + height - 2 * scale * margin - 1, true);
             }
+        }
+    }
+    for(var i = 0; i &lt; array_height_2d(extra_rooms); i += 1) {
+        if !extra_rooms[i, 4] {
+            continue;
+        }
+        var xx = x + width * extra_rooms[i, 0];
+        var yy = y + height * extra_rooms[i, 1];
+        var image = extra_rooms[i, 2];
+        draw_sprite_ext(spr, image, xx, yy, scale, scale, 0, c_white, 1);
+        if i == extra_hover_room {
+            draw_set_color(c_white);
+            draw_set_alpha(0.25);
+                draw_rectangle(xx, yy, xx + width - 1, yy + height - 1, false);
+            draw_set_alpha(1);
         }
     }
 texture_set_interpolation(false);

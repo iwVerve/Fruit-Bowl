@@ -317,6 +317,12 @@ if (global.debugMode &amp;&amp; global.gameStarted &amp;&amp; !global.gamePaused
         with(objPlayer) {
             visible = !visible;
         }
+        with(objBossEagle) {
+            visible = false;
+        }
+        with(objBossHealthbar) {
+            visible = false;
+        }
     }
      
     if keyboard_check_pressed(ord("O")) {
@@ -540,7 +546,7 @@ alarm[0] = 50;  //Pause music when it's done fading
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_system_clear(global.glitch_particle_system);
+            <string>part_particles_clear(global.glitch_particle_system);
 </string>
           </argument>
         </arguments>

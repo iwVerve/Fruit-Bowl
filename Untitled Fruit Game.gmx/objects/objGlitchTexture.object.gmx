@@ -72,40 +72,41 @@ right_emitter = noone;
 bottom_emitter = noone;
 left_emitter = noone;
 
-var emit = part_emitter_create(global.glitch_particle_system);
-part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -14);
+var psys = global.glitch_particle_system;
+var emit = part_emitter_create(psys);
+part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(psys, emit, global.glitch_particle_type, -14);
 emitters[0] = emit;
 emitter_count = 1;
 
 if top_edge {
-    emit = part_emitter_create(global.glitch_particle_system);
-    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
-    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emit = part_emitter_create(psys);
+    part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
     emitters[1] = emit;
     emitter_count = 2;
 }
 
 if bottom_edge {
-    emit = part_emitter_create(global.glitch_particle_system);
-    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
-    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emit = part_emitter_create(psys);
+    part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }
 
 if right_edge {
-    emit = part_emitter_create(global.glitch_particle_system);
-    part_emitter_region(global.glitch_particle_system, emit, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
-    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emit = part_emitter_create(psys);
+    part_emitter_region(psys, emit, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }
 
 if left_edge {
-    emit = part_emitter_create(global.glitch_particle_system);
-    part_emitter_region(global.glitch_particle_system, emit, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
-    part_emitter_stream(global.glitch_particle_system, emit, global.glitch_particle_type, -6);
+    emit = part_emitter_create(psys);
+    part_emitter_region(psys, emit, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+    part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }

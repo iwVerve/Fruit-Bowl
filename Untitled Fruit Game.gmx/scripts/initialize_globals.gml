@@ -84,7 +84,7 @@ pause_t = 0;
 
 var psys = part_system_create();
 global.glitch_particle_system = psys;
-part_system_depth(psys, 0);
+part_system_depth(psys, 5);
 
 var ptyp = part_type_create();
 global.glitch_particle_type = ptyp;
@@ -93,4 +93,5 @@ part_type_colour_hsv(ptyp, 0, 255, 127, 127, 255, 255);
 part_type_speed(ptyp, 0.05, 0.05, 0, 0);
 part_type_direction(ptyp, 0, 360, 0, 0);
 part_type_life(ptyp, 50, 50);
+
 

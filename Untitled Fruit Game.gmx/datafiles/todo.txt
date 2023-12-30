@@ -1,5 +1,4 @@
 redo green apple?
-redo hub screenshots
 missing music:
 - Fork room
 - Spoon area
@@ -17,4 +16,3 @@ more different seal negative
 true end room
 sfx
 test no easy mode if no savefile
-warp to glitch + boss
