@@ -1,5 +1,6 @@
 Untitled Fruit Game
 Made by Verve
+Press Shift to start
 
 
 Testplay:

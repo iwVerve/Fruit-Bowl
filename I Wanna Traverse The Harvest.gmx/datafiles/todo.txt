@@ -7,4 +7,3 @@ boss
 true end room
 sfx
 trim songs
-game title (traverse the harvest)
