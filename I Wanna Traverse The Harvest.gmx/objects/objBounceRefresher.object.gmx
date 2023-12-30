@@ -46,6 +46,7 @@ spikes_sprite = sprBounceRefresherSpikes;
 x_prev = x;
 y_prev = y;
       
+bwomp = false;
 </string>
           </argument>
         </arguments>
@@ -186,7 +187,7 @@ if cooldown &lt;= 0 {
                 }
             } 
             
-            var snd = audio_play_sound(sndBounceBoing, 0, false);
+            var snd = audio_play_sound(ternary(bwomp, sndBwomp, sndBounceBoing), 0, false);
             audio_sound_pitch(snd, random_range(0.8, 1.2));
             
             if room == rJigsaw {

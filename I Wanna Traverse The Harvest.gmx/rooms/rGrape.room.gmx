@@ -163,7 +163,7 @@
     <instance objName="objMiniRight" x="288" y="32" name="inst_BC065030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="128" name="inst_BCB60EF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="416" y="96" name="inst_18971FA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="204" y="288" name="inst_66B1C762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="204" y="288" name="inst_66B1C762" locked="0" code="bwomp = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="128" y="192" name="inst_9BC74C27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="192" name="inst_0FAD52D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="192" name="inst_CD275C73" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>

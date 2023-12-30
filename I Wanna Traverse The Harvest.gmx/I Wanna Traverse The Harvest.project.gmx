@@ -430,6 +430,7 @@
       <sound>sound\sndScrape</sound>
       <sound>sound\sndCannon</sound>
       <sound>sound\sndOProjectorPush</sound>
+      <sound>sound\sndBwomp</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>
@@ -1299,6 +1300,7 @@
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
+      <object>objects\objBossP2Trigger</object>
       <object>objects\objClearBowl</object>
       <object>objects\objClearCutscene</object>
       <object>objects\objClearBackspace</object>

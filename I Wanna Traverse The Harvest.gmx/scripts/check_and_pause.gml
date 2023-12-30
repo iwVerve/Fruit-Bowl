@@ -35,7 +35,7 @@ if (global.pauseDelay <= 0)    //Check if pause delay is active
                             }
                         }
                         if have_all {
-                            savedata_set("allSeals", true);
+                            savedata_set_persistent("allSeals", true);
                         }
                     }
                 }

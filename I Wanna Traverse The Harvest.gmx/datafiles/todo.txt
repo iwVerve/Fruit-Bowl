@@ -4,5 +4,7 @@ boss
 - story
 - ending
 - walls redo
+- phase 2 triggers
 true end room
 sfx
+rNegative2 loop to top without seal
