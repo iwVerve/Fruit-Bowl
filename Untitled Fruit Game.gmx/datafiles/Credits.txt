@@ -1,3 +1,7 @@
+Source:
+https://github.com/iwVerve/Fruit-Bowl
+
+
 Tools:
 GameMaker: Studio
 YoYoYo Engine Verve Edition
@@ -23,9 +27,16 @@ Platforming 5: [3] - Rooftop Run (Night)
 Outside: [4] - For the Sake of One Flower
 Outside platforming: [4] - So Close, Yet so Far Away
 Secret 1: [5] - Anyway Let's Begin the Diagnosis
+Secret 2: [9] - The Ratings Are In
 Secret 3: [6] - In The Pocket
+Secret 4: [8] - I Hennes Majestats Hemliga Hatt
+Secret 5: TODO
 Final platforming: [5] - The Corpse Whisperer
+Boss 1: [7] - B-in [Battle 1]
+Boss 2: [7] - 1st F. [Forest]
+Boss 3: [7] - G.D. [Mid Boss]
 Clear: [1] - papapa sweet swing (Main Theme)
+Clear 2: TODO
 
 [1]
 Majokko de'GO♪GO♪ ~Paul to Mira☆Kuru Daisakusen~
@@ -47,6 +58,15 @@ https://www.youtube.com/playlist?list=PL77kWsjN7iun3rLufB_bh2YZCNhZnRYKs
 [6]
 Bomb Rush Cyberfunk
 https://www.youtube.com/playlist?list=PLD6ujQ0tHAv2qLS5FKH6B8MjtfEg1kwsn
+[7]
+Grounseed
+https://downloads.khinsider.com/game-soundtracks/album/grounseed-opna-ver.-pc-98
+[8]
+Slagsmålsklubben - Sagan om konungens årsinkomst
+https://www.youtube.com/watch?v=d0713VsPa_s&list=OLAK5uy_mVn3RElnXKscE0dtZkVEMbnRYaj3jlFb0&index=10
+[9]
+A Hat In Time
+https://www.youtube.com/watch?v=DXN8tnErII0&list=PLAeP_W1RI8JHKosqaCKsNreqGt5HSVd1V&index=25
 
 
 Fonts:

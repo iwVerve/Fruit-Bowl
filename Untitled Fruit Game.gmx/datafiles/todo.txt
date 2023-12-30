@@ -1,9 +1,6 @@
-redo green apple?
 missing music:
-- Fork room
-- Spoon area
 - Negative
-- Boss
+/ Boss
 - True end
 boss
 - boss sprite
@@ -11,8 +8,8 @@ boss
 - story
 - ending
 - walls redo
-boss dialogue bread reference
 more different seal negative
 true end room
 sfx
-test no easy mode if no savefile
+volume balance
+trim songs

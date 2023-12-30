@@ -93,12 +93,15 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == grav
         if phase == 0 {
             var inst = instance_create(400, -64, objBossEagle);
             inst.state = Boss_state_p1_start;
+            music_play("B-in", true);
         }
         else if phase == 1 {
             objBossEagle.state = Boss_state_p2_start;
+            music_play("1stF", true);
         }
         else if phase == 2 {
             objBossEagle.state = Boss_state_p3_start;
+            music_play("GD", true);
         }
         with(objSaveBlocker) {
             instance_destroy();

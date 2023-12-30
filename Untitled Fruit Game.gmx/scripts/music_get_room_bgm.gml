@@ -31,6 +31,9 @@ switch (room) {
     case rTowerOutside:
     case rOutsideRight:
         return "ForTheSakeOfOneFlower";
+    
+    case rTower:
+        return "Adagio";
         
     case rClimb1:
     case rClimb2:
@@ -39,18 +42,27 @@ switch (room) {
         
     case rSecret1:
         return "AnywayLetsBeginTheDiagnosis";
+    
+    case rFops:
+        return "TheRatingsAreIn";
+    
+    case rJigsaw:
+        return "InThePocket";
         
     case rSecret3:
         return "RooftopRun";
     
-    case rTower:
-        return "Adagio";
+    case rO1:
+    case rO2:
+    case rO3:
+    case rO4:
+    case rO5:
+        return "IHennesMajestatsHemligaHatt";
     
-    case rClear:
-        return "PapapaSweetSwing";
-    
-    case rJigsaw:
-        return "InThePocket";
+    case rNegative1:
+    case rNegative2:
+    case rNegative3:
+        return -1;
     
     case rGlitch1:
     case rGlitch2:
@@ -58,6 +70,29 @@ switch (room) {
     case rGlitch4:
     case rGlitch5:
         return "TheCorpseWhisperer";
+    
+    case rBoss1:
+    case rBoss2:
+    case rBoss3:
+        var song;
+        switch(room) {
+            case rBoss1:
+                song = "B-in"; break;
+            case rBoss2:
+                song = "1stF"; break;
+            case rBoss3:
+                song = "GD"; break;
+        }
+        if global.currentMusicID == music_load(song) {
+            return song;
+        }
+        return -1;
+    
+    case rClear:
+        return "PapapaSweetSwing";
+    
+    //case rTrueClear:
+        //return -1;
 
     default:
         return -1;          //Play nothing

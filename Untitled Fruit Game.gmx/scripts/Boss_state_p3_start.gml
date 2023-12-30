@@ -6,9 +6,9 @@ shield_iframes_duration = 100;
 
 attacks = array_shuffle(array_from_values(
     Boss_state_p3_attack_ceiling_start,
-    Boss_state_p3_attack_wrap_start,
     Boss_state_p3_attack_fall_start,
 ));
+attacks[2] = Boss_state_p3_attack_wrap_start;
 next_attack = 0;
 
 with(objGlitchTexture) {
