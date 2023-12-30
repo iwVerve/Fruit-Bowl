@@ -1,6 +1,5 @@
 missing music:
 - Negative
-/ Boss
 - True end
 boss
 - boss sprite
@@ -8,7 +7,7 @@ boss
 - story
 - ending
 - walls redo
-more different seal negative
+nerf seals
 true end room
 sfx
 volume balance

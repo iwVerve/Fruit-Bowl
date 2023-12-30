@@ -25,36 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>all_backgrounds = array_from_values(
-    bTutorialTiles,
-    bSecret1Tiles,
-    bBananaTiles,
-    bCherryTiles,
-    bGrapeTiles,
-    bIntermission1Tiles,
-    bRedAppleTiles,
-    bGreenAppleTiles,
-    bKiwiTiles,
-    bCoconutTiles,
-    bIntermission2Tiles,
-    bBlackberryTiles,
-    bStrawberryTiles,
-    bWatermelonTiles,
-    bCloudTiles,
-    bJigsawTiles,
-    bLemonTiles,
-    bOTiles,
-);
-//background = array_create(4);
-//left = array_create(4);
-//top = array_create(4);
-//width = 16;
-//height = 16;
-//init = false;
-
-period = irandom_range(20, 40);
+            <string>period = irandom_range(20, 40);
 texture_change_chance = 0.05;
 time = irandom(period - 1);
+
+emitter_move_period = 5;
+emitter_x = x;
+emitter_y = y;
 
 sprite_index = sprGlitchTexture;
 image_speed = 0;
@@ -83,6 +60,7 @@ if top_edge {
     emit = part_emitter_create(psys);
     part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
     part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
+    top_emitter = emit;
     emitters[1] = emit;
     emitter_count = 2;
 }
@@ -91,6 +69,7 @@ if bottom_edge {
     emit = part_emitter_create(psys);
     part_emitter_region(psys, emit, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
     part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
+    bottom_emitter = emit;
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }
@@ -99,6 +78,7 @@ if right_edge {
     emit = part_emitter_create(psys);
     part_emitter_region(psys, emit, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
     part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
+    right_emitter = emit;
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }
@@ -107,6 +87,7 @@ if left_edge {
     emit = part_emitter_create(psys);
     part_emitter_region(psys, emit, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
     part_emitter_stream(psys, emit, global.glitch_particle_type, -6);
+    left_emitter = emit;
     emitters[emitter_count] = emit;
     emitter_count += 1;
 }
@@ -160,6 +141,22 @@ event_user(0);
             <string>if time % period == 0 &amp;&amp; random(1) &gt; texture_change_chance {
     image_index = irandom(image_number - 1);
 } 
+
+if time % emitter_move_period == 0 {
+    if x != emitter_x || y != emitter_y {
+        var psys = global.glitch_particle_system;
+        if left_emitter != noone
+            part_emitter_region(psys, left_emitter, bbox_left, bbox_left, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+        if right_emitter != noone
+            part_emitter_region(psys, right_emitter, bbox_right, bbox_right, bbox_top, bbox_bottom, ps_shape_line, ps_distr_linear);
+        if top_emitter != noone
+            part_emitter_region(psys, top_emitter, bbox_left, bbox_right, bbox_top, bbox_top, ps_shape_line, ps_distr_linear);
+        if bottom_emitter != noone
+            part_emitter_region(psys, bottom_emitter, bbox_left, bbox_right, bbox_bottom, bbox_bottom, ps_shape_line, ps_distr_linear);
+        emitter_x = x;
+        emitter_y = y;
+    }
+}
 
 if disappear {
     image_alpha -= 1/20;
