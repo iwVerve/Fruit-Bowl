@@ -801,6 +801,14 @@
         <sprite>sprites\sprBossBulletBlueberry</sprite>
         <sprite>sprites\sprBossBulletMango</sprite>
         <sprite>sprites\sprBossBulletStrawberry</sprite>
+        <sprite>sprites\sprBossBulletBanana</sprite>
+        <sprite>sprites\sprBossBulletLemon</sprite>
+        <sprite>sprites\sprBossBulletAvocado</sprite>
+        <sprite>sprites\sprBossBulletMelon</sprite>
+        <sprite>sprites\sprBossBulletCoconut</sprite>
+        <sprite>sprites\sprBossBulletGrape</sprite>
+        <sprite>sprites\sprBossBulletLime</sprite>
+        <sprite>sprites\sprBossPomegranate</sprite>
       </sprites>
       <sprite>sprites\sprBossHealthbar</sprite>
       <sprite>sprites\sprSpeechBubble</sprite>

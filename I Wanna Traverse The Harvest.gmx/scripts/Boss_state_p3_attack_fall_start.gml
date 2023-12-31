@@ -11,6 +11,7 @@ if instance_exists(objPlayer) {
 
 fall_bouncer_spawn_side = -side;
 fall_move_glitch_delay = 120;
+shield_iframes = fall_move_glitch_delay + 20;
 
 var warn = instance_create(0, 0, objBossFallWarning);
 warn.side = side;

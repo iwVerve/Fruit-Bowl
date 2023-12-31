@@ -12,6 +12,6 @@ cover_spawn_step = 16;
 cover_bouncer_delay = 325;
 cover_bouncer = noone;
 cover_bouncer_y = 480;
-cover_reset_delay = 200;
+cover_reset_delay = 300;
 
 state = Boss_state_p2_attack_cover;

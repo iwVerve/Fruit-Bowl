@@ -66,12 +66,12 @@ if place_meeting(x, y, objPlayer) {
         event_user(0);
     }
     var side = ternary(x &lt; 400, -1, 1);
-    for(var i = 0; i &lt; 6; i += 1) {
-        var xx = 400 + side * (400 - (48 + i * 32));
+    for(var i = 0; i &lt; 7; i += 1) {
+        var xx = 400 + side * (400 - (48 + i * 24));
         var yy = 0;
         var inst = instance_create(xx, yy, objBossP2Bullet);
-        inst.gravity = 0.1 + sqr(6 - i) * 0.00075;
-        inst.vspeed = 1.2 + sqr(6 - i) * 0.01;
+        inst.gravity = 0.1 + sqr(7 - i) * 0.0008;
+        inst.vspeed = 1.2 + sqr(7 - i) * 0.008;
         create_instance_display(inst);
     }
 }

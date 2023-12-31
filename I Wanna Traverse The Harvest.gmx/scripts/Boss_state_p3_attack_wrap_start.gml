@@ -8,7 +8,7 @@ wrap_bullet_angle = random(360);
 wrap_appear_time = 0;
 wrap_appear_delay = 30;
 wrap_appear_period = 350;
-wrap_appear_count = 30;
+wrap_appear_count = 25;
 wrap_appear_bouncer_count = 25;
 wrap_appear_regions = array_from_values(
     array_from_values(0,   192, 95,  415),

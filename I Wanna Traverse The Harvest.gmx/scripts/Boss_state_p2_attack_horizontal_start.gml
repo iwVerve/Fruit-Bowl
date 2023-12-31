@@ -18,12 +18,12 @@ i.image_angle = 270;
 i = instance_create(400 + distance, yy, objBounceRefresherAppear);
 i.image_angle = 90;
 
-for(var i = 0; i < 4; i += 1) {
+for(var i = 0; i < 3; i += 1) {
     for(var s = -1; s <= 1; s += 2) {
         if i == 0 && s == 1 {
             continue;
         }
-        var bullet = instance_create(400 + s * i * 32, 528 + 128, objBossHorizontalObstacleBullet);
+        var bullet = instance_create(400 + s * i * 44, 528 + 128, objBossHorizontalObstacleBullet);
         bullet.destroy_outside_room = false;
     }
 }
