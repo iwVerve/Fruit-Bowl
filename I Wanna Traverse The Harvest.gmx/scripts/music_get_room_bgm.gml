@@ -92,8 +92,8 @@ switch (room) {
     case rClear:
         return "PapapaSweetSwing";
     
-    //case rTrueClear:
-        //return -1;
+    case rTrueClear:
+        return "Europe";
 
     default:
         return -1;          //Play nothing

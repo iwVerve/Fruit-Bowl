@@ -27,19 +27,19 @@
             <kind>1</kind>
             <string>images = array_from_values(
     array_from_values(-1, -1,  0, 26, 27, 28),
-    array_from_values(-1, 18,  1, -1, -1, -1),
+    array_from_values(-1, 18,  1, -1, 37, -1),
     array_from_values(-1, -1,  2,  3, 17, 24),
     array_from_values( 8,  6,  5,  4, 16, 23),
     array_from_values( 9,  7, 25, 19, 15, 21),
     array_from_values(10, 11, 12, 13, 14, 20),
 );
 rooms = array_from_values(
-    array_from_values(-1,             -1,          rFall,          rFops,         rJigsaw, rO1),
-    array_from_values(-1,             rSecret1,    rTutorial,      -1,            -1,      -1),
-    array_from_values(-1,             -1,          rBanana,        rCherry,       rTower,  rClimb3),
-    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower,  rClimb2),
-    array_from_values(rIntermission2, rKiwi,       rSecret3,       rOutsideAbove, rTower,  rClimb1),
-    array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower,  rOutsideRight),
+    array_from_values(-1,             -1,          rFall,          rFops,         rJigsaw,    rO1),
+    array_from_values(-1,             rSecret1,    rTutorial,      -1,            rTrueClear, -1),
+    array_from_values(-1,             -1,          rBanana,        rCherry,       rTower,     rClimb3),
+    array_from_values(rCoconut,       rApple,      rIntermission1, rGrape,        rTower,     rClimb2),
+    array_from_values(rIntermission2, rKiwi,       rSecret3,       rOutsideAbove, rTower,     rClimb1),
+    array_from_values(rBlackberry,    rStrawberry, rWatermelon,    rOutside,      rTower,     rOutsideRight),
 );
 start = array_from_values(
     array_from_values(-1, -1, -1, -1, -1, -1),
@@ -170,7 +170,10 @@ if !savedata_get("seenO") {
     images[0, 5] = -1;
     rooms[0, 5] = -1;
 }
-
+if !savedata_get("trueClear") {
+    images[1, 4] = -1;
+    rooms[1, 4] = -1;
+}
 </string>
           </argument>
         </arguments>
@@ -227,6 +230,20 @@ hover_y = floor((mouse_y - y) / height);
     
 if hover_x &gt;= 0 &amp;&amp; hover_x &lt; array_length_2d(rooms, 0) &amp;&amp; hover_y &gt;= 0 &amp;&amp; hover_y &lt; array_height_2d(rooms) {
     hover_room = rooms[hover_y, hover_x];
+    var img = images[hover_y, hover_x];
+    if in_range(img, 26, 28) || img == 37 {
+        var margin = 16;
+        if !in_range(mouse_x - x,
+            hover_x * width + scale * margin,
+            (hover_x + 1) * width - scale * margin - 1
+            ) ||
+            !in_range(mouse_y - y,
+            hover_y * height + scale * margin,
+            (hover_y + 1) * height - scale * margin - 1,
+            ) {
+            hover_room = -1;
+        } 
+    }
 }
 else {
     hover_room = -1;
@@ -357,7 +374,7 @@ texture_set_interpolation(true);
             if index == 22 {
                 draw_sprite_ext(spr, no_room_index, t_x, t_y, scale, scale, 0, c_white, 1);            
             }
-            var is_secret_room = in_range(index, 26, 28);
+            var is_secret_room = in_range(index, 26, 28) || index == 37;
             if !is_secret_room {
                 draw_sprite_ext(spr, index, t_x, t_y, scale, scale, 0, c_white, 1);
             }
@@ -386,6 +403,9 @@ texture_set_interpolation(true);
                     case 28:
                         draw_set_color(c_green);
                         break;
+                    case 37:
+                        draw_set_color(c_white);
+                        break;
                 }
                 draw_rectangle(xx, yy, xx + width - 2 * scale * margin - 1, yy + height - 2 * scale * margin - 1, true);
             }
@@ -413,7 +433,8 @@ if hover_room != -1 &amp;&amp; instance_exists(objPlayer) {
     var yy = y + height * hover_y;
     var w = width - 1;
     var h = height - 1;
-    if in_range(images[hover_y, hover_x], 26, 28) {
+    var img = images[hover_y, hover_x];
+    if in_range(img, 26, 28) || img == 37 {
         xx += margin * scale;
         yy += margin * scale;
         w -= 2 * margin * scale;

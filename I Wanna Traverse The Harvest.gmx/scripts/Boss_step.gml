@@ -17,7 +17,7 @@ if bullet != noone || p2_damage {
             instance_destroy(bullet);
         }
     }
-    else {
+    else if hp > 0 {
         if iframes <= 0 {
             hp -= 1;
             boss_hit = true;

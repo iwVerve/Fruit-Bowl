@@ -12,7 +12,7 @@ if !cover_done_spawning{
         }
         else {
             var number = instance_number(objBossCoverBullet);
-            var rng = array_shuffle(get_fair_rng(-160, 160, number, 0.99));
+            var rng = array_shuffle(get_fair_rng(-192, 192, number, 0.99));
             for(var i = 0; i < number; i += 1) {
                 var inst = instance_find(objBossCoverBullet, i);
                 inst.offset = rng[i];

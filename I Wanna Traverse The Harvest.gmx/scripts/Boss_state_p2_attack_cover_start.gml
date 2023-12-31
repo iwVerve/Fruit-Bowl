@@ -3,7 +3,7 @@
 cover_time = 0;
 cover_direction = choose(-1, 1)
 cover_done_spawning = false;
-cover_spawn_period = 5;
+cover_spawn_period = 4;
 cover_spawn_range = 216;
 cover_spawn_x = 400 - cover_direction * cover_spawn_range;
 cover_spawn_y_min = 176;

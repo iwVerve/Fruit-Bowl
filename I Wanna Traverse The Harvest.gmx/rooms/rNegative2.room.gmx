@@ -114,7 +114,6 @@
     <instance objName="objNegativeBackground" x="0" y="0" name="inst_9ED6DC80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSealNegative" x="192" y="192" name="inst_571F983F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objNegativeInstructions" x="0" y="64" name="inst_87CFAEDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objNegativeFloor" x="0" y="592" name="inst_529BB8EF" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="0" y="608" name="inst_E101A7B5" locked="0" code="roomTo = rNegative3;&#xA;smooth = true;&#xA;" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

@@ -25,13 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_number(object_index) &gt; 1 {
-    instance_destroy();
-    exit;
+            <string>background = background_index[0];
+if instance_number(object_index) &gt; 1 {
+    var stay = false;
+    with(object_index) {
+        if id != other.id &amp;&amp; background != other.background {
+            stay = true;
+        }
+    }
+    if !stay {
+        instance_destroy();
+        exit;
+    }
 }
 
 time = 0;
-background = background_index[0];
 </string>
           </argument>
         </arguments>

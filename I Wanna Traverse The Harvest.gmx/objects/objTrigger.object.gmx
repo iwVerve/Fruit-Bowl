@@ -63,6 +63,10 @@ if (!locked)
         audio_sound_gain(snd, volume, 0);
     }
     global.trigger[? trg] = true;
+    if room == rO5 &amp;&amp; trg == 1 {
+        objOWarp.room_to = rO6;
+        objOWarp.autosave = true;
+    }
     if (destroy)
     {
         instance_destroy();

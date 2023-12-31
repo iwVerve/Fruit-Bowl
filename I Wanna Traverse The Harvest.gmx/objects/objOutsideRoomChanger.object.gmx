@@ -80,8 +80,12 @@ if (!in_range(other.x, 0, room_width) || !in_range(other.y, 0, room_height))  //
             other.x += offsetX;
             other.y += offsetY;
             
+            var r = roomTo;
+            if room == rNegative2 &amp;&amp; y &gt;= 608 &amp;&amp; !savedata_get("sealNegative") {
+                r = rNegative1;
+            }
             other.already_warped = true;
-            room_goto(roomTo);
+            room_goto(r);
         }
     }
 }

@@ -38,7 +38,7 @@ acceleration_y = 0;
 start_frames = 5;
 max_speed = 12;
 
-bounce_delay = 120;
+bounce_delay = 80;
 offset = 0;
 </string>
           </argument>
@@ -94,8 +94,8 @@ else if state == 2 {
     if time &gt;= bounce_delay {
         if instance_exists(objPlayer) {
             var xx = objPlayer.x - x + offset;
-            gravity = 0.15;
-            vspeed = -random_range(10, 11);
+            gravity = 0.2;
+            vspeed = -random_range(11, 13);
             hspeed = xx / (-2 * vspeed / gravity);
         }
         state = 3;

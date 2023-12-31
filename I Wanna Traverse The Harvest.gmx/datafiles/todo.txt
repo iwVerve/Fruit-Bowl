@@ -7,4 +7,5 @@ boss
 - phase 2 triggers
 true end room
 sfx
-rNegative2 loop to top without seal
+semcret warp out
+game icon

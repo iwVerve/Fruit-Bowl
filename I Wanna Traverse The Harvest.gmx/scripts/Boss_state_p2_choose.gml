@@ -1,7 +1,7 @@
 ///Boss_state_p2_choose()
 
 if hp <= 0 {
-    state = Boss_state_p2_leave_start;
+    state = Boss_state_p2_talk_start;
     exit;
 }
 
