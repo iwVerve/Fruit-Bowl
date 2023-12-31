@@ -21,7 +21,12 @@ if shield_hp > 0 {
     if shield_iframes > 0 {
         alpha = 0.5;
     }
-    draw_set_alpha(alpha);
-        draw_sprite(sprBossShield, 0, x, y);
+    var image = floor(0.125 * shield_time);
+    draw_set_alpha(shield_alpha * alpha);
+        draw_sprite(sprBossShield, image, x, y);
+        draw_set_blend_mode(bm_add);
+            draw_set_alpha(shield_alpha * alpha);
+            draw_sprite(sprBossShield, 2 * image, x, y);
+        draw_set_blend_mode(bm_normal);
     draw_set_alpha(1);
 }

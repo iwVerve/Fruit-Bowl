@@ -18,6 +18,8 @@ shield_hp = 0;
 shield_hit = false;
 shield_iframes = 0;
 shield_iframes_duration = 50;
+shield_time = 0;
+shield_alpha = 0.3;
 
 p2_damage = false;
 

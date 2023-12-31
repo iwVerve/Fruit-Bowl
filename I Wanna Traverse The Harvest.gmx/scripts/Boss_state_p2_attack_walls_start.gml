@@ -2,8 +2,8 @@
 
 walls_time = 0;
 walls_bullet_counter = 0;
-walls_bullet_period = 40;
-walls_wall_period = 7;
+walls_bullet_period = 45;
+walls_wall_period = 6;
 walls_bullet_speed = 2.5;
 walls_aimed_period = 85;
 walls_aimed_angle_range = 10;

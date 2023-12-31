@@ -785,6 +785,7 @@
       <sprite>sprites\sprBossEagle</sprite>
       <sprite>sprites\sprEagleSplat</sprite>
       <sprite>sprites\sprBossShield</sprite>
+      <sprite>sprites\sprBossCannonball</sprite>
       <sprites name="Bullets">
         <sprite>sprites\sprBossBulletOrange</sprite>
         <sprite>sprites\sprBossBulletApple</sprite>
@@ -1317,7 +1318,6 @@
       <object>objects\objBounceBounceParticle</object>
       <object>objects\objMap</object>
       <object>objects\objWatermelonTrigger</object>
-      <object>objects\objBossP2Trigger</object>
       <object>objects\objClearBowl</object>
       <object>objects\objClearCutscene</object>
       <object>objects\objClearBackspace</object>
@@ -1432,6 +1432,9 @@
       <object>objects\objBossHorizontalWarning</object>
       <object>objects\objBossP2Bullet</object>
       <object>objects\objBossP2DamageTrigger</object>
+      <object>objects\objBossP2Trigger</object>
+      <object>objects\objBossCannon</object>
+      <object>objects\objBossCannonball</object>
       <object>objects\objBossBulletWrapParent</object>
       <object>objects\objBossCeilingBullet</object>
       <object>objects\objBossCeilingTrailBullet</object>

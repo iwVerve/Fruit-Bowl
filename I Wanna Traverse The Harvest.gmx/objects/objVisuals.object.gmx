@@ -48,6 +48,8 @@
     objFork,
     objNegativeSign,
     objGlitchTexture,
+    objBossBulletParent,
+    objBossEagle,
 );
 
 x_dist = 3;
