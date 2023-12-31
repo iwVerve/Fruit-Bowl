@@ -28,6 +28,11 @@ if bullet != noone || p2_damage {
 }
 p2_damage = false;
 
+if instance_exists(objPlayer) && sprite_index == sprBossEagle {
+    image_xscale = ternary(objPlayer.x > x, 1, -1);
+}
+bob_time += 1;
+
 iframes -= 1;
 shield_iframes -= 1;
 healthbar_y += healthbar_vspeed;

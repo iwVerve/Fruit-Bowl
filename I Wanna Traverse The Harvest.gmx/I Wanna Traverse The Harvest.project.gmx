@@ -783,6 +783,7 @@
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\sprBossEagle</sprite>
+      <sprite>sprites\sprEagleSplat</sprite>
       <sprite>sprites\sprBossShield</sprite>
       <sprites name="Bullets">
         <sprite>sprites\sprBossBulletOrange</sprite>

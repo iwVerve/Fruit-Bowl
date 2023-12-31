@@ -1,5 +1,10 @@
 ///Boss_create()
 
+image_speed = 12/50;
+bob_time = 0;
+bob_period = 40;
+bob_distance = 4;
+
 max_hp = 3;
 hp = max_hp;
 

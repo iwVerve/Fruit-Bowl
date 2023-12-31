@@ -1,4 +1,4 @@
-I Wanna Traverse The Harvest
+I Wanna Traverse The Harvest, version 1
 Made by Verve
 Press Shift to start
 

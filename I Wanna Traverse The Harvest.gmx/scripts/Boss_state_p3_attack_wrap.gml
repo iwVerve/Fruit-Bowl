@@ -40,7 +40,7 @@ if (wrap_appear_time - wrap_appear_delay) % wrap_appear_period == 0 {
     var bullets_left = wrap_appear_count;
     var bouncers_left = wrap_appear_bouncer_count;
     var total_left = bullets_left + bouncers_left;
-    var area_left = wrap_appear_area_sum
+    var area_left = wrap_appear_area_sum;
     
     var area_count = array_length_1d(wrap_appear_areas);
     for(var a = 0; a < area_count; a += 1) {

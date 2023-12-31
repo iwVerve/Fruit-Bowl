@@ -1,11 +1,7 @@
 boss
-- boss sprite
 - bullets
-- story
-- ending
 - walls redo
 - phase 2 triggers
-true end room
 sfx
-semcret warp out
-game icon
+debug mode
+delete todo.txt

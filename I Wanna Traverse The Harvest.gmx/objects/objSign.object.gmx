@@ -55,6 +55,13 @@ showText = false;
     if (input_check_pressed(KEY.UP))
     {
         showText = true;
+        if room == rO6 {
+            with(objBlock) {
+                if y &lt; 0 {
+                    instance_destroy();
+                }
+            }
+        }
     }
 }
 else

@@ -2,7 +2,7 @@
 
 shield_hp = 1;
 
-wrap_bullet_count = 8;
+wrap_bullet_count = 7;
 wrap_bullet_angle = random(360);
 
 wrap_appear_time = 0;
@@ -29,7 +29,7 @@ for(var i = 0; i < array_height_2d(wrap_appear_regions); i += 1) {
 for(var i = 0; i < wrap_bullet_count; i += 1) {
     var angle = wrap_bullet_angle + i / wrap_bullet_count * 360;
     var bullet = instance_create(x, y, objBossWrapBullet);
-    bullet.speed = random_range(2.8, 3.2);
+    bullet.speed = random_range(2.4, 2.6);
     bullet.direction = angle + random_range(-5, 5);
     create_instance_display(bullet);
 }
