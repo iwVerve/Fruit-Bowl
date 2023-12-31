@@ -1,7 +1,4 @@
 boss
 - bullets
-- walls redo
-- phase 2 triggers
-sfx
 debug mode
 delete todo.txt

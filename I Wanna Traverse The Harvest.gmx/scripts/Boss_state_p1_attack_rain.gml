@@ -45,6 +45,7 @@ if rain_spawn_time % rain_spawn_period == 0 {
         
         var inst = instance_create(xx, yy, objBounceRefresherAppear);
         inst.face_player = true;
+        audio_play_sound(sndBossBullet1, 0, false);
     }
     
     rain_spawn_y -= rain_spawn_y_step;

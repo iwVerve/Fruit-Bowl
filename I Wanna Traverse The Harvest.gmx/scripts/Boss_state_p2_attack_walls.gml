@@ -13,6 +13,7 @@ if walls_time % walls_bullet_period == 0 {
         // 1 before wall, move bouncer
         walls_wall_counter += 1;
         walls_bouncer_x = walls_bouncer_next_x;
+        audio_play_sound(sndBossBullet2, 0, false);
         if (walls_wall_counter + 1) % walls_leave_period == 0 {
             // Move to edge
             walls_bouncer_next_x = 400 + choose(-1, 1) * 176;
@@ -51,6 +52,7 @@ if walls_time % walls_aimed_period == 0 {
         var inst = instance_create(x, y, objBossWallsAimedBullet);
         inst.speed = walls_aimed_speed;
         inst.direction = point_direction(x, y, objPlayer.x, objPlayer.y) + random_range(-walls_aimed_angle_range, walls_aimed_angle_range);
+        audio_play_sound(sndBossBullet5, 0, false);
     }
 }
 walls_time += 1;

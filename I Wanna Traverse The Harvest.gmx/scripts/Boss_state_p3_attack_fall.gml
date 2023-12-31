@@ -90,5 +90,6 @@ if fall_move_glitch_delay == 0 {
         y += 544;
         target_alpha = 1;
     }
+    audio_play_sound(sndBossBullet3, 0, false);
 }
 fall_move_glitch_delay -= 1;

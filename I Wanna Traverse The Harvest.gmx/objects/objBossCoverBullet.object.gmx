@@ -97,6 +97,7 @@ else if state == 2 {
             gravity = 0.2;
             vspeed = -random_range(11, 13);
             hspeed = xx / (-2 * vspeed / gravity);
+            audio_play_sound(sndBossBullet2, 0, false);
         }
         state = 3;
     }

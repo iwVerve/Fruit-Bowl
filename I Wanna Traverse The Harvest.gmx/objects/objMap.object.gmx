@@ -389,8 +389,8 @@ texture_set_interpolation(true);
                 draw_sprite_part_ext(
                     spr, index,
                     margin, margin,
-                    sw - 2 * margin, sh - 2 * margin,
-                    xx, yy,
+                    sw - 2 * margin - 2, sh - 2 * margin - 2,
+                    xx + 1, yy + 1,
                     scale, scale, c_white, 1,
                 );
                 switch(index) {

@@ -50,6 +50,7 @@ if sweep_burst_timer % sweep_burst_period == 0 {
         inst.speed = 4;
         inst.direction = rng[i];
     }
+    audio_play_sound(sndBossBullet3, 0, false);
 }
 sweep_burst_timer += 1;
 

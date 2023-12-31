@@ -14,6 +14,7 @@ if bullet != noone || p2_damage {
             else {
                 shield_iframes = shield_iframes_duration;
             }
+            audio_play_sound(sndBossHit, 0, false);
             instance_destroy(bullet);
         }
     }
@@ -22,6 +23,7 @@ if bullet != noone || p2_damage {
             hp -= 1;
             boss_hit = true;
             iframes = iframes_duration;
+            audio_play_sound(sndBossHit, 0, false);
             instance_destroy(bullet);
         }
     }

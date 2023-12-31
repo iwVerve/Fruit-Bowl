@@ -68,6 +68,7 @@ if time >= 0 && time % ceiling_bullet_aim_period == 0 {
             bullet.direction = point_direction(bullet.x, bullet.y, objPlayer.x, objPlayer.y);
             bullet.gravity_direction = bullet.direction;
             bullet.gravity = 0.03;
+            audio_play_sound(sndBossBullet1, 0, false);
         }
         if array_length_1d(array) == 1 {
             ceiling_spawn_v_bullets = false;

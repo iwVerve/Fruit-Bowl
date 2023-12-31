@@ -12,7 +12,7 @@ if horizontal_time % horizontal_wall_period == 0 {
     for(var i = 0; i < 12; i += 1) {
         var yy = 528 - 32 * i;
         var inst = instance_create(xx, yy, objBossHorizontalBullet);
-        inst.s0_target_x = 400 - horizontal_wall_side * 152;
+        inst.s0_target_x = 400 - horizontal_wall_side * 128;
         inst.side = horizontal_wall_side;
         create_instance_display(inst);
     }
@@ -20,7 +20,7 @@ if horizontal_time % horizontal_wall_period == 0 {
     horizontal_wall_count += 1;
     horizontal_wall_side *= -1;
 }
-if horizontal_time % horizontal_wall_period == horizontal_obstacle_offset {
+/*if horizontal_time % horizontal_wall_period == horizontal_obstacle_offset {
     instance_destroy(objBossHorizontalObstacleBullet);
     var count = 5;
     var gap = irandom(count - 2);
@@ -30,10 +30,10 @@ if horizontal_time % horizontal_wall_period == horizontal_obstacle_offset {
         }
         instance_create(400, 528 - 32 * i, objBossHorizontalObstacleBullet);
     }
-}
-if !horizontal_rotate_bouncers && horizontal_time % horizontal_wall_period == 25 && horizontal_wall_count == horizontal_wall_needed_count {
+}*/
+if !horizontal_rotate_bouncers && horizontal_time % horizontal_wall_period == 1 && horizontal_wall_count == horizontal_wall_needed_count {
     horizontal_rotate_bouncers = true;
-    horizontal_timer_pause = 50;
+    horizontal_timer_pause = 100;
 }
 if horizontal_timer_pause <= 0 {
     horizontal_time += 1;
@@ -41,6 +41,13 @@ if horizontal_timer_pause <= 0 {
 else {
     horizontal_timer_pause -= 1;
 }
+
+if horizontal_obstacle_delay <= 0 {
+    with(objBossHorizontalObstacleBullet) {
+        y = lerp(y, 528, 0.1);
+    }
+}
+horizontal_obstacle_delay -= 1;
 
 if horizontal_rotate_bouncers {
     with(objBounceRefresher) {

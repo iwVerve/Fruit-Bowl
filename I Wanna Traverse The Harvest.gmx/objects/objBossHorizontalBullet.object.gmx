@@ -32,9 +32,9 @@ side = 0;
 
 s0_start_x = x;
 s0_target_x = 0;
-s0_x_lerp = 0.05;
+s0_x_lerp = 0.045;
 s0_time = 0;
-s0_duration = 100;
+s0_duration = 90;
 </string>
           </argument>
         </arguments>
@@ -79,11 +79,13 @@ if state == 0 {
     //var g = 1 - power(1 - progress, 2);
     //var eased = lerp(f, g, progress);
     
-    var steep = 1 - power(1 - progress, 4);
-    var shallow_start = 1 - power(1 - progress, 1.75);
-    var shallow_end = 1 - power(1 - progress, 2);
-    var shallow = lerp(shallow_start, shallow_end, progress);
-    var eased = lerp(steep, shallow, progress);
+    //var steep = 1 - power(1 - progress, 3);
+    //var shallow_start = 1 - power(1 - progress, 2);
+    //var shallow_end = 1 - power(1 - progress, 2);
+    //var shallow = lerp(shallow_start, shallow_end, progress);
+    //var eased = lerp(steep, shallow, progress);
+    
+    var eased = 1 - power(1 - progress, 2.5);
     
     x = lerp(s0_start_x, s0_target_x, eased);
     

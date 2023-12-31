@@ -431,6 +431,14 @@
       <sound>sound\sndCannon</sound>
       <sound>sound\sndOProjectorPush</sound>
       <sound>sound\sndBwomp</sound>
+      <sounds name="Boss">
+        <sound>sound\sndBossBullet1</sound>
+        <sound>sound\sndBossBullet2</sound>
+        <sound>sound\sndBossBullet3</sound>
+        <sound>sound\sndBossBullet4</sound>
+        <sound>sound\sndBossBullet5</sound>
+        <sound>sound\sndBossBullet6</sound>
+      </sounds>
     </sounds>
     <sounds name="Music">
       <sound>sound\musOnDeath</sound>

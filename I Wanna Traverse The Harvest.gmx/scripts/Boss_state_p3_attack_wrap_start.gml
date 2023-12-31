@@ -33,6 +33,7 @@ for(var i = 0; i < wrap_bullet_count; i += 1) {
     bullet.direction = angle + random_range(-5, 5);
     create_instance_display(bullet);
 }
+audio_play_sound(sndBossBullet2, 0, false);
 
 for(var s = -1; s <= 1; s += 2) {
     for(var distance = 160; distance <= 320; distance += 32) {

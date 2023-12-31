@@ -9,6 +9,7 @@ if !cover_done_spawning{
             inst.target_x = cover_spawn_x;
             inst.target_y = random_range(cover_spawn_y_min, cover_spawn_y_max);
             cover_spawn_x += cover_direction * cover_spawn_step;
+            audio_play_sound(sndBossBullet4, 0, false);
         }
         else {
             var number = instance_number(objBossCoverBullet);

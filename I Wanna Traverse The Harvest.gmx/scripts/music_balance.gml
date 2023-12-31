@@ -31,3 +31,10 @@ audio_sound_gain(sndMenuSelect, 0.8, 0);
 audio_sound_gain(sndThunder, 0.6, 0);
 audio_sound_gain(sndScrape, 0.8, 0);
 audio_sound_gain(sndItem, 0.6, 0);
+
+audio_sound_gain(sndBossBullet1, 1, 1);
+audio_sound_gain(sndBossBullet2, 1, 1);
+audio_sound_gain(sndBossBullet3, 1, 1);
+audio_sound_gain(sndBossBullet4, 1, 1);
+audio_sound_gain(sndBossBullet5, 1, 1);
+audio_sound_gain(sndBossBullet6, 1, 1);
