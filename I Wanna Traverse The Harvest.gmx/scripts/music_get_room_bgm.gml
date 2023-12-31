@@ -57,6 +57,7 @@ switch (room) {
     case rO3:
     case rO4:
     case rO5:
+    case rO6:
         return "IHennesMajestatsHemligaHatt";
     
     case rNegative1:
