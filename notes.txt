@@ -2,3 +2,4 @@ don't redo rClimb3 in speedrun?
 em backspace funny
 bonk rigged spawn room
 fix O
+fix O minitiles
