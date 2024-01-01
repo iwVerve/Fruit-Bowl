@@ -93,3 +93,5 @@ part_type_colour_hsv(ptyp, 0, 255, 127, 127, 255, 255);
 part_type_speed(ptyp, 0.05, 0.05, 0, 0);
 part_type_direction(ptyp, 0, 360, 0, 0);
 part_type_life(ptyp, 50, 50);
+
+global.o_start_room = irandom(3);

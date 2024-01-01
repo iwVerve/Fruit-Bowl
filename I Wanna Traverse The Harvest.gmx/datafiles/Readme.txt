@@ -1,13 +1,9 @@
-I Wanna Traverse The Harvest, version 1
+I Wanna Traverse The Harvest, version 2
 Made by Verve
 Press Shift to start
 
 
 I'm open to updating the game and interested in hearing your suggestions.
-
-
-Source:
-https://github.com/iwVerve/Fruit-Bowl
 
 
 Testplay:
@@ -23,3 +19,7 @@ Special Thanks:
 Emmanating
 Ghost
 SupraDarky
+
+
+Source:
+https://github.com/iwVerve/Fruit-Bowl

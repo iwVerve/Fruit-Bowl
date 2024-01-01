@@ -26,11 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>allowed_rooms = array_from_values(rO1, rO2, rO3, rO4, rO5);
+all_rooms = array_from_values(rO2, rO3, rO4, rO5);
 
-var all_rooms = array_from_values(rO2, rO3, rO4, rO5);
 room_count = array_length_1d(all_rooms);
 rooms = array_create(room_count);
-var r = irandom(room_count - 1);
+//var r = irandom(room_count - 1);
+var r = global.o_start_room;
 for(var i = 0; i &lt; room_count; i += 1) {
     rooms[i] = all_rooms[(r + i) % room_count];
 }
@@ -60,7 +61,13 @@ current = 0;
             <kind>1</kind>
             <string>if !array_contains(allowed_rooms, room) {
     instance_destroy();
+    exit;
 }
+
+var position = array_find(all_rooms, room);
+if position != -1 {
+    global.o_start_room = (position + 3) % 4;
+} 
 
 if current &lt; room_count {
     with(objOWarp) {
