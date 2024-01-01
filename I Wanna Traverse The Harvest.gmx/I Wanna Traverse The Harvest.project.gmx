@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="27" name="datafiles">
-    <datafiles number="27" name="Music">
+  <datafiles number="28" name="datafiles">
+    <datafiles number="28" name="Music">
       <datafile>
         <name>Cutie.ogg</name>
         <exists>-1</exists>
@@ -379,6 +379,23 @@
         </Config>
       </ConfigOptions>
       <filename>Credits.txt</filename>
+    </datafile>
+    <datafile>
+      <name>Changelog.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>743440586</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>Changelog.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions>

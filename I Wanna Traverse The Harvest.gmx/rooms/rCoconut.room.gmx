@@ -596,13 +596,13 @@
     <tile bgName="bCoconutMiniTiles" x="528" y="320" w="16" h="16" xo="16" yo="48" id="10004337" name="inst_B2BA58FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutMiniTiles" x="544" y="320" w="16" h="16" xo="16" yo="48" id="10004338" name="inst_2A38897E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutMiniTiles" x="560" y="320" w="16" h="16" xo="16" yo="48" id="10004339" name="inst_E919DE84" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCoconutTiles" x="0" y="576" w="32" h="32" xo="32" yo="64" id="10008153" name="inst_25830971" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCoconutTiles" x="32" y="576" w="32" h="32" xo="32" yo="64" id="10008154" name="inst_AB75E801" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bCoconutTiles" x="64" y="576" w="32" h="32" xo="32" yo="64" id="10008155" name="inst_5C9C26CB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutTiles" x="192" y="576" w="32" h="32" xo="192" yo="128" id="10008156" name="inst_B8F63B65" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutTiles" x="128" y="576" w="32" h="32" xo="32" yo="96" id="10008157" name="inst_F71BE67C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutTiles" x="160" y="576" w="32" h="32" xo="32" yo="96" id="10008158" name="inst_628AAFA4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bCoconutTiles" x="96" y="576" w="32" h="32" xo="160" yo="96" id="10008159" name="inst_2E656BED" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCoconutTiles" x="64" y="576" w="32" h="32" xo="160" yo="32" id="10013123" name="inst_BADEC0FF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCoconutTiles" x="0" y="576" w="32" h="32" xo="32" yo="32" id="10013124" name="inst_D90D94EB" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bCoconutTiles" x="32" y="576" w="32" h="32" xo="32" yo="32" id="10013125" name="inst_EF1AA526" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

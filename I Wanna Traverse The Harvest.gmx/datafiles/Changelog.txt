@@ -1,0 +1,12 @@
+Version 2
+
+Added changelog
+Added soundtrack playlist link
+Moved source link to readme
+Featured one more friend from the journey in the recap
+Rigged the room selection in the exposition
+Added a funny
+Adjusted a missing detail to be missing harder
+Fixed a platforming skip
+Fixed a y position at the start of a showdown
+Fixed the exposition behaving weirdly and being skippable
