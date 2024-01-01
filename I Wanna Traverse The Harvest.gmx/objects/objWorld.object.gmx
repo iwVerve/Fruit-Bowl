@@ -491,7 +491,7 @@ if (Id == global.httpUpdateCheck)
             if (!is_undefined(global.newestVersionNumber) &amp;&amp; !is_undefined(global.newestVersionLink))
             {
                 global.isUpToDate = (global.gameVersion == global.newestVersionNumber);
-                updateString = string_concat("Current version ", global.gameVersion, " is outdated! ", global.newestVersionNumber, " is available.#Press Tab to open the download link");
+                updateString = string_concat("Current version ", global.gameVersion, " is outdated! Version ", global.newestVersionNumber, " is available.#Press Tab to open the download link");
             }
         }
     }

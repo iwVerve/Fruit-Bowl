@@ -8,7 +8,7 @@ global.debugVisuals = true;     //Enables changing the color/alpha of player whe
 //Updates
 global.checkForUpdates = true;
 global.versionDataUrl = "https://gist.githubusercontent.com/iwVerve/f95298692aee1e00707f24211a021dff/raw/";
-global.gameVersion = "1";
+global.gameVersion = "2";
 
 //Menu
 global.menuMode = 1;                //Sets whether to use a warp room or a menu for selecting the game's difficulty (0 = warp room, 1 = menu)

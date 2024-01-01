@@ -1,7 +1,3 @@
-Source:
-https://github.com/iwVerve/Fruit-Bowl
-
-
 Tools:
 GameMaker: Studio
 YoYoYo Engine Verve Edition
