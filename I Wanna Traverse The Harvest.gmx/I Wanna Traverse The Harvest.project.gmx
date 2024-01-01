@@ -1034,6 +1034,7 @@
       <script>scripts\print.gml</script>
       <script>scripts\string_concat.gml</script>
       <script>scripts\array_shuffle.gml</script>
+      <script>scripts\array_contains.gml</script>
     </scripts>
     <scripts name="Mint">
       <scripts name="mint">
