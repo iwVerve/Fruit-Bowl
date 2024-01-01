@@ -397,9 +397,18 @@ if keyboard_check_pressed(vk_f8) {
 //if keyboard_check_pressed(vk_backspace) {
 if input_check_pressed(KEY.HUB) {
     if global.gameStarted &amp;&amp; savedata_get("gameClear") &amp;&amp; room != rNegative1 &amp;&amp; room != rNegative2 &amp;&amp; room != rNegative3 &amp;&amp; !global.gamePaused {
+        if room != rClear {
+            savedata_set("warp_count", savedata_get("warp_count") + 1);
+        }
         global.jump_out_of_bowl = false;
         instance_destroy(objPlayer);
         global.playerStartTarget = 1;
+        if savedata_get("warp_count") &gt; 5 {
+            global.playerStartTarget = 2;
+        }
+        if savedata_get("warp_count") &gt; 10 {
+            global.playerStartTarget = 3;
+        }
         room_goto(rClear);
     }
 }
