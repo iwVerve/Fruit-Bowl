@@ -7,6 +7,7 @@ Featured one more friend from the journey in the recap
 Rigged the room selection in the exposition
 Added a funny
 Adjusted a missing detail to be missing harder
+Adjusted an intermission room
 Fixed a platforming skip
 Fixed a y position at the start of a showdown
 Fixed the exposition behaving weirdly and being skippable
