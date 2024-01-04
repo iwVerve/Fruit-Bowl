@@ -3,7 +3,7 @@
 horizontal_start_delay = 50;
 horizontal_time = 0;
 horizontal_timer_pause = 0;
-horizontal_wall_period = 135;
+horizontal_wall_period = 125;
 horizontal_obstacle_offset = 50;
 horizontal_wall_side = choose(-1, 1);
 horizontal_wall_count = 0;
@@ -11,12 +11,14 @@ horizontal_wall_needed_count = 4;
 horizontal_rotate_bouncers = false;
 
 var i;
-var distance = 208 - 48;
+var distance = 208 - 40;
 var yy = 496;
 i = instance_create(400 - distance, yy, objBounceRefresherAppear);
 i.image_angle = 270;
+i.sprite_index = sprBounceRefresherBig;
 i = instance_create(400 + distance, yy, objBounceRefresherAppear);
 i.image_angle = 90;
+i.sprite_index = sprBounceRefresherBig;
 
 for(var i = 0; i < 3; i += 1) {
     for(var s = -1; s <= 1; s += 2) {

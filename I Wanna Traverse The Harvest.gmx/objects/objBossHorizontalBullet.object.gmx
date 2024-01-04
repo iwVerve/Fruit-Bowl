@@ -34,7 +34,7 @@ s0_start_x = x;
 s0_target_x = 0;
 s0_x_lerp = 0.045;
 s0_time = 0;
-s0_duration = 90;
+s0_duration = 80;
 
 image_angle = random(360);
 </string>
