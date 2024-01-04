@@ -300,6 +300,7 @@
     <instance objName="objBlockNoShadow" x="352" y="-32" name="inst_F34D8687" locked="0" code="with(make_trigger(&quot;secret&quot;)) {&#xA;    trg_fade(&quot;in&quot;, 1, EASE.NONE);&#xA;}&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrigger" x="0" y="0" name="inst_4BDA8BE6" locked="0" code="trg = &quot;secret&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="-32" y="0" name="inst_9CF139CC" locked="0" code="roomTo = rSecret1;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="512" y="128" name="inst_7E52628A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bTutorialTiles" x="320" y="0" w="32" h="32" xo="64" yo="32" id="10004443" name="inst_56646D2D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

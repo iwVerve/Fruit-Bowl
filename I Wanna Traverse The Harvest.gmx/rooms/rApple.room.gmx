@@ -390,6 +390,7 @@
     <instance objName="objBlock" x="704" y="512" name="inst_5AFF3ECA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSealApple1" x="600" y="3" name="inst_BB705A78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSealApple2" x="200" y="104" name="inst_57A0C80F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="240" y="544" name="inst_FE685598" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bRedAppleTiles" x="400" y="32" w="32" h="32" xo="64" yo="32" id="10003552" name="inst_397E1E73" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

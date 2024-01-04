@@ -188,6 +188,7 @@
     <instance objName="objEyeParticleSpawner" x="160" y="544" name="inst_E9D3CFBE" locked="0" code="path = pEyePartClimb3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEyePlatform" x="640" y="112" name="inst_9BA7DBD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="811" y="0" name="inst_06FB48D8" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="608" y="448" name="inst_9D5C815B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bOutside" x="704" y="480" w="32" h="32" xo="32" yo="32" id="10009398" name="inst_5838A44B" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
