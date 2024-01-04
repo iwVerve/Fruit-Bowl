@@ -818,6 +818,7 @@
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprBillboardEye</sprite>
     <sprite>sprites\sprBillboardPlatform</sprite>
+    <sprite>sprites\sprBillboardNotch</sprite>
     <sprite>sprites\sprPlatformbutO</sprite>
     <sprite>sprites\sprSpinner</sprite>
     <sprite>sprites\sprSpinnerBackground</sprite>

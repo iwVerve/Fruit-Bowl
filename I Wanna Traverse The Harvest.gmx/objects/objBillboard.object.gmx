@@ -40,6 +40,9 @@ eyes = array_from_values(
     array_from_values("",               "sealKiwi",       "sealLemon", "",  "",           "sealNegative"),
     array_from_values("sealBlackberry", "sealStrawberry", "sealWatermelon", "",           "", ""),
 );
+active_count = 0;
+active_count += savedata_get("sealApple1");
+active_count += savedata_get("sealApple2");
 
 random_set_seed(254);
 for(var j = 0; j &lt; array_height_2d(eyes); j += 1) {
@@ -47,6 +50,10 @@ for(var j = 0; j &lt; array_height_2d(eyes); j += 1) {
         offsetX[j, i] = irandom_range(-4, 4);
         offsetY[j, i] = irandom_range(-2, 2);
         image[j, i] = irandom_range(0, 1);
+        
+        if eyes[j, i] != "apple" &amp;&amp; eyes[j, i] != "" {
+            active_count += savedata_get(eyes[j, i]);
+        }
     }
 }
 randomize();
@@ -85,7 +92,7 @@ for(var j = 0; j &lt; array_height_2d(eyes); j += 1) {
             continue;
         }
         
-        var xx = x + 240 + 40 * (i - 2.5) + offsetX[j, i];
+        var xx = x + 176 + 40 * (i - 2.5) + offsetX[j, i];
         var yy = y + 96 + 32 * (j - 2) + offsetY[j, i];
         var img;
         if str == "apple" {
@@ -98,6 +105,16 @@ for(var j = 0; j &lt; array_height_2d(eyes); j += 1) {
         
         draw_sprite(sprBillboardEye, img, xx, yy);
     }
+}
+
+var center_x = x + 368;
+var center_y = y + 96;
+var dist = 40;
+for(var i = 0; i &lt; 8; i += 1) {
+    var angle = 90 - i/8 * 360;
+    var xx = center_x + lengthdir_x(dist, angle);
+    var yy = center_y + lengthdir_y(dist, angle);
+    draw_sprite(sprBillboardNotch, (active_count &gt; i), xx, yy);
 }
 </string>
           </argument>

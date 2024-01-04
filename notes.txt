@@ -1,5 +1,2 @@
 don't redo rClimb3 in speedrun route?
-fix O minitiles
-check saveblockers
-don't require every seal?
 seal hunt intermission?

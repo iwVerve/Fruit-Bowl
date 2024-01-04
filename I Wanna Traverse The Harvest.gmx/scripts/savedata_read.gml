@@ -10,3 +10,7 @@ file_text_close(file);
 if savedata_get("gameClear") {
     global.seenMapRoom = true;
 }
+
+if savedata_get("allSeals") {
+    savedata_set("eightSeals", true);
+}

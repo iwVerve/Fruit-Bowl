@@ -27,12 +27,18 @@ if (global.pauseDelay <= 0)    //Check if pause delay is active
                         savedata_set_persistent(seal.name, true);
                         
                         var have_all = true;
+                        var count = 0;
                         all_seals = array_from_values("sealBanana", "sealCherry", "sealGrape", "sealApple1", "sealApple2", "sealKiwi", "sealCoconut", "sealBlackberry", "sealStrawberry", "sealWatermelon", "sealLemon", "sealSecret1", "sealNegative");
                         for (var i = 0; i < array_length_1d(all_seals); i += 1) {
                             if !savedata_get(all_seals[i]) {
                                 have_all = false;
-                                break;
                             }
+                            else {
+                                count += 1;
+                            }
+                        }
+                        if count >= 8 {
+                            savedata_set_persistent("eightSeals", true);
                         }
                         if have_all {
                             savedata_set_persistent("allSeals", true);

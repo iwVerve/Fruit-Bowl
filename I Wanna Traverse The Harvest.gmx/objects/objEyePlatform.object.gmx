@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-if !savedata_get("allSeals") {
+if !savedata_get("eightSeals") {
     instance_destroy();
 }
 </string>
