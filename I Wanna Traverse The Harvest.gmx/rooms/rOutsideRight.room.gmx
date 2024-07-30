@@ -192,6 +192,7 @@
     <instance objName="objOutsideRoomChanger" x="800" y="608" name="inst_E7D16F26" locked="0" code="roomTo = rGlitch1;&#xA;smooth = true;&#xA;offsetX = -800;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShowPauseBind" x="448" y="416" name="inst_B945333B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPresent" x="288" y="416" name="inst_6AD9E494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="288" y="416" name="inst_C3726972" locked="0" code="target = 1;&#xA;vspd = -8.5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bOutside" x="736" y="384" w="32" h="32" xo="0" yo="0" id="10008606" name="inst_C5C2974F" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

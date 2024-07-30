@@ -144,6 +144,8 @@ if (global.gameStarted)
     
     if (!global.gamePaused)
     {
+        canvas_update();
+    
         if (input_check_pressed(KEY.RESTART))
         {
             //Stop death sound/music
@@ -618,6 +620,8 @@ repeat(ds_map_size(map)) {
     audio_destroy_stream(index);
     key = ds_map_find_next(map, key);
 }
+
+canvas_deinit();
 </string>
           </argument>
         </arguments>
@@ -661,6 +665,28 @@ room_goto_next();
       </action>
     </event>
     <event eventtype="8" enumb="73">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Canvas
+canvas_draw();
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>

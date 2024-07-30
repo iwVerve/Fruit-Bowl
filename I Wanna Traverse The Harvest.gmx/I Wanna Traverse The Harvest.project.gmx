@@ -826,6 +826,7 @@
       <sprite>sprites\sprPresentMiniRight</sprite>
       <sprite>sprites\sprPresentMiniDown</sprite>
       <sprite>sprites\sprPresentMiniLeft</sprite>
+      <sprite>sprites\sprBrush</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -1173,6 +1174,12 @@
         <script>scripts\Boss_state_p3_spawn_fade_out.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Canvas">
+      <script>scripts\canvas_init.gml</script>
+      <script>scripts\canvas_deinit.gml</script>
+      <script>scripts\canvas_update.gml</script>
+      <script>scripts\canvas_draw.gml</script>
+    </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>
     <script>scripts\Visuals_add_apple_object_sprite.gml</script>
@@ -1490,6 +1497,7 @@
       <object>objects\objPresentArrow</object>
       <object>objects\objPresentPlayer</object>
       <object>objects\objPresentRefresher</object>
+      <object>objects\objBrush</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>

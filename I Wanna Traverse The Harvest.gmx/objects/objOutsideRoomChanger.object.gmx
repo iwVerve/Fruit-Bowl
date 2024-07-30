@@ -32,6 +32,7 @@ event_inherited();
 smooth = false;   //sets whether the player wraps around the screen for a smooth transition to the next room (this requires the room sizes to be the same)
 offsetX = 0;
 offsetY = 0;
+target = 0;
 </string>
           </argument>
         </arguments>
@@ -62,6 +63,7 @@ if (!in_range(other.x, 0, room_width) || !in_range(other.y, 0, room_height))  //
 {
     if (!smooth)
     {
+        global.playerStartTarget = target;
         event_user(0);
     }
     else
@@ -85,6 +87,7 @@ if (!in_range(other.x, 0, room_width) || !in_range(other.y, 0, room_height))  //
                 r = rNegative1;
             }
             other.already_warped = true;
+            global.playerStartTarget = target;
             room_goto(r);
         }
     }
