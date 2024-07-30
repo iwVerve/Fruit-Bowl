@@ -1,3 +1,11 @@
+Version 3
+
+Billboard now requires less completionism for smoother pacing
+Added a reward for formerly required completionism
+Nerfed a very horizontal attack
+Added missing saveblockers
+Fixed tiling
+
 Version 2
 
 Added changelog

@@ -47,7 +47,7 @@ if walls_time % walls_bullet_period == 0 {
     }
 }
 
-if walls_time % walls_aimed_period == 0 {
+if (walls_time % walls_aimed_period == 0) && (walls_bullet_counter % walls_wall_period < walls_wall_period - 1) {
     if instance_exists(objPlayer) {
         var inst = instance_create(x, y, objBossWallsAimedBullet);
         inst.speed = walls_aimed_speed;
