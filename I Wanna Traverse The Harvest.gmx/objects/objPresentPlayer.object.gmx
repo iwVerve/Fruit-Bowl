@@ -87,10 +87,10 @@ target_y = undefined;
     }
     exit;
 }
-if (x &lt;= target_x - 3) {
+if (x &lt;= target_x - 6) {
     hspeed = 3;
     image_xscale = 1;
-} else if (x &gt;= target_x + 3) {
+} else if (x &gt;= target_x + 6) {
     hspeed = -3;
     image_xscale = -1;
 } else {

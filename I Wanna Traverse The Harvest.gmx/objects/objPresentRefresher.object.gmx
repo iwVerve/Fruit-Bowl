@@ -3,7 +3,7 @@
   <spriteName>sprBounceRefresher</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1200</depth>
   <persistent>0</persistent>
   <parentName>objBounceRefresher</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>x_start = x;
 event_inherited();
+
+var _display = instance_create(x, y, objInstanceDisplay);
+_display.inst = id;
 </string>
           </argument>
         </arguments>
