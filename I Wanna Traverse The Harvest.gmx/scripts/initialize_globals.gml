@@ -95,3 +95,4 @@ part_type_direction(ptyp, 0, 360, 0, 0);
 part_type_life(ptyp, 50, 50);
 
 global.o_start_room = irandom(3);
+global.present_transition = false;

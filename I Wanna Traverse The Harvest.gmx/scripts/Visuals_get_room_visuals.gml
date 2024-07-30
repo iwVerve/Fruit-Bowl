@@ -190,4 +190,15 @@ switch(argument0) {
             objMiniLeft,   sprOMiniLeft,
         );
         break;
+    case rPresent:
+        Visuals_add_object_sprite(
+            objSpikeUp,    sprPresentSpikeUp,
+            objSpikeRight, sprPresentSpikeRight,
+            objSpikeDown,  sprPresentSpikeDown,
+            objSpikeLeft,  sprPresentSpikeLeft,
+            objMiniUp,     sprPresentMiniUp,
+            objMiniRight,  sprPresentMiniRight,
+            objMiniDown,   sprPresentMiniDown,
+            objMiniLeft,   sprPresentMiniLeft,
+        );
 }

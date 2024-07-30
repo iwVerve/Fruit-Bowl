@@ -52,8 +52,15 @@
 
 if (!instance_exists(objPlayer) &amp;&amp; target == global.playerStartTarget)
 {
-    instance_create(x+17,y+23,objPlayer);
+    var _player = instance_create(x+17,y+23,objPlayer);
     global.playerStartTarget = 0;
+    
+    if (global.present_transition) {
+        _player.y -= 144;
+        _player.airJumps = 0;
+        _player.vspeed = _player.maxVspeed;
+        global.present_transition = false;
+    }
 }
 </string>
           </argument>

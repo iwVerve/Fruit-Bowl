@@ -818,6 +818,14 @@
     <sprites name="Present">
       <sprite>sprites\sprPresent</sprite>
       <sprite>sprites\sprPresentFull</sprite>
+      <sprite>sprites\sprPresentSpikeUp</sprite>
+      <sprite>sprites\sprPresentSpikeRight</sprite>
+      <sprite>sprites\sprPresentSpikeDown</sprite>
+      <sprite>sprites\sprPresentSpikeLeft</sprite>
+      <sprite>sprites\sprPresentMiniUp</sprite>
+      <sprite>sprites\sprPresentMiniRight</sprite>
+      <sprite>sprites\sprPresentMiniDown</sprite>
+      <sprite>sprites\sprPresentMiniLeft</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -881,6 +889,7 @@
       <background>background\bOMiniTiles</background>
       <background>background\bGlitchTiles</background>
       <background>background\bGlitchMiniTiles</background>
+      <background>background\bPresentTiles</background>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bLivingRoom</background>
@@ -907,6 +916,7 @@
       <background>background\bO6</background>
       <background>background\bClearBackground</background>
       <background>background\bClearForeground</background>
+      <background>background\bPresent</background>
     </backgrounds>
     <backgrounds name="Glitch">
       <background>background\bGlitch1</background>
@@ -1479,6 +1489,7 @@
       <object>objects\objPresentCap</object>
       <object>objects\objPresentArrow</object>
       <object>objects\objPresentPlayer</object>
+      <object>objects\objPresentRefresher</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
@@ -1541,6 +1552,7 @@
     <room>rooms\rTowerOutside</room>
     <room>rooms\rTower</room>
     <room>rooms\rOutsideRight</room>
+    <room>rooms\rPresent</room>
     <rooms name="Climb">
       <room>rooms\rClimb1</room>
       <room>rooms\rClimb2</room>
