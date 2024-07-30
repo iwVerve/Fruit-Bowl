@@ -431,6 +431,7 @@
       <sound>sound\sndCannon</sound>
       <sound>sound\sndOProjectorPush</sound>
       <sound>sound\sndBwomp</sound>
+      <sound>sound\sndBottlePop</sound>
       <sounds name="Boss">
         <sound>sound\sndBossBullet1</sound>
         <sound>sound\sndBossBullet2</sound>
@@ -813,6 +814,10 @@
       <sprite>sprites\sprBossHealthbar</sprite>
       <sprite>sprites\sprSpeechBubble</sprite>
       <sprite>sprites\sprHandshake</sprite>
+    </sprites>
+    <sprites name="Present">
+      <sprite>sprites\sprPresent</sprite>
+      <sprite>sprites\sprPresentFull</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
@@ -1468,6 +1473,12 @@
       <object>objects\objBossFallBullet</object>
       <object>objects\objHandshake</object>
       <object>objects\objBossFadeIn</object>
+    </objects>
+    <objects name="Present">
+      <object>objects\objPresent</object>
+      <object>objects\objPresentCap</object>
+      <object>objects\objPresentArrow</object>
+      <object>objects\objPresentPlayer</object>
     </objects>
     <object>objects\objBillboard</object>
     <object>objects\objBillboardPlatform</object>
