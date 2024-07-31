@@ -823,6 +823,10 @@
       <sprite>sprites\sprPresentMiniLeft</sprite>
       <sprite>sprites\sprBrush</sprite>
     </sprites>
+    <sprites name="Canvas">
+      <sprite>sprites\sprCanvasButton</sprite>
+      <sprite>sprites\sprCanvasIcon</sprite>
+    </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
     <sprite>sprites\sprBillboardEye</sprite>
@@ -1129,6 +1133,8 @@
       <script>scripts\canvas_deinit.gml</script>
       <script>scripts\canvas_update.gml</script>
       <script>scripts\canvas_draw.gml</script>
+      <script>scripts\canvas_is_unlocked.gml</script>
+      <script>scripts\canvas_button.gml</script>
     </scripts>
     <script>scripts\Visuals_get_room_visuals.gml</script>
     <script>scripts\Visuals_add_object_sprite.gml</script>

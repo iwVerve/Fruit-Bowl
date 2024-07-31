@@ -278,11 +278,13 @@ if instance_exists(objPlayer) &amp;&amp; mouse_check_button_pressed(mb_left) {
         }
         instance_destroy(objPlayer);
         global.autosave = true;
+        mouse_clear(mb_left);
         room_goto(hover_room);
     }
     else if extra_hover_room != noone {
         instance_destroy(objPlayer);
         global.autosave = true;
+        mouse_clear(mb_left);
         room_goto(extra_rooms[extra_hover_room, 3]);
     }
 }

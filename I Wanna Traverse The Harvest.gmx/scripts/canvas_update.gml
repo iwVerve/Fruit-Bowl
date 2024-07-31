@@ -1,7 +1,54 @@
-///canvas_update()
+///canvas_update() -> void
+
+if (!canvas_is_unlocked()) {
+    exit;
+}
 
 var _left = mouse_check_button(mb_left);
 var _right = mouse_check_button(mb_right);
+
+var _mouse_x = mouse_x - view_xview;
+var _mouse_y = mouse_y - view_yview;
+
+if (global.canvas_ui_cooldown > 0) {
+    global.canvas_ui_cooldown -= 1;
+} else {
+    global.canvas_ui_alpha -= 1 / global.canvas_ui_lifetime;
+}
+
+if (!surface_exists(global.canvas_ui_surf)) {
+    global.canvas_ui_surf = surface_create(global.canvas_width, global.canvas_height);
+}
+
+surface_set_target(global.canvas_ui_surf);
+    draw_clear_alpha(c_black, 0);
+    
+    for (var i = 0; i < CANVAS_TOOL.COUNT; i += 1) {
+        var _clicked = canvas_button(32 * i, 0, i);
+        if (_clicked) {
+            global.canvas_tool = i;
+            global.canvas_ui_alpha = 1;
+            global.canvas_ui_cooldown = global.canvas_ui_cooldown_duration;
+            mouse_clear(mb_left);
+        }
+    }
+    var _clear = canvas_button(32 * CANVAS_TOOL.COUNT, 0, CANVAS_TOOL.COUNT);
+    if (_clear) {
+        global.canvas_ui_alpha = 1;
+        global.canvas_ui_cooldown = global.canvas_ui_cooldown_duration;
+        mouse_clear(mb_left);
+        
+        global.canvas_drawing = false;
+        if (background_exists(global.canvas_background)) {
+            background_delete(global.canvas_background);
+        }
+    }
+surface_reset_target();
+
+if (mouse_x != global.last_mouse_x || mouse_y != global.last_mouse_y) {
+    global.canvas_ui_alpha = 1;
+    global.canvas_ui_cooldown = global.canvas_ui_cooldown_duration;
+}
 
 if (global.canvas_drawing) {
     if (_left) {
@@ -10,8 +57,8 @@ if (global.canvas_drawing) {
             switch (global.canvas_tool) {
                 case CANVAS_TOOL.BRUSH:
                     draw_circle(global.last_mouse_x, global.last_mouse_y, global.canvas_radius, false);
-                    draw_circle(mouse_x, mouse_y, global.canvas_radius, false);
-                    draw_line_width(global.last_mouse_x, global.last_mouse_y, mouse_x, mouse_y, 2 * global.canvas_radius);
+                    draw_circle(_mouse_x, _mouse_y, global.canvas_radius, false);
+                    draw_line_width(global.last_mouse_x, global.last_mouse_y, _mouse_x, _mouse_y, 2 * global.canvas_radius);
                     break;
             }
         surface_reset_target();
@@ -20,8 +67,8 @@ if (global.canvas_drawing) {
             surface_set_target(global.canvas_surf);
                 var _erase_radius = 1.4 * global.canvas_radius + 2;
                 draw_circle(global.last_mouse_x, global.last_mouse_y, _erase_radius, false);
-                draw_circle(mouse_x, mouse_y, _erase_radius, false);
-                draw_line_width(global.last_mouse_x, global.last_mouse_y, mouse_x, mouse_y, 2 * _erase_radius);
+                draw_circle(_mouse_x, _mouse_y, _erase_radius, false);
+                draw_line_width(global.last_mouse_x, global.last_mouse_y, _mouse_x, _mouse_y, 2 * _erase_radius);
             surface_reset_target();
         draw_set_blend_mode(bm_normal);
     } else {
@@ -48,5 +95,5 @@ if (global.canvas_drawing) {
     }
 }
 
-global.last_mouse_x = mouse_x;
-global.last_mouse_y = mouse_y;
+global.last_mouse_x = _mouse_x;
+global.last_mouse_y = _mouse_y;

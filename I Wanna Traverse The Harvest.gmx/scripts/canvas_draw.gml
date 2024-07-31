@@ -1,4 +1,8 @@
-///canvas_draw()
+///canvas_draw() -> void
+
+if (!canvas_is_unlocked()) {
+    exit;
+}
 
 d3d_set_projection_ortho(0, 0, global.canvas_width, global.canvas_height, 0);
 
@@ -13,7 +17,13 @@ if (global.canvas_drawing) {
 if (global.canvas_tool != CANVAS_TOOL.NONE) {
     draw_set_color(c_white);
     draw_set_alpha(0.5);
-        draw_circle(mouse_x, mouse_y, global.canvas_radius, true);
+        draw_circle(global.last_mouse_x, global.last_mouse_y, global.canvas_radius, true);
+    draw_set_alpha(1);
+}
+
+if (surface_exists(global.canvas_ui_surf)) {
+    draw_set_alpha(global.canvas_ui_alpha);
+        draw_surface(global.canvas_ui_surf, 0, 0);
     draw_set_alpha(1);
 }
 

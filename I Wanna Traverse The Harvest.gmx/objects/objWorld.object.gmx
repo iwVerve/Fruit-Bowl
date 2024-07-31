@@ -330,7 +330,7 @@ if (global.debugMode &amp;&amp; global.gameStarted &amp;&amp; !global.gamePaused
     if keyboard_check_pressed(ord("O")) {
         var num = floor(get_integer("", ""));
         view_yview = num;
-        instance_destroy(objCamera)
+        instance_destroy(objCamera);
     }
      
     if keyboard_check_pressed(ord("U")) {

@@ -2,7 +2,7 @@ Version 3
 
 Billboard now requires less completionism for smoother pacing
 Added a reward for formerly required completionism
-Nerfed all non-coconut attacks in phase two
+Nerfed phase two
 Added missing saveblockers
 Fixed tiling
 
