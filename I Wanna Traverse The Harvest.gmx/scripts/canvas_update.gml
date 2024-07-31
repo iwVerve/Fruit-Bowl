@@ -45,10 +45,13 @@ surface_set_target(global.canvas_ui_surf);
     }
 surface_reset_target();
 
-if (mouse_x != global.last_mouse_x || mouse_y != global.last_mouse_y) {
+if (window_mouse_get_x() != global.last_window_mouse_x || window_mouse_get_y() != global.last_window_mouse_y) {
     global.canvas_ui_alpha = 1;
     global.canvas_ui_cooldown = global.canvas_ui_cooldown_duration;
 }
+
+global.last_window_mouse_x = window_mouse_get_x();
+global.last_window_mouse_y = window_mouse_get_y();
 
 if (global.canvas_drawing) {
     if (_left) {

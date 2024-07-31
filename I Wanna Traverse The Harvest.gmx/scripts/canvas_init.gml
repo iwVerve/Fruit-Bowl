@@ -20,6 +20,8 @@ global.canvas_radius = 4;
 global.canvas_drawing = false;
 global.last_mouse_x = 0;
 global.last_mouse_y = 0;
+global.last_window_mouse_x = 0;
+global.last_window_mouse_y = 0;
 
 global.canvas_ui_alpha = 0;
 global.canvas_ui_cooldown_duration = 30;

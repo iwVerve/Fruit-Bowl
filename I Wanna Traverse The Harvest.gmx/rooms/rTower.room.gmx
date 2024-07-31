@@ -1099,7 +1099,6 @@
     <tile bgName="bTowerTiles" x="128" y="1088" w="32" h="32" xo="128" yo="128" id="10007944" name="inst_8BDC25DB" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="448" y="1088" w="32" h="32" xo="96" yo="0" id="10007945" name="inst_3F465E51" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="256" y="1184" w="32" h="32" xo="0" yo="0" id="10007946" name="inst_9FFF41EC" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bTowerTiles" x="288" y="1184" w="32" h="32" xo="160" yo="64" id="10007949" name="inst_25DF94A8" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="288" y="1152" w="32" h="32" xo="0" yo="32" id="10007950" name="inst_44A3A5B8" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="288" y="1120" w="32" h="32" xo="0" yo="0" id="10007951" name="inst_78C9EA14" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="352" y="1120" w="32" h="32" xo="32" yo="96" id="10007955" name="inst_DDDCEDCA" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1251,7 +1250,6 @@
     <tile bgName="bTowerTiles" x="128" y="1568" w="32" h="32" xo="128" yo="32" id="10008130" name="inst_1B064839" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTilesMini" x="480" y="2288" w="16" h="16" xo="0" yo="48" id="10008163" name="inst_5569CABF" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTilesMini" x="496" y="2288" w="16" h="16" xo="16" yo="48" id="10008164" name="inst_DC063607" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bTowerTilesMini" x="512" y="2288" w="16" h="16" xo="112" yo="48" id="10008165" name="inst_4ED5970F" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTilesMini" x="528" y="2288" w="16" h="16" xo="32" yo="32" id="10008166" name="inst_68CC3FB6" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTilesMini" x="528" y="2272" w="16" h="16" xo="32" yo="16" id="10008167" name="inst_B1454C9D" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTilesMini" x="512" y="2272" w="16" h="16" xo="0" yo="16" id="10008168" name="inst_14AB3B83" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1272,6 +1270,8 @@
     <tile bgName="bTowerTilesMini" x="320" y="528" w="16" h="16" xo="48" yo="32" id="10008735" name="inst_42AB9B22" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="384" y="496" w="32" h="32" xo="0" yo="96" id="10008736" name="inst_561EB2F1" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerTiles" x="416" y="496" w="32" h="32" xo="192" yo="96" id="10008737" name="inst_CE883BD7" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerTiles" x="288" y="1184" w="32" h="32" xo="192" yo="64" id="10013398" name="inst_E1122C25" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerTilesMini" x="512" y="2288" w="16" h="16" xo="96" yo="48" id="10013400" name="inst_70786BB0" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
