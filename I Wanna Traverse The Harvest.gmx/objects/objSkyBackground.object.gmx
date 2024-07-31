@@ -82,11 +82,13 @@ if room == rTower {
         }
     }
     
-    var b = c_black;
-    var w = make_color_hsv(0, 0, 0.1 * 255);
-    draw_set_blend_mode(bm_subtract);
-        draw_rectangle_colour(144, max(view_yview, 80), 399, view_yview + 608, w, b, b, w, false);
-        draw_rectangle_colour(656, max(view_yview, 80), 400, view_yview + 608, b, w, w, b, false);
+    draw_set_blend_mode(bm_add);
+    with (objTowerChandelier) {
+        draw_circle_colour(x + 16, y + 12, random_range(56, 64), $111a2b, c_black, false);
+    }
+    with (objTowerCandle) {
+        draw_circle_colour(x + 16, y + 6, random_range(48, 52), $111a2b, c_black, false);
+    }
     draw_set_blend_mode(bm_normal);
 }
 </string>

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>2432</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -804,8 +804,37 @@
     <instance objName="objOutsideRoomChanger" x="800" y="1216" name="inst_CE61399B" locked="0" code="roomTo = rClimb1;&#xA;smooth = true;&#xA;offsetY = -1216;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="800" y="608" name="inst_DAE1DA21" locked="0" code="roomTo = rClimb2;&#xA;smooth = true;&#xA;offsetY = -608;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objOutsideRoomChanger" x="800" y="0" name="inst_57781C5A" locked="0" code="roomTo = rClimb3;&#xA;smooth = true;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="576" y="2160" name="inst_010CC2F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="288" y="2304" name="inst_6EDB3EA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="160" y="2144" name="inst_BD448CBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="480" y="2000" name="inst_E96CAC73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="176" y="1696" name="inst_05031023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="560" y="1488" name="inst_84C0E83D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="192" y="1120" name="inst_C43CDEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="496" y="1216" name="inst_4E70953C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="480" y="992" name="inst_2C78FBEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="304" y="832" name="inst_3CDF8360" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="352" y="672" name="inst_E9C51855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="576" y="736" name="inst_9EA7C3F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="224" y="480" name="inst_E1933C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="608" y="448" name="inst_2C893C88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="320" y="256" name="inst_C848781C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="448" y="256" name="inst_C95BC866" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="192" y="96" name="inst_AE38CF5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerChandelier" x="576" y="96" name="inst_239AFA9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="208" y="1968" name="inst_938DF9FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="560" y="1808" name="inst_6C5136E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="352" y="1504" name="inst_5EA3CDF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="416" y="1184" name="inst_DC20FBF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="256" y="1024" name="inst_F547F1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="448" y="368" name="inst_23CDFFFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTowerCandle" x="544" y="224" name="inst_741DEAEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
+    <tile bgName="bTowerDoorFrame" x="352" y="2304" w="96" h="96" xo="96" yo="0" id="10013403" name="inst_548F7D50" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerPainting1" x="344" y="2160" w="96" h="128" xo="0" yo="0" id="10013404" name="inst_CD938394" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerPainting2" x="512" y="1648" w="112" h="112" xo="0" yo="0" id="10013405" name="inst_A5E55636" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerPainting3" x="168" y="840" w="112" h="112" xo="0" yo="0" id="10013406" name="inst_22F44FE1" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="0" y="2400" w="32" h="32" xo="0" yo="0" id="10007620" name="inst_C06126B7" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="32" y="2400" w="32" h="32" xo="0" yo="0" id="10007621" name="inst_2E9C871C" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="64" y="2400" w="32" h="32" xo="0" yo="0" id="10007622" name="inst_4DBFD8F5" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

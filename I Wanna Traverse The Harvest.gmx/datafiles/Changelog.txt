@@ -2,6 +2,7 @@ Version 3
 
 Billboard now requires less completionism for smoother pacing
 Added a reward for formerly required completionism
+Remade tower visuals
 Nerfed phase two
 Added missing saveblockers
 Fixed tiling

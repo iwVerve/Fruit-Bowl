@@ -709,6 +709,8 @@
       <sprite>sprites\sprTowerDoorInside</sprite>
       <sprite>sprites\sprArrow</sprite>
       <sprite>sprites\sprCannon</sprite>
+      <sprite>sprites\sprTowerChandelier</sprite>
+      <sprite>sprites\sprTowerCandle</sprite>
     </sprites>
     <sprites name="Map">
       <sprite>sprites\sprRoomThumbnail</sprite>
@@ -877,8 +879,14 @@
       <background>background\bWatermelonTiles</background>
       <background>background\bWatermelonMiniTiles</background>
       <background>background\bOutside</background>
-      <background>background\bTowerTiles</background>
-      <background>background\bTowerTilesMini</background>
+      <backgrounds name="Tower">
+        <background>background\bTowerTiles</background>
+        <background>background\bTowerTilesMini</background>
+        <background>background\bTowerDoorFrame</background>
+        <background>background\bTowerPainting1</background>
+        <background>background\bTowerPainting2</background>
+        <background>background\bTowerPainting3</background>
+      </backgrounds>
       <background>background\bCloudTiles</background>
       <background>background\bCloudTilesMini</background>
       <background>background\bJigsawTiles</background>
@@ -1328,6 +1336,8 @@
       <object>objects\objTowerDummy</object>
       <object>objects\objTowerDummy2</object>
       <object>objects\objTowerFadeout</object>
+      <object>objects\objTowerChandelier</object>
+      <object>objects\objTowerCandle</object>
     </objects>
     <objects name="Secret 1">
       <object>objects\objFops</object>
