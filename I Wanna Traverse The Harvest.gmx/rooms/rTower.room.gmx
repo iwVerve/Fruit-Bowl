@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>2432</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -831,10 +831,11 @@
     <instance objName="objTowerCandle" x="544" y="224" name="inst_741DEAEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bTowerDoorFrame" x="352" y="2304" w="96" h="96" xo="96" yo="0" id="10013403" name="inst_548F7D50" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerPainting1" x="344" y="2160" w="96" h="128" xo="0" yo="0" id="10013404" name="inst_CD938394" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerPainting2" x="512" y="1648" w="112" h="112" xo="0" yo="0" id="10013405" name="inst_A5E55636" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bTowerPainting3" x="168" y="840" w="112" h="112" xo="0" yo="0" id="10013406" name="inst_22F44FE1" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerDoorFrame" x="352" y="2304" w="96" h="96" xo="0" yo="0" id="10013408" name="inst_A1B78AF7" depth="22000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bTowerDoorFrame" x="352" y="2304" w="96" h="96" xo="96" yo="0" id="10013407" name="inst_DD01BDF0" depth="21999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="0" y="2400" w="32" h="32" xo="0" yo="0" id="10007620" name="inst_C06126B7" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="32" y="2400" w="32" h="32" xo="0" yo="0" id="10007621" name="inst_2E9C871C" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bOutside" x="64" y="2400" w="32" h="32" xo="0" yo="0" id="10007622" name="inst_4DBFD8F5" depth="21000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

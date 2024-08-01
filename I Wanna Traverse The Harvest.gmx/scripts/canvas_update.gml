@@ -42,7 +42,9 @@ surface_set_target(global.canvas_ui_surf);
         var _smaller = canvas_button(0, 32, CANVAS_TOOL.COUNT + 2, false, false) || mouse_wheel_down();
         var _bigger = canvas_button(64, 32, CANVAS_TOOL.COUNT + 1, false, false) || mouse_wheel_up();
         var _change = _bigger - _smaller;
-        if (_change != 0) {
+        if (_change != 0) {        
+            global.canvas_ui_alpha = 1;
+            global.canvas_ui_cooldown = global.canvas_ui_cooldown_duration;
             global.canvas_brush_size_index = clamp(global.canvas_brush_size_index + _change, 0, array_length_1d(global.canvas_brush_sizes) - 1);
             global.canvas_brush_size = global.canvas_brush_sizes[global.canvas_brush_size_index];
         }
