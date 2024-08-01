@@ -21,6 +21,7 @@ var songs = array_from_values(
     "TheRatingsAreIn", 0.65,
     "Fields", 0.7,
     "Europe", 0.7,
+    "Beyond", 0.9,
 );
 for(var i = 0; i < array_length_1d(songs); i += 2) {
     audio_sound_gain(music_load(songs[i]), songs[i + 1], 0);

@@ -50,6 +50,8 @@
     objGlitchTexture,
     objBossBulletParent,
     objBossEagle,
+    objPresent,
+    objPresentCap,
 );
 
 x_dist = 3;

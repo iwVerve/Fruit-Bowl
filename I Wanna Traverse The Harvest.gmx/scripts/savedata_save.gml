@@ -5,6 +5,7 @@
 var savePosition = argument0;
 
 savedata_set("saved", true);
+savedata_set("version", global.gameVersion);
 
 if savePosition && instance_exists(objPlayer) {
     savedata_set("room", room_get_name(room));

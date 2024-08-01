@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !savedata_get("eightSeals") {
+            <string>if !savedata_get("eightSeals") || !savedata_get("sealNegative") {
     instance_destroy();
 }
 

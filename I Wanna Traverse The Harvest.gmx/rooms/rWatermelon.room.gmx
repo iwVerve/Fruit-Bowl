@@ -146,7 +146,7 @@
     <instance objName="objBlock" x="256" y="96" name="inst_BDB747BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="128" name="inst_80D23922" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="224" y="128" name="inst_3B761C42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBounceRefresher" x="176" y="144" name="inst_01244510" locked="0" code="with(make_trigger(1)) {&#xA;    trg_move_to(0, 128, 6, EASE.OUT, true);&#xA;}&#xA;&#xA;with(make_trigger(2)) {&#xA;    trg_move_to(16, 160, 6, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBounceRefresher" x="176" y="144" name="inst_01244510" locked="0" code="with(make_trigger(1)) {&#xA;    trg_move_to(0, 128, 6, EASE.OUT, true);&#xA;}&#xA;&#xA;with(make_trigger(2)) {&#xA;    trg_move_to(16, 160, 6, EASE.OUT, true);&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="160" y="48" name="inst_01218D14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="128" y="16" name="inst_61F991FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="32" name="inst_F87F0886" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -434,7 +434,7 @@
     <instance objName="objMiniUp" x="464" y="256" name="inst_A3053492" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="448" y="256" name="inst_9ABC8B3D" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="432" y="256" name="inst_0642ACB2" locked="0" code="with(make_trigger(8)) {&#xA;    trg_move_to(0, -16, 2, EASE.OUT, true);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSealWatermelon" x="192" y="512" name="inst_66674237" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSealWatermelon" x="64" y="384" name="inst_66674237" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bWatermelonTiles" x="96" y="112" w="32" h="16" xo="96" yo="0" id="10006930" name="inst_4B20B6E3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

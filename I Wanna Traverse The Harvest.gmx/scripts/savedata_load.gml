@@ -16,13 +16,15 @@ else {
     ds_map_copy(global.saveData, global.persistentSaveData);
 }
 
+if savedata_get("allSeals") {
+    savedata_set("eightSeals", true);
+}
+
 with(objPlayer) {
     instance_destroy();
 }
 
 global.gameStarted = true;
-
-
 
 global.grav = savedata_get("grav");
 global.difficulty = savedata_get("difficulty");
