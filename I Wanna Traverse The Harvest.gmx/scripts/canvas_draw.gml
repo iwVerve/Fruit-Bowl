@@ -17,7 +17,7 @@ if (global.canvas_drawing) {
 if (global.canvas_tool != CANVAS_TOOL.NONE) {
     draw_set_color(c_white);
     draw_set_alpha(0.5);
-        draw_circle(global.last_mouse_x, global.last_mouse_y, global.canvas_radius, true);
+        draw_circle(global.last_mouse_x, global.last_mouse_y, global.canvas_brush_size, true);
     draw_set_alpha(1);
 }
 

@@ -845,6 +845,8 @@
     <sprites name="Canvas">
       <sprite>sprites\sprCanvasButton</sprite>
       <sprite>sprites\sprCanvasIcon</sprite>
+      <sprite>sprites\sprCanvasButtonSmall</sprite>
+      <sprite>sprites\sprCanvasIconSmall</sprite>
     </sprites>
     <sprite>sprites\sprClearBackspace</sprite>
     <sprite>sprites\sprBillboard</sprite>
